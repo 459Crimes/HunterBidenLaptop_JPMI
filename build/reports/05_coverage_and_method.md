@@ -1,36 +1,97 @@
-# Coverage And Method
+# JPMI Coverage, Method, and Limits
 
 ## 1. Source boundary
 
-- Source ID **122** `JPMI Metadata HB-FileList-2022-04-v1`.
-- The project holds metadata/hash reports, not JPMI device bytes.
-- Inventory in PostgreSQL: `roberthunter` home directory plus GPT/EFI/HFS+ structural records. System/Application/usr trees are not byte-accessible from this source.
+This repository publishes a **metadata and hash witness for JPMI**, the John Paul Mac Isaac copy lineage.
+
+The restricted JPMI E01 image is not published or independently mounted by this GitHub checkout. The project therefore works from received forensic reports/manifests normalized into JPMI-specific database tables and derived public artifacts.
 
 ## 2. Coverage figures
 
-
 | Metric | Value |
-|---|---|
-| inventory_paths | 576,249 |
-| inventory_paths_with_sha256 | 331,906 |
-| hash_manifest_rows (rank-1 allpaths) | 655,330 |
-| cnid_map_entries | 397,440 |
-| tsk_timeline_rows | 1,259,300 |
-| home_counts_emlx_vcf_icloud | 128,847 / 77,891 / 12,911 |
-| cross_source_hash_overlap_rows | 292,667 |
-| cross_source_path_overlap_rows | 461,450 |
+|---|---:|
+| Normalized JPMI inventory paths | 576,249 |
+| Inventory paths with SHA-256 | 331,906 |
+| Rank-1 hash-manifest path rows | 655,330 |
+| HFS+ CNID map entries | 397,440 |
+| TSK timeline rows | 1,259,300 |
+| Apple Mail `.emlx` path population | ~128,842 |
+| Contact `.vcf` path population | ~77,907 |
+| iCloud-related path population | ~12,337 |
 
+The differing row counts represent different forensic dimensions. A path count, CNID count, timeline-event count, and hash-manifest count should not be treated as interchangeable “number of files” figures.
 
-## 3. Size policy applied
+## 3. Hash method
 
-- Per-file budget: 52,428,800 bytes (8 MiB), hard cap 20 MiB.
-- Every export is sharded under the budget; `90_validate_exports.py` regenerates `manifest.tsv` + `manifest.sha256` and fails on any violation.
-- `build/deep/` opt-in exports are gitignored.
+The public hash export is now JPMI-only.
 
-## 4. Limitations
+`build/hash_manifest/01_sha256_by_cnid_*.tsv` records canonical HFS+ catalog identities together with reported SHA-256 values and paths.
 
-- JPMI SHA-256 values identify the objects in the manifest, not bytes this project can re-read.
-- The TSK timeline (rank-5) is present as a row count; the ingestion did not parse mtime into `jpmi_tsk_timeline`, so timeline analysis uses `jpmi_file_times`.
-- Exact-byte cross-source matches are leads; mounting the readable APFS/GAI sources is required for content-level confirmation.
-- No source evidence was modified. The pipeline performs read-only PostgreSQL queries and writes only under `build/`.
+The public coverage table records JPMI's own hash population. This repository does not require a hash match against another corpus to describe JPMI.
 
+### Important limitation
+
+A SHA-256 value in this repository is a **reported JPMI-manifest value** unless the repository explicitly states that the hash was recomputed from source bytes.
+
+Because the restricted E01 is not mounted here, the correct wording is:
+
+> “The JPMI forensic manifest reports SHA-256 X for this represented object.”
+
+That is different from claiming that the current GitHub checkout independently read the source object and calculated the value itself.
+
+## 4. Reproducibility method
+
+The pipeline performs read-only PostgreSQL queries and writes derived artifacts under `build/`.
+
+Stages:
+
+1. file-tree export;
+2. JPMI-only hash identity export;
+3. metadata distributions;
+4. disk/partition/volume identity export;
+5. standalone JPMI reports;
+6. deep metadata archives;
+7. size/checksum validation.
+
+The pipeline does not need APFS, GAI, 0728, or another laptop-data collection to produce this repository's public JPMI analysis.
+
+## 5. Size policy
+
+The configured publication limits are:
+
+- per-file budget: **52,428,800 bytes (50 MiB)**;
+- hard cap: **94,371,840 bytes (90 MiB)**.
+
+Large exports are sharded at row boundaries. Deep metadata sets are archived into partitioned parts so that the repository can preserve detailed evidence without exceeding GitHub's practical file-size limits.
+
+## 6. Copy-method boundary
+
+The structure supports describing JPMI to the public as a **whole-volume or filesystem-preserving, `dd`-style copy lineage**.
+
+That phrase does not prove:
+
+- that John Paul Mac Isaac literally used `dd`;
+- that the final Crucial X6 was cloned directly from the original internal SSD in one operation;
+- that no intermediate server, image, restore, or filesystem-aware copy step existed.
+
+The exact original copy utility and intermediate custody steps remain open provenance questions.
+
+## 7. Timestamp boundary
+
+The HFS+ destination reports creation on September 26, 2019 and later filesystem/index activity in 2020, 2022, and 2024.
+
+Those dates establish later handling of the destination. They do not automatically transform older user content into post-2019 content, nor do later Spotlight/Finder timestamps automatically prove substantive document insertion.
+
+## 8. Historical hardware boundary
+
+Older WirelessDiagnostics packages inside the `roberthunter` data tree reference a MacBook Air and older serial-bearing captures.
+
+Those artifacts establish that historical Mac data exists in the copied account. They should not automatically be used to identify the particular 2019 repair-shop machine because user data can migrate across Apple hardware.
+
+## 9. Core conclusion
+
+JPMI can be characterized from its own internal forensic witness:
+
+> It is a later GPT/HFS+ Mac custody volume containing a broad `roberthunter` user/application environment, preserved in a 2022 E01 acquisition and carrying both older user data and later filesystem-handling metadata.
+
+The strongest remaining provenance gap is the undocumented intermediate step between the original repair-shop storage and the later HFS+ custody medium.
