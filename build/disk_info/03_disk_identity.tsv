@@ -1,0 +1,12 @@
+field	value
+drive_model	Micron Crucial X6 SSD USB Device
+drive_serial	2145E498755E
+disk_guid	c93db56d-6e88-4965-94e5-8585a013d086
+volume_identifier	dfe8079582e21400
+acquisition_tool	ADI4.7.1.2
+case_number	HB-2022-04-29
+reported_at	2022-04-29
+manifest_source	rank2-uuid-manifest.txt
+image_md5	682619c1884e6fe006664ba31deed698
+image_sha1	fe918f0cff3304ab52875b984c88fee78ec05197
+image_size_bytes	500107862016

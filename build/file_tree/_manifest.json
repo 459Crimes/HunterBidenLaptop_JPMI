@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "file": "file_tree/01_directory_tree.tsv",
+      "rows": 71905,
+      "sha256": "43eb0098c6993b582953c006730dbe08996a95527b34f9add7341ce7d12176d2",
+      "size": 20556936
+    },
+    {
+      "file": "file_tree/02_top_level_summary.tsv",
+      "rows": 4,
+      "sha256": "acd661e656e0df1d37dd76e885c75b11181870cbfeccdba463ef42ca3050e80c",
+      "size": 341
+    },
+    {
+      "file": "file_tree/03_home_overview.tsv",
+      "rows": 15,
+      "sha256": "2849ee8df1c400680282578ff17a523e0006f06792d37b58c84c0ca1c6cd3a7d",
+      "size": 1183
+    }
+  ],
+  "section": "file_tree",
+  "source_rows": {
+    "query_rows": 576249
+  }
+}

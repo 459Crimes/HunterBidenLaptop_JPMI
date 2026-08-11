@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "file": "hash_manifest/01_sha256_by_cnid_00001.tsv",
+      "rows": 221807,
+      "sha256": "158f7d6116fc35cfd28df8c8138e7da62048587bd8614ae78c78e8aaf354387d",
+      "size": 52428786
+    },
+    {
+      "file": "hash_manifest/01_sha256_by_cnid_00002.tsv",
+      "rows": 110314,
+      "sha256": "455e8cdc9e41cf763fbdd63550210a576cecee6422c8265846bcf0ef7a78f3e6",
+      "size": 25234577
+    },
+    {
+      "file": "hash_manifest/02_cross_source_matches_00001.tsv",
+      "rows": 135123,
+      "sha256": "9ac3e58bb95b0f945bee799c00005b7a1c26afe59e965ecea22bab3d0e1c8c65",
+      "size": 33041106
+    },
+    {
+      "file": "hash_manifest/03_cross_source_unaligned_00001.tsv",
+      "rows": 68198,
+      "sha256": "3921e985eee2fc9215ce0a1a49a12fb24fb246225d867256b254d1f6543b2a68",
+      "size": 16701307
+    },
+    {
+      "file": "hash_manifest/04_coverage.tsv",
+      "rows": 13,
+      "sha256": "399ab86dfa7b7d7516d4fad40bc1eb37439d7fe00869b960f9f773cdaa716cb7",
+      "size": 428
+    }
+  ],
+  "section": "hash_manifest",
+  "source_rows": {
+    "alias_rows": 332097,
+    "jpmi_rows": 180046,
+    "match_rows": 293502
+  }
+}

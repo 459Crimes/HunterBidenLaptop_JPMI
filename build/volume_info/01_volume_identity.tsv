@@ -1,0 +1,16 @@
+field	value
+volume_name	Untitled
+volume_identifier	dfe8079582e21400
+main_volume	vol_vol5
+filesystem	HFS+
+hfs_sector_offset	409634
+source_image	HB-IMAGE-2022-04-29.E01
+image_format	E01
+image_size_bytes	500107862016
+sector_size	512
+sector_count	976773168
+volume_creation_reported	2019-09-26 22:59:02 CDT
+volume_last_write_reported	2024-11-21 17:40:22 CST
+deleted_catalog_status	empty
+unallocated_ranges	~280 GB
+hfs_journal_bytes	41943040

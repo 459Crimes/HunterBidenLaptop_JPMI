@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "file": "metadata/01_time_distribution.tsv",
+      "rows": 51,
+      "sha256": "a1937a921d1540e90de35e0a7678831a2c8343661fbe324aa5efc1f72d1b42ed",
+      "size": 1747
+    },
+    {
+      "file": "metadata/02_extension_distribution.tsv",
+      "rows": 1702,
+      "sha256": "6abb736cf010cebb4bea2e1256316b5e2bd64d6acb958a34cb56ded418d9b21c",
+      "size": 62878
+    },
+    {
+      "file": "metadata/03_type_distribution.tsv",
+      "rows": 5,
+      "sha256": "f9182ca4f22036be795a5f47c8c578094bc8bee5581b7e6c514043abae9d5fb7",
+      "size": 90
+    },
+    {
+      "file": "metadata/04_permission_distribution.tsv",
+      "rows": 19,
+      "sha256": "3db28164cf851dee150edb718c52c284da900a5b87e535c916b7ec82110539b0",
+      "size": 466
+    },
+    {
+      "file": "metadata/05_cnid_summary.tsv",
+      "rows": 9,
+      "sha256": "820d6b8aaef7471ff2f041ef559b535a0e41dbcb8b486cc76edffffecc0dc818",
+      "size": 164
+    },
+    {
+      "file": "metadata/06_alias_summary.tsv",
+      "rows": 7,
+      "sha256": "5e8639b02481a71bbb305b5186d27c453db4dceedb6931fe15f23bfdc1cbbffc",
+      "size": 161
+    }
+  ],
+  "section": "metadata",
+  "source_rows": {
+    "time_month": 25,
+    "time_year": 26
+  }
+}

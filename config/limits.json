@@ -1,0 +1,11 @@
+{
+  "per_file_budget_bytes": 52428800,
+  "hard_cap_bytes": 94371840,
+  "deep_exports": true,
+  "time_buckets": {
+    "year_start": 2014,
+    "year_end": 2024,
+    "month_detail_years": [2019, 2020, 2022, 2024]
+  },
+  "post_2019_03_31_boundary": "2019-03-31 23:59:59"
+}

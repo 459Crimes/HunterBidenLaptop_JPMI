@@ -1,0 +1,21 @@
+system_area	object_count	size_bytes	hash_count	note
+spotlight	90	453507107	0	Spotlight index stores under the HFS+ volume
+document_revisions	11	197329	0	DocumentRevisions-V100 version stores
+hfs_journal	2	41947136	0	HFS+ journal and journal info block
+efi_partition	8	209715200	0	EFI System Partition FAT32 records
+gpt_structural	8	134252032	0	GPT headers, entry arrays, protective MBR
+volume_structural	3373	282491155804	0	Volume-root structural records below Untitled
+090_diagnostics	1782	62948653	643	Desktop 090-[] wireless/system diagnostics capture
+mail	139113	4405931770	17223	Mail and .emlx stores under home Library
+photos	92356	8484862962	56888	Photos Library objects and proxies
+drfone_tooling	116889	23416280117	97439	DrFone application-support tooling
+chrome	3842	285290946	2927	Google Chrome profile data
+icloud_cloudkit	27833	20925071976	18087	iCloud/CloudKit placeholders and state
+home_library	96486	46710942269	76946	Remaining home Library system/application state
+desktop	1185	14852868215	615	Home Desktop files
+documents	11890	607051860	11771	Home Documents
+downloads	676	1606309975	534	Home Downloads
+movies	61202	9421285218	48669	Home Movies
+music	19284	32206615939	0	Home Music
+pictures	134	52542846742	120	Home Pictures
+other	85	16197311	44	Remaining inventory rows

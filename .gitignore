@@ -1,0 +1,4 @@
+# Deep full-volume exports are local analysis products only.
+# They are intentionally NOT part of the GitHub-ready build/ tree.
+build/deep/
+__pycache__/

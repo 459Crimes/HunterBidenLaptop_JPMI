@@ -1,0 +1,8 @@
+metric	value
+total_rows	655330
+canonical_rows	332097
+alias_rows	323233
+distinct_cnids	332097
+distinct_hashes	180046
+multi_path_cnids	323233
+max_paths_for_cnid	2

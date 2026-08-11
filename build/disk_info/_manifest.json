@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "file": "disk_info/01_acquisition.tsv",
+      "rows": 24,
+      "sha256": "c5f5754cdd76d9c4f2ecb4f8fe496f8bd3593cfa5b254a9255fa5699b97beb17",
+      "size": 800
+    },
+    {
+      "file": "disk_info/02_partition_map.tsv",
+      "rows": 3,
+      "sha256": "298a4adabc41f1fb27b10b430fe35f31efc679681ed8b89745b5d31afecc9370",
+      "size": 355
+    },
+    {
+      "file": "disk_info/03_disk_identity.tsv",
+      "rows": 11,
+      "sha256": "a785a1909ad1baccdf7a6634e217b073805c59046bc8c4900b7a13547fa5605a",
+      "size": 407
+    }
+  ],
+  "section": "disk_info",
+  "source_rows": {
+    "acquisition_rows": 1
+  }
+}

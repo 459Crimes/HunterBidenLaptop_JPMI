@@ -1,0 +1,4 @@
+partition	type	guid	byte_start	note
+GPT disk	GUID	c93db56d-6e88-4965-94e5-8585a013d086		entire device GUID
+EFI System Partition	GUID	54bcfba5-c609-44c0-a45d-b07090d2c996		small EFI FAT32 partition (VBR + FAT tables + unallocated)
+HFS+ data partition	GUID	cf0fd7cc-b0c0-4667-affd-d1627e93c654	209732608	named Untitled; journaled HFS+; sector offset 409634

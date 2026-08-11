@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "file": "volume_info/01_volume_identity.tsv",
+      "rows": 15,
+      "sha256": "6cfe72920c5e04a443e69890d6bf70406f6de912942cfb908517ab8dd4ea67db",
+      "size": 436
+    },
+    {
+      "file": "volume_info/02_volume_metadata.tsv",
+      "rows": 116,
+      "sha256": "d3b721502fd306549c1811648951462a09ff5c89a9d8dc8307bbe457118f7124",
+      "size": 18147
+    },
+    {
+      "file": "volume_info/03_volume_system_state.tsv",
+      "rows": 20,
+      "sha256": "69fd14d6db39144e067534ee55bf5495fd4678b3d84b3d91e742c618be83859b",
+      "size": 1290
+    }
+  ],
+  "section": "volume_info",
+  "source_rows": {
+    "all_files": 576249,
+    "vol_objects": 116
+  }
+}
