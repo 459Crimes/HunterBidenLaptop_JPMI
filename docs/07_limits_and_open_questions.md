@@ -1,24 +1,160 @@
 # 7. Limits and Open Questions
 
-A provenance repository is more credible when it states what the evidence **cannot** answer.
+A provenance repository is more credible when it states both what the evidence **supports** and what it **cannot prove**.
 
-The JPMI material is substantial, but the present project does not have every custody artifact or unrestricted byte-level access to the source E01.
+The JPMI material is substantial, but this public GitHub repository does not contain the restricted source E01 bytes. It contains detailed forensic reports, manifests, and derived tables from the Mac Isaac direct-copy lineage.
 
-## 1. The exact original copy method is unresolved
+## 1. No identified hacking or post-dropoff substantive-file injection
 
-The structure is consistent with a broad filesystem-preserving or block-oriented copy lineage, but the current records do not identify the literal repair-shop copy command.
+The most important positive finding should not be buried in caveats:
 
-Open questions include:
+> **No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting analyzed here.**
 
-- Was the first recovery written to a server?
-- Was it stored as a raw image, forensic image, logical tree, backup set, or mounted working copy?
-- Was the later HFS+ destination restored from an intermediate image?
-- Was any partition resized during the process?
-- Which utility performed each stage?
+The copy does contain later activity. But the later activity identified in the current reporting is dominated by:
 
-The evidence should not be forced into a one-command story unless logs establish it.
+- `.DS_Store` Finder metadata;
+- Spotlight indexes;
+- DocumentRevisions structures;
+- directory timestamps;
+- temporary/system state;
+- large software-scale access clusters consistent with examination and indexing.
 
-## 2. The 2022 acquisition record and 2024 last-write are not reconciled
+No JPMI report presently identifies:
+
+- malware establishing an intrusion into the direct copy;
+- a remote-access event establishing an outside hacker;
+- a bulk import of later external user files;
+- a later population of substantive Hunter-created documents;
+- an externally injected email, photograph, video, or document.
+
+CBS News independently reported the same basic result from an **exact-copy Mac Isaac/FBI-lineage dataset** supplied by Mac Isaac's lawyer Brian Della Rocca: no evidence of user-data modification, fabrication, or tampering, and no new files originating after April 2019.
+
+Reference: [CBS News, Nov. 21, 2022](https://www.cbsnews.com/news/hunter-biden-laptop-data-analysis/)
+
+### What this finding does not mean
+
+“No evidence identified” is not the same as proving that an undetectable alteration was logically impossible.
+
+The defensible claim is that the forensic indicators presently available do **not show** the hacking/injection theory in this direct-copy lineage.
+
+## 2. The project does not publish the restricted source bytes
+
+This GitHub repository is a **metadata/hash forensic witness**, not a public byte dump.
+
+It contains received and derived reporting for:
+
+- paths;
+- file sizes;
+- timestamps;
+- reported SHA-256 values;
+- HFS+ CNIDs and parents;
+- aliases/hard links;
+- partition structure;
+- disk and volume identifiers;
+- HFS+ journal/system-state objects;
+- Spotlight and DocumentRevisions state;
+- TSK timeline records;
+- acquisition MD5/SHA-1 and device identity.
+
+### What cannot be done without the source bytes
+
+This checkout cannot independently:
+
+- open and display every JPMI source file;
+- recompute every source-object hash;
+- carve fresh deleted content from the source image;
+- inspect file-internal metadata not represented in the reports;
+- prove byte-for-byte identity for every object from first principles.
+
+### What can be done accurately from the reporting
+
+The reports are sufficiently detailed to support **reproducible structural, timeline, and provenance analysis**, including:
+
+- reconstructing the directory tree;
+- quantifying user/application populations;
+- analyzing created/modified/accessed clusters;
+- distinguishing Hunter-era activity from later custody/system-state activity;
+- following CNID and alias relationships;
+- documenting disk/partition/HFS+ identity;
+- recording reported object hashes;
+- identifying later Finder/Spotlight/examination traces;
+- testing whether the reporting contains evidence of bulk post-dropoff substantive-file insertion.
+
+So the correct statement is:
+
+> **The absence of public source bytes limits fresh byte-content verification, but it does not prevent accurate analysis of the filesystem structure, chronology, hash reporting, and provenance recorded by the forensic reports.**
+
+## 3. Hashes are manifest evidence unless recomputed from source bytes
+
+The SHA-256 values in this repository are important evidence, but they are received forensic-manifest values.
+
+The public project should say:
+
+> “The JPMI manifest reports this SHA-256.”
+
+rather than implying:
+
+> “This GitHub checkout independently read the restricted JPMI object and computed this SHA-256.”
+
+unless such a re-read actually occurs.
+
+## 4. The exact April 2019 recovery implementation remains unresolved
+
+Mac Isaac has described a recovery workflow in which data was first copied to his **store server**, then transferred to the customer-supplied external hard drive.
+
+That account is historically useful and technically plausible, but this repository does not presently have:
+
+- the store-server image;
+- server logs;
+- copy-tool logs;
+- command history;
+- first-generation hashes.
+
+Therefore the repository attributes the server operation to Mac Isaac's account rather than claiming that it was independently reconstructed.
+
+The evidence should not be forced into a literal `dd` story. “`dd`-style” remains a public analogy for the broad filesystem-preserving evidentiary form.
+
+## 5. The September 26, 2019 HFS+ creation date is a strong correlation, not yet a physical-device identification
+
+JPMI reports the `Untitled` HFS+ volume created:
+
+```text
+2019-09-26 22:59:02 CDT
+```
+
+Mac Isaac's later accounts place creation/shipment of a preservation copy for his father's FBI approach in the **September–October 2019** period.
+
+That is a significant temporal correlation.
+
+It does **not yet prove** that `Untitled` is the exact physical hard drive carried or offered to the Albuquerque FBI office.
+
+The missing proof would be a drive serial, acquisition hash, photograph, shipping record tied to the device, or other direct transfer evidence.
+
+## 6. The December 9, 2019 exact-copy event is stronger
+
+The Delaware Supreme Court's 2025 opinion states that before Mac Isaac surrendered the original laptop and external hard drive to the FBI under subpoena, **he made an exact copy of the hard drive**.
+
+That judicially recited event is a strong anchor for the existence of a Mac Isaac direct-copy lineage before broad public circulation.
+
+It is one reason this repository distinguishes JPMI from later mixed or politically circulated collections.
+
+## 7. The Todd Sanders / America Project bridge is provenance evidence, not proof of identical media
+
+The JPMI acquisition record includes:
+
+```text
+hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
+```
+
+Public records identify Todd Sanders as affiliated with Patrick Byrne's **America Project**. The America Project publicly supported/funded Mac Isaac's 2022 litigation; Brian Della Rocca represented Mac Isaac and later supplied CBS with an exact-copy Mac Isaac/FBI-lineage dataset for independent forensic review.
+
+This supports the conclusion that the JPMI reports were delivered through the **same Mac Isaac-centered custody/support network**.
+
+It does **not yet prove** that Sanders possessed the same physical disk or exact E01 file CBS examined.
+
+The strongest missing evidence is a direct transfer record or matching source-image hash.
+
+## 8. The 2022 acquisition record and 2024 last-write are not reconciled
 
 The delivered acquisition record identifies:
 
@@ -35,59 +171,25 @@ volume_last_write_reported: 2024-11-21 17:40:22 CST
 
 An immutable E01 actually acquired in April 2022 cannot later acquire a November 2024 filesystem write.
 
-The current records therefore require at least one missing fact: a later acquisition, a later working copy, source-device activity after 2022, regenerated/mixed reports, or a mislabeled date/provenance field.
+The current records therefore require a missing fact: a later acquisition, later working copy, source-device activity after 2022, regenerated/mixed reports, or a mislabeled date/provenance field.
 
-This repository does **not** currently establish which explanation is correct.
+This later report-lineage issue should not be conflated with the 2019–2020 direct-copy provenance.
 
-Until the underlying acquisition worksheets and report lineage are reconciled, the project should preserve both reported values and label the combination an **open chronology discrepancy**.
-
-## 3. The Crucial X6 is not the original laptop SSD
+## 9. The Crucial X6 is not the original laptop SSD
 
 The 500 GB-class Micron Crucial X6 described in the acquisition record is a **later custody device**.
 
 Its model, serial number, partition geometry, and HFS+ creation date describe that later storage object. They do not identify the original internal SSD hardware in the Mac left for repair.
 
-## 4. The project does not publish the restricted E01 bytes
+## 10. Historical hardware artifacts can be migrated data
 
-The GitHub repository is based on received reports and manifests.
+The user tree includes historical diagnostic packages identifying older Apple hardware, including a `roberts-MacBook-Air` name and serial-bearing WirelessDiagnostics folders.
 
-This permits strong statements about reported:
+Those artifacts show that older Mac data is represented inside JPMI.
 
-- paths;
-- hashes;
-- timestamps;
-- partition structure;
-- volume identity;
-- CNIDs;
-- application/system-state objects.
+They do **not** independently prove that the older MacBook Air was the particular computer left at the repair shop in 2019. Mac users can migrate home directories, restore backups, copy diagnostic folders, and carry application data across multiple machines.
 
-It does not permit the repository to claim that every source byte was independently re-read during this GitHub build.
-
-## 5. Hashes are manifest evidence unless recomputed from source bytes
-
-The SHA-256 values in this repository are important evidence, but they are received forensic-manifest values.
-
-The public project should therefore say:
-
-> “The JPMI manifest reports this SHA-256.”
-
-rather than implying:
-
-> “This GitHub checkout independently read the restricted JPMI object and computed this SHA-256.”
-
-unless such a re-read actually occurs.
-
-## 6. Old hardware artifacts can be migrated data
-
-The user tree includes historical diagnostic packages whose filenames identify older Apple hardware, including a `roberts-MacBook-Air` name and serial-bearing WirelessDiagnostics folders.
-
-Those artifacts show that data from an older Mac environment is represented inside JPMI.
-
-They do **not** by themselves prove that the older MacBook Air was the computer left at the repair shop in 2019. Mac users can migrate home directories, restore backups, copy diagnostic folders, and carry application data forward across multiple machines.
-
-The repository should therefore treat old hardware diagnostics as **historical source artifacts**, not as automatic identification of the 2019 repair-shop hardware.
-
-## 7. A timestamp is not a person
+## 11. A timestamp is not a person
 
 A modified or accessed timestamp proves that a filesystem field changed. It does not automatically identify:
 
@@ -95,39 +197,21 @@ A modified or accessed timestamp proves that a filesystem field changed. It does
 - John Paul Mac Isaac;
 - a journalist;
 - a forensic examiner;
-- Spotlight;
 - Finder;
+- Spotlight;
 - another software process.
 
-Attribution requires object type, event context, surrounding timestamps, logs, and ideally custody records.
+Attribution requires object type, surrounding activity, logs, and custody records.
 
-## 8. Post-2019 metadata does not equal post-2019 document fabrication
+The October 15, 2020 Desktop `.DS_Store` modification is a good example: it is consistent with someone browsing the copied Desktop one day after the New York Post story, but it is not evidence that a substantive Hunter document was added or altered.
 
-JPMI contains later filesystem/system-state timestamps. That matters.
-
-But the later population identified so far is dominated by system and application metadata, especially Finder and Spotlight-related state.
-
-A responsible conclusion is:
-
-> The represented copy lineage contains evidence of later filesystem or system-state activity.
-
-A much stronger claim such as:
-
-> Someone inserted large numbers of substantive files after April 2019.
-
-requires file-level evidence beyond the later metadata clusters presently identified.
-
-Because of the unresolved 2022/2024 chronology, the repository should also avoid assigning every later timestamp to one specific physical disk or image stage unless that stage is established by the source reports.
-
-## 9. The empty deleted-file catalog is not proof that nothing was deleted
+## 12. The empty deleted-file catalog is not proof that nothing was deleted
 
 The source reports an empty deleted-file catalog and large unallocated ranges.
 
-On HFS+, deletion history is not necessarily recoverable as a neat catalog of every deleted object. Unallocated space can contain remnants, overwritten fragments, or no useful recoverable data at all.
+On HFS+, deletion history is not necessarily recoverable as a neat catalog of every deleted object. The project should not equate an empty deleted catalog with “no deletions ever occurred.”
 
-The project should not equate an empty deleted catalog with “no deletions ever occurred.”
-
-## 10. File counts are not unique-content counts
+## 13. File counts are not unique-content counts
 
 One underlying item can appear as:
 
@@ -141,7 +225,7 @@ One underlying item can appear as:
 
 This is why the project tracks paths, CNIDs, sizes, and hashes separately.
 
-## 11. Timezones remain a normalization issue
+## 14. Timezones remain a normalization issue
 
 The received reports use a mixture of labeled local times and UTC-oriented timeline values. Some database fields do not preserve timezone metadata.
 
@@ -151,24 +235,25 @@ Before asserting exact minute-level sequencing across report families, the relev
 
 The following materials would materially strengthen the JPMI provenance chain:
 
-1. **the complete acquisition/report lineage needed to reconcile the 2022 E01 record with the 2024 reported last-write;**
-2. original repair-shop recovery logs;
-3. first-copy hashes;
-4. repair-shop server records, if applicable;
-5. source/destination device serials from each intermediate step;
-6. copy-tool or imaging logs;
-7. contemporaneous custody notes;
-8. the restricted E01 for independent read-only verification;
-9. complete acquisition worksheets associated with `HB-IMAGE-2022-04-29.E01`;
-10. normalized timezone documentation for each received report family.
+1. Mac Shop server logs or a forensic image of the recovery server;
+2. original April 2019 copy-tool logs or command history;
+3. first-generation copy hashes;
+4. serial/hash evidence for the drive sent to Mac Isaac's father;
+5. evidence proving or disproving that the September 26 `Untitled` volume was that FBI-intended copy;
+6. direct records showing how Todd Sanders obtained the JPMI image/report lineage;
+7. source-image hashes establishing whether the CBS exact-copy media and JPMI source are byte-identical;
+8. the restricted JPMI E01 for independent read-only verification;
+9. the complete acquisition/report lineage needed to reconcile the 2022 E01 record with the 2024 reported last-write;
+10. normalized timezone documentation.
 
 ## Publication rule
 
-When a conclusion is not directly established, this repository should use wording such as:
+When a conclusion is not directly established, use wording such as:
 
 - “the evidence is consistent with…”
 - “the metadata supports…”
+- “no evidence was identified showing…”
 - “the current records do not establish…”
 - “the exact mechanism remains unresolved…”
 
-That is not weakness. It is the difference between forensic reporting and advocacy.
+The repository can state strong findings where the evidence supports them. Precision about the remaining gaps makes those findings stronger, not weaker.
