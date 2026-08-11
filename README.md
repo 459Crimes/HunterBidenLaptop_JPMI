@@ -2,41 +2,87 @@
 
 This repository documents one specific evidence source from the Hunter Biden laptop story: the **John Paul Mac Isaac copy**, abbreviated **JPMI**.
 
-The purpose of this repository is narrow. It does not ask readers to understand other laptop datasets, competing exports, or our larger forensic database. It asks a simpler question:
+The purpose of this repository is narrow. It does not ask readers to understand other laptop datasets or competing exports. It asks:
 
-> **What is the JPMI copy, where did it come from, what does it contain, and what can its filesystem tell us about its history?**
+> **What is the JPMI copy, where did it come from, what does it contain, and what can its filesystem reporting tell us about its history?**
 
 ## The short version
 
-In April 2019, a Mac computer associated with Hunter Biden was left for data recovery at John Paul Mac Isaac's computer repair shop in Wilmington, Delaware. The data recovered from that repair-shop custody became the source of later copies.
+In April 2019, Hunter Biden's data entered John Paul Mac Isaac's repair-shop custody in Wilmington, Delaware through a data-recovery event involving damaged Apple laptops.
 
-**JPMI is our name for the Mac Isaac-lineage copy examined in this repository.**
+The Delaware Supreme Court's 2025 opinion recounts the pleaded history that **three damaged laptops** were presented on April 12, 2019: one could be used with a keyboard Mac Isaac supplied, another was considered unrecoverable, and one was left for recovery. The next day, at Mac Isaac's request, Biden returned with an external hard drive for the recovered data. Mac Isaac later described first staging recoverable data on his **store server** before transferring it to the customer drive.
 
-For a non-specialist, the easiest way to understand JPMI is as a **whole-volume, `dd`-style forensic copy rather than a hand-picked folder of documents**. That analogy describes the form of the evidence: the JPMI material preserves a partitioned Mac volume, filesystem structures, application state, a normal user home directory, timestamps, catalog identifiers, and hundreds of thousands of file records.
+**JPMI is our name for the Mac Isaac direct-copy provenance lineage examined in this repository.**
 
-It does **not** mean that we have proven John Paul Mac Isaac literally ran the Unix `dd` command. The exact repair-shop copy utility and every intermediate custody step remain unresolved.
+For a non-specialist, the easiest way to understand JPMI is as a **whole-volume, `dd`-style forensic copy rather than a hand-picked folder of documents**. That analogy describes the evidentiary form: JPMI preserves a partitioned Mac volume, filesystem structures, application state, a normal user home directory, timestamps, catalog identifiers, and hundreds of thousands of file records.
 
-The later forensic acquisition record represented in this project identifies an **E01 forensic image** named `HB-IMAGE-2022-04-29.E01`, made from a 500,107,862,016-byte Micron Crucial X6 USB SSD. The image is identified by MD5 and SHA-1 values in the source acquisition record. The Crucial X6 is a later custody medium; it is not the original internal laptop SSD.
+It does **not** mean that we have proved Mac Isaac literally used the Unix `dd` command. The exact repair-shop copy utility and every intermediate custody step remain unresolved.
 
-There is also an important chronology issue in the delivered records: the acquisition record reports **April 29, 2022**, while the delivered HFS+ volume metadata reports a **November 21, 2024 last-write**. An immutable E01 actually acquired in 2022 cannot subsequently acquire a 2024 filesystem write. This repository therefore treats the 2022/2024 pairing as an **open provenance discrepancy requiring reconciliation of the source reports**, not as proof that the 2022 E01 itself was modified later.
+## The most important provenance finding
+
+The JPMI reporting shows that the copied environment was later **opened, browsed, indexed, copied, and forensically examined**.
+
+It does **not** presently show evidence that an outside actor hacked the Mac Isaac direct copy or injected substantive external user files into it after the April 2019 repair event.
+
+The later modified rows identified in JPMI are overwhelmingly Finder, filesystem, Spotlight, DocumentRevisions, directory, temporary, and other system/application metadata—not a later population of substantive Hunter-created documents.
+
+That finding is independently consistent with CBS News' 2022 examination of what Mac Isaac's lawyer Brian Della Rocca called an **“exact copy”** of the laptop data supplied to federal investigators. CBS reported that independent examiners found **no evidence that the user data had been modified, fabricated, or tampered with and no new files originating after April 2019**.
+
+Reference: [CBS News, Nov. 21, 2022](https://www.cbsnews.com/news/hunter-biden-laptop-data-analysis/)
+
+The correct formulation throughout this repository is therefore:
+
+> **No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.**
+
+That is an evidentiary finding, not a claim that undetectable alteration is philosophically impossible.
+
+## The 2019–2020 custody story in ten steps
+
+1. **April 12, 2019 — three damaged laptops.** According to the Delaware court record, three damaged laptops were presented. One worked with a supplied keyboard, one was unrecoverable, and one remained for recovery.
+2. **April 13 — external hard drive.** Biden returned with an external drive for the recovered data. Mac Isaac said the recovery was completed that day.
+3. **Store server.** Mac Isaac later said recoverable data was first copied to his secure store server and then transferred to the customer drive. The server logs are not presently available here.
+4. **Late July 2019 — FBI concern.** Court opinions place the start of Mac Isaac's FBI-related contacts in this period.
+5. **September–October 2019 — preservation/FBI copy.** Mac Isaac later said he created a copy for his father to take to the FBI in Albuquerque.
+6. **September 26, 2019 — JPMI HFS+ volume creation.** JPMI reports the `Untitled` HFS+ destination created on this date. This falls within the same general period as Mac Isaac's described FBI-copy activity. The timing is significant, but physical identity is not yet proved.
+7. **December 9, 2019 — FBI subpoena.** The FBI took the laptop, customer hard drive, and paperwork. The Delaware Supreme Court states that Mac Isaac **made an exact copy before parting with the original**.
+8. **August 2020 — Costello copy.** Mac Isaac provided a copy to Robert Costello, Rudy Giuliani's attorney.
+9. **October 14, 2020 — New York Post story.** The first laptop story became public.
+10. **October 15, 2020 — JPMI Finder metadata.** JPMI's Desktop `.DS_Store` was modified the next day, consistent with someone opening/browsing the copied environment. This is **not evidence that a Hunter file was injected or altered**.
+
+See [`docs/06_timeline_and_handling.md`](docs/06_timeline_and_handling.md) for the sourced timeline.
+
+## The provenance bridge to this repository
+
+The JPMI acquisition record contains this note:
+
+```text
+hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
+```
+
+Public records identify **Todd Sanders as affiliated with Patrick Byrne's America Project**. The America Project publicly supported/funded Mac Isaac's 2022 litigation; Brian Della Rocca represented Mac Isaac in that litigation and later supplied CBS with the exact-copy dataset it independently examined.
+
+That supports this bounded conclusion:
+
+> **The JPMI reports come from the same Mac Isaac-centered provenance network as the clean Mac Isaac/FBI-lineage copy later supplied by Mac Isaac's lawyer for independent CBS examination.**
+
+It does **not yet prove** that Todd Sanders possessed the identical physical drive or identical E01 file examined by CBS. A direct transfer record or matching acquisition hash is still needed for that stronger statement.
+
+See [`docs/03_chain_of_custody.md`](docs/03_chain_of_custody.md).
 
 ## The 5 Ws of JPMI
 
 | Question | Answer supported by this repository |
 |---|---|
-| **Who?** | The user data is organized primarily under the macOS account `roberthunter` and contains the ordinary personal, communications, application, media, and device-backup state associated with that account. John Paul Mac Isaac is the repair-shop custodian from whose recovery/copy lineage JPMI takes its name. |
-| **What?** | A GPT-partitioned Mac-oriented storage image containing an EFI partition and a journaled HFS+ data volume named `Untitled`, plus the `roberthunter` home tree, filesystem metadata, application state, and hash/timestamp inventories. |
-| **When?** | The important dates are different events: original user data spans years before the 2019 repair; the repair-shop event occurred in April 2019; the JPMI HFS+ destination reports a creation date of September 26, 2019; the image acquisition is reported as April 29, 2022; and the delivered volume metadata also reports a 2024 last-write that must be reconciled with the 2022 acquisition record. |
-| **Where?** | The historical repair event was in Wilmington, Delaware. The physical custody medium described by the forensic acquisition record is a Micron Crucial X6 USB SSD. This GitHub repository itself contains metadata, hashes, reports, and derived inventories—not the restricted source image bytes. |
-| **Why?** | The copy lineage exists because data was recovered from the repair-shop computer and preserved for later custody, review, and forensic examination. This repository exists to make the provenance and internal structure of that copy understandable and reproducible. |
-
-A sixth question matters just as much:
-
-**How?** The exact original repair-shop copy method is not established by the evidence presently in this repository. The resulting JPMI structure is much richer than a curated document dump: it includes GPT/EFI structure, an HFS+ journal, filesystem catalog relationships, Spotlight and document-revision state, and a normal macOS user hierarchy. Those features are consistent with a filesystem-level or block-oriented recovery/copy lineage. The later preservation record identifies an E01 image, but the precise chronology of the source device, the 2022 acquisition record, and the 2024 reported last-write remains an open question.
+| **Who?** | The copied environment is organized primarily under the macOS account `roberthunter`. John Paul Mac Isaac is the repair-shop custodian from whose recovery/copy lineage JPMI takes its name. Later JPMI reporting supplied to this project is attributed internally to Todd Sanders. |
+| **What?** | A GPT-partitioned Mac-oriented storage environment containing an EFI partition and a journaled HFS+ data volume named `Untitled`, plus the `roberthunter` home tree, filesystem metadata, application state, and hash/timestamp inventories. |
+| **When?** | User data spans years before the repair; the repair occurred in April 2019; the JPMI HFS+ destination reports creation on September 26, 2019; the FBI took the original laptop/drive on December 9, 2019; the direct copy was publicly distributed in 2020; later forensic examination/reporting followed. |
+| **Where?** | The repair event occurred in Wilmington, Delaware. The later custody medium described in the acquisition record is a Micron Crucial X6 USB SSD. This GitHub repository contains reports/manifests rather than the restricted source bytes. |
+| **Why?** | Data was recovered for a repair customer, then preserved in copies after the customer did not retrieve it and Mac Isaac sought FBI/law-enforcement attention. This repository exists to document the direct-copy provenance and structure. |
+| **How?** | Mac Isaac describes a recovery involving his store server and later preservation copies. The exact first-copy software/command is unresolved. The resulting JPMI reporting is consistent with a broad filesystem-preserving copy lineage rather than a curated document dump. |
 
 ## What is actually on JPMI?
 
-The current inventory contains **576,249 paths**. The user-tree rollup contains approximately **572,743 file rows** under `Users`, including a conventional macOS home directory:
+The current inventory contains **576,249 paths**. The user-tree rollup contains approximately **572,743 file rows** under `Users`:
 
 | Home directory | Files |
 |---|---:|
@@ -48,59 +94,59 @@ The current inventory contains **576,249 paths**. The user-tree rollup contains 
 | `Music` | 19,313 |
 | `Desktop` | 4,654 |
 
-This matters because a real Mac user profile is not just PDFs, photographs, and emails. It also contains Mail databases, contacts, caches, preferences, application support, device backups, Cloud/iCloud state, Photos data, message databases, thumbnail and derivative files, `.DS_Store` records, SQLite journals, and other machine-generated artifacts.
+A real Mac user profile is not just PDFs, photographs, and emails. It contains Mail databases, contacts, caches, preferences, application support, device backups, Cloud/iCloud state, Photos data, message databases, thumbnails, `.DS_Store`, SQLite journals, and other machine-generated artifacts.
 
-The JPMI inventory includes, among other categories, large populations of Apple Mail `.emlx` messages, `.vcf` contacts, photographs, property-list files, and iCloud-related objects.
+That context is one reason JPMI is useful for provenance analysis.
 
 ## Why the filesystem matters
 
-A loose export can tell you that a file exists. A filesystem can tell you much more about **context**.
+JPMI preserves reporting for:
 
-JPMI preserves evidence of:
-
-- a GPT partition map;
+- GPT partition structure;
 - an EFI System Partition;
 - a journaled HFS+ data volume;
 - an HFS+ volume identifier and sector offset;
-- CNID and parent-CNID directory relationships;
+- CNID and parent-CNID relationships;
 - filesystem journal structures;
 - Spotlight indexing state;
 - DocumentRevisions state;
 - allocated and unallocated regions;
-- a normal `Users/roberthunter` hierarchy;
+- `Users/roberthunter` hierarchy;
 - created, modified, and accessed timestamps;
-- hard-link/alias relationships;
-- SHA-256 identities for hundreds of thousands of represented objects.
+- alias/hard-link relationships;
+- reported SHA-256 identities for hundreds of thousands of represented objects.
 
-These artifacts make JPMI useful not only for asking **what files are present**, but also **how the copied Mac environment was organized and later handled**.
+These records allow analysis of **structure, chronology, and custody activity**, even though this public repository does not contain the individual JPMI source-file bytes.
 
-## The timeline is not one timestamp
+## No source bytes does not mean no forensic value
 
-A central rule of this repository is that different timestamps answer different questions.
+This GitHub repository is a **metadata/hash forensic witness**, not a public byte dump of the restricted source image.
 
-- **Pre-April 2019 timestamps** can describe original user or application activity.
-- **September 2019 filesystem timestamps** are associated with creation/reconstruction of the HFS+ destination volume.
-- **2020 metadata changes** show later browsing or interaction with parts of the copied volume.
-- **2022 accessed-time clusters** are consistent with broad examination or acquisition activity.
-- **2024 Spotlight/index timestamps and the reported last-write** appear in the delivered metadata, but their relationship to the separately reported 2022 E01 acquisition is unresolved and must not be narrated as though an immutable 2022 image itself changed in 2024.
+It cannot independently open every JPMI file or recompute every source-object hash.
 
-The repository currently identifies **141 inventory rows with modified timestamps after March 31, 2019**. Those rows are dominated by filesystem and application metadata. They demonstrate that the represented volume includes later system-state activity, but they do **not** by themselves establish wholesale insertion of later user documents or resolve which physical/image stage produced every later timestamp.
+It can accurately and reproducibly analyze what the received forensic reports record, including:
 
-See [`docs/06_timeline_and_handling.md`](docs/06_timeline_and_handling.md).
+- directory hierarchy;
+- file populations and represented sizes;
+- timestamps and event clusters;
+- partition/volume identity;
+- HFS+ catalog relationships;
+- aliases/hard links;
+- reported object hashes;
+- later Finder/Spotlight/system-state activity;
+- whether the reporting contains evidence of bulk post-dropoff substantive-file insertion.
 
-## What this repository does not claim
+So the evidentiary scope is clear:
 
-This project deliberately separates observations from conclusions.
+> **JPMI contains enough forensic reporting to support accurate structural, timeline, and provenance analysis. Byte-content claims remain limited to what the reports actually record or what an independently examined copy establishes.**
 
-It does **not** presently claim that:
+## Important later-report chronology issue
 
-- John Paul Mac Isaac used the literal `dd` command;
-- the 500 GB Crucial X6 was Hunter Biden's original internal SSD;
-- every timestamp on the later HFS+ copy is an original-user timestamp;
-- every historical hardware diagnostic inside the user folders identifies the particular laptop left for repair in 2019;
-- the project has byte-level access to the restricted JPMI E01 image;
-- the metadata can identify the human who caused every post-2019 filesystem event;
-- the 2024 last-write occurred inside an immutable E01 that was definitively acquired in 2022.
+The acquisition record represented in this project identifies `HB-IMAGE-2022-04-29.E01`, while delivered HFS+ volume metadata reports a November 21, 2024 last-write.
+
+An immutable E01 actually acquired in 2022 cannot subsequently acquire a 2024 filesystem write. This repository therefore treats the 2022/2024 pairing as an **open report-lineage discrepancy**, not as proof that the 2022 E01 itself changed later.
+
+That later issue is separate from the 2019–2020 direct-copy timeline.
 
 ## Start here
 
@@ -108,21 +154,21 @@ For the public-facing narrative, read these in order:
 
 1. [`docs/01_what_is_jpmi.md`](docs/01_what_is_jpmi.md) — the evidence source in plain English.
 2. [`docs/02_provenance_5ws.md`](docs/02_provenance_5ws.md) — Who, What, When, Where, Why, and How.
-3. [`docs/03_chain_of_custody.md`](docs/03_chain_of_custody.md) — the known and unknown custody steps.
+3. [`docs/03_chain_of_custody.md`](docs/03_chain_of_custody.md) — repair, FBI copy, media copy, and project-delivery provenance.
 4. [`docs/04_what_is_on_the_copy.md`](docs/04_what_is_on_the_copy.md) — the contents of the HFS+ copy.
 5. [`docs/05_filesystem_for_non_experts.md`](docs/05_filesystem_for_non_experts.md) — HFS+, GPT, CNIDs, journals, Spotlight, hashes, and timestamps explained.
-6. [`docs/06_timeline_and_handling.md`](docs/06_timeline_and_handling.md) — original activity versus later custody activity.
+6. [`docs/06_timeline_and_handling.md`](docs/06_timeline_and_handling.md) — detailed 2019–2020 chronology and later handling.
 7. [`docs/07_limits_and_open_questions.md`](docs/07_limits_and_open_questions.md) — what remains unproven.
 8. [`docs/08_reproducibility.md`](docs/08_reproducibility.md) — how the published tables and reports are generated.
 
 ## Technical evidence
 
-The `build/` directory contains the underlying reproducibility artifacts:
+The `build/` directory contains:
 
 - `disk_info/` — custody device, image, and partition identity;
 - `volume_info/` — HFS+ volume identity and system-state summaries;
 - `file_tree/` — directory and user-home rollups;
-- `hash_manifest/` — JPMI SHA-256 identities and coverage;
+- `hash_manifest/` — JPMI-reported SHA-256 identities and coverage;
 - `metadata/` — timestamp, extension, type, permission, CNID, and alias summaries;
 - `reports/` — human-readable forensic summaries;
 - `archives/` — partitioned deep metadata exports;
