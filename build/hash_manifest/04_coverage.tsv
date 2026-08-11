@@ -3,12 +3,5 @@ total_paths	655330
 hashed_paths	655330
 distinct_cnids_hashed	332097
 distinct_hashes	180046
-hashes_matched_to_apfs_family	267781
-hashes_matched_to_gai_family	729099
-hashes_matched_to_0728_family	399640
-distinct_hashes_with_any_cross_source_match	135112
-distinct_hashes_with_size_mismatch	68196
-distinct_hashes_exclusive_to_jpmi	44934
 alias_map_rows	655330
-jpmi_hash_overlap_rows	292667
-jpmi_path_overlap_rows	461450
+canonical_cnid_hash_rows	332121
