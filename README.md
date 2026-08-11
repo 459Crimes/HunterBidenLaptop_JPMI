@@ -16,7 +16,9 @@ For a non-specialist, the easiest way to understand JPMI is as a **whole-volume,
 
 It does **not** mean that we have proven John Paul Mac Isaac literally ran the Unix `dd` command. The exact repair-shop copy utility and every intermediate custody step remain unresolved.
 
-The later forensic acquisition represented in this project is an **E01 forensic image** named `HB-IMAGE-2022-04-29.E01`, made from a 500,107,862,016-byte Micron Crucial X6 USB SSD. The image is identified by MD5 and SHA-1 values in the source acquisition record. The Crucial X6 is a later custody medium; it is not the original internal laptop SSD.
+The later forensic acquisition record represented in this project identifies an **E01 forensic image** named `HB-IMAGE-2022-04-29.E01`, made from a 500,107,862,016-byte Micron Crucial X6 USB SSD. The image is identified by MD5 and SHA-1 values in the source acquisition record. The Crucial X6 is a later custody medium; it is not the original internal laptop SSD.
+
+There is also an important chronology issue in the delivered records: the acquisition record reports **April 29, 2022**, while the delivered HFS+ volume metadata reports a **November 21, 2024 last-write**. An immutable E01 actually acquired in 2022 cannot subsequently acquire a 2024 filesystem write. This repository therefore treats the 2022/2024 pairing as an **open provenance discrepancy requiring reconciliation of the source reports**, not as proof that the 2022 E01 itself was modified later.
 
 ## The 5 Ws of JPMI
 
@@ -24,13 +26,13 @@ The later forensic acquisition represented in this project is an **E01 forensic 
 |---|---|
 | **Who?** | The user data is organized primarily under the macOS account `roberthunter` and contains the ordinary personal, communications, application, media, and device-backup state associated with that account. John Paul Mac Isaac is the repair-shop custodian from whose recovery/copy lineage JPMI takes its name. |
 | **What?** | A GPT-partitioned Mac-oriented storage image containing an EFI partition and a journaled HFS+ data volume named `Untitled`, plus the `roberthunter` home tree, filesystem metadata, application state, and hash/timestamp inventories. |
-| **When?** | The important dates are different events: original user data spans years before the 2019 repair; the repair-shop event occurred in April 2019; the JPMI HFS+ destination reports a creation date of September 26, 2019; the E01 acquisition is reported as April 29, 2022; later indexing/handling metadata exists after those dates. |
+| **When?** | The important dates are different events: original user data spans years before the 2019 repair; the repair-shop event occurred in April 2019; the JPMI HFS+ destination reports a creation date of September 26, 2019; the image acquisition is reported as April 29, 2022; and the delivered volume metadata also reports a 2024 last-write that must be reconciled with the 2022 acquisition record. |
 | **Where?** | The historical repair event was in Wilmington, Delaware. The physical custody medium described by the forensic acquisition record is a Micron Crucial X6 USB SSD. This GitHub repository itself contains metadata, hashes, reports, and derived inventories—not the restricted source image bytes. |
 | **Why?** | The copy lineage exists because data was recovered from the repair-shop computer and preserved for later custody, review, and forensic examination. This repository exists to make the provenance and internal structure of that copy understandable and reproducible. |
 
 A sixth question matters just as much:
 
-**How?** The exact original repair-shop copy method is not established by the evidence presently in this repository. The resulting JPMI structure is much richer than a curated document dump: it includes GPT/EFI structure, an HFS+ journal, filesystem catalog relationships, Spotlight and document-revision state, and a normal macOS user hierarchy. Those features are consistent with a filesystem-level or block-oriented recovery/copy lineage. The later forensic acquisition itself was made as an E01 image.
+**How?** The exact original repair-shop copy method is not established by the evidence presently in this repository. The resulting JPMI structure is much richer than a curated document dump: it includes GPT/EFI structure, an HFS+ journal, filesystem catalog relationships, Spotlight and document-revision state, and a normal macOS user hierarchy. Those features are consistent with a filesystem-level or block-oriented recovery/copy lineage. The later preservation record identifies an E01 image, but the precise chronology of the source device, the 2022 acquisition record, and the 2024 reported last-write remains an open question.
 
 ## What is actually on JPMI?
 
@@ -79,10 +81,10 @@ A central rule of this repository is that different timestamps answer different 
 - **Pre-April 2019 timestamps** can describe original user or application activity.
 - **September 2019 filesystem timestamps** are associated with creation/reconstruction of the HFS+ destination volume.
 - **2020 metadata changes** show later browsing or interaction with parts of the copied volume.
-- **2022 accessed-time clusters** are dominated by examination/acquisition activity.
-- **2024 Spotlight/index timestamps** show later filesystem/index handling.
+- **2022 accessed-time clusters** are consistent with broad examination or acquisition activity.
+- **2024 Spotlight/index timestamps and the reported last-write** appear in the delivered metadata, but their relationship to the separately reported 2022 E01 acquisition is unresolved and must not be narrated as though an immutable 2022 image itself changed in 2024.
 
-The repository currently identifies **141 inventory rows with modified timestamps after March 31, 2019**. Those rows are dominated by filesystem and application metadata. They demonstrate that the copied volume was not frozen after the repair-shop period, but they do **not** by themselves establish wholesale insertion of later user documents.
+The repository currently identifies **141 inventory rows with modified timestamps after March 31, 2019**. Those rows are dominated by filesystem and application metadata. They demonstrate that the represented volume includes later system-state activity, but they do **not** by themselves establish wholesale insertion of later user documents or resolve which physical/image stage produced every later timestamp.
 
 See [`docs/06_timeline_and_handling.md`](docs/06_timeline_and_handling.md).
 
@@ -97,7 +99,8 @@ It does **not** presently claim that:
 - every timestamp on the later HFS+ copy is an original-user timestamp;
 - every historical hardware diagnostic inside the user folders identifies the particular laptop left for repair in 2019;
 - the project has byte-level access to the restricted JPMI E01 image;
-- the metadata can identify the human who caused every post-2019 filesystem event.
+- the metadata can identify the human who caused every post-2019 filesystem event;
+- the 2024 last-write occurred inside an immutable E01 that was definitively acquired in 2022.
 
 ## Start here
 
