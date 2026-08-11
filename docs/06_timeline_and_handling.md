@@ -1,6 +1,8 @@
-# 6. Timeline and Later Handling
+# 6. Timeline and Handling
 
-The JPMI copy contains multiple layers of time. The most important task is to distinguish **original user/application activity** from **creation of the later copy** and from **later custody activity**.
+The JPMI records contain multiple layers of time. The most important task is to distinguish **original user/application activity**, **creation of the later HFS+ destination**, **later filesystem/system-state activity**, and **the chronology of the forensic reports themselves**.
+
+One delivered chronology is internally unresolved: the acquisition record identifies `HB-IMAGE-2022-04-29.E01`, while the delivered volume metadata reports a November 2024 last-write. An immutable E01 actually acquired in 2022 cannot later acquire a 2024 filesystem write. This page therefore reports both values without pretending that their relationship is settled.
 
 ## Timeline at a glance
 
@@ -9,11 +11,13 @@ The JPMI copy contains multiple layers of time. The most important task is to di
 | 2014–2018 and earlier historical material | User files, application state, migrated/cloud/device material, diagnostics, documents, media | Historical data represented inside the Mac account; not all of it necessarily originated on the particular 2019 repair-shop machine |
 | Jan–Mar 2019 | Very large modified-time population | Strongest broad cluster associated with the last ordinary user period represented by the inventory |
 | April 2019 | Publicly reported repair-shop custody event | Historical boundary; not the creation date of the later HFS+ destination |
-| May 2019 | A small number of `.DS_Store` changes | Limited post-repair filesystem interaction |
-| September 2019 | HFS+ destination creation and journal/Spotlight initialization | Creation or reconstruction of the later JPMI destination volume |
-| 2020 | Limited Finder/application/system metadata changes | Later browsing/mounting/handling indicators |
-| March–April 2022 | Dominant access-time cluster and Spotlight activity | Examination/acquisition period |
-| November 2024 | Spotlight/index changes and reported volume last write | Later indexing/handling activity |
+| May 2019 | A small number of `.DS_Store` changes | Limited post-repair filesystem interaction represented by the metadata |
+| September 2019 | HFS+ destination creation and journal/Spotlight initialization | Creation or reconstruction of the later JPMI HFS+ destination volume |
+| 2020 | Limited Finder/application/system metadata changes | Evidence of interaction with a working copy or destination stage |
+| March–April 2022 | Dominant access-time cluster and Spotlight activity | Consistent with broad software examination, indexing, hashing, or acquisition |
+| April 29, 2022 | Acquisition record / image name `HB-IMAGE-2022-04-29.E01` | Reported forensic-image event |
+| November 2024 | Spotlight/index changes and reported volume last write | **Must be reconciled with the 2022 acquisition record; it cannot simply be a later write inside an immutable 2022 E01** |
+| July 2026 | Project acquisition-record creation/ingestion field | Later project recordkeeping, not original evidence creation |
 
 ## Original-user activity cluster
 
@@ -39,7 +43,7 @@ Associated filesystem structures cluster around the same window, including:
 
 This is one of the most important provenance findings in the repository.
 
-It means the HFS+ volume itself was created or reconstructed **after** the April 2019 repair event.
+It supports the conclusion that the represented HFS+ volume was created or reconstructed **after** the April 2019 repair event.
 
 That does not make the older files in the volume “fake.” A copy or restore can place years of older files onto a newly created destination filesystem. It does mean the destination's own creation event must be separated from the original creation/modification history preserved for files inside it.
 
@@ -72,7 +76,7 @@ The later rows are dominated by:
 - directories and filesystem state;
 - temporary/system metadata.
 
-This pattern is consistent with later mounting, Finder browsing, indexing, migration, and forensic handling.
+This pattern is consistent with mounting, Finder browsing, indexing, migration, or forensic processing at one or more later copy stages.
 
 It is **not**, by itself, evidence that 141 substantive user documents were inserted after the repair-shop event.
 
@@ -90,7 +94,7 @@ Among the 2020 records are modifications to:
 
 The Desktop `.DS_Store` modification on **2020-10-15** is particularly useful as a custody marker because Finder metadata can be changed simply by opening/browsing folders.
 
-It should be described as evidence of later interaction with the copied volume, not automatically as proof that document contents were edited.
+It should be described as evidence of interaction with the copied environment, not automatically as proof that document contents were edited.
 
 ## 2022 examination cluster
 
@@ -105,17 +109,28 @@ A half-million-file access wave is not a plausible pattern of ordinary human doc
 
 This is an example of why access timestamps cannot be interpreted without scale and context.
 
-## 2024 Spotlight/index activity
+## The 2024 chronology problem
 
-The volume reports a last-write time of:
+The delivered volume metadata reports:
 
 ```text
-2024-11-21 17:40:22 CST
+HFS+ volume last write: 2024-11-21 17:40:22 CST
 ```
 
-The later records cluster in Spotlight/index structures. This is evidence that the volume or a working representation of it was still being processed after the 2022 acquisition period.
+and the 2024 modified rows cluster in Spotlight/index structures.
 
-The metadata available to this project does not identify the human operator responsible for that activity.
+Standing alone, those fields indicate that the represented filesystem state includes 2024-era indexing metadata. But the same acquisition record identifies an E01 image associated with **April 29, 2022**.
+
+Those two reported facts require an additional custody or reporting step that is not presently documented in this repository. Possible classes of explanation include:
+
+1. the physical/source device was examined or acquired again after 2022;
+2. the delivered volume metadata came from a later working copy rather than the immutable 2022 E01;
+3. the E01/image date or the volume-report provenance has been mislabeled or mixed during later reporting;
+4. another intermediate image/copy exists but has not yet been documented.
+
+The current evidence does **not** choose among those explanations.
+
+Therefore the repository should not say simply that “the 2022 E01 was later indexed in 2024.” It should say that the delivered evidence contains a **2022/2024 chronology discrepancy requiring source-level reconciliation**.
 
 ## Timestamp timezone caveat
 
@@ -123,17 +138,18 @@ The received reports use multiple timezone conventions. Some file-list fields ap
 
 For that reason, this project should avoid making minute-level accusations from an unnormalized timestamp unless the original field's timezone convention is known.
 
-Broad event clusters—February 2019, September 2019, October 2020, March/April 2022, November 2024—are considerably more reliable for public explanation than overprecision about an ambiguous two-hour offset.
+Broad event clusters—February 2019, September 2019, October 2020, March/April 2022, and the separately reported November 2024 system-state cluster—are more reliable for public explanation than overprecision about an ambiguous offset.
 
-## What the timeline proves
+## What the timeline supports
 
 The current JPMI metadata supports these bounded conclusions:
 
-1. The copy preserves a large body of user/application activity predating the April 2019 repair event.
-2. The later HFS+ destination reports a September 2019 creation event.
-3. The destination experienced later filesystem interaction.
-4. The dominant later events are characteristic of mounting, browsing, indexing, and forensic examination.
-5. The copy was therefore **not a completely untouched time capsule after April 2019**.
+1. The copy lineage preserves a large body of user/application activity predating the April 2019 repair event.
+2. The represented HFS+ destination reports a September 2019 creation event.
+3. The represented filesystem includes later system/application metadata after the original user period.
+4. The large 2022 access cluster is characteristic of broad software traversal rather than ordinary manual reading.
+5. The delivered records are **not** a simple untouched-April-2019 time capsule.
 6. The later metadata identified so far does **not** by itself demonstrate wholesale insertion of later substantive user files.
+7. The reported 2022 E01 acquisition and 2024 volume last-write **cannot yet be placed into one verified custody chronology**.
 
 The detailed row set remains available in [`build/reports/04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md).
