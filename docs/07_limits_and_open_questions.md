@@ -18,13 +18,36 @@ Open questions include:
 
 The evidence should not be forced into a one-command story unless logs establish it.
 
-## 2. The Crucial X6 is not the original laptop SSD
+## 2. The 2022 acquisition record and 2024 last-write are not reconciled
+
+The delivered acquisition record identifies:
+
+```text
+HB-IMAGE-2022-04-29.E01
+reported_at: 2022-04-29
+```
+
+The delivered HFS+ volume metadata also reports:
+
+```text
+volume_last_write_reported: 2024-11-21 17:40:22 CST
+```
+
+An immutable E01 actually acquired in April 2022 cannot later acquire a November 2024 filesystem write.
+
+The current records therefore require at least one missing fact: a later acquisition, a later working copy, source-device activity after 2022, regenerated/mixed reports, or a mislabeled date/provenance field.
+
+This repository does **not** currently establish which explanation is correct.
+
+Until the underlying acquisition worksheets and report lineage are reconciled, the project should preserve both reported values and label the combination an **open chronology discrepancy**.
+
+## 3. The Crucial X6 is not the original laptop SSD
 
 The 500 GB-class Micron Crucial X6 described in the acquisition record is a **later custody device**.
 
 Its model, serial number, partition geometry, and HFS+ creation date describe that later storage object. They do not identify the original internal SSD hardware in the Mac left for repair.
 
-## 3. The project does not publish the restricted E01 bytes
+## 4. The project does not publish the restricted E01 bytes
 
 The GitHub repository is based on received reports and manifests.
 
@@ -40,7 +63,7 @@ This permits strong statements about reported:
 
 It does not permit the repository to claim that every source byte was independently re-read during this GitHub build.
 
-## 4. Hashes are manifest evidence unless recomputed from source bytes
+## 5. Hashes are manifest evidence unless recomputed from source bytes
 
 The SHA-256 values in this repository are important evidence, but they are received forensic-manifest values.
 
@@ -54,7 +77,7 @@ rather than implying:
 
 unless such a re-read actually occurs.
 
-## 5. Old hardware artifacts can be migrated data
+## 6. Old hardware artifacts can be migrated data
 
 The user tree includes historical diagnostic packages whose filenames identify older Apple hardware, including a `roberts-MacBook-Air` name and serial-bearing WirelessDiagnostics folders.
 
@@ -64,7 +87,7 @@ They do **not** by themselves prove that the older MacBook Air was the computer 
 
 The repository should therefore treat old hardware diagnostics as **historical source artifacts**, not as automatic identification of the 2019 repair-shop hardware.
 
-## 6. A timestamp is not a person
+## 7. A timestamp is not a person
 
 A modified or accessed timestamp proves that a filesystem field changed. It does not automatically identify:
 
@@ -78,15 +101,15 @@ A modified or accessed timestamp proves that a filesystem field changed. It does
 
 Attribution requires object type, event context, surrounding timestamps, logs, and ideally custody records.
 
-## 7. Post-2019 metadata does not equal post-2019 document fabrication
+## 8. Post-2019 metadata does not equal post-2019 document fabrication
 
-JPMI contains later filesystem activity. That matters.
+JPMI contains later filesystem/system-state timestamps. That matters.
 
 But the later population identified so far is dominated by system and application metadata, especially Finder and Spotlight-related state.
 
 A responsible conclusion is:
 
-> The copy was later mounted, browsed, indexed, or examined.
+> The represented copy lineage contains evidence of later filesystem or system-state activity.
 
 A much stronger claim such as:
 
@@ -94,7 +117,9 @@ A much stronger claim such as:
 
 requires file-level evidence beyond the later metadata clusters presently identified.
 
-## 8. The empty deleted-file catalog is not proof that nothing was deleted
+Because of the unresolved 2022/2024 chronology, the repository should also avoid assigning every later timestamp to one specific physical disk or image stage unless that stage is established by the source reports.
+
+## 9. The empty deleted-file catalog is not proof that nothing was deleted
 
 The source reports an empty deleted-file catalog and large unallocated ranges.
 
@@ -102,7 +127,7 @@ On HFS+, deletion history is not necessarily recoverable as a neat catalog of ev
 
 The project should not equate an empty deleted catalog with “no deletions ever occurred.”
 
-## 9. File counts are not unique-content counts
+## 10. File counts are not unique-content counts
 
 One underlying item can appear as:
 
@@ -116,7 +141,7 @@ One underlying item can appear as:
 
 This is why the project tracks paths, CNIDs, sizes, and hashes separately.
 
-## 10. Timezones remain a normalization issue
+## 11. Timezones remain a normalization issue
 
 The received reports use a mixture of labeled local times and UTC-oriented timeline values. Some database fields do not preserve timezone metadata.
 
@@ -126,15 +151,16 @@ Before asserting exact minute-level sequencing across report families, the relev
 
 The following materials would materially strengthen the JPMI provenance chain:
 
-1. original repair-shop recovery logs;
-2. first-copy hashes;
-3. repair-shop server records, if applicable;
-4. source/destination device serials from each intermediate step;
-5. copy-tool or imaging logs;
-6. contemporaneous custody notes;
-7. the restricted E01 for independent read-only verification;
-8. complete acquisition worksheets associated with `HB-IMAGE-2022-04-29.E01`;
-9. normalized timezone documentation for each received report family.
+1. **the complete acquisition/report lineage needed to reconcile the 2022 E01 record with the 2024 reported last-write;**
+2. original repair-shop recovery logs;
+3. first-copy hashes;
+4. repair-shop server records, if applicable;
+5. source/destination device serials from each intermediate step;
+6. copy-tool or imaging logs;
+7. contemporaneous custody notes;
+8. the restricted E01 for independent read-only verification;
+9. complete acquisition worksheets associated with `HB-IMAGE-2022-04-29.E01`;
+10. normalized timezone documentation for each received report family.
 
 ## Publication rule
 
