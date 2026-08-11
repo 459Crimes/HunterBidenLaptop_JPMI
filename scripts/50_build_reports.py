@@ -8,8 +8,8 @@ Writes:
   build/reports/04_post_2019_03_31_timeline.md
   build/reports/05_coverage_and_method.md
 
-Despite legacy filenames, every report is now JPMI-only. No APFS, GAI, 0728,
-or cross-corpus route is required to explain the evidence.
+Despite legacy filenames, every report is JPMI-only. No comparative corpus or
+cross-corpus route is required to explain the evidence.
 
 Read-only against PostgreSQL. Reads Stage-10 rollups from build/file_tree/.
 """
@@ -226,7 +226,7 @@ def report_01(data):
     text += md_table(["Field", "Reported value"], disk_rows)
     text += (
         "\nThe destination is represented as a GPT-partitioned Mac-oriented disk with an EFI System Partition and a journaled HFS+ data volume. "
-        "The later forensic preservation is an E01 image.\n\n"
+        "The acquisition record identifies an E01 image.\n\n"
         "## Interpretation\n\n"
         "For a non-specialist, JPMI is reasonably described as a **whole-volume / `dd`-style copy lineage**, meaning that the evidence retains filesystem context rather than only a curated folder of documents. "
         "The phrase does not prove that Mac Isaac literally used the `dd` program.\n\n"
@@ -288,7 +288,7 @@ def report_03(data):
         [
             ("Repair-shop period", "April 2019 (historical context)"),
             ("HFS+ destination creation", "2019-09-26 22:59:02 CDT"),
-            ("E01 acquisition", a.get("reported_at")),
+            ("E01 acquisition record", a.get("reported_at")),
             ("Reported volume last write", "2024-11-21 17:40:22 CST"),
         ],
     )
@@ -298,10 +298,10 @@ def report_03(data):
     text += md_table(["Year-month", "Rows"], data["access_clusters"])
     text += (
         "\n## Interpretation\n\n"
-        "The broad modified-time population is concentrated before the repair event, while later access and system-metadata clusters reflect creation of the destination, mounting, indexing, and forensic handling. "
-        "The March/April 2022 access wave is software-scale activity, not evidence that a person manually opened hundreds of thousands of files.\n\n"
+        "The broad modified-time population is concentrated before the repair event. The March/April 2022 access wave is software-scale activity, not evidence that a person manually opened hundreds of thousands of files. "
+        "The delivered records also pair a 2022 acquisition record with a 2024 HFS+ last-write. An immutable E01 actually acquired in 2022 cannot later acquire a 2024 filesystem write, so that pair is an **unresolved source-chronology discrepancy**, not proof that the 2022 E01 itself changed in 2024.\n\n"
         "## Limitation\n\n"
-        "The source reports use mixed timezone conventions. Exact minute-level sequencing should not be asserted across report families until their timezone fields are normalized.\n"
+        "The source reports use mixed timezone conventions, and the acquisition/report lineage needed to reconcile the 2022/2024 dates is incomplete. Exact sequencing should not be asserted until both issues are resolved.\n"
     )
     (REPORTS / "03_known_datetime_stamps_of_use.md").write_text(text, encoding="utf-8")
 
@@ -315,7 +315,8 @@ def report_04(data, boundary):
     text += (
         "\n## Interpretation\n\n"
         "The later population is dominated by filesystem and application metadata such as `.DS_Store`, Spotlight, DocumentRevisions, directories, and temporary/system state. "
-        "It proves the later copy was mounted, browsed, indexed, or examined after the original user period. It does not, by itself, prove wholesale insertion of substantive user documents.\n\n"
+        "It establishes that the represented copy lineage contains later system-state activity; it does not, by itself, prove wholesale insertion of substantive user documents or identify which physical/image stage produced every later timestamp. "
+        "In particular, the 2024 rows must be reconciled with the separately reported 2022 E01 acquisition.\n\n"
         "## Complete modified-row set\n\n"
     )
     rows = []
@@ -324,7 +325,7 @@ def report_04(data, boundary):
     text += md_table(["Path", "Size", "Created", "Modified", "Accessed"], rows)
     text += (
         "\n## Limitation\n\n"
-        "A filesystem timestamp does not identify the human or process responsible for the event. Attribution requires object type, surrounding activity, logs, and custody records.\n"
+        "A filesystem timestamp does not identify the human or process responsible for the event. Attribution requires object type, surrounding activity, logs, custody records, and a reconciled source chronology.\n"
     )
     (REPORTS / "04_post_2019_03_31_timeline.md").write_text(text, encoding="utf-8")
 
@@ -340,17 +341,20 @@ def report_05(data, limits):
         ("Alias-map rows", f"{data['alias_rows']:,}"),
         ("TSK timeline rows", f"{data['tsk_rows']:,}"),
     ]
+    a = data["acq"]
     text = "# JPMI Coverage, Method, and Limits\n\n"
     text += "## Coverage\n\n"
     text += md_table(["Metric", "Value"], rows)
     text += (
         "\n## Method\n\n"
         "The pipeline performs read-only queries against JPMI tables, writes derived public artifacts under `build/`, shards large exports under the configured file-size budget, and validates section manifests and checksums. "
-        "This standalone repository intentionally does not generate cross-corpus comparison tables.\n\n"
+        "This standalone repository intentionally does not generate comparison tables.\n\n"
         "## Source boundary\n\n"
         "The GitHub project publishes received JPMI metadata/hash evidence and derived reports. The restricted E01 image itself is not published here. Therefore a reported manifest hash is distinguished from a hash freshly recomputed by this checkout from restricted source bytes.\n\n"
         "## Copy-method boundary\n\n"
         "The evidence supports describing JPMI as a whole-volume/filesystem-preserving copy lineage for public explanation. It does not establish the literal original repair-shop copy command or every intermediate storage device.\n\n"
+        "## Acquisition chronology boundary\n\n"
+        f"The acquisition record reports `{a.get('source_image')}` with date `{a.get('reported_at')}`, while delivered HFS+ metadata reports a 2024 last-write. An immutable E01 actually acquired in 2022 cannot later acquire a 2024 filesystem write. The relationship between those records is unresolved and requires the original acquisition/report lineage.\n\n"
         "## Size policy\n\n"
         f"Per-file budget: {limits['per_file_budget_bytes']:,} bytes. Hard cap: {limits['hard_cap_bytes']:,} bytes.\n"
     )
