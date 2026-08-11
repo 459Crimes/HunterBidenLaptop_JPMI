@@ -8,7 +8,7 @@ The technical pipeline should be able to rebuild the published summaries without
 
 The pipeline reads the JPMI-related tables in the project's forensic PostgreSQL database and writes derived artifacts under `build/`.
 
-The published repository does **not** require APFS, GAI, 0728, or any other corpus to explain JPMI.
+The published repository requires **JPMI evidence only** to explain and reproduce its JPMI analysis.
 
 The restricted JPMI E01 image is not stored in GitHub.
 
@@ -24,7 +24,7 @@ The restricted JPMI E01 image is not stored in GitHub.
 | `jpmi_alias_map` | Canonical/alias and hard-link relationships |
 | `jpmi_tsk_timeline` | TSK filesystem timeline and system-state events |
 
-Cross-corpus overlap tables are not required for this standalone JPMI publication.
+Comparative overlap tables are outside the scope of this standalone JPMI publication.
 
 ## Build stages
 
