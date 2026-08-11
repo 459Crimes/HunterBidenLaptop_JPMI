@@ -1,156 +1,186 @@
 # Data Contract
 
-All TSV files are UTF-8, LF-terminated, header row on the first line, and tab-
-separated. All shard files share an identical header. Timestamps are rendered
-`YYYY-MM-DD HH:MM:SS` in the time zone recorded by the source report (CDT/CST
-for the file list, UTC for the TSK timeline); no conversion is applied.
+All published tables in this repository describe **JPMI only**.
 
-## file_tree/
+TSV files are UTF-8, LF-terminated, tab-separated, and contain a header row. Shards of the same logical export use identical columns.
+
+Timestamp fields preserve the convention supplied by the originating forensic report unless a file explicitly says that normalization has been applied. Do not silently compare timestamps from different report families as though every field uses the same timezone.
+
+## `build/file_tree/`
 
 ### `01_directory_tree.tsv`
 
-Columns: `path`, `depth`, `parent_path`, `dir_count`, `file_count`,
-`size_bytes`, `hash_count`, `hash_pct`, `min_modified_ts`, `max_modified_ts`
+Columns:
 
-One row per directory in the inventory tree (derived from `files` paths for
-source `122`). `dir_count` counts immediate child directories; `file_count` and
-`size_bytes` count regular files under the directory (not recursive); `hash_pct`
-is the fraction of those files with a SHA-256.
+`path`, `depth`, `parent_path`, `dir_count`, `file_count`, `size_bytes`, `hash_count`, `hash_pct`, `min_modified_ts`, `max_modified_ts`
+
+One row per directory represented in the JPMI inventory tree. Immediate-child directory/file counts and size/hash coverage are rolled up from the JPMI path inventory.
 
 ### `02_top_level_summary.tsv`
 
-Columns: `top_path`, `file_count`, `size_bytes`, `hash_count`, `hash_pct`,
-`min_modified_ts`, `max_modified_ts`
+Columns:
 
-Rollup for each first-level inventory branch (`Users`, `Basic data partition
-(2)`, `EFI System Partition (1)`, `Unpartitioned Space [GPT]`, malformed rows).
+`top_path`, `file_count`, `size_bytes`, `hash_count`, `hash_pct`, `min_modified_ts`, `max_modified_ts`
+
+Top-level rollup for the user tree and disk/filesystem structural areas.
 
 ### `03_home_overview.tsv`
 
-Columns: `home_subdir`, `file_count`, `size_bytes`, `hash_count`, `hash_pct`,
-`min_modified_ts`, `max_modified_ts`
+Columns:
 
-Rollup for the direct children of `Users/roberthunter` (`Library`, `Documents`,
-`Pictures`, `Movies`, `Downloads`, `Music`, `Desktop`, others).
+`home_subdir`, `file_count`, `size_bytes`, `hash_count`, `hash_pct`, `min_modified_ts`, `max_modified_ts`
 
-## hash_manifest/
+Rollup for direct children of `Users/roberthunter`.
+
+## `build/hash_manifest/`
 
 ### `01_sha256_by_cnid_*.tsv`
 
-Columns: `cnid`, `size`, `n_paths`, `sha256`, `canonical_path`, `alloc`
+Columns:
 
-One row per distinct allocated CNID with a SHA-256 (rank-1 master manifest,
-canonical identity). Sharded.
+`cnid`, `size`, `alloc`, `n_paths`, `sha256`, `canonical_path`
 
-### `02_cross_source_matches_*.tsv`
-
-Columns: `sha256`, `jpmi_canonical_path`, `jpmi_size`, `match_count`,
-`match_sources`, `sample_match_path`
-
-One row per distinct JPMI SHA-256 that has at least one exact SHA-256 match in
-another corpus (`hash_sources`), with aggregate match counts per source family
-and one sample matched path. Sharded.
-
-### `03_cross_source_unaligned_*.tsv`
-
-Columns: `sha256`, `jpmi_canonical_path`, `jpmi_size`, `match_sources`,
-`match_count`
-
-JPMI hashes that have matches in other corpora but with a **size mismatch**
-(exact-hash/size contradiction requiring review). Sharded.
+One row per represented JPMI CNID with a reported SHA-256 identity. The canonical path is selected from the JPMI alias map.
 
 ### `04_coverage.tsv`
 
-Columns: `metric`, `value`
+Columns:
 
-Coverage counts: paths total, paths hashed, distinct CNIDs, distinct hashes,
-hashes matched to each corpus family, exclusive hashes, and the 2019-03-31
-boundary definition.
+`metric`, `value`
 
-## metadata/
+JPMI-only coverage metrics, including:
+
+- total reported hash-manifest paths;
+- paths with SHA-256;
+- distinct hashed CNIDs;
+- distinct SHA-256 values;
+- alias-map row count;
+- canonical hashed-CNID export row count.
+
+The public JPMI repository does not publish cross-corpus match tables.
+
+## `build/metadata/`
 
 ### `01_time_distribution.tsv`
 
-Columns: `event_type` (`created`/`modified`/`accessed`), `bucket`,
-`row_count`, `size_bytes`
+Columns:
 
-Year bucket and (for 2019) month bucket counts from `jpmi_file_times`.
+`event_type`, `bucket`, `row_count`, `size_bytes`
+
+`event_type` is `created`, `modified`, or `accessed`. Buckets are year and selected year-month values.
 
 ### `02_extension_distribution.tsv`
 
-Columns: `extension`, `file_count`, `size_bytes`, `hash_count`
+Columns:
+
+`extension`, `file_count`, `size_bytes`, `hash_count`
 
 ### `03_type_distribution.tsv`
 
-Columns: `file_type`, `file_count`, `size_bytes`
+Columns:
+
+`file_type`, `file_count`, `size_bytes`
 
 ### `04_permission_distribution.tsv`
 
-Columns: `permissions`, `file_count`, `size_bytes`
+Columns:
+
+`permissions`, `file_count`, `size_bytes`
 
 ### `05_cnid_summary.tsv`
 
-Columns: `metric`, `value`
+Columns:
 
-CNID hierarchy metrics from `jpmi_cnid_map`.
+`metric`, `value`
+
+HFS+ catalog/CNID metrics from `jpmi_cnid_map`.
 
 ### `06_alias_summary.tsv`
 
-Columns: `metric`, `value`
+Columns:
 
-Hard-link/alias statistics from `jpmi_alias_map`.
+`metric`, `value`
 
-## volume_info/
+Canonical/alias and hard-link metrics from `jpmi_alias_map`.
+
+## `build/volume_info/`
 
 ### `01_volume_identity.tsv`
 
-Columns: `field`, `value`
+Columns:
 
-Volume name, HFS+ volume identifier, filesystem, sector offset, reported
-creation and last-write dates.
+`field`, `value`
+
+Contains the reported JPMI destination-volume identity, including volume name, identifier, filesystem type, HFS+ sector offset, source-image name, image size, volume-creation date, volume last-write date, deleted-catalog status, unallocated-range estimate, and journal size.
 
 ### `02_volume_metadata.tsv`
 
-Columns: `object`, `size_bytes`, `modified_ts`, `note`
+Columns:
 
-Volume-level metadata objects: `.journal`, `.journal_info_block`,
-`.Spotlight-V100/*`, `.DocumentRevisions-V100/*`, `.DS_Store`, GPT structural
-records.
+`object`, `size_bytes`, `modified_ts`, `note`
+
+Selected filesystem/system metadata objects, including HFS+ journal state, Spotlight, DocumentRevisions, `.DS_Store`, and GPT-related records.
 
 ### `03_volume_system_state.tsv`
 
-Columns: `system_area`, `object_count`, `size_bytes`, `note`
+Columns:
 
-Rollups for Spotlight, DocumentRevisions, GPT/EFI structures, and home system
-libraries.
+`system_area`, `object_count`, `size_bytes`, `note`
 
-## disk_info/
+Rollups for filesystem and application/system-state areas represented by JPMI.
+
+## `build/disk_info/`
 
 ### `01_acquisition.tsv`
 
-Columns: `field`, `value`
+Columns:
 
-The `jpmi_acquisition` record verbatim (image, format, MD5/SHA1, size, sectors,
-tool, case number, drive model/serial).
+`field`, `value`
+
+Verbatim normalized fields from the JPMI acquisition record, including device model/serial, image identity, acquisition hashes, image size, sector geometry, case number, tool version, partition identifiers, and volume identifier.
 
 ### `02_partition_map.tsv`
 
-Columns: `partition`, `type`, `guid`, `byte_start`, `byte_length`, `note`
+Columns:
 
-GPT/EFI/HFS+ partition identity.
+`partition`, `type`, `guid`, `byte_start`, `byte_length`, `note`
+
+GPT/EFI/HFS+ partition identity for the later JPMI custody medium.
 
 ### `03_disk_identity.tsv`
 
-Columns: `field`, `value`
+Columns:
 
-Consolidated device identity (reported device, serial, disk GUID, volume
-identifier).
+`field`, `value`
 
-## reports/
+Consolidated device, disk, partition, and volume identity.
 
-Markdown reports. Section policy:
+## `build/reports/`
 
-- **Exact-byte findings**: only statements supportable from the manifest/hash
-  records.
-- **Contextual relationships**: labeled as interpretive.
-- **Conclusions**: separately labeled and bounded.
+Markdown reports are generated from JPMI evidence only.
+
+Every report should separate:
+
+1. **Observation** — what the JPMI record directly reports.
+2. **Interpretation** — what that observation is consistent with or supports.
+3. **Limitation** — what the observation does not establish by itself.
+
+## `build/archives/`
+
+Deep metadata exports may be partitioned into deterministic archive parts to remain below repository file-size limits.
+
+Archive parts are derived JPMI metadata. They are not source-image bytes.
+
+## Evidence terminology
+
+The following terms are not interchangeable:
+
+- **path** — a represented filesystem location;
+- **CNID** — an HFS+ catalog identity;
+- **hash** — reported byte-content fingerprint;
+- **device** — a physical custody medium;
+- **image** — a forensic representation of a device;
+- **volume** — a filesystem instance inside the device/image;
+- **timestamp** — a field whose meaning depends on event type and copy history.
+
+The repository keeps these dimensions separate so that provenance conclusions remain auditable.
