@@ -1,36 +1,33 @@
-# Coverage And Method
+# JPMI Coverage, Method, and Limits
 
-## 1. Source boundary
-
-- Source ID **122** `JPMI Metadata HB-FileList-2022-04-v1`.
-- The project holds metadata/hash reports, not JPMI device bytes.
-- Inventory in PostgreSQL: `roberthunter` home directory plus GPT/EFI/HFS+ structural records. System/Application/usr trees are not byte-accessible from this source.
-
-## 2. Coverage figures
-
+## Coverage
 
 | Metric | Value |
 |---|---|
-| inventory_paths | 576,249 |
-| inventory_paths_with_sha256 | 331,906 |
-| hash_manifest_rows (rank-1 allpaths) | 655,330 |
-| cnid_map_entries | 397,440 |
-| tsk_timeline_rows | 1,259,300 |
-| home_counts_emlx_vcf_icloud | 128,847 / 77,891 / 12,911 |
-| cross_source_hash_overlap_rows | 292,667 |
-| cross_source_path_overlap_rows | 461,450 |
+| Normalized JPMI inventory paths | 576,249 |
+| Rank-1 JPMI hash-manifest paths | 655,330 |
+| Hash-manifest paths with SHA-256 | 655,330 |
+| Distinct reported SHA-256 values | 180,046 |
+| CNID-map rows | 397,440 |
+| Alias-map rows | 655,330 |
+| TSK timeline rows | 1,259,300 |
 
+## Method
 
-## 3. Size policy applied
+The pipeline performs read-only queries against JPMI tables, writes derived public artifacts under `build/`, shards large exports under the configured file-size budget, and validates section manifests and checksums. This standalone repository intentionally does not generate comparison tables.
 
-- Per-file budget: 52,428,800 bytes (8 MiB), hard cap 20 MiB.
-- Every export is sharded under the budget; `90_validate_exports.py` regenerates `manifest.tsv` + `manifest.sha256` and fails on any violation.
-- `build/deep/` opt-in exports are gitignored.
+## Source boundary
 
-## 4. Limitations
+The GitHub project publishes received JPMI metadata/hash evidence and derived reports. The restricted E01 image itself is not published here. Therefore a reported manifest hash is distinguished from a hash freshly recomputed by this checkout from restricted source bytes.
 
-- JPMI SHA-256 values identify the objects in the manifest, not bytes this project can re-read.
-- The TSK timeline (rank-5) is present as a row count; the ingestion did not parse mtime into `jpmi_tsk_timeline`, so timeline analysis uses `jpmi_file_times`.
-- Exact-byte cross-source matches are leads; mounting the readable APFS/GAI sources is required for content-level confirmation.
-- No source evidence was modified. The pipeline performs read-only PostgreSQL queries and writes only under `build/`.
+## Copy-method boundary
 
+The evidence supports describing JPMI as a whole-volume/filesystem-preserving copy lineage for public explanation. It does not establish the literal original repair-shop copy command or every intermediate storage device.
+
+## Acquisition chronology boundary
+
+The acquisition record reports `HB-IMAGE-2022-04-29.E01` with date `2022-04-29`, while delivered HFS+ metadata reports a 2024 last-write. An immutable E01 actually acquired in 2022 cannot later acquire a 2024 filesystem write. The relationship between those records is unresolved and requires the original acquisition/report lineage.
+
+## Size policy
+
+Per-file budget: 52,428,800 bytes. Hard cap: 94,371,840 bytes.

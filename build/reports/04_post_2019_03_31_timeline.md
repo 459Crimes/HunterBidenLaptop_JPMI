@@ -1,13 +1,10 @@
-# Post-2019-03-31 Timeline
+# Post-Repair Custody Activity
 
-**Status: DRAFT for investigator review.**
+Boundary used for the technical slice: `modified_ts > 2019-03-31 23:59:59`.
 
-Boundary: `modified_ts > 2019-03-31 23:59:59` (i.e., after March 31, 2019).
+**141 inventory rows** fall after that boundary.
 
-**141** inventory rows have a modified timestamp after the boundary.
-
-## 1. Summary by year
-
+## Summary by year
 
 | Year | Rows |
 |---|---|
@@ -16,20 +13,11 @@ Boundary: `modified_ts > 2019-03-31 23:59:59` (i.e., after March 31, 2019).
 | 2022 | 82 |
 | 2024 | 30 |
 
+## Interpretation
 
-## 2. Interpretation by period
+The later population is dominated by filesystem and application metadata such as `.DS_Store`, Spotlight, DocumentRevisions, directories, and temporary/system state. It establishes that the represented copy lineage contains later system-state activity; it does not, by itself, prove wholesale insertion of substantive user documents or identify which physical/image stage produced every later timestamp. In particular, the 2024 rows must be reconciled with the separately reported 2022 E01 acquisition.
 
-- **2019 (11 rows):** filesystem metadata and `.DS_Store` records aligned to the 2019-09-26 volume creation window.
-- **2020 (18 rows):** `.DS_Store` and application/document-state records, including Desktop `.DS_Store` 2020-10-15.
-- **2022 (82 rows):** Spotlight, DocumentRevisions, and application metadata consistent with later mounting/indexing/examination.
-- **2024 (30 rows):** `.Spotlight-V100` index structures at the reported 2024-11-21 last-write.
-
-These records show the volume was **not quiescent** after 2019-03-31. They are custody-relevant activity indicators; they do **not** establish broad post-2019 insertion of user documents.
-
-Note: this boundary slices out the large Jan–Mar 2019 modified-time cluster (~360,700 rows, February ~241,000 rows). That cluster predates the boundary and is reported in `03_known_datetime_stamps_of_use.md`.
-
-## 3. Complete row set (all 141)
-
+## Complete modified-row set
 
 | Path | Size | Created | Modified | Accessed |
 |---|---|---|---|---|
@@ -175,3 +163,6 @@ Note: this boundary slices out the large Jan–Mar 2019 modified-time cluster (~
 | jpmi_metadata/Basic data partition (2)/Untitled [HFS+]/Untitled/.Spotlight-V100/Store-V2/3DEE7E1E-F78C-4768-B492-D2485F7ADCBA/tmp.spotlight.state | 4096 | 2022-04-11 22:34:01 | 2024-11-21 23:40:22 | 2024-11-21 23:40:20 |
 | jpmi_metadata/Basic data partition (2)/Untitled [HFS+]/Untitled/.Spotlight-V100/Store-V2/3DEE7E1E-F78C-4768-B492-D2485F7ADCBA/ |  | 2019-09-27 01:59:05 | 2024-11-21 23:40:22 | 2024-11-21 23:40:21 |
 
+## Limitation
+
+A filesystem timestamp does not identify the human or process responsible for the event. Attribution requires object type, surrounding activity, logs, custody records, and a reconciled source chronology.

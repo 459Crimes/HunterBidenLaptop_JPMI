@@ -1,61 +1,135 @@
-# Architecture
+# Repository Architecture
 
-## Goal
+## Purpose
 
-Turn the received JPMI metadata/hash witness (source `122`) into a bounded,
-reproducible, GitHub-ready evidence package without ever touching source bytes.
+This repository documents **JPMI — the John Paul Mac Isaac copy — as a standalone evidence source**.
 
-## Data sources
+The architecture has four layers:
 
-| Source | Role |
+1. **Public narrative** — explain provenance and filesystem evidence to a reader with no digital-forensics background.
+2. **Historical source record** — maintain court/news/participant sources for the 2019–2020 custody story separately from filesystem-derived facts.
+3. **Machine-readable JPMI evidence** — publish the inventories and summaries that support the technical narrative.
+4. **Reproducibility pipeline** — regenerate and validate the technical artifacts and republish the sourced custody timeline.
+
+No comparative laptop-data corpus is required to explain JPMI.
+
+## Layer 1 — public narrative
+
+The `docs/` directory is the recommended entry point.
+
+| Document | Purpose |
 |---|---|
-| PostgreSQL `rhb_forensics` (canonical master) | Authoritative inventory: `files`, `sources`, `hash_sources`, `jpmi_*` tables |
-| `source/JPMI_metadata/` | Received reports and manifests (`HB-FileList-2022-04-v1.*`, `hb-report-5/`, `reports/`); held with the master corpus, not shipped |
-| `docs/notes/` (OS-files, source characterization, hash-discrepancy notes) | Interpretive context, kept separate from exact-byte findings |
+| `01_what_is_jpmi.md` | Define the evidence source and qualified `dd`-style analogy |
+| `02_provenance_5ws.md` | Who, What, When, Where, Why, and How |
+| `03_chain_of_custody.md` | April repair, FBI-copy lineage, Costello/New York Post route, Todd Sanders delivery bridge |
+| `04_what_is_on_the_copy.md` | Explain user, application, media, and filesystem populations |
+| `05_filesystem_for_non_experts.md` | Explain GPT, EFI, HFS+, CNIDs, journals, Spotlight, hashes, and timestamps |
+| `06_timeline_and_handling.md` | Sourced 2019–2020 timeline interwoven with JPMI timestamps |
+| `07_limits_and_open_questions.md` | State evidentiary boundaries, no-injection finding, and missing records |
+| `08_reproducibility.md` | Map technical claims back to build artifacts and scripts |
+| `09_source_matrix.md` | Identify which legal/news/forensic source supports each historical custody claim |
 
-## Key tables used
+The narrative rule is:
 
-| Table | Rows (approx.) | Used for |
-|---|---|---|
-| `jpmi_acquisition` | 1 | disk/device identity, partition map, volume identity |
-| `files` (source 122) | 576,249 | inventory paths, sizes, hashes, mtimes |
-| `jpmi_file_times` | 576,249 | created/modified/accessed distributions and timeline |
-| `jpmi_sha256_allpaths` | 655,330 | per-path SHA-256 identity (rank-1 master manifest) |
-| `jpmi_cnid_map` | 397,440 | CNID/parent hierarchy, directory vs file kinds |
-| `jpmi_alias_map` | 655,330 | hard-link canonical/alias identity |
-| `jpmi_hash_overlap` | 292,667 | cross-source SHA-256 matches (APFS=1, GAI=116, 0728=2) |
-| `jpmi_path_overlap` | 461,450 | cross-source path matches with size/time alignment |
-| `jpmi_tsk_timeline` | 1,259,300 | TSK event count and volume-level system-state entries |
+> **Observed fact → interpretation → limitation**
 
-## Pipeline stages
+## Layer 2 — historical source record
 
-1. `10_export_file_tree.py` — build hierarchical tree from `files` paths; roll
-   up per-directory counts, sizes, hash coverage, and modified-time ranges.
-2. `20_export_hash_manifest.py` — per-CNID canonical SHA-256 manifest and
-   cross-source match manifest.
-3. `30_export_metadata.py` — time, extension, type, permission, CNID, and
-   hard-link distributions.
-4. `40_export_volume_disk.py` — volume and disk identity files.
-5. `50_build_reports.py` — markdown forensic reports grounded in the above.
-6. `60_archive_deep_exports.py` — partition gitignored `build/deep/` sections
-   into `archives/deep_*_NNN.tar.gz.part` parts (byte-verified, deterministic).
-7. `90_validate_exports.py` — size/checksum/row-count gate (also cross-checks
-   `archives/_manifest.tsv`).
+Historical custody assertions are **not generated from PostgreSQL**.
 
-## Identity and provenance rules
+The principal sources are maintained in `docs/09_source_matrix.md` and include:
 
-- SHA-256 is blob identity; path, CNID, source ID, and size are separate
-  provenance attributes.
-- JPMI values are metadata-derived. A JPMI hash absent from APFS/GAI is not
-  automatically a missing user file; generated/cache/system state is expected
-  to vary across derivative branches.
-- Byte-identical cross-source routes are reported as **leads** with the exact
-  readable source and path; they are not byte copies in this package.
+- Delaware Supreme Court and Superior Court opinions;
+- the earlier S.D. Florida opinion reciting the Mac Isaac timeline;
+- the December 2019 FBI subpoena sequence;
+- Mac Isaac's later store-server/FBI-copy account;
+- the October 14, 2020 New York Post publication event;
+- CBS's 2022 independent examination of an exact-copy Mac Isaac/FBI-lineage dataset;
+- public-record evidence connecting Todd Sanders to Patrick Byrne's America Project.
 
-## Boundaries
+This separation prevents a participant recollection or news report from being presented as if it were a filesystem-derived fact.
 
-- No source evidence is read beyond PostgreSQL metadata queries.
-- Reports separate exact-byte findings, contextual relationships, and
-  conclusions into distinct sections.
-- `build/` artifacts are analysis products; `build/deep/` opt-in exports are
-  local-only and gitignored.
+## Layer 3 — machine-readable JPMI evidence
+
+The `build/` directory contains derived artifacts.
+
+### `build/disk_info/`
+
+Records the later custody device and forensic image, including the internal source note attributing the rank-2 manifest to Todd Sanders.
+
+### `build/volume_info/`
+
+Records the HFS+ destination, including the reported **September 26, 2019** creation event and later system-state metadata.
+
+### `build/file_tree/`
+
+Records the JPMI path hierarchy and `Users/roberthunter` rollups.
+
+### `build/hash_manifest/`
+
+Records **JPMI-only** object identity and coverage. Hashes are received manifest evidence unless explicitly recomputed from restricted source bytes.
+
+### `build/metadata/`
+
+Records created/modified/accessed distributions, extensions, types, permissions, CNID metrics, and alias/hard-link metrics.
+
+### `build/reports/`
+
+Human-readable technical summaries. `03_known_datetime_stamps_of_use.md` is republished after Stage 50 from the sourced custody timeline so a rebuild does not erase the historical narrative.
+
+### `build/archives/`
+
+Partitioned archives of large JPMI metadata exports.
+
+## Layer 4 — reproducibility pipeline
+
+### Canonical technical inputs
+
+| Table / input | Role |
+|---|---|
+| `jpmi_acquisition` | custody device, image, disk and volume identity |
+| `files` for the JPMI source | normalized path inventory |
+| `jpmi_file_times` | created / modified / accessed timestamps |
+| `jpmi_sha256_allpaths` | reported SHA-256 values by JPMI path |
+| `jpmi_cnid_map` | HFS+ catalog identity and parent hierarchy |
+| `jpmi_alias_map` | canonical/alias and hard-link relationships |
+| `jpmi_tsk_timeline` | filesystem timeline and system-state events |
+
+The raw JPMI E01 is not published here.
+
+### Pipeline stages
+
+1. `10_export_file_tree.py` — build JPMI hierarchy and directory rollups.
+2. `20_export_hash_manifest.py` — build JPMI-only SHA-256 identity and coverage outputs.
+3. `30_export_metadata.py` — build timestamp, extension, type, permission, CNID, and alias summaries.
+4. `40_export_volume_disk.py` — build disk, partition, and HFS+ volume identity outputs.
+5. `50_build_reports.py` — generate database-derived JPMI reports.
+6. `55_publish_custody_timeline.py` — publish the sourced 2019–2020 custody narrative into the legacy datetime-report location.
+7. `60_archive_deep_exports.py` — archive large deep JPMI metadata exports.
+8. `90_validate_exports.py` — validate file sizes, section manifests, archive parts, and checksums.
+
+## Integrity and provenance rules
+
+- The Crucial X6 is a later custody device, not automatically the original laptop SSD.
+- “`dd`-style” is an explanatory analogy, not proof that `dd` was literally used.
+- Mac Isaac's store-server step is attributed to his account until server logs are produced.
+- The September 26, 2019 HFS+ creation date is chronologically consistent with his described preservation/FBI-copy period, but does not by itself identify the exact physical FBI-intended drive.
+- The Delaware Supreme Court's recitation that Mac Isaac made an **exact copy before the December 9, 2019 FBI surrender** is the strongest public anchor for the direct-copy lineage.
+- Later `.DS_Store`, Spotlight, DocumentRevisions, and software-scale access activity is custody/system-state evidence, not automatically evidence of substantive document injection.
+- **No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting analyzed here.**
+- CBS's separate exact-copy Mac Isaac/FBI-lineage review is corroborating external forensic evidence and remains separately attributed.
+- The JPMI acquisition note identifying Todd Sanders, combined with public evidence of his America Project affiliation, supports a Mac Isaac-centered provenance-network inference but not yet physical identity with CBS's media.
+- Historical hardware diagnostics may be migrated data and should not automatically identify the 2019 repair-shop machine.
+- Reported hashes remain manifest evidence unless recomputed from source bytes.
+
+## Source-byte boundary
+
+The public repository does not contain the individual JPMI source-file bytes.
+
+It can reproduce accurate structural/timeline/provenance analysis from the forensic reports—paths, timestamps, CNIDs, aliases, partition/volume identity, reported hashes, and system-state records—but cannot independently open every source object or recompute every source hash.
+
+## Publication boundary
+
+This repository intentionally does **not** present comparative laptop-dataset analysis.
+
+Questions involving relationships between JPMI and other datasets belong in a separate comparative project. This repository asks one question: **what does the Mac Isaac direct-copy lineage itself show?**

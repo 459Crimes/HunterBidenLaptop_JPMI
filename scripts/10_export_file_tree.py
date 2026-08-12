@@ -26,6 +26,7 @@ SELECT f.relative_path, f.size, f.sha256, t.modified_ts
 FROM files f
 JOIN jpmi_file_times t ON t.file_id = f.id
 WHERE f.source_id = 122
+ORDER BY f.relative_path
 """
 
 
