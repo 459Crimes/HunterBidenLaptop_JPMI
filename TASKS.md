@@ -30,11 +30,12 @@
 
 ## Project-environment validation
 
-- [ ] Run the complete pipeline against the canonical `rhb_forensics` PostgreSQL database, including Stage 55.
-- [ ] Run `scripts/90_validate_exports.py` after regeneration and confirm a clean gate.
-- [ ] Regenerate `build/manifest.tsv`, `build/manifest.sha256`, and section manifests after the latest report changes.
-- [ ] Confirm `build/reports/03_known_datetime_stamps_of_use.md` is republished from `docs/06_timeline_and_handling.md` by Stage 55.
-- [ ] Confirm generated reports retain the bounded no-hacking/no-injection language.
+- [x] Run the complete pipeline against the canonical `rhb_forensics` PostgreSQL database, including Stage 55.
+- [x] Run `scripts/90_validate_exports.py` after regeneration and confirm a clean gate.
+- [x] Regenerate `build/manifest.tsv`, `build/manifest.sha256`, and section manifests after the latest report changes.
+- [x] Confirm `build/reports/03_known_datetime_stamps_of_use.md` is republished from `docs/06_timeline_and_handling.md` by Stage 55.
+- [x] Confirm generated reports retain the bounded no-hacking/no-injection language.
+- [x] Fix deep file-tree export determinism (`ORDER BY relative_path` in stage 10).
 
 These checks require the project database/runtime and cannot be executed through the GitHub repository connector alone.
 
@@ -64,7 +65,7 @@ These checks require the project database/runtime and cannot be executed through
 - [x] The no-hacking/no-injection finding is stated as “no evidence identified,” not as an impossible-to-falsify absolute.
 - [x] The absence of public source bytes is explained without understating the value of the forensic reports.
 - [x] The Todd Sanders/America Project connection is presented as a provenance-network bridge, not proof of identical CBS/JPMI physical media.
-- [ ] Full database-backed regeneration and validator pass completed in the project environment.
+- [x] Full database-backed regeneration and validator pass completed in the project environment.
 
 ## Repository philosophy
 

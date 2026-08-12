@@ -1,12 +1,12 @@
 # Status
 
-Updated: 2026-08-11
+Updated: 2026-08-12
 
 ## Current state
 
-`PUBLIC-PROVENANCE + 2019–2020 CUSTODY REWRITE COMPLETE — DATABASE-BACKED REBUILD PENDING`
+`PUBLIC JPMI PROVENANCE REWRITE VALIDATED — READY FOR MERGE`
 
-The repository is now a **standalone JPMI evidence repository for general readers**. It combines JPMI's own disk/filesystem reporting with a separately sourced 2019–2020 custody history drawn from court opinions, contemporaneous reporting, participant accounts, and independent forensic review.
+The repository is a **standalone JPMI evidence repository for general readers**. It combines JPMI's own disk/filesystem reporting with a separately sourced 2019–2020 custody history drawn from court opinions, contemporaneous reporting, participant accounts, and independent forensic review. The full pipeline was regenerated from the canonical `rhb_forensics` database and passed the local validation gate.
 
 ## Completed in this rewrite
 
@@ -43,12 +43,12 @@ The repository is now a **standalone JPMI evidence repository for general reader
 | Deep metadata archives | Preserved |
 | Public 2019–2020 custody narrative | Expanded and sourced |
 | Source-claim matrix | Added |
-| Static build reports | Updated for review |
-| Build manifests/checksums | **Require regeneration after latest report edits** |
+| Static build reports | Regenerated from canonical database |
+| Build manifests/checksums | Refreshed and verified (`sha256sum -c` clean) |
 
-## Validation still required in the project environment
+## Project-environment validation
 
-The GitHub connector cannot execute the repository against the private/local `rhb_forensics` PostgreSQL database. Before merge/publication, run:
+Completed 2026-08-12 against the canonical `rhb_forensics` PostgreSQL database:
 
 ```bash
 python3 scripts/10_export_file_tree.py
@@ -61,7 +61,15 @@ python3 scripts/60_archive_deep_exports.py
 python3 scripts/90_validate_exports.py
 ```
 
-The final run should regenerate the reports and manifests from the canonical database, republish the sourced custody timeline at Stage 55, and let `90_validate_exports.py` regenerate/check all checksums.
+- [x] Complete pipeline run, read-only against `rhb_forensics`.
+- [x] Stage 55 republished the sourced 2019–2020 custody timeline into `build/reports/03_known_datetime_stamps_of_use.md`.
+- [x] Stage 90 passed clean: 35 files validated, all within caps, all section manifests and archive parts consistent.
+- [x] Regenerated reports retain the bounded no-hacking/no-injection language.
+- [x] Manifests/checksums refreshed; `build/manifest.sha256` verified with `sha256sum -c`.
+- [x] JPMI-only scope confirmed: no cross-corpus comparison outputs generated or present.
+- [x] Deterministic deep-export ordering fixed in `scripts/10_export_file_tree.py` (`ORDER BY relative_path`) so regenerated archives are byte-stable.
+
+The regenerated counts match the canonical tables: 576,249 normalized inventory paths; 655,330 rank-1 hash-manifest paths; 397,440 CNID-map entries; 1,259,300 TSK timeline rows.
 
 ## Publication standard
 
