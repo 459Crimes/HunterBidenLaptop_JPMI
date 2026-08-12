@@ -19,7 +19,7 @@ That conclusion should be stated precisely:
 
 That JPMI finding is consistent with a separate 2022 CBS-commissioned examination of what Mac Isaac's attorney Brian Della Rocca described as an **“exact copy”** of the laptop data supplied to federal investigators. CBS reported that the examiners found **no evidence that the user data had been modified, fabricated, or tampered with, and no new files originating after April 2019**.
 
-That CBS result is important corroboration from the same **Mac Isaac → FBI copy provenance lineage**. It should not be represented as proof that CBS examined the identical physical Crucial X6 described by this repository unless an additional custody record establishes that fact.
+That CBS result is important corroboration from the same **Mac Isaac → FBI copy provenance lineage**. This project assumes, consistent with the source chain, that the JPMI media and the CBS-examined copy are **byte-identical or virtually byte-identical**: the same attorney, Brian Della Rocca, provided both copies for the same purpose — an original, unadulterated copy of the Mac Isaac/FBI-lineage data for each party. That assumption rests on the common source and purpose; an independent side-by-side hash comparison of the two media has not been published.
 
 ## Detailed 2019–2020 timeline
 
@@ -73,7 +73,7 @@ Mac Isaac store server / recovery workspace
 
 The present repository does not have the server logs, server disk image, copy command, or contemporaneous hashes needed to prove the exact implementation of that step.
 
-Accordingly, the repository should say **“Mac Isaac states that he first copied the recoverable data to his store server”**, rather than presenting the server operation as independently reconstructed fact.
+Accordingly, this project **accepts Mac Isaac's declaration as the operative account** and should say **“Mac Isaac states that he first copied the recoverable data to his store server”**, rather than presenting the server operation as independently reconstructed fact. The claim cannot be independently verified from the current record, but no contradictory evidence has surfaced; independent verification would require the server logs or the server-side image.
 
 ## September 26, 2019: the copy date and the FBI chronology
 
@@ -171,25 +171,26 @@ hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
 
 Public records independently identify **Todd Sanders as affiliated with Patrick Byrne's America Project**. The America Project also publicly supported/funded John Paul Mac Isaac's 2022 defamation litigation, in which Brian Della Rocca represented Mac Isaac.
 
+**Direct transfer record.** Todd Sanders received the drive copy **directly from Brian Della Rocca**, Mac Isaac's attorney. The repository holds a photograph of the mailing packet in which the drive copy was shipped to Todd Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg), committed with this source-analysis record); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient. The photograph provides a direct physical-custody record of the Mac Isaac → Della Rocca → Sanders handoff.
+
 This creates an important provenance bridge:
 
 ```text
 Mac Isaac direct-copy / FBI lineage
               |
-              +--> Della Rocca → CBS forensic examination
+              +--> Della Rocca → CBS forensic examination (exact copy)
               |
-              +--> Mac Isaac-aligned custody/reporting network
-                         |
-                         +--> Todd Sanders / America Project affiliation
-                                      |
-                                      +--> JPMI reports/manifests received here
+              +--> Della Rocca → drive shipped directly to Todd Sanders
+                    (mailing packet photo, Mac Isaac home address as sender)
+                          |
+                          +--> JPMI reports/manifests received here
 ```
 
 The bounded conclusion is:
 
 > **The JPMI reports come from the same Mac Isaac-centered provenance lineage as the clean copy later supplied by Mac Isaac's lawyer for independent CBS examination.**
 
-What is **not yet proved** is that Todd Sanders received the identical physical disk or identical E01 file that CBS's examiners inspected. That final equivalence requires a direct transfer record or matching acquisition hash.
+Given that the same attorney, Brian Della Rocca, supplied both the drive shipped to Todd Sanders and the exact-copy dataset examined by CBS — both for the same purpose of preserving an original, unadulterated copy of the Mac Isaac/FBI-lineage data for each party — this project assumes the JPMI media is **byte-identical or virtually byte-identical** to the CBS-examined copy. That equivalence is a source-derived assumption, not a published hash comparison: the two sets of media have not been subject to an independent side-by-side hash comparison.
 
 References:
 
@@ -211,7 +212,13 @@ This repository does not need a long post-2020 political history to explain JPMI
 
 One delivered chronology remains unresolved: the acquisition record identifies `HB-IMAGE-2022-04-29.E01`, while delivered volume metadata reports a November 2024 last-write. An immutable E01 acquired in 2022 cannot itself acquire a 2024 filesystem write.
 
+**Participant account.** Per this project's own communications with Todd Sanders, any alteration of the data between 2022 and 2024 would have occurred in the course of **analyzing the data — probably mistakenly mounted in a read-write state on a Mac**. That is a coherent explanation for the later filesystem write: analysis handling of the image in a writable mount can update filesystem metadata without any content fabrication. This is recorded as Sanders' account — a participant statement, not independently verified — and only the FBI (or forensic examination of the acquired image) can verify the actual cause.
+
 That later reporting discrepancy must be reconciled separately. It does not alter the 2019–2020 finding that the post-dropoff activity identified in JPMI is principally custody/system-state activity rather than evidence of substantive external-file injection.
+
+## Open FBI-side questions
+
+The FBI has not returned the original laptop or external drive to anyone, and the FBI-side record of the December 2019 seizure, the preservation copy, and subsequent custody has not been publicly disclosed. Only the FBI can verify the FBI-side history — including whether the data it holds matches the JPMI/CBS media. Whether and how many copies were made at the time of the preservation-copy period likewise remains open; Mac Isaac's account describes the copies he made, but the total number of copies created in that period is not established by the public record.
 
 ## What the timeline supports
 
@@ -227,6 +234,6 @@ The combined JPMI and public-custody record supports these bounded conclusions:
 8. That Finder metadata is **not evidence of injected substantive files**.
 9. No hacking, malware, or post-April bulk external-file injection has been identified in the JPMI reporting analyzed here.
 10. CBS's independent examination of an exact-copy Mac Isaac/FBI-lineage dataset likewise reported no tampering and no new files originating after April 2019.
-11. The repository's manifest delivery is attributed internally to Todd Sanders, who is publicly documented as affiliated with the America Project; this ties the delivered reports to the broader Mac Isaac-aligned provenance network without proving physical identity with the CBS examination media.
+11. The repository's manifest delivery is attributed internally to Todd Sanders, who received the drive copy directly from Mac Isaac's attorney Brian Della Rocca (mailing-packet photograph in this repository); the same attorney supplied CBS its exact-copy dataset, and this project assumes the two media are byte-identical or virtually byte-identical, an equivalence not yet confirmed by an independent hash comparison.
 
 The detailed JPMI row set remains available in [`build/reports/04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md).

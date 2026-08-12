@@ -23,7 +23,7 @@ A later interview can explain technical details absent from a court opinion, but
 | One laptop remained for recovery | Delaware Supreme Court majority/dissent | **Court-recited pleaded history** |
 | Biden returned the next day with an external hard drive | Delaware Supreme Court; Delaware Superior Court; S.D. Florida opinion | **Repeated in court records** |
 | Recovery/transfer was completed and Biden was contacted | Delaware Supreme Court / Superior Court | **Repeated in court records** |
-| Mac Isaac first staged recoverable data on his store server | Mac Isaac later interviews/account | **Participant account; server logs not presently available** |
+| Mac Isaac first staged recoverable data on his store server | Mac Isaac declaration/interviews | **Participant account; accepted by this project, server logs not available for independent verification** |
 | Mac Isaac began FBI-related efforts in summer 2019 | Delaware court opinions | **Court-recited history** |
 | A copy was prepared/sent for Mac Isaac's father to approach the Albuquerque FBI office | Mac Isaac later accounts; attorney statements/reporting | **Participant/counsel account; exact drive identity unresolved** |
 | JPMI HFS+ `Untitled` reports creation on Sept. 26, 2019 | JPMI `volume_info` / acquisition reporting | **Directly reported JPMI metadata** |
@@ -40,11 +40,13 @@ A later interview can explain technical details absent from a court opinion, but
 | CBS examiners found no new files originating after April 2019 | CBS News / Computer Forensics Services | **Independent forensic result** |
 | JPMI reporting does not identify post-dropoff hacking or bulk substantive-file injection | JPMI post-repair timeline/system-state analysis | **Finding from this repository's reporting** |
 | JPMI acquisition note attributes rank-2 manifest to Todd Sanders | `build/disk_info/01_acquisition.tsv` | **Internal source-delivery record** |
+| Sanders received the drive copy directly from Della Rocca | Mailing-packet photograph `photo_20260716_120324.jpg` (Mac Isaac home address as sender, Sanders as recipient) | **Direct custody/transfer record in this repository** |
 | Todd Sanders was affiliated with the America Project | American Oversight public-record reporting | **Externally documented affiliation** |
 | America Project supported/funded Mac Isaac's 2022 litigation | Public statements/reporting about the lawsuit | **Externally documented support relationship** |
 | Della Rocca represented Mac Isaac and supplied CBS the exact-copy dataset | Delaware court record + CBS News | **Externally documented** |
 | JPMI reports therefore sit in the same Mac Isaac-centered provenance network | Combined internal/external chain | **Supported provenance inference** |
-| JPMI and CBS media are literally the same physical disk/E01 | No direct record presently located | **Not established** |
+| JPMI media is byte-identical or virtually byte-identical to the CBS-examined copy | Same attorney supplied both for the same purpose | **Assumed from common source and purpose; not independently hash-verified** |
+| Any 2022–2024 data alteration occurred during analysis, probably a read-write mount on a Mac | Todd Sanders' communications with this project | **Participant account; not independently verified; only the FBI can verify** |
 
 ## Primary legal sources
 
@@ -126,11 +128,11 @@ Mac Isaac later described:
 - making later preservation copies;
 - sending a copy to his father for an FBI approach.
 
-This material is useful for reconstructing a possible technical workflow, but the repository labels it as **Mac Isaac's account** because the original store-server logs and copy commands have not been produced here.
+This material is useful for reconstructing a possible technical workflow, and this project accepts Mac Isaac's declaration as the operative account; the repository still labels it as **Mac Isaac's account** because the original store-server logs and copy commands have not been produced here and cannot be independently verified.
 
 https://www.breitbart.com/politics/2022/03/27/nolte-hunter-biden-laptop-whistleblower-john-paul-mac-isaac-the-breitbart-news-interview/
 
-## America Project / Todd Sanders provenance source
+## America Project / Todd Sanders direct-transfer source
 
 The JPMI acquisition record itself says:
 
@@ -138,13 +140,15 @@ The JPMI acquisition record itself says:
 notes: hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
 ```
 
-American Oversight's public-record reporting identifies Todd Sanders as affiliated with Patrick Byrne's **America Project** and describes his operational role in America Project-funded efforts.
+**Direct transfer record.** Todd Sanders received the drive copy directly from Brian Della Rocca, Mac Isaac's attorney. The repository holds a photograph of the mailing packet in which the drive copy was shipped to Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg)); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient.
+
+American Oversight's public-record reporting additionally identifies Todd Sanders as affiliated with Patrick Byrne's **America Project** and describes his operational role in America Project-funded efforts.
 
 https://americanoversight.org/in-the-documents-patrick-byrnes-continued-involvement-in-election-denying-efforts/
 
 https://americanoversight.org/co-defendants-and-unindicted-co-conspirators-what-public-records-reveal-about-trump-allies-election-denial-activities/
 
-The America Project also publicly supported Mac Isaac's 2022 litigation. This places Sanders and the JPMI report delivery in a Mac Isaac-aligned support/custody network. It does not by itself prove that Sanders received the exact physical media Della Rocca supplied to CBS.
+The America Project also publicly supported Mac Isaac's 2022 litigation. The direct Della Rocca → Sanders handoff, combined with the fact that the same attorney supplied CBS its exact-copy dataset for the same purpose, supports this project's assumption that the JPMI media and the CBS-examined copy are **byte-identical or virtually byte-identical**; that equivalence is not yet confirmed by an independent side-by-side hash comparison.
 
 ## Repository-wide integrity language
 
@@ -160,8 +164,8 @@ Avoid:
 
 - “Nothing could possibly have been changed.”
 - “The literal `dd` command was used.”
-- “Todd Sanders had the exact same physical disk CBS examined.”
+- “Todd Sanders had a hash-verified byte-identical copy of the disk CBS examined.”
 - “Every post-April timestamp proves tampering.”
 - “Every historical artifact was created on the 2019 repair-shop Mac.”
 
-Those stronger propositions are not established by the current record.
+Those stronger propositions are not established by the current record. (Byte-identity with the CBS-examined copy is assumed from the common source and purpose, but is not independently hash-verified.)

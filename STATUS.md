@@ -14,15 +14,17 @@ The repository is a **standalone JPMI evidence repository for general readers**.
 - [x] Added the qualified **`dd`-style / whole-volume clone** explanation without claiming the literal `dd` command was proven.
 - [x] Added Who / What / When / Where / Why / How provenance treatment.
 - [x] Added the April 2019 **three-laptop / keyboard / unrecoverable-laptop / external-hard-drive** sequence from the Delaware court record.
-- [x] Added Mac Isaac's later account that recoverable data was first staged on his **store server**, clearly labeled as his account because the server logs are not presently available here.
+- [x] Added Mac Isaac's account that recoverable data was first staged on his **store server**, accepted by this project as the operative account and labeled as such, with the note that server logs are not presently available for independent verification.
 - [x] Added the September–October 2019 father/FBI preservation-copy chronology.
 - [x] Identified the JPMI **September 26, 2019 HFS+ creation date** as chronologically consistent with that preservation-copy period while explicitly stopping short of claiming physical-device identity.
 - [x] Added the **December 9, 2019 FBI subpoena** and the Delaware Supreme Court's recitation that Mac Isaac made an **exact copy before surrendering the original**.
 - [x] Added the August 2020 Costello transfer, October 14 New York Post publication, and October 15 JPMI Desktop `.DS_Store` modification.
 - [x] Explained the October 15 `.DS_Store` event as evidence consistent with Finder opening/browsing, **not substantive-file injection**.
 - [x] Added CBS News' independent examination of an exact-copy Mac Isaac/FBI-lineage dataset and its reported findings of **no user-data modification/fabrication/tampering and no new files originating after April 2019**.
-- [x] Added the internal JPMI source note identifying **Todd Sanders** and a sourced provenance bridge to his public affiliation with Patrick Byrne's **America Project**.
-- [x] Bounded that bridge correctly: same Mac Isaac-centered provenance network is supported; literal identity of the CBS media and JPMI physical/image media is **not yet established**.
+- [x] Added the internal JPMI source note identifying **Todd Sanders** and the **direct transfer record**: Sanders received the drive copy directly from Brian Della Rocca, documented by the mailing-packet photograph (`photo_20260716_120324.jpg`, Mac Isaac home address as sender, Sanders as recipient).
+- [x] Recorded the source-derived assumption that the JPMI media is **byte-identical or virtually byte-identical** to the CBS-examined copy (same attorney, same purpose), explicitly noting that no independent side-by-side hash comparison has been published.
+- [x] Recorded Todd Sanders' participant account of the 2022/2024 discrepancy — any alteration occurred during analysis, probably a read-write mount on a Mac — labeled as unverified, with only the FBI able to verify.
+- [x] Added the open FBI-side questions: why the original laptop/external drive have not been returned to anyone, and how many copies were made in the preservation-copy period.
 - [x] Added `docs/09_source_matrix.md` separating court-recited facts, participant accounts, JPMI-internal findings, and independent forensic results.
 - [x] Added repeated, bounded integrity language: **no evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting**.
 - [x] Expanded the explanation that the public repository lacks individual source-file bytes but contains enough disk/filesystem/hash/timestamp/CNID/system-state reporting for accurate, reproducible structural and provenance analysis.

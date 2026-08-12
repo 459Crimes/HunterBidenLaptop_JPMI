@@ -59,13 +59,13 @@ The JPMI acquisition record contains this note:
 hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
 ```
 
-Public records identify **Todd Sanders as affiliated with Patrick Byrne's America Project**. The America Project publicly supported/funded Mac Isaac's 2022 litigation; Brian Della Rocca represented Mac Isaac in that litigation and later supplied CBS with the exact-copy dataset it independently examined.
+Todd Sanders received the drive copy **directly from Brian Della Rocca**, Mac Isaac's attorney; this repository holds a photograph of the mailing packet in which the drive copy was shipped to Sanders ([`photo_20260716_120324.jpg`](photo_20260716_120324.jpg)), with a mailing label reflecting Mac Isaac's home address as the sender. Public records additionally identify **Todd Sanders as affiliated with Patrick Byrne's America Project**. The America Project publicly supported/funded Mac Isaac's 2022 litigation; Brian Della Rocca represented Mac Isaac in that litigation and later supplied CBS with the exact-copy dataset it independently examined.
 
 That supports this bounded conclusion:
 
 > **The JPMI reports come from the same Mac Isaac-centered provenance network as the clean Mac Isaac/FBI-lineage copy later supplied by Mac Isaac's lawyer for independent CBS examination.**
 
-It does **not yet prove** that Todd Sanders possessed the identical physical drive or identical E01 file examined by CBS. A direct transfer record or matching acquisition hash is still needed for that stronger statement.
+Because the same attorney supplied both copies for the same purpose — an original, unadulterated copy for each party — this project assumes the JPMI media is **byte-identical or virtually byte-identical** to the CBS-examined copy. That equivalence is source-derived and has not been confirmed by an independent side-by-side hash comparison.
 
 See [`docs/03_chain_of_custody.md`](docs/03_chain_of_custody.md).
 
@@ -144,7 +144,7 @@ So the evidentiary scope is clear:
 
 The acquisition record represented in this project identifies `HB-IMAGE-2022-04-29.E01`, while delivered HFS+ volume metadata reports a November 21, 2024 last-write.
 
-An immutable E01 actually acquired in 2022 cannot subsequently acquire a 2024 filesystem write. This repository therefore treats the 2022/2024 pairing as an **open report-lineage discrepancy**, not as proof that the 2022 E01 itself changed later.
+An immutable E01 actually acquired in 2022 cannot subsequently acquire a 2024 filesystem write. Per Todd Sanders' communications with this project, any 2022–2024 alteration would have occurred during analysis of the data — probably mistakenly mounted in a read-write state on a Mac (a participant account, not independently verified; only the FBI can verify). This repository therefore treats the 2022/2024 pairing as an **open report-lineage discrepancy** with a plausible analysis-handling explanation, not as proof that the 2022 E01 itself changed later.
 
 That later issue is separate from the 2019–2020 direct-copy timeline.
 

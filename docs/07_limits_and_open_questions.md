@@ -122,7 +122,7 @@ JPMI reports the `Untitled` HFS+ volume created:
 2019-09-26 22:59:02 CDT
 ```
 
-Mac Isaac's later accounts place creation/shipment of a preservation copy for his father's FBI approach in the **September–October 2019** period.
+Mac Isaac's declaration places creation/shipment of a preservation copy for his father's FBI approach in the **September–October 2019** period; this project accepts that account as the operative description of the copy-creation period.
 
 That is a significant temporal correlation.
 
@@ -138,7 +138,7 @@ That judicially recited event is a strong anchor for the existence of a Mac Isaa
 
 It is one reason this repository distinguishes JPMI from later mixed or politically circulated collections.
 
-## 7. The Todd Sanders / America Project bridge is provenance evidence, not proof of identical media
+## 7. The Todd Sanders bridge is a documented direct handoff; byte-identity with the CBS media is assumed, not hash-proven
 
 The JPMI acquisition record includes:
 
@@ -146,13 +146,13 @@ The JPMI acquisition record includes:
 hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
 ```
 
-Public records identify Todd Sanders as affiliated with Patrick Byrne's **America Project**. The America Project publicly supported/funded Mac Isaac's 2022 litigation; Brian Della Rocca represented Mac Isaac and later supplied CBS with an exact-copy Mac Isaac/FBI-lineage dataset for independent forensic review.
+**Direct transfer record.** Todd Sanders received the drive copy directly from Brian Della Rocca, Mac Isaac's attorney. This repository holds a photograph of the mailing packet in which the drive copy was shipped to Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg)); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient. That photograph records the physical handoff Mac Isaac → Della Rocca → Sanders.
 
-This supports the conclusion that the JPMI reports were delivered through the **same Mac Isaac-centered custody/support network**.
+Public records additionally identify Todd Sanders as affiliated with Patrick Byrne's **America Project**. The America Project publicly supported/funded Mac Isaac's 2022 litigation; Brian Della Rocca represented Mac Isaac and later supplied CBS with an exact-copy Mac Isaac/FBI-lineage dataset for independent forensic review.
 
-It does **not yet prove** that Sanders possessed the same physical disk or exact E01 file CBS examined.
+This supports the conclusion that the JPMI reports were delivered through the **same Mac Isaac-centered custody/support network**, and specifically that the drive came from the same attorney's office that supplied the CBS dataset.
 
-The strongest missing evidence is a direct transfer record or matching source-image hash.
+Because the same attorney provided both copies for the same purpose — an original, unadulterated copy of the Mac Isaac/FBI-lineage data for each party — this project assumes the JPMI media is **byte-identical or virtually byte-identical** to the CBS-examined copy. That equivalence is source-derived, not independently established: no published side-by-side hash comparison of the two media exists. A matching source-image hash remains the definitive route to proof.
 
 ## 8. The 2022 acquisition record and 2024 last-write are not reconciled
 
@@ -171,7 +171,9 @@ volume_last_write_reported: 2024-11-21 17:40:22 CST
 
 An immutable E01 actually acquired in April 2022 cannot later acquire a November 2024 filesystem write.
 
-The current records therefore require a missing fact: a later acquisition, later working copy, source-device activity after 2022, regenerated/mixed reports, or a mislabeled date/provenance field.
+**Participant account.** Per this project's own communications with Todd Sanders, any alteration of the data between 2022 and 2024 would have occurred in the course of **analyzing the data — probably mistakenly mounted in a read-write state on a Mac**. Analysis handling on a writable mount can update filesystem metadata without any content fabrication. This is recorded as Sanders' account — a participant statement, not independently verified; only the FBI or forensic examination of the acquired image can verify the actual cause.
+
+The current records therefore require a missing fact: a later acquisition, later working copy, source-device activity after 2022, regenerated/mixed reports, or a mislabeled date/provenance field — with Sanders' analysis-handling account as the plausible explanation identified so far.
 
 This later report-lineage issue should not be conflated with the 2019–2020 direct-copy provenance.
 
@@ -240,11 +242,12 @@ The following materials would materially strengthen the JPMI provenance chain:
 3. first-generation copy hashes;
 4. serial/hash evidence for the drive sent to Mac Isaac's father;
 5. evidence proving or disproving that the September 26 `Untitled` volume was that FBI-intended copy;
-6. direct records showing how Todd Sanders obtained the JPMI image/report lineage;
-7. source-image hashes establishing whether the CBS exact-copy media and JPMI source are byte-identical;
+6. an independent side-by-side hash comparison establishing whether the CBS exact-copy media and the JPMI source are byte-identical (currently assumed from the common source and purpose);
+7. how many copies were made in the preservation-copy period and where each went;
 8. the restricted JPMI E01 for independent read-only verification;
 9. the complete acquisition/report lineage needed to reconcile the 2022 E01 record with the 2024 reported last-write;
-10. normalized timezone documentation.
+10. normalized timezone documentation;
+11. any FBI-side disclosure, including why the original laptop and external drive seized December 9, 2019 have not been returned to anyone; only the FBI can verify the FBI-side custody history and whether the data it holds matches the JPMI/CBS media.
 
 ## Publication rule
 
