@@ -15,13 +15,13 @@
     {
       "file": "hash_manifest/04_coverage.tsv",
       "rows": 6,
-      "sha256": "d57521121eceae60589e7327716549c626a02e5f4d553b6de42f3a16a74639ed",
+      "sha256": "66c029eaeb8f43c6ca165514316f126ed1997257b76b188c210cb30ef0dfb7ef",
       "size": 158
     }
   ],
   "section": "hash_manifest",
   "source_rows": {
-    "alias_rows": 332121,
+    "alias_rows": 332097,
     "hashed_paths": 655330,
     "total_paths": 655330
   }
