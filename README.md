@@ -21,7 +21,7 @@ This GitHub repository is an **encyclopedia of that disk lineage**, not a dump o
 | **CNIDs / hash-manifest paths / distinct SHA-256** | 397,440 / 655,330 / 180,046 |
 | **This GitHub tree contains** | Reports, manifests, derived tables — **not** the E01 or individual source-file bytes |
 | **Integrity finding (bounded)** | No hacking attributed to JPMI. **0728** is not laptop files per se. Marco Polo used Hayes **APFS** laptop, not JPMI. |
-| **Author** | **459Crimes / Marc Aaron DeGiovanni**. [Author](docs/AUTHOR.md) · [*George News* essay](https://www.georgenews.org/p/a-cold-front-in-democracy) · [archive](https://web.archive.org/web/20250321004405/https://www.georgenews.org/p/a-cold-front-in-democracy) |
+| **Author** | **459Crimes / Marc Aaron DeGiovanni**. [Author](docs/AUTHOR.md) · [*Beyond the Diary*](https://BeyondTheDiary.com) · [diary release](https://ShowersWithMy.Dad) |
 
 **Contents**
 

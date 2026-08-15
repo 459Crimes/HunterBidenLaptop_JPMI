@@ -172,7 +172,7 @@ December 9, 2019 grand-jury subpoena **19-3-LFWS-V-136** (AUSA **Lesley F. Wolf*
 
 ## Marc Aaron DeGiovanni / 459Crimes (this encyclopedia)
 
-Author of **this** repository. Marco Polo member working with Garrett Ziegler from **May 2021**; first downloader of **0728** from Conan Hayes. **Not** a custodian in the Della Rocca → Sanders chain. Holds copies similar to those used by **Dimitrelos** and **Maryman** (APFS-structure, not JPMI). FBI 0728 referral is out of scope. Public narrative: [A Cold Front In Democracy](https://www.georgenews.org/p/a-cold-front-in-democracy) (*George News*, 7 Feb 2024) and [archived copy](https://web.archive.org/web/20250321004405/https://www.georgenews.org/p/a-cold-front-in-democracy). Full page: [Author](AUTHOR.md).
+Author of **this** repository. Also publishes *[Beyond the Diary: the Tempest Within Ashley Biden](https://BeyondTheDiary.com)* and the [full digital diary release](https://ShowersWithMy.Dad). Marco Polo member working with Garrett Ziegler from **May 2021**; first downloader of **0728** from Conan Hayes. **Not** a custodian in the Della Rocca → Sanders chain. Holds copies similar to those used by **Dimitrelos** and **Maryman** (APFS-structure, not JPMI). FBI 0728 referral is out of scope. Public narrative: [A Cold Front In Democracy](https://www.georgenews.org/p/a-cold-front-in-democracy) (*George News*, 7 Feb 2024) and [archived copy](https://web.archive.org/web/20250321004405/https://www.georgenews.org/p/a-cold-front-in-democracy). Full page: [Author](AUTHOR.md).
 
 ## See also
 

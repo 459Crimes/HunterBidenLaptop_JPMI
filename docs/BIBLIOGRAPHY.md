@@ -37,6 +37,8 @@
 
 - *George News*, “A Cold Front In Democracy” (7 Feb 2024). Public narrative of Marco Polo member **Marc De Giovanni** (this encyclopedia’s author, **Marc Aaron DeGiovanni** / **459Crimes**). Original: https://www.georgenews.org/p/a-cold-front-in-democracy — archived: https://web.archive.org/web/20250321004405/https://www.georgenews.org/p/a-cold-front-in-democracy — article: [Author](AUTHOR.md).
 - *FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf* (28 Jul 2026). Author’s FBI referral on 0728 as potentially hacked. **Not hosted here; not part of the JPMI analysis.** See [Author](AUTHOR.md).
+- *Beyond the Diary: the Tempest Within Ashley Biden*. https://BeyondTheDiary.com — separate 459Crimes publication; not a JPMI table. See [Author](AUTHOR.md).
+- Full digital diary release. https://ShowersWithMy.Dad — separate publication; not hosted or analyzed here.
 
 ## Public-record affiliation (Sanders / America Project)
 

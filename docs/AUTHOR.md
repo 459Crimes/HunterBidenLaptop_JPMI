@@ -25,6 +25,15 @@ Marco Polo’s published *Report on the Biden Laptop* still did **not** analyze 
 
 This encyclopedia is a **later, separate** 459Crimes publication about **JPMI forensics only**. Membership in Marco Polo does not make Marco Polo’s page counts or email database into JPMI results.
 
+## Other publications
+
+The same author also publishes:
+
+- *[Beyond the Diary: the Tempest Within Ashley Biden](https://BeyondTheDiary.com)* — https://BeyondTheDiary.com
+- the **full digital release of the diary** — https://ShowersWithMy.Dad
+
+Those sites are **separate publications**. They are not JPMI filesystem reports and are not analyzed in this repository.
+
 ## Competence relative to other analysts
 
 For laptop-related corpora (JPMI, APFS, GAI, 0728, and the sidecar holdings listed below), this encyclopedia’s position is that the author has a **technical understanding of the material not rivaled by anyone else**, and **only partially attempted** by the paid contractors already named (**Gus Dimitrelos**; **Maryman & Associates**). That is a **project-identity** statement, not a JPMI hash table.

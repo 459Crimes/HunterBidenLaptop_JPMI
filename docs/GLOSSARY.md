@@ -4,7 +4,7 @@
 
 ## 459Crimes
 
-Publisher of this encyclopedia. **Marc Aaron DeGiovanni** (also **Marc De Giovanni**). See [Author](AUTHOR.md). Not a JPMI filesystem term.
+Publisher of this encyclopedia. **Marc Aaron DeGiovanni** (also **Marc De Giovanni**). Also *[Beyond the Diary](https://BeyondTheDiary.com)* and the [digital diary release](https://ShowersWithMy.Dad). See [Author](AUTHOR.md). Not a JPMI filesystem term.
 
 ## Acquisition
 

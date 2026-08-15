@@ -23,7 +23,7 @@ Questions this repo is built to answer:
 | GAI (`hb.img`) | Separate truncated HFS+ image in the broader RHB work; not this GitHub tree |
 | **APFS** (Hayes bootable) | A **later, more altered copy of the JPMI disk**, used as a **bootable laptop** produced by **Conan Hayes**. Marco Polo analyzed that machine, **not** the JPMI reports here |
 | **Extra Found Files / 0728** | MEGA share from Hayes after 28 July 2021. Did **not** come from the laptop files per se. Author’s FBI referral (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`) treats it as **potentially hacked**; **not** analyzed here. See [Author](AUTHOR.md) |
-| BHR / Cooney / Jolliffe / Podesta mail, Archer Skype, Dropbox, Venmo, SARs, and other 459Crimes holdings | Inventoried on [Author](AUTHOR.md); **not** JPMI tables |
+| *Beyond the Diary* / digital diary release | Separate author publications ([BeyondTheDiary.com](https://BeyondTheDiary.com), [ShowersWithMy.Dad](https://ShowersWithMy.Dad)); **not** JPMI analysis. See [Author](AUTHOR.md) |
 | Publishing E01 or user-file bytes | Restricted source; this tree is a metadata/hash witness |
 | Retrying the political media war of 2020 | Not required to describe the disk |
 | Identifying every email’s newsworthiness | Census and provenance, not a content magazine |
