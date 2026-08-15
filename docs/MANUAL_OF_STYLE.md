@@ -1,8 +1,8 @@
-# Manual of Style
+# Sourcing and terminology
 
 > **Hatnote.** How this encyclopedia labels evidence. It is not a court opinion and not a filesystem measurement. See also [Source matrix](09_source_matrix.md) and [Scope](SCOPE.md).
 
-This repository is written so a technically literate stranger can audit it like a Wikipedia article: **lead, sources, infobox facts, limitations, see-also**. Contested politics are not crowd-edited into the lead. The publication covers **one lineage**, with labeled evidence classes.
+This repository is written so a technically literate reader can audit it like a Wikipedia article: **lead, sources, infobox facts, limitations, see-also**. Contested politics are not edited into the lead. The publication covers **one lineage**, with labeled evidence classes.
 
 ## The one question
 
@@ -18,11 +18,11 @@ These classes are kept distinct:
 |---|---|---|
 | **Direct JPMI report** | `build/disk_info`, `volume_info`, file times, CNIDs, hashes | “JPMI reports…” / “the acquisition record identifies…” |
 | **Court-recited** | Delaware Supreme Court 2025; Superior Court 2024; S.D. Florida 2021 | “The court recounts…” / “the opinion states…” |
-| **Participant account** | Mac Isaac interviews; Todd Sanders communications with this project | “Mac Isaac later said…” / “Sanders’ account, unverified, is…” |
+| **Participant account** | Mac Isaac interviews; Todd Sanders communications with this project | “Mac Isaac later said…” / “Sanders’ account…” |
 | **Independent forensic** | CBS / Computer Forensics Services, Nov 2022 | CBS and CFS are separate from JPMI tables |
 | **Public-record affiliation** | American Oversight on Sanders / America Project | Affiliation is not hash identity |
 | **Interpretation** | macOS artifact knowledge (`.DS_Store`, Spotlight) | “Consistent with…” rather than “proves the person was…” |
-| **Assumption** | Byte-identity JPMI ↔ CBS media | Labeled as assumption; no side-by-side hash is published |
+| **Inference** | Byte-identity JPMI ↔ CBS media | Labeled as inference; no side-by-side hash is published |
 | **Project identity** | [Author](AUTHOR.md); *George News* essay | Who published this repo. Distinct from JPMI CNID/hash/timestamp tables |
 
 ## The three-layer sentence

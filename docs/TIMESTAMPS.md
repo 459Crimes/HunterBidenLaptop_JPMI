@@ -1,6 +1,6 @@
 # Timestamps
 
-> **Hatnote.** How to read time in JPMI without lying to yourself. Distributions: [`build/metadata/01_time_distribution.tsv`](../build/metadata/01_time_distribution.tsv). Event index: [Timeline](TIMELINE.md).
+> **Hatnote.** How to read time in JPMI. Distributions: [`build/metadata/01_time_distribution.tsv`](../build/metadata/01_time_distribution.tsv). Event index: [Timeline](TIMELINE.md).
 
 ## Three fields
 
@@ -14,7 +14,7 @@ A timestamp is **not a person**. It does not name Hunter Biden, Mac Isaac, a rep
 
 ## Timezone trap
 
-Reports mix **CDT/CST labels**, unlabeled DB fields, and TSK conventions. Example: volume creation `2019-09-26 22:59:02 CDT` vs journal objects at `2019-09-27 01:59:02` in another export. A three-hour offset is not a narrative until the families are normalized ([Limits](07_limits_and_open_questions.md) item 14).
+Reports mix **CDT/CST labels**, unlabeled DB fields, and TSK conventions. Example: volume creation `2019-09-26 22:59:02 CDT` vs journal objects at `2019-09-27 01:59:02` in another export. A three-hour offset is not a narrative until the families are normalized (see [Limits](07_limits_and_open_questions.md)).
 
 ## User-era shape (created / modified)
 
@@ -30,11 +30,11 @@ Created-year row counts (inventory time table):
 | 2022 | 82 | 82 |
 | 2024 | 7 | 30 |
 
-2019 created **months** (same table): January 55,462; **February 241,603**; March 56,597; September 15. That is a living account heading into the repair, then a cliff — consistent with CBS’s “use stops around March 2019,” without treating every February row as a unique document.
+2019 created **months** (same table): January 55,462; **February 241,603**; March 56,597; September 15. That is a living account heading into the repair, then a cliff — consistent with CBS's “use stops around March 2019,” without treating every February row as a unique document.
 
 Oddities such as a **year-1984 created** row (count 1, size 0) are classic filesystem/sentinel noise. They are not a 1984 user biography.
 
-## Access-era shape (the examiner’s footprint)
+## Access-era shape (the examiner's footprint)
 
 | Bucket | Accessed rows | Approx. represented bytes |
 |---|---:|---:|
@@ -57,7 +57,7 @@ From the post-repair modified list, within minutes:
 - `.DocumentRevisions-V100` subdirs and `.TemporaryItems` 21:19:22
 - `Documents/.DS_Store` 21:20:53
 
-The *New York Post* story was **14 October 2020**. The correct sentence is: **the copied environment appears to have been opened**. The incorrect sentence is: **Hunter files were planted the next day**.
+The *New York Post* story was **14 October 2020**. The supported sentence is: **the copied environment appears to have been opened**. The unsupported sentence is: **Hunter files were planted the next day**.
 
 ## Volume vs file time
 
@@ -67,4 +67,4 @@ HFS+ **volume creation** (26 Sep 2019) is the birthday of `Untitled`. Files insi
 
 - [Integrity](INTEGRITY.md)
 - [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md)
-- [Manual of Style](MANUAL_OF_STYLE.md)
+- [Sourcing and terminology](MANUAL_OF_STYLE.md)

@@ -18,7 +18,7 @@ Users/roberthunter/
 
 The account contains the ordinary mixture expected from a long-used Apple environment: Mail, contacts, documents, photographs, movies, downloads, messages, application support, iCloud-related state, mobile-device material, preferences, and caches.
 
-The user-tree structure is evidence about the account and the copied environment. It should not be confused with proof that one human personally created every file represented inside that environment. Email attachments, cloud downloads, mobile-device backups, application caches, and migrated material can all be stored inside one user account.
+The user-tree structure is evidence about the account and the copied environment. It is not proof that one human personally created every file represented inside that environment. Email attachments, cloud downloads, mobile-device backups, application caches, and migrated material can all be stored inside one user account.
 
 ### Repair-shop custodian
 
@@ -28,13 +28,13 @@ John Paul Mac Isaac operated the Wilmington, Delaware computer repair shop assoc
 
 The acquisition metadata supplied to this project identifies a later physical source as a **Micron Crucial X6 SSD**, serial `2145E498755E`, represented by the forensic image record `HB-IMAGE-2022-04-29.E01`.
 
-The project metadata notes that the restricted source image is retained outside this GitHub repository. This repository publishes derived metadata, manifests, reports, and validation artifacts.
+The restricted source image is retained outside this GitHub repository. This repository publishes derived metadata, manifests, reports, and validation artifacts.
 
 ## What?
 
-JPMI is not presented here as a loose directory of selected newsworthy files.
+JPMI is not a loose directory of selected newsworthy files.
 
-It is represented as a **partitioned Mac storage environment** with:
+It is a **partitioned Mac storage environment** with:
 
 - GPT disk structure;
 - EFI System Partition;
@@ -96,7 +96,7 @@ Because data was recovered from a computer brought to a repair shop and later pr
 
 To document that specific copy as an evidence source without requiring the reader to know the rest of the broader laptop-data ecosystem.
 
-The goal is to answer:
+The questions it answers:
 
 1. What storage object was examined?
 2. What Mac filesystem structure does it contain?
@@ -110,7 +110,7 @@ The exact original repair-shop copy utility is unresolved.
 
 The evidence does support a more bounded statement: the JPMI lineage preserved far more than a curated user-document folder. The represented destination includes native Mac filesystem and indexing structures, a normal home hierarchy, filesystem catalog relationships, and unallocated space.
 
-For non-specialists, **“`dd`-style clone”** is therefore a useful analogy for the evidentiary form, provided it is immediately qualified:
+For non-specialists, **“`dd`-style clone”** is the useful analogy for that evidentiary form, with a qualification:
 
 > The phrase means a whole-volume or filesystem-preserving copy lineage. It does not assert that the Unix `dd` command was literally used or that every block on the final Crucial X6 came directly from the original laptop SSD in one operation.
 

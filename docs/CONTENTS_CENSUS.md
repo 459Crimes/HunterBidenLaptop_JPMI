@@ -13,7 +13,7 @@ From [`02_top_level_summary.tsv`](../build/file_tree/02_top_level_summary.tsv):
 | EFI System Partition | 6 | 209.7 MB | 0% |
 | GPT / unpartitioned | 7 | 134.3 MB | 0% |
 
-The 215 GB user-tree figure and the 283 GB structural figure are different accounting classes. Added together they are not “Hunter’s unique files.” The structural byte total includes filesystem objects and unallocated-range accounting.
+The 215 GB user-tree figure and the 283 GB structural figure are different accounting classes. Added together they are not “Hunter's unique files.” The structural byte total includes filesystem objects and unallocated-range accounting.
 
 User-tree `max_modified_ts` in that rollup is **2020-10-15 21:20:53** — the Finder cluster, not a 2022 authorship date. Structural partition `max_modified_ts` runs to **2024-11-21**.
 
@@ -52,7 +52,7 @@ User-tree `max_modified_ts` in that rollup is **2020-10-15 21:20:53** — the Fi
 | hfs_journal | 2 | ~40 MB |
 | document_revisions | 11 | |
 
-Characterization report additionally: **~128,847 `.emlx` paths**, **~77,891 `.vcf` paths**, **~12,911 iCloud-related paths**. Extension TSV splits `.emlx` vs `.emlx-slack` and will look “smaller” if you only sum the unsuffixed `.emlx` line (15,487) — that is a **different census**. Always name the table.
+The characterization report additionally records **~128,847 `.emlx` paths**, **~77,891 `.vcf` paths**, **~12,911 iCloud-related paths**. The extension TSV splits `.emlx` vs `.emlx-slack` and reads “smaller” if only the unsuffixed `.emlx` line (15,487) is summed — that is a **different census**. Each table is named.
 
 ## Identity math
 
@@ -71,9 +71,9 @@ Characterization report additionally: **~128,847 `.emlx` paths**, **~77,891 `.vc
 
 Dr.Fone trees named like `Hunter's iPad 10-30-2018…` show **device-recovery tooling** inside Documents. iCloud `.icloud` placeholders show cloud-backed names without local bytes. WirelessDiagnostics / `roberts-MacBook-Air` / serial `C02S953UH3QF` show **older Mac diagnostic packages** in the account ([device report](../build/reports/01_computer_information.md): 33 / 1,090 / 1,298 path rows respectively). None of those, alone, serializes the 2019 drop-off chassis.
 
-## What this GitHub tree cannot show you
+## What this GitHub tree cannot show
 
-It cannot open the JPEG. It can tell you the path, size, timestamps, CNID, and **reported** SHA-256. That is still enough to ask provenance questions correctly. See [Limits](07_limits_and_open_questions.md).
+It cannot open the JPEG. It records the path, size, timestamps, CNID, and **reported** SHA-256. That is still enough to ask provenance questions correctly. See [Limits](07_limits_and_open_questions.md).
 
 ## See also
 

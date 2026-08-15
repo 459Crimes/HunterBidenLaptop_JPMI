@@ -12,7 +12,7 @@ For a general reader, JPMI is best understood as a **disk/volume copy**, not a f
 
 A common technical analogy is a `dd`-style clone. The Unix utility `dd` can copy storage at the block level, producing a destination that represents the structure of the source rather than merely copying visible documents one by one.
 
-That analogy is useful here because the JPMI evidence contains features expected from a copied Mac storage environment:
+That analogy fits the JPMI evidence, which contains features expected from a copied Mac storage environment:
 
 - a GPT partition map;
 - an EFI System Partition;
@@ -30,11 +30,9 @@ A hand-curated document dump does not need most of those structures.
 
 ## Important technical qualification
 
-Calling JPMI “`dd`-style” does **not** establish that John Paul Mac Isaac literally used the `dd` program or that the final 500 GB external disk was made in one direct sector-for-sector operation from the original laptop SSD.
+Calling JPMI “`dd`-style” does **not** establish that John Paul Mac Isaac literally used the `dd` program, or that the final 500 GB external disk was made in one direct sector-for-sector operation from the original laptop SSD.
 
-The exact original recovery/copy command is not established by the source material available to this project.
-
-The safer formulation is:
+The exact original recovery/copy command is not established by the source material. The accurate formulation is:
 
 > **JPMI is a Mac Isaac-lineage, filesystem-preserving or block-oriented copy represented to this project by a later forensic E01 acquisition.**
 
@@ -58,7 +56,7 @@ The acquisition record describes the custody device as:
 
 These values are published in [`build/disk_info/01_acquisition.tsv`](../build/disk_info/01_acquisition.tsv).
 
-The Crucial X6 is a **custody medium**. It should not be confused with the original internal storage hardware of the laptop left at the repair shop.
+The Crucial X6 is a **custody medium**. It is not the original internal storage hardware of the laptop left at the repair shop.
 
 ## What the repository actually possesses
 
@@ -74,7 +72,7 @@ The project works from received forensic metadata and manifests that describe th
 - filesystem timelines;
 - volume and disk identity records.
 
-Accordingly, this repository can make strong statements about **reported structure, paths, hashes, timestamps, and filesystem relationships**, while remaining explicit about the fact that the GitHub project is not independently re-reading every JPMI byte from the restricted E01.
+Accordingly, this repository speaks authoritatively about **reported structure, paths, hashes, timestamps, and filesystem relationships**. The GitHub project does not independently re-read every JPMI byte from the restricted E01; it is a metadata-and-hash witness.
 
 ## Why JPMI matters
 

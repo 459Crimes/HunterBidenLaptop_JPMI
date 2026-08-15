@@ -1,6 +1,6 @@
 # Glossary
 
-> **Hatnote.** Terms of art used in the JPMI encyclopedia. For a tutorial in reading order, see [Filesystem for non-experts](05_filesystem_for_non_experts.md). For house wording, see [Manual of Style](MANUAL_OF_STYLE.md).
+> **Hatnote.** Terms of art used in the JPMI encyclopedia. For a tutorial in reading order, see [Filesystem for non-experts](05_filesystem_for_non_experts.md). For evidence classes and terminology, see [Sourcing and terminology](MANUAL_OF_STYLE.md).
 
 ## 459Crimes
 
@@ -52,7 +52,7 @@ Out of scope. MEGA share from **Conan Hayes after 28 July 2021**. Did **not** co
 
 ## `.emlx`
 
-Apple Mail on-disk message file. Characterization reports ~**128,847** `.emlx` **paths**. Extension-distribution TSV counts differ because of slack rows, path vs extension rules, and Mail attachments living beside `.emlx` files. Always say which table you used.
+Apple Mail on-disk message file. Characterization reports ~**128,847** `.emlx` **paths**. Extension-distribution TSV counts differ because of slack rows, path vs extension rules, and Mail attachments living beside `.emlx` files.
 
 ## GPT
 

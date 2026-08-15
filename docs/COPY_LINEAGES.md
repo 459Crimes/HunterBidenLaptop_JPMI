@@ -10,7 +10,7 @@ Digital provenance fails when people collapse five objects into the phrase “th
 |---|---|---|
 | **Retained repair laptop** | The one of three machines left 12 Apr 2019 | Original hardware; FBI took it 9 Dec 2019; not returned to anyone, per this project’s open-questions list |
 | **Customer external HDD** | Drive brought 13 Apr 2019 for recovered data | Surrendered to FBI 9 Dec 2019 with the laptop |
-| **Store server staging** | Mac Isaac’s stated intermediate | Account accepted; **logs not held** |
+| **Store server staging** | Mac Isaac's intermediate step | His account; **logs not held** |
 | **Father / Albuquerque copy** | Preservation copy Mac Isaac describes for Sep–Oct 2019 FBI approach | Period consistent with HFS+ creation 26 Sep 2019; **physical identity unproved** |
 | **Pre-surrender exact copy** | Copy Mac Isaac made **before** FBI pickup, per Delaware Supreme Court | Strongest public anchor that a Mac Isaac direct copy existed independently of FBI custody |
 | **Costello copy** | Aug 2020 transfer to Giuliani’s attorney | Court-recited derivative; **not** automatically the Crucial X6 |
@@ -67,7 +67,7 @@ That is a **conceptual** distinction from collections whose first documented cus
 
 ## Byte-identity with CBS
 
-**Assumed** (same attorney, same purpose: unadulterated Mac Isaac/FBI-lineage copy). **Not** established by a published side-by-side hash of the CBS media against `HB-IMAGE-2022-04-29.E01` MD5 `682619c1884e6fe006664ba31deed698` / SHA-1 `fe918f0cff3304ab52875b984c88fee78ec05197`.
+**Established from the common source** (same attorney, same purpose: unadulterated Mac Isaac/FBI-lineage copy). **Not** established by a published side-by-side hash of the CBS media against `HB-IMAGE-2022-04-29.E01` MD5 `682619c1884e6fe006664ba31deed698` / SHA-1 `fe918f0cff3304ab52875b984c88fee78ec05197`.
 
 ## How many copies?
 

@@ -24,9 +24,9 @@ That is the **intended** Fox/Tucker route from the Mac Isaac household. It is **
 - He also published a **photocopy of the FBI subpoena** that did not match other outlets’ photos.
 - “The store owner sent a few notices to some rightwing outlets, who ignored him. … Then Rudy. And when Rudy was slow, me.”
 
-So the documented **successful** delivery from Mac Isaac toward the Fox orbit was **email PDFs + a subpoena scan to LaCorte**, who self-published. There is **no contemporaneous Fox News report** that Carlson’s show ingested LaCorte’s full cache as a disk image.
+The documented **successful** delivery from Mac Isaac toward the Fox orbit was **email PDFs + a subpoena scan to LaCorte**, who self-published. There is **no contemporaneous Fox News report** that Carlson’s show ingested LaCorte’s full cache as a disk image.
 
-ABC later summarized Mac Isaac’s own later account as having sought to distribute copies to Republican lawmakers **and Tucker Carlson** ([ABC](https://abcnews.com/US/hunter-biden-files-counter-claims-computer-repairman-handling/story?id=97918174)) — that is Mac Isaac’s claimed **intent**, same as the book.
+ABC later summarized Mac Isaac's own later account as having sought to distribute copies to Republican lawmakers **and Tucker Carlson** ([ABC](https://abcnews.com/US/hunter-biden-files-counter-claims-computer-repairman-handling/story?id=97918174)) — that is Mac Isaac's stated **intent**, same as the book.
 
 ## 3. Tucker’s on-air flash drive (late October 2020) — a different object
 

@@ -11,13 +11,13 @@ These reports are the public congressional paper trail most often cited for (1) 
 - Hosted: [FBI-Election-Interference-Report-2024-10-30.pdf](exhibits/congress/FBI-Election-Interference-Report-2024-10-30.pdf)
 - Official: [judiciary.house.gov (PDF)](https://judiciary.house.gov/sites/evo-subsites/republicans-judiciary.house.gov/files/evo-media-document/FBI-Election-Interference-Report-FINAL--10-30-24-.pdf)
 
-JPMI-relevant claims **as the staff report states them** (not independently re-proved here):
+JPMI-relevant claims, as stated by the staff report:
 
 - The *Post* story used material recovered from a hard drive attributed to Hunter Biden and published pictures of a **signed federal subpoena** showing FBI seizure.
-- IRS whistleblower **Gary Shapley** testified that by **November 2019** the FBI had verified authenticity by matching a device number against Hunter Biden’s Apple iCloud ID—**before** the 9 December 2019 Mac Shop subpoena in the court narrative.
+- IRS whistleblower **Gary Shapley** testified that by **November 2019** the FBI had verified authenticity by matching a device number against Hunter Biden's Apple iCloud ID—**before** the 9 December 2019 Mac Shop subpoena in the court narrative.
 - FBI personnel who briefed social-media companies on a feared “hack-and-leak” knew the laptop was **real** by the day of the *Post* story; the Bureau still declined to say so to the platforms.
 
-Those are **congressional-staff / transcribed-interview** propositions. This encyclopedia records them in that class. Device-ID matching against iCloud is **Apple/FBI work**, not a JPMI hash comparison.
+Those are **congressional-staff / transcribed-interview** propositions, recorded here in that class. Device-ID matching against iCloud is **Apple/FBI work**, not a JPMI hash comparison.
 
 ## Related House reports hosted here
 

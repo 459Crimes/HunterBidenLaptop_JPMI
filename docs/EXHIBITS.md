@@ -35,7 +35,7 @@ Fox News published the same class of photograph on 19 October 2020 and stated it
 
 ## 2. Email / invoice after the work was completed
 
-Two different communications are often collapsed. Keep them separate.
+Two different communications are often collapsed. They are separate objects.
 
 ### 2a. Shop contact after recovery (13–17 April 2019)
 
@@ -52,7 +52,7 @@ The **emailed $85 invoice** is a **separate object** from Quote #7469’s signed
 
 > **GTX 40** — “The Mac Shop Invoice Emailed to **rhbdc@icloud.com**” — admitted **4 June 2024** — witness **Erika Jensen** (FBI).
 
-Trial reporting: Jensen testified investigators obtained that invoice email from **Apple iCloud** data (subpoenaed independently of the shop), matching the April 2019 repair ([Denver Gazette](https://www.denvergazette.com/2024/06/04/hunter-bidens-silver-laptop-shown-to-courtroom-during-gun-trial/)). The **image of GTX 40 itself is not on the public RECAP docket** as of this writing—only the [admitted-exhibit list](exhibits/court/US_v_Biden_23cr61_exhibit_list.pdf).
+Trial reporting: Jensen testified investigators obtained that invoice email from **Apple iCloud** data (subpoenaed independently of the shop), matching the April 2019 repair ([Denver Gazette](https://www.denvergazette.com/2024/06/04/hunter-bidens-silver-laptop-shown-to-courtroom-during-gun-trial/)). The **image of GTX 40 itself is not on the public RECAP docket** — only the [admitted-exhibit list](exhibits/court/US_v_Biden_23cr61_exhibit_list.pdf).
 
 Bill-to email on Quote #7469 and GTX 40’s addressee are the same address: `rhbdc@icloud.com`.
 

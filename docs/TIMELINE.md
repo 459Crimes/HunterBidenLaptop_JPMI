@@ -1,8 +1,8 @@
 # Timeline (index)
 
-> **Hatnote.** Compact event index. The **canonical sourced narrative** (court + participant + JPMI timestamps interleaved) remains [Timeline and handling](06_timeline_and_handling.md). Stage 55 republishes that file to `build/reports/03_known_datetime_stamps_of_use.md`. Row-level post-repair mtimes: [04_post_2019_03_31_timeline.md](../build/reports/04_post_2019_03_31_timeline.md). Distributions: [01_time_distribution.tsv](../build/metadata/01_time_distribution.tsv).
+> **Hatnote.** Compact event index. The **canonical sourced narrative** (court + participant + JPMI timestamps interleaved) remains [Timeline and handling](06_timeline_and_handling.md), republished to `build/reports/03_known_datetime_stamps_of_use.md`. Row-level post-repair mtimes: [04_post_2019_03_31_timeline.md](../build/reports/04_post_2019_03_31_timeline.md). Distributions: [01_time_distribution.tsv](../build/metadata/01_time_distribution.tsv).
 
-## Layers of time (do not flatten)
+## Layers of time
 
 1. **User/application era** — years of `roberthunter` activity, heavily 2017–March 2019.
 2. **Repair/recovery** — 12–13 April 2019.
@@ -11,7 +11,7 @@
 5. **Public circulation** — August–October 2020.
 6. **Forensic examination of copies** — especially March–June 2022 access clusters; April 2022 E01 name.
 7. **Later report-lineage / mount activity** — November 2024 last-write (unreconciled with a 2022 immutable E01).
-8. **This project’s ingest** — `jpmi_acquisition.created_at` 22 July 2026 (recordkeeping, not a disk event).
+8. **Repository ingest** — `jpmi_acquisition.created_at` 22 July 2026 (recordkeeping, not a disk event).
 
 ## Index of dated events
 

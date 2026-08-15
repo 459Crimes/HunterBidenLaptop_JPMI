@@ -1,6 +1,6 @@
 # 4. What Is on the JPMI Copy?
 
-> **Encyclopedia.** Nerd-depth census: [Contents census](CONTENTS_CENSUS.md). Generated rollup: [environment report](../build/reports/02_os_version.md). [Index](INDEX.md).
+> **Encyclopedia.** Detailed census: [Contents census](CONTENTS_CENSUS.md). Generated rollup: [environment report](../build/reports/02_os_version.md). [Index](INDEX.md).
 
 JPMI is best understood as a **Mac user environment inside a later HFS+ custody volume**, not as a folder containing only the files that later became newsworthy.
 
@@ -19,7 +19,7 @@ From [`build/file_tree/02_top_level_summary.tsv`](../build/file_tree/02_top_leve
 | EFI System Partition | 6 | 209.7 MB |
 | GPT/unpartitioned structures | 7 | 134.3 MB |
 
-The large HFS+ structural byte total includes filesystem-level objects and unallocated-space representations; it should not be added to the user-tree total and described as unique user content.
+The large HFS+ structural byte total includes filesystem-level objects and unallocated-space representations; it is not added to the user-tree total and described as unique user content.
 
 ## The `roberthunter` home directory
 
@@ -58,7 +58,7 @@ An `.emlx` file is Apple's on-disk representation of an individual Mail message.
 
 The copy contains large `Pictures`, `Movies`, and media populations. These include user media as well as application-generated derivatives such as thumbnails, proxies, databases, and cached representations.
 
-A forensic count should therefore distinguish:
+A forensic count distinguishes:
 
 - an original photograph;
 - a thumbnail of that photograph;
@@ -75,7 +75,7 @@ The Mac user environment contains data associated with Apple mobile-device backu
 
 That explains why files in JPMI can predate the particular laptop or destination volume on which they were eventually stored. Apple users routinely migrate data forward across Macs and restore or synchronize data from iPhones, iPads, iCloud, Mail providers, and backups.
 
-This is also why a historical diagnostic package from an older Mac should not automatically be treated as proof that the older Mac was the computer later brought to the repair shop.
+This is also why a historical diagnostic package from an older Mac is not automatically treated as proof that the older Mac was the computer later brought to the repair shop.
 
 ## Application state
 
@@ -123,7 +123,7 @@ Those numbers differ because a filesystem can represent the same underlying obje
 
 The public project is a metadata/hash witness. It does not publish the restricted JPMI E01 image.
 
-Accordingly, the repository can directly publish:
+Accordingly, the repository directly publishes:
 
 - reported paths;
 - sizes;
@@ -134,7 +134,7 @@ Accordingly, the repository can directly publish:
 - aggregate counts;
 - later filesystem-state indicators.
 
-It should not pretend that every object in the source image has been independently opened and parsed from bytes in this GitHub checkout.
+Not every object in the source image has been independently opened and parsed from bytes in this GitHub checkout.
 
 ## Bottom line
 

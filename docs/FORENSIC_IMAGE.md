@@ -22,7 +22,7 @@ Source: [`build/disk_info/01_acquisition.tsv`](../build/disk_info/01_acquisition
 
 ## What E01 means here
 
-An E01 is a forensic **container**. Public discussion sometimes treats “the 2022 image” as a philosophical freeze-ray. Two cautions:
+An E01 is a forensic **container**. Two points clarify its role:
 
 1. If the E01 is **immutable and actually acquired on 2022-04-29**, it cannot later grow a 2024 HFS+ last-write **inside itself**. A 2024 write implies another working copy, a later acquisition, mixed reports, or a mislabeled field — see [2022/2024](2022_2024_DISCREPANCY.md).
 2. Image MD5/SHA-1 authenticate **this named image file as recorded**, not every historical ancestor copy back to April 2019.
@@ -35,9 +35,9 @@ An E01 is a forensic **container**. Public discussion sometimes treats “the 20
 | Object | SHA-256 | File/catalog content per received manifests | Yes, as **manifest evidence** (655,330 hashed paths; 180,046 distinct SHA-256) |
 | Recomputed object | SHA-256 | Fresh hash from restricted source bytes in *this* checkout | **No** — source bytes unpublished |
 
-Correct public sentence: “The JPMI manifest reports this SHA-256.” Incorrect: “This GitHub clone hashed the E01 file contents.”
+The accurate statement: “The JPMI manifest reports this SHA-256,” not “this GitHub clone hashed the E01 file contents.”
 
-## Coverage numbers (do not collapse)
+## Coverage numbers
 
 From [`build/reports/05_coverage_and_method.md`](../build/reports/05_coverage_and_method.md):
 
@@ -49,6 +49,8 @@ From [`build/reports/05_coverage_and_method.md`](../build/reports/05_coverage_an
 | CNID-map rows | 397,440 |
 | Alias-map rows | 655,330 |
 | TSK timeline rows | 1,259,300 |
+
+These are different universes and are not summed as if they were one file count.
 
 ## Tooling named in notes
 

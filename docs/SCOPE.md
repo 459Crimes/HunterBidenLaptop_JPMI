@@ -22,12 +22,12 @@ Questions this repo is built to answer:
 | Cross-corpus hash matching to other “laptop” dumps | Separate comparative project; this repo is JPMI-only |
 | GAI (`hb.img`) | Separate truncated HFS+ image in the broader RHB work; not this GitHub tree |
 | **APFS** (Hayes bootable) | A **later, more altered copy of the JPMI disk**, used as a **bootable laptop** produced by **Conan Hayes**. Marco Polo analyzed that machine, **not** the JPMI reports here |
-| **Extra Found Files / 0728** | MEGA share from Hayes after 28 July 2021. Did **not** come from the laptop files per se. Author’s FBI referral (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`) treats it as **potentially hacked**; **not** analyzed here. See [Author](AUTHOR.md) |
+| **Extra Found Files / 0728** | MEGA share from Hayes after 28 July 2021. Did **not** come from the laptop files per se. The author’s FBI referral (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`) treats it as **potentially hacked**; **not** analyzed here. See [Author](AUTHOR.md) |
 | *Beyond the Diary* / digital diary release | Separate author publications ([BeyondTheDiary.com](https://BeyondTheDiary.com), [ShowersWithMy.Dad](https://ShowersWithMy.Dad)); **not** JPMI analysis. See [Author](AUTHOR.md) |
 | Publishing E01 or user-file bytes | Restricted source; this tree is a metadata/hash witness |
 | Retrying the political media war of 2020 | Not required to describe the disk |
 | Identifying every email’s newsworthiness | Census and provenance, not a content magazine |
-| FBI unreleased holdings | Open questions only; we cannot verify them from here |
+| FBI unreleased holdings | Open questions only; the FBI-side record is not verifiable from here |
 
 ## Disambiguation: “the Hunter Biden laptop”
 
@@ -47,4 +47,4 @@ This encyclopedia is about **(3) as instantiated in the reports of (the X6 / E01
 ## See also
 
 - [Copy lineages](COPY_LINEAGES.md)
-- [Manual of Style](MANUAL_OF_STYLE.md)
+- [Sourcing and terminology](MANUAL_OF_STYLE.md)

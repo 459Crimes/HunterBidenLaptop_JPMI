@@ -2,7 +2,7 @@
 
 > **Hatnote.** This article is about the **Wilmington repair event** that starts the JPMI chain. For later copies, see [Copy lineages](COPY_LINEAGES.md). For the full date table, see [Timeline](06_timeline_and_handling.md).
 
-**The Mac Shop** (legal name in public business records: **The Mac Shop, Inc.**) was a Mac repair shop in Wilmington’s **Trolley Square** neighborhood, operated by **John Paul Mac Isaac**. Delaware court opinions recite that Hunter Biden presented damaged Apple laptops there on **12 April 2019**.
+**The Mac Shop** (legal name in public business records: **The Mac Shop, Inc.**) was a Mac repair shop in Wilmington's **Trolley Square** neighborhood, operated by **John Paul Mac Isaac**. Delaware court opinions recite that Hunter Biden presented damaged Apple laptops there on **12 April 2019**.
 
 ## Address and premises
 
@@ -20,11 +20,11 @@ Yelp and similar directories still list the closed shop at [21A Trolley Sq](http
 
 CBS photographed Mac Isaac **inside the shop on 14 October 2020**, the day the *New York Post* story ran ([CBS](https://www.cbsnews.com/news/hunter-biden-laptop-new-york-post-story/), photo: Bo Erickson). ABC later ran a **21 October 2020 file photo of the storefront** ([ABC News](https://abcnews.com/US/hunter-biden-files-counter-claims-computer-repairman-handling/story?id=97918174)). See [Portraits and premises](PORTRAITS.md).
 
-Mac Isaac told CBS the shop had indoor cameras with **~two months** retention and that he did not grasp the laptops’ significance until after that footage had rotated off.
+Mac Isaac told CBS the shop had indoor cameras with **~two months** retention and that he did not grasp the laptops' significance until after that footage had rotated off.
 
 ## The three-laptop event
 
-The Delaware Supreme Court’s 2025 opinion (including the dissent’s summary of the Second Amended Complaint) recounts:
+The Delaware Supreme Court's 2025 opinion (including the dissent's summary of the Second Amended Complaint) recounts:
 
 1. **Three damaged laptops** were presented.
 2. Mac Isaac supplied a **keyboard** that made **one** machine usable.
@@ -32,13 +32,13 @@ The Delaware Supreme Court’s 2025 opinion (including the dissent’s summary o
 4. The **remaining** laptop was left for **data recovery**.
 5. A **repair authorization** was signed ([Quote #7469](EXHIBITS.md)).
 
-This is why “the laptop” is a journalistic shorthand, not a serial-number identification. JPMI’s `roberthunter` tree can contain **migrated** and **multi-device** material (iPhone/iPad backups, iCloud, older `roberts-MacBook-Air` diagnostics). Older artifacts do **not** prove they were created on the one physical Mac left for recovery.
+This is why “the laptop” is a journalistic shorthand, not a serial-number identification. JPMI's `roberthunter` tree can contain **migrated** and **multi-device** material (iPhone/iPad backups, iCloud, older `roberts-MacBook-Air` diagnostics). Older artifacts do **not** prove they were created on the one physical Mac left for recovery.
 
 ## 13 April 2019 — customer external drive
 
-The next day, at Mac Isaac’s request, Biden returned with an **external hard drive** for the recovered data. Court opinions state Mac Isaac completed the recovery/transfer that day and contacted Biden.
+The next day, at Mac Isaac's request, Biden returned with an **external hard drive** for the recovered data. Court opinions state Mac Isaac completed the recovery/transfer that day and contacted Biden.
 
-Mac Isaac later said he first copied recoverable data to his **secure store server**, then from that server onto the customer drive. This project **accepts that as the operative technical account** and labels it as **his declaration**. The repository does not hold server logs, the server image, copy-tool history, or first-generation hashes. No contradictory evidence has surfaced here; independent verification would require those server-side records.
+Mac Isaac first copied recoverable data to his **secure store server**, then from that server onto the customer drive. The repository does not hold server logs, the server image, copy-tool history, or first-generation hashes. No contradictory evidence has surfaced; independent verification would require those server-side records.
 
 ```text
 Damaged laptop (retained for recovery)
@@ -51,7 +51,7 @@ Mac Isaac store server / recovery workspace     [logs not held]
         +--> later preservation / FBI / safekeeping copies
 ```
 
-The server-first workflow is technically important: later Mac Isaac copies **need not preserve the original laptop’s native disk geometry** while still preserving a broad user environment. That is one reason the later Crucial X6 is described as a **custody medium**, not “the laptop SSD.”
+The server-first workflow is technically important: later Mac Isaac copies **need not preserve the original laptop's native disk geometry** while still preserving a broad user environment. That is one reason the later Crucial X6 is described as a **custody medium**, not “the laptop SSD.”
 
 ## Invoice and non-pickup
 
@@ -59,7 +59,7 @@ Mac Isaac sent an **$85** electronic invoice on **17 April 2019**. Pleadings sta
 
 The signed in-shop form is **Quote #7469** (same $85, bill-to Hunter Biden, email `rhbdc@icloud.com`, scope including “recover data to store server and contact customer when complete”). Marco Polo v4 also cites an internal inventory invoice **#6077**. Those can be two CRM objects for one job; only 7469 is hosted here. The **emailed** invoice is a later object: government **GTX 40** in the 2024 Delaware gun trial (“The Mac Shop Invoice Emailed to rhbdc@icloud.com”). Photographs and the distinction: [Exhibits](EXHIBITS.md). Congressional FBI/laptop reports: [Congress](CONGRESS.md). Compilation notes: [Marco Polo v4](MARCO_POLO.md).
 
-JPMI’s substantive user/application modifications are overwhelmingly **before** this repair window. Later activity in the current reports is sparse and metadata-dominated. Nothing in the JPMI reporting analyzed here establishes hacking or injection of substantive external user files during April–July 2019. **No hacking is attributed to this or any other laptop-derived medium**; non-laptop provenance is **0728 Extra Found Files** only (out of scope). See [Integrity](INTEGRITY.md).
+JPMI's substantive user/application modifications are overwhelmingly **before** this repair window. Later activity in the current reports is sparse and metadata-dominated. Nothing in the JPMI reporting analyzed here establishes hacking or injection of substantive external user files during April–July 2019. **No hacking is attributed to this or any other laptop-derived medium**; non-laptop provenance is **0728 Extra Found Files** only (out of scope). See [Integrity](INTEGRITY.md).
 
 ## What the shop event is not
 

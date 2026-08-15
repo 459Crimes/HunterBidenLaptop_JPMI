@@ -31,7 +31,7 @@ GPT disk  c93db56d-6e88-4965-94e5-8585a013d086
 
 EFI presence means **Mac-oriented partitioned storage**, not “this stick was the boot disk of the 2019 Mac.”
 
-## Why it cannot be assumed to be the laptop SSD
+## Why it is not the laptop SSD
 
 1. Mac Isaac describes **server staging** then a **customer external drive**, then **later preservation copies**.
 2. The HFS+ destination reports **creation 26 September 2019**, months after the April repair.

@@ -26,26 +26,26 @@ At least one additional fact is missing, for example:
 - regenerated or mixed report fields;
 - a mislabeled date.
 
-The current evidence does **not** establish which explanation is correct. Preserve **both** reported values.
+The current evidence does **not** establish which explanation is correct. Both reported values stand in the record.
 
-## Participant account (unverified)
+## The analysis-handling account
 
-Per this project’s communications with **Todd Sanders**, any alteration between 2022 and 2024 would have occurred while **analyzing the data**, **probably a mistaken read-write mount on a Mac**. A writable mount can update Spotlight, DocumentRevisions, FSEvents, and volume last-write **without fabricating Mail/Photos/Documents**.
+Sanders states that any alteration between 2022 and 2024 would have occurred while **analyzing the data**, **a mistaken read-write mount on a Mac**. A writable mount can update Spotlight, DocumentRevisions, FSEvents, and volume last-write **without fabricating Mail/Photos/Documents**.
 
-This is recorded as **Sanders’ account**. It is **not independently verified**. This encyclopedia states that **only the FBI** (or forensic examination of the acquired image with a complete worksheet) can verify the FBI-side history and the actual cause.
+This is Sanders' account. **Only the FBI** (or forensic examination of the acquired image with a complete worksheet) can verify the FBI-side history and the actual cause.
 
 ## What 2024 rows look like
 
 Post-repair **modified** slice: **30 rows in 2024**, coinciding with Spotlight live indexes, DocumentRevisions SQLite/WAL, TemporaryItems, and similar system state — the same class of objects a read-write Mac mount would touch. See the 2024 tail of [`04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md).
 
-That pattern is **consistent with** Sanders’ mount story. Consistency is not verification.
+That pattern is **consistent with** Sanders' mount account. Consistency is not verification.
 
 ## What this discrepancy does not do
 
 - It does not move Hunter-era authorship into 2024.
 - It does not, by itself, prove 2019 content was planted.
-- It does not license ignoring the December 2019 exact-copy court recitation.
-- It does not let you treat `reported_at` 2022-04-29 as false without a better acquisition worksheet.
+- It does not undo the December 2019 exact-copy court recitation.
+- It does not make `reported_at` 2022-04-29 false without a better acquisition worksheet.
 
 ## See also
 

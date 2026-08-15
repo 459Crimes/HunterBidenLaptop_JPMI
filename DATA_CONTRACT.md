@@ -4,7 +4,7 @@ All published tables in this repository describe **JPMI only**.
 
 TSV files are UTF-8, LF-terminated, tab-separated, and contain a header row. Shards of the same logical export use identical columns.
 
-Timestamp fields preserve the convention supplied by the originating forensic report unless a file explicitly says that normalization has been applied. Timestamps from different report families are not interchangeable as if every field used the same timezone.
+Timestamp fields preserve the convention supplied by the originating forensic report except where a file states that normalization has been applied. Timestamps from different report families are not interchangeable as if every field used the same timezone.
 
 ## `build/file_tree/`
 
@@ -159,7 +159,7 @@ Consolidated device, disk, partition, and volume identity.
 
 Markdown reports are generated from JPMI evidence only.
 
-Every report should separate:
+Every report separates:
 
 1. **Observation** — what the JPMI record directly reports.
 2. **Interpretation** — what that observation is consistent with or supports.
@@ -167,7 +167,7 @@ Every report should separate:
 
 ## `build/archives/`
 
-Deep metadata exports may be partitioned into deterministic archive parts to remain below repository file-size limits.
+Deep metadata exports are partitioned into deterministic archive parts when they exceed repository file-size limits.
 
 Archive parts are derived JPMI metadata. They are not source-image bytes.
 

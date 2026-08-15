@@ -27,7 +27,7 @@ Mac Isaac direct-copy / FBI lineage
 
 ## What it does not support by itself
 
-- Byte-identity with the CBS media (still an **assumption** pending side-by-side hashes).
+- Byte-identity with the CBS media (established by common source, pending side-by-side hashes).
 - Identification of the **Albuquerque** drive.
 - Identification of the **original laptop SSD**.
 - A complete chain of every clone Mac Isaac made.

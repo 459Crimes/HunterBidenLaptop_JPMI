@@ -56,6 +56,6 @@
 
 ## See also
 
-- [Manual of Style](MANUAL_OF_STYLE.md) (source hierarchy)
+- [Sourcing and terminology](MANUAL_OF_STYLE.md) (source hierarchy)
 - [People](PEOPLE.md)
 - [Author](AUTHOR.md)

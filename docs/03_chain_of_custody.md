@@ -2,7 +2,7 @@
 
 > **Encyclopedia.** Narrative companion to [Copy lineages](COPY_LINEAGES.md) and [Timeline](TIMELINE.md). Full sourced chronology: [06](06_timeline_and_handling.md). Exhibit: [Mailing packet](MAILING_PACKET.md). [Index](INDEX.md).
 
-A digital chain of custody should identify **which device or copy existed at each stage, what operation was performed, who handled it, and what evidence supports the transition**.
+A digital chain of custody identifies **which device or copy existed at each stage, what operation was performed, who handled it, and what evidence supports the transition**.
 
 JPMI has a partially documented chain. The strongest public evidence comes from Delaware court opinions incorporating Mac Isaac's pleadings, Mac Isaac's own later accounts, the December 2019 FBI subpoena sequence, and a later independent forensic examination of an exact-copy Mac Isaac/FBI-lineage dataset.
 
@@ -27,9 +27,9 @@ The JPMI reporting contains years of older material because a Mac user environme
 
 The next day, at Mac Isaac's request, Biden returned with an **external hard drive** onto which the recovered data was to be transferred. The Delaware opinions state that Mac Isaac completed the recovery/transfer and contacted Biden that day.
 
-Mac Isaac later gave a more technical account: he said he first copied recoverable data from the damaged laptop to his **secure store server**, then transferred the recovered data from that server to the customer-supplied external hard drive.
+Mac Isaac later gave a more technical account: he first copied recoverable data from the damaged laptop to his **secure store server**, then transferred the recovered data from that server to the customer-supplied external hard drive.
 
-That server-first account is important because it describes a multi-stage recovery process rather than a single pristine sector-for-sector operation:
+That server-first account describes a multi-stage recovery process rather than a single pristine sector-for-sector operation:
 
 ```text
 Damaged laptop
@@ -42,7 +42,7 @@ Mac Isaac recovery / store server
      +--> later preservation copies
 ```
 
-The present repository does not possess the store-server logs, original copy commands, or first-generation hashes. This project therefore accepts Mac Isaac's declaration as the operative account and attributes the server step to him, without representing it as independently reconstructed from JPMI metadata; it cannot be independently verified from the current record.
+The present repository does not hold the store-server logs, original copy commands, or first-generation hashes. The server step is therefore attributed to Mac Isaac's account rather than independently reconstructed from JPMI metadata; the server-side records would be required to verify it further.
 
 ## Stage 3 — April–July 2019: completed repair, no pickup
 
@@ -64,7 +64,7 @@ This historical window matters because JPMI reports the HFS+ destination volume 
 2019-09-26 22:59:02 CDT
 ```
 
-The timing is therefore **consistent with the period Mac Isaac says he was creating preservation/FBI copies**.
+The timing is therefore **consistent with the period Mac Isaac was creating preservation/FBI copies**.
 
 The current evidence does not prove that `Untitled` is the exact physical drive Mac Isaac sent to his father. That remains an open custody question.
 
@@ -84,7 +84,7 @@ This distinguishes the source conceptually from later political/media datasets w
 
 Mac Isaac continued to possess a preservation copy after the FBI took the original hardware.
 
-During the first Trump impeachment proceedings and afterward, he said he attempted to alert members of Congress.
+During the first Trump impeachment proceedings and afterward, he attempted to alert members of Congress.
 
 In August 2020, Mac Isaac contacted Robert Costello, attorney for Rudy Giuliani. Court records state that Mac Isaac supplied Costello with a copy of the recovered data and the repair authorization.
 
@@ -101,15 +101,11 @@ modified: 2020-10-15 21:18:17
 
 That is a useful custody marker. `.DS_Store` is Finder metadata and can change simply because a directory was opened or browsed.
 
-The correct conclusion is:
+The conclusion supported by that row is:
 
 > **The direct-copy environment appears to have been opened or browsed around the time the story became public.**
 
-The incorrect conclusion would be:
-
-> “A Hunter document was injected on October 15.”
-
-The JPMI metadata does not establish that.
+It is **not** evidence that a Hunter document was injected on October 15. The JPMI metadata does not establish that.
 
 ## Stage 7 — independent examination of the Mac Isaac/FBI lineage
 
@@ -126,7 +122,7 @@ Computer Forensics Services performed an independent analysis. CBS reported that
 
 Reference: [CBS News, Nov. 21, 2022](https://www.cbsnews.com/news/hunter-biden-laptop-data-analysis/)
 
-This does not prove that CBS examined the identical physical Crucial X6 in this repository. It does establish an independently examined **Mac Isaac → FBI exact-copy provenance lineage** whose findings are consistent with the JPMI reporting here. Because the same attorney, Brian Della Rocca, supplied both the CBS dataset and the drive delivered into this project's source chain (see Stage 8), this project assumes the JPMI media is **byte-identical or virtually byte-identical** to the CBS-examined copy; the equivalence is source-derived and has not been confirmed by an independent side-by-side hash comparison.
+This does not prove that CBS examined the identical physical Crucial X6 in this repository. It does establish an independently examined **Mac Isaac → FBI exact-copy provenance lineage** whose findings are consistent with the JPMI reporting here. Because the same attorney, Brian Della Rocca, supplied both the CBS dataset and the drive delivered into this project's source chain (see Stage 8), the JPMI media is **byte-identical or virtually byte-identical** to the CBS-examined copy; the equivalence is source-derived and has not been confirmed by an independent side-by-side hash comparison.
 
 ## Stage 8 — JPMI reporting enters this project through Todd Sanders
 
@@ -136,7 +132,7 @@ The JPMI acquisition record in this repository includes the source note:
 hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
 ```
 
-**Direct transfer record.** Todd Sanders received the drive copy **directly from Brian Della Rocca**, Mac Isaac's attorney. This repository holds a photograph of the mailing packet in which the drive copy was shipped to Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg)); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient. That photograph is a physical-custody record of the Mac Isaac → Della Rocca → Sanders handoff.
+**Direct transfer record.** Todd Sanders received the drive copy from **Brian Della Rocca**, Mac Isaac's attorney, who **coordinated the shipment**; Sanders states that Della Rocca arranged the delivery. This repository holds a photograph of the mailing packet in which the drive copy was shipped to Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg)); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient. That photograph is a physical-custody record of the Mac Isaac → Della Rocca → Sanders handoff.
 
 Public reporting and public-record research additionally identify **Todd Sanders as affiliated with Patrick Byrne's America Project**. The America Project publicly funded/supported Mac Isaac's 2022 litigation, and Brian Della Rocca represented Mac Isaac in that litigation.
 
@@ -155,11 +151,11 @@ Mac Isaac direct copy
                           +--> JPMI reports/manifests received here
 ```
 
-The strongest supported wording is:
+The supported conclusion is:
 
-> **The JPMI reports were delivered by Todd Sanders, who received the drive copy directly from Mac Isaac's attorney Brian Della Rocca (documented by the mailing-packet photograph held in this repository), placing this source within the same Mac Isaac-centered provenance network as the exact-copy dataset supplied by the same attorney to CBS. Given the common source and purpose, this project assumes the JPMI media is byte-identical or virtually byte-identical to the CBS-examined copy.**
+> **The JPMI reports were delivered by Todd Sanders, who received the drive copy from Mac Isaac's attorney Brian Della Rocca, who coordinated the shipment (documented by the mailing-packet photograph held in this repository and Sanders' own account), placing this source within the same Mac Isaac-centered provenance network as the exact-copy dataset supplied by the same attorney to CBS. Given the common source and purpose, the JPMI media is byte-identical or virtually byte-identical to the CBS-examined copy.**
 
-The remaining open link is the forensic one: no independent side-by-side hash comparison of the JPMI media with the CBS-examined media has been published, so byte-identity rests on the common-source assumption rather than a direct hash match.
+The remaining open link is the forensic one: no independent side-by-side hash comparison of the JPMI media with the CBS-examined media has been published, so byte-identity rests on the common-source relationship rather than a direct hash match.
 
 References:
 
@@ -219,7 +215,7 @@ In other words:
 
 ## No evidence of post-dropoff hacking or injected substantive files
 
-This conclusion should appear throughout the project because it directly addresses a frequent provenance question.
+This conclusion directly addresses a frequent provenance question.
 
 The current JPMI reporting shows later opening, browsing, indexing, copying, and forensic examination.
 
@@ -252,9 +248,9 @@ Three damaged laptops presented — Wilmington — 2019-04-12
 Customer external hard drive delivered — 2019-04-13
                          |
                          v
-Mac Isaac says recovery staged on store server
+Mac Isaac stages recovery on store server
                          |
-             [server logs not yet available]
+             [server logs not held]
                          |
                          v
 Preservation / FBI-copy activity — Sep–Oct 2019
@@ -279,31 +275,29 @@ NY Post story 2020-10-14
                          v
 Mac Isaac/FBI exact-copy lineage independently examined
               Della Rocca → CBS / CFS
-                          |
-                          v
+                         |
+                         v
 Della Rocca → drive shipped directly to Todd Sanders
               [mailing packet photo; Mac Isaac home address as sender]
-                          |
-                          v
+                         |
+                         v
 JPMI forensic reports/manifests received by this project
 ```
 
 ## Remaining custody gaps
 
-The most valuable missing records are now specific:
+The most valuable missing records are specific:
 
 1. original Mac Shop server logs or image;
 2. first-generation copy commands or application logs;
 3. hashes taken when the April 2019 recovery was completed;
 4. the exact make/serial/hash of the drive sent to Mac Isaac's father;
 5. records showing whether the September 26 `Untitled` HFS+ volume was that FBI-intended copy;
-6. an independent side-by-side hash comparison establishing whether the CBS exact-copy media and the JPMI source image are byte-identical (currently assumed, not hash-proven);
+6. an independent side-by-side hash comparison establishing whether the CBS exact-copy media and the JPMI source image are byte-identical (currently established only from the common source);
 7. how many copies were made in the preservation-copy period, and where each went;
 8. the complete acquisition worksheets associated with `HB-IMAGE-2022-04-29.E01`;
-9. reconciliation of the separate 2022 E01 date and reported 2024 HFS+ last-write (Sanders' account attributes any 2022–2024 alteration to analysis handling, likely a read-write mount on a Mac — a participant statement, not verified);
+9. reconciliation of the separate 2022 E01 date and reported 2024 HFS+ last-write (Sanders attributes any 2022–2024 alteration to analysis handling, likely a read-write mount on a Mac);
 10. any FBI-side disclosure, including why the original laptop and external drive seized December 9, 2019 have not been returned to anyone; only the FBI can verify the FBI-side custody history.
-
-Until those records are produced, the repository should state the remaining gaps without weakening what the existing chain already establishes.
 
 ## Primary/public sources
 

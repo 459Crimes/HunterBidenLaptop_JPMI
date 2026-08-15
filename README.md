@@ -1,10 +1,10 @@
 # John Paul Mac Isaac copy
 
-> This article is about the **Mac Isaac direct-copy lineage** documented in this repository. For other laptop-data collections that circulated after October 2020, see [Scope](docs/SCOPE.md). For how claims are sourced, see the [Manual of Style](docs/MANUAL_OF_STYLE.md).
+> This article is about the **Mac Isaac direct-copy lineage** documented in this repository. For other laptop-data collections that circulated after October 2020, see [Scope](docs/SCOPE.md). For how claims are sourced, see [Sourcing and terminology](docs/MANUAL_OF_STYLE.md).
 
 The **John Paul Mac Isaac copy** (**JPMI**) is this project's name for one specific evidence lineage in the Hunter Biden laptop matter: a **filesystem-preserving copy** of data recovered at **The Mac Shop** in Wilmington, Delaware, in April 2019, later preserved by the shop's proprietor **John Paul Mac Isaac**, and represented here by forensic reports from a later **500 GB Micron Crucial X6** USB SSD imaged as `HB-IMAGE-2022-04-29.E01`.
 
-This GitHub repository is an **encyclopedia of that disk lineage**, not a dump of the restricted source bytes. It publishes disk identity, HFS+ catalog structure, path inventories, timestamps, reported hashes, and a sourced 2019–2020 custody history. The intended reader is anyone who wants the full technical story of *this* copy: where it came from, what is on it, which dates mean what, and what the metadata does and does not prove.
+This GitHub repository is an **encyclopedia of that disk lineage**, not a dump of the restricted source bytes. It publishes disk identity, HFS+ catalog structure, path inventories, timestamps, reported hashes, and a sourced 2019–2020 custody history. It is the full technical record of *this* copy: where it came from, what is on it, which dates mean what, and what the metadata does and does not prove.
 
 | JPMI (this repository) | |
 |---|---|
@@ -57,7 +57,7 @@ It does **not** mean Mac Isaac has been proved to have typed the Unix `dd` comma
 
 The **Crucial X6** described in the acquisition record is a **later custody medium**, not the original internal SSD of the laptop left for repair. See [Crucial X6](docs/CRUCIAL_X6.md), [HFS+ volume Untitled](docs/HFS_VOLUME_UNTITLED.md), and [Forensic image](docs/FORENSIC_IMAGE.md).
 
-The reports examined here were delivered through **Todd Sanders**, who received a drive copy **directly from Della Rocca**. This repository holds a photograph of the mailing packet ([`photo_20260716_120324.jpg`](photo_20260716_120324.jpg)). Because the same attorney supplied both this project's media and the CBS-examined copy for the same purpose, the project **assumes** the two are byte-identical or virtually so. That assumption is **not** a published side-by-side hash comparison. See [Copy lineages](docs/COPY_LINEAGES.md) and [Mailing packet](docs/MAILING_PACKET.md).
+The reports examined here were delivered through **Todd Sanders**, who received a drive copy **directly from Della Rocca**. This repository holds a photograph of the mailing packet ([`photo_20260716_120324.jpg`](photo_20260716_120324.jpg)). Because the same attorney supplied both this project's media and the CBS-examined copy for the same purpose, the two are **byte-identical or virtually byte-identical**. That equivalence is **not** a published side-by-side hash comparison. See [Copy lineages](docs/COPY_LINEAGES.md) and [Mailing packet](docs/MAILING_PACKET.md).
 
 ## Historical timeline
 
@@ -69,7 +69,7 @@ Full sourced narrative: [Timeline and handling](docs/06_timeline_and_handling.md
 | **13 Apr 2019** | Customer returned with an external hard drive. Recovery/transfer completed that day. Mac Isaac later said data was first staged on the **store server**. | Court record + participant account (server logs not held) |
 | **17 Apr 2019** | $85 electronic invoice sent to `rhbdc@icloud.com` (later **GTX 40** at the 2024 gun trial). Laptop and drive not retrieved, per pleadings. | Court-recited + trial exhibit list |
 | **Late Jul 2019** | Mac Isaac's FBI-related contacts begin. | Court-recited |
-| **Sep–Oct 2019** | Mac Isaac says he made a copy for his father, Col. Richard “Steve” Mac Isaac, to take to the FBI in Albuquerque. | Participant account; exact physical drive unproved |
+| **Sep–Oct 2019** | Mac Isaac made a copy for his father, Col. Richard “Steve” Mac Isaac, to take to the FBI in Albuquerque. | Participant account; exact physical drive unproved |
 | **26 Sep 2019** | JPMI reports HFS+ volume `Untitled` created `2019-09-26 22:59:02 CDT`. | Direct JPMI metadata; **chronology correlation**, not physical-device ID |
 | **9 Dec 2019** | FBI subpoena **19-3-LFWS-V-136** (SA Wilson / AUSA Wolf): MacBook Pro `FVFXC2MMHV29`, WD `WX21A19ATFF3`. Delaware Supreme Court: Mac Isaac made an **exact copy before parting with the original**. | Court photos — [Exhibits](docs/EXHIBITS.md) |
 | **26 Aug 2020** | Copy provided to Robert Costello (Giuliani's attorney). | Court-recited |
@@ -78,7 +78,7 @@ Full sourced narrative: [Timeline and handling](docs/06_timeline_and_handling.md
 | **15 Oct 2020** | JPMI: `Users/roberthunter/Desktop/.DS_Store` modified. Consistent with Finder browsing, **not** file injection. | Direct JPMI metadata + forensic interpretation |
 | **29 Apr 2022** | Acquisition record names `HB-IMAGE-2022-04-29.E01`. | Direct acquisition field |
 | **21 Nov 2022** | CBS reports independent exam: no user-data tampering; no new files originating after April 2019. | Independent forensic review |
-| **21 Nov 2024** | Delivered HFS+ last-write. **Cannot** be a write into an immutable E01 actually acquired in 2022; report-lineage issue, with a participant (Sanders) read-write-mount account that is **unverified**. | Open discrepancy — [2022/2024](docs/2022_2024_DISCREPANCY.md) |
+| **21 Nov 2024** | Delivered HFS+ last-write. **Cannot** be a write into an immutable E01 actually acquired in 2022; report-lineage issue, with Sanders' account of a read-write mount during analysis. | Open discrepancy — [2022/2024](docs/2022_2024_DISCREPANCY.md) |
 
 ## What is on the disk
 
@@ -100,15 +100,15 @@ Counts of paths, CNIDs, and hashes are **different numbers** because aliases, ha
 
 ## How to read this encyclopedia
 
-Every public claim is supposed to be traceable to one of: JPMI disk/volume reporting; path/timestamp/CNID/hash/system-state reporting; a court opinion or incorporated pleading; an attributed participant account; an independently attributed forensic review; or a sourced public-record provenance link.
+Every public claim is traceable to one of: JPMI disk/volume reporting; path/timestamp/CNID/hash/system-state reporting; a court opinion or incorporated pleading; an attributed participant account; an independently attributed forensic review; or a sourced public-record provenance link.
 
 The editorial rule is:
 
 > **Observed fact → interpretation → limitation**
 
-Court-recited facts, Mac Isaac's later technical account, JPMI-internal measurements, and CBS's exam are **not interchangeable**. The [source matrix](docs/09_source_matrix.md) is the claim index. The [manual of style](docs/MANUAL_OF_STYLE.md) records how evidence classes are labeled.
+Court-recited facts, Mac Isaac's later technical account, JPMI-internal measurements, and CBS's exam are **not interchangeable**. The [source matrix](docs/09_source_matrix.md) is the claim index. The [sourcing and terminology](docs/MANUAL_OF_STYLE.md) page records how evidence classes are labeled.
 
-Start with articles, not with `build/` TSVs, unless you already know which measurement you want.
+The articles are the entry point; the `build/` TSVs are the machine-readable appendix behind them.
 
 ## Technical evidence
 
@@ -139,7 +139,7 @@ See the **[article index](docs/INDEX.md)** for the full map. Core reading order:
 8. [Reproducibility](docs/08_reproducibility.md)
 9. [Source matrix](docs/09_source_matrix.md)
 
-Nerd-depth companions: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
+Companion articles: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
 
 ---
 

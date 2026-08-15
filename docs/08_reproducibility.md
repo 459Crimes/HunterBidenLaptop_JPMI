@@ -1,10 +1,10 @@
-# 8. Reproducibility
+# 8. Reproducibility and method
 
-> **Encyclopedia.** [Architecture](../ARCHITECTURE.md) · [Data contract](../DATA_CONTRACT.md) · [Forensic image](FORENSIC_IMAGE.md) · [Index](INDEX.md). Historical claims are not generated from PostgreSQL; they live in `06` / `09` and the wiki articles.
+> **Encyclopedia.** [Architecture](../ARCHITECTURE.md) · [Data contract](../DATA_CONTRACT.md) · [Forensic image](FORENSIC_IMAGE.md) · [Index](INDEX.md). Historical claims are maintained as cited source material; they are not generated from PostgreSQL.
 
 The public narrative in this repository is backed by machine-readable JPMI tables **and a separately sourced historical custody record**.
 
-The technical pipeline should rebuild the JPMI-derived summaries without using another laptop-data corpus. Historical custody events—court decisions, the FBI subpoena sequence, the New York Post publication date, and the independent CBS review—are maintained as cited public-source material rather than fabricated from filesystem timestamps.
+The technical pipeline rebuilds the JPMI-derived summaries from the JPMI tables alone, without drawing on any other laptop-data corpus. Historical custody events — court decisions, the FBI subpoena sequence, the New York Post publication date, and the independent CBS review — are maintained as cited public-source material rather than derived from filesystem timestamps.
 
 ## Evidence boundary
 
@@ -90,7 +90,7 @@ These reports follow:
 build/reports/03_known_datetime_stamps_of_use.md
 ```
 
-This stage exists so a database rebuild does **not** erase the sourced 2019–2020 custody history or revert to a filesystem-only timeline.
+This stage exists so a database rebuild does not erase the sourced 2019–2020 custody history or revert to a filesystem-only timeline.
 
 The underlying machine-readable timestamp data remains in:
 
@@ -121,7 +121,7 @@ python3 scripts/60_archive_deep_exports.py
 python3 scripts/90_validate_exports.py
 ```
 
-## Claims that should be reproducible from JPMI reporting
+## Claims reproducible from JPMI reporting
 
 | Public claim | Evidence artifact |
 |---|---|
@@ -140,9 +140,9 @@ python3 scripts/90_validate_exports.py
 | JPMI hash identities | `build/hash_manifest/01_sha256_by_cnid_*.tsv` |
 | Later activity is dominated by system/application metadata | post-repair report + row set |
 
-## Claims that require historical/public sources
+## Claims that rest on historical/public sources
 
-The following should **not** be presented as if PostgreSQL itself proved them:
+The following rest on historical/public sources, not on PostgreSQL:
 
 - three damaged laptops were presented April 12, 2019;
 - the keyboard/unrecoverable-laptop sequence;

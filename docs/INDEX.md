@@ -1,17 +1,8 @@
 # Article index
 
-This directory is the **JPMI encyclopedia**: everything this project currently knows—and explicitly does not know—about the disk lineage that came from John Paul Mac Isaac's repair shop.
+This directory is the **JPMI encyclopedia**: the full record of the disk lineage that originated in John Paul Mac Isaac's Wilmington repair shop — what it contains, how it moved, and what its metadata does and does not establish.
 
 Main article: [README](../README.md).
-
-## How to use this like Wikipedia
-
-- **Lead articles** answer “what is this object?”
-- **Event articles** answer “what happened when?”
-- **Hardware / image articles** answer “what physical and forensic objects exist?”
-- **Census articles** answer “what populations are on the volume?”
-- **Method articles** answer “how was this published, and what can it prove?”
-- Every strong sentence should have a **source class**. If it does not, it does not belong in the lead.
 
 ## Portal
 
@@ -24,7 +15,7 @@ Main article: [README](../README.md).
 | Who wrote this encyclopedia | [Author](AUTHOR.md) |
 | Who the people are (father, uncle, FBI agents, Della Rocca, Apelbaum) | [People](PEOPLE.md) |
 | Yaacov Apelbaum / XRVision | [Apelbaum](APELBAUM.md) |
-| Attempt to get a copy to Tucker Carlson at Fox | [Fox / Tucker](FOX_TUCKER.md) |
+| The attempt to get a copy to Tucker Carlson at Fox | [Fox / Tucker](FOX_TUCKER.md) |
 | Marco Polo 4th printing (shop/FBI extract only) | [Marco Polo v4](MARCO_POLO.md) |
 | Photos of the men and the shop (links only) | [Portraits and premises](PORTRAITS.md) |
 | Signed quote, invoice email, FBI subpoena photos | [Exhibits](EXHIBITS.md) |
@@ -44,12 +35,11 @@ Main article: [README](../README.md).
 | What remains unproved | [Limits and open questions](07_limits_and_open_questions.md) |
 | Which source supports which claim | [Source matrix](09_source_matrix.md) · [Bibliography](BIBLIOGRAPHY.md) |
 | How tables are generated | [Reproducibility](08_reproducibility.md) · [Architecture](../ARCHITECTURE.md) · [Data contract](../DATA_CONTRACT.md) |
-| House rules for wording | [Manual of Style](MANUAL_OF_STYLE.md) |
-| Project checklist | [STATUS](../STATUS.md) · [TASKS](../TASKS.md) |
+| Evidence classes and terminology | [Sourcing and terminology](MANUAL_OF_STYLE.md) |
 
 ## Numbered narrative (stable IDs)
 
-These nine files are the original public-narrative sequence. Stage 55 of the build republishes `06` as `build/reports/03_known_datetime_stamps_of_use.md`. Those IDs are stable in this repository.
+These nine files are the primary narrative sequence. The `06` timeline is also published as `build/reports/03_known_datetime_stamps_of_use.md`.
 
 | ID | Article |
 |---|---|

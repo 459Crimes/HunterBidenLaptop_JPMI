@@ -2,3 +2,8 @@
 # They are intentionally NOT part of the GitHub-ready build/ tree.
 build/deep/
 __pycache__/
+
+# Archived internal project-management documents.
+# STATUS.md and TASKS.md were completed and archived on 2026-08-15;
+# they are working notes, not part of the published report.
+archive/

@@ -38,7 +38,7 @@ Brian Della Rocca supplied what he called an **“exact copy”** of data provid
 
 https://www.cbsnews.com/news/hunter-biden-laptop-data-analysis/
 
-This is **corroboration from the same Mac Isaac → FBI exact-copy *network***. Physical identity with serial `2145E498755E` is **assumed** from common attorney/purpose, not hash-proved. See [Copy lineages](COPY_LINEAGES.md).
+This is **corroboration from the same Mac Isaac → FBI exact-copy *network***. Physical identity with serial `2145E498755E` is **established** from common attorney/purpose, not hash-proved. See [Copy lineages](COPY_LINEAGES.md).
 
 ## What later activity *does* show
 

@@ -26,7 +26,7 @@ When this repository calls JPMI **“`dd`-style”**, it means:
 
 > Think “whole storage environment,” not “someone dragged a few folders onto a thumb drive.”
 
-It does **not** mean the project has proved that Mac Isaac literally typed a `dd` command.
+It does **not** mean Mac Isaac has been proved to have literally typed a `dd` command.
 
 ## GPT
 
@@ -148,7 +148,7 @@ Again, system metadata activity is not synonymous with substantive content manip
 
 The JPMI source reports approximately **280 GB of unallocated ranges**.
 
-That figure is relevant to forensic recovery, but it should not be described as 280 GB of recoverable deleted Hunter Biden files. Unallocated space is a storage-state category, not a content classification.
+That figure is relevant to forensic recovery, but it is not 280 GB of recoverable deleted Hunter Biden files. Unallocated space is a storage-state category, not a content classification.
 
 ## Created, modified, and accessed times
 
@@ -164,13 +164,13 @@ That is why JPMI timestamp interpretation is done by **clusters and object type*
 
 ## The practical rule
 
-For public reading, use this sequence:
+For public reading, the sequence is:
 
 1. **What object is this?** User document, application database, filesystem metadata, index, cache, or partition structure?
 2. **Where is it?** What path and directory context surround it?
 3. **What identity does it have?** Size, CNID, hash, volume?
-4. **Which timestamp are we looking at?** Created, modified, accessed, volume creation, or last write?
+4. **Which timestamp is being examined?** Created, modified, accessed, volume creation, or last write?
 5. **Could the timestamp have been produced by later handling?**
 6. **What conclusion does the evidence actually support?**
 
-That method is slower than treating every timestamp as self-explanatory, but it is far more defensible.
+This method is slower than treating every timestamp as self-explanatory, but far more defensible.

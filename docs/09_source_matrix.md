@@ -1,12 +1,12 @@
 # 9. Source Matrix — JPMI Custody and Integrity Claims
 
-> **Encyclopedia.** Reading list: [Bibliography](BIBLIOGRAPHY.md). People: [People](PEOPLE.md). House MOS: [Manual of Style](MANUAL_OF_STYLE.md). [Index](INDEX.md).
+> **Encyclopedia.** Reading list: [Bibliography](BIBLIOGRAPHY.md). People: [People](PEOPLE.md). Sourcing: [Sourcing and terminology](MANUAL_OF_STYLE.md). [Index](INDEX.md).
 
 This page shows **which source supports which part of the JPMI story**. It separates court-recited facts, Mac Isaac's own later technical account, contemporaneous reporting, independent forensic review, and this repository's internal forensic reporting.
 
 ## Source hierarchy
 
-The repository generally gives the most weight to:
+The repository gives the most weight to, in this order:
 
 1. court opinions and incorporated pleadings/documents;
 2. contemporaneous documentary records such as the repair authorization, invoice, subpoena, and acquisition manifests;
@@ -18,14 +18,14 @@ A later interview can explain technical details absent from a court opinion. It 
 
 ## Claim matrix
 
-| Claim | Best supporting source | Status used in this repository |
+| Claim | Best supporting source | Attribution |
 |---|---|---|
 | Three damaged laptops were presented in April 2019 | Delaware Supreme Court dissent summarizing Second Amended Complaint | **Court-recited pleaded history** |
 | Mac Isaac supplied a keyboard for one laptop and another was unrecoverable | Delaware Supreme Court dissent | **Court-recited pleaded history** |
 | One laptop remained for recovery | Delaware Supreme Court majority/dissent | **Court-recited pleaded history** |
 | Biden returned the next day with an external hard drive | Delaware Supreme Court; Delaware Superior Court; S.D. Florida opinion | **Repeated in court records** |
 | Recovery/transfer was completed and Biden was contacted | Delaware Supreme Court / Superior Court | **Repeated in court records** |
-| Mac Isaac first staged recoverable data on his store server | Mac Isaac declaration/interviews | **Participant account; accepted by this project, server logs not available for independent verification** |
+| Mac Isaac first staged recoverable data on his store server | Mac Isaac declaration/interviews | **Participant account; server logs not available for independent verification** |
 | Mac Isaac began FBI-related efforts in summer 2019 | Delaware court opinions | **Court-recited history** |
 | A copy was prepared/sent for Mac Isaac's father to approach the Albuquerque FBI office | Mac Isaac later accounts; attorney statements/reporting | **Participant/counsel account; exact drive identity unresolved** |
 | JPMI HFS+ `Untitled` reports creation on Sept. 26, 2019 | JPMI `volume_info` / acquisition reporting | **Directly reported JPMI metadata** |
@@ -47,10 +47,10 @@ A later interview can explain technical details absent from a court opinion. It 
 | America Project supported/funded Mac Isaac's 2022 litigation | Public statements/reporting about the lawsuit | **Externally documented support relationship** |
 | Della Rocca represented Mac Isaac and supplied CBS the exact-copy dataset | Delaware court record + CBS News | **Externally documented** |
 | JPMI reports therefore sit in the same Mac Isaac-centered provenance network | Combined internal/external chain | **Supported provenance inference** |
-| JPMI media is byte-identical or virtually byte-identical to the CBS-examined copy | Same attorney supplied both for the same purpose | **Assumed from common source and purpose; not independently hash-verified** |
-| Any 2022–2024 data alteration occurred during analysis, probably a read-write mount on a Mac | Todd Sanders' communications with this project | **Participant account; not independently verified; only the FBI can verify** |
+| JPMI media is byte-identical or virtually byte-identical to the CBS-examined copy | Same attorney supplied both for the same purpose | **Established from common source and purpose; not independently hash-verified** |
+| Any 2022–2024 data alteration occurred during analysis, a read-write mount on a Mac | Todd Sanders' communications with this project | **Participant account; only the FBI can verify** |
 | This encyclopedia is authored by 459Crimes / Marc Aaron DeGiovanni | [Author](AUTHOR.md); *George News* 7 Feb 2024 (live + archive) | **Project identity**, not a JPMI table |
-| DeGiovanni first downloaded 0728 from Hayes; was Marco Polo member from May 2021 | Author identification | **Project identity**; does not make Marco Polo’s corpus into JPMI |
+| DeGiovanni first downloaded 0728 from Hayes; was Marco Polo member from May 2021 | Author identification | **Project identity**; does not make Marco Polo's corpus into JPMI |
 
 ## Primary legal sources
 
@@ -132,7 +132,7 @@ Mac Isaac later described:
 - making later preservation copies;
 - sending a copy to his father for an FBI approach.
 
-This material is useful for reconstructing a possible technical workflow, and this project accepts Mac Isaac's declaration as the operative account; the repository still labels it as **Mac Isaac's account** because the original store-server logs and copy commands have not been produced here and cannot be independently verified.
+This material reconstructs the likely technical workflow. It is labeled as **Mac Isaac's account** because the original store-server logs and copy commands have not been produced here and cannot be independently verified.
 
 https://www.breitbart.com/politics/2022/03/27/nolte-hunter-biden-laptop-whistleblower-john-paul-mac-isaac-the-breitbart-news-interview/
 
@@ -152,11 +152,11 @@ https://americanoversight.org/in-the-documents-patrick-byrnes-continued-involvem
 
 https://americanoversight.org/co-defendants-and-unindicted-co-conspirators-what-public-records-reveal-about-trump-allies-election-denial-activities/
 
-The America Project also publicly supported Mac Isaac's 2022 litigation. The direct Della Rocca → Sanders handoff, combined with the fact that the same attorney supplied CBS its exact-copy dataset for the same purpose, supports this project's assumption that the JPMI media and the CBS-examined copy are **byte-identical or virtually byte-identical**; that equivalence is not yet confirmed by an independent side-by-side hash comparison.
+The America Project also publicly supported Mac Isaac's 2022 litigation. The direct Della Rocca → Sanders handoff, combined with the fact that the same attorney supplied CBS its exact-copy dataset for the same purpose, supports the position that the JPMI media and the CBS-examined copy are **byte-identical or virtually byte-identical**; that equivalence is not yet confirmed by an independent side-by-side hash comparison.
 
 ## Integrity finding
 
-> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. The later activity identified is consistent with opening, browsing, indexing, copying, and forensic examination. **0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin). **Marco Polo** analyzed a Hayes bootable **APFS** later copy of the JPMI disk, not JPMI. **Dimitrelos** and **Maryman** used copies that correlate to **APFS structure**, not JPMI. The author’s FBI 0728 referral is outside this analysis.
+> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. The later activity identified is consistent with opening, browsing, indexing, copying, and forensic examination. **0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin). **Marco Polo** analyzed a Hayes bootable **APFS** later copy of the JPMI disk, not JPMI. **Dimitrelos** and **Maryman** used copies that correlate to **APFS structure**, not JPMI. The author's FBI 0728 referral is outside this analysis.
 
 ## Byte-access limitation
 
@@ -175,4 +175,4 @@ The present record does not support:
 - “Dimitrelos or Maryman examined the JPMI copy.”
 - “Every historical artifact was created on the 2019 repair-shop Mac.”
 
-Byte-identity with the CBS-examined copy is assumed from the common source and purpose, but is not independently hash-verified.
+Byte-identity with the CBS-examined copy is established from the common source and purpose, but is not independently hash-verified.

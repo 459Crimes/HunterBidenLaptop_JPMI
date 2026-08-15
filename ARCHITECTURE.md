@@ -17,7 +17,7 @@ No comparative laptop-data corpus is required to explain JPMI.
 
 The recommended entry points are [`README.md`](README.md) (main article) and [`docs/INDEX.md`](docs/INDEX.md) (all pages).
 
-Numbered files `docs/01`–`09` remain the **stable narrative IDs** (Stage 55 still republishes `06`). Companion articles cover people, hardware, copy lineages, timestamps, integrity, and glossary without renaming those IDs.
+Numbered files `docs/01`–`09` remain the **stable narrative IDs**. The `06` timeline is republished to `build/reports/03_known_datetime_stamps_of_use.md` during the build. Companion articles cover people, hardware, copy lineages, timestamps, integrity, and glossary without renaming those IDs.
 
 | Document | Purpose |
 |---|---|
@@ -88,7 +88,7 @@ Records created/modified/accessed distributions, extensions, types, permissions,
 
 ### `build/reports/`
 
-Human-readable technical summaries. `03_known_datetime_stamps_of_use.md` is republished after Stage 50 from the sourced custody timeline so a rebuild does not erase the historical narrative.
+Human-readable technical summaries. `03_known_datetime_stamps_of_use.md` is published from the sourced custody timeline, so the historical narrative is preserved alongside the database-derived summaries.
 
 ### `build/archives/`
 
@@ -132,7 +132,7 @@ The raw JPMI E01 is not published here.
 - **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** Non-laptop provenance is **0728 Extra Found Files** only (out of scope here).
 - CBS's separate exact-copy Mac Isaac/FBI-lineage review is corroborating external forensic evidence and remains separately attributed.
 - The JPMI acquisition note identifying Todd Sanders, combined with public evidence of his America Project affiliation, supports a Mac Isaac-centered provenance-network inference but not yet physical identity with CBS's media.
-- Historical hardware diagnostics may be migrated data and should not automatically identify the 2019 repair-shop machine.
+- Historical hardware diagnostics may be migrated data and do not automatically identify the 2019 repair-shop machine.
 - Reported hashes remain manifest evidence unless recomputed from source bytes.
 
 ## Source-byte boundary
