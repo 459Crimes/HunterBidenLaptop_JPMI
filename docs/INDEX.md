@@ -21,7 +21,9 @@ Main article: [README](../README.md).
 | Who / what / when / where / why / how | [Provenance — 5 Ws](02_provenance_5ws.md) |
 | The custody story as a chain | [Chain of custody](03_chain_of_custody.md) |
 | The full sourced chronology | [Timeline and handling](06_timeline_and_handling.md) · [Timeline index](TIMELINE.md) |
-| Who the people are (father, uncle, FBI agents) | [People](PEOPLE.md) |
+| Who the people are (father, uncle, FBI agents, Della Rocca, Apelbaum) | [People](PEOPLE.md) |
+| Yaacov Apelbaum / XRVision | [Apelbaum](APELBAUM.md) |
+| Attempt to get a copy to Tucker Carlson at Fox | [Fox / Tucker](FOX_TUCKER.md) |
 | Photos of the men and the shop (links only) | [Portraits and premises](PORTRAITS.md) |
 | The shop address and three laptops | [The Mac Shop](THE_MAC_SHOP.md) |
 | How many copies and which is which | [Copy lineages](COPY_LINEAGES.md) |

@@ -103,11 +103,33 @@ That is **account and tree evidence**. It does not prove one human personally cr
 
 Court-recited pleaded history: three damaged laptops presented 12 April 2019; external drive returned 13 April; later attorney **George Mesires** contacted Mac Isaac on 13 October 2020 asking whether he still possessed the laptop.
 
-## Brian Della Rocca
+## Brian R. Della Rocca (attorney)
 
-Mac Isaac’s attorney. Publicly described supplying CBS an **“exact copy”** of laptop data provided to federal investigators. This project’s drive copy was received by Todd Sanders **directly from Della Rocca**; the [mailing packet](MAILING_PACKET.md) photograph shows Mac Isaac’s home address as sender and Sanders as recipient.
+Maryland/DC-area lawyer (Compass Law Partners, Rockville; later Della Rocca Law, Gaithersburg). Delaware bar no. 4447 appears on federal pro hac filings. He is **Mac Isaac’s litigation and public-statement counsel**, not the repair-shop technician.
 
-Because the same attorney supplied both copies for the same purpose (an unadulterated Mac Isaac/FBI-lineage copy), this project **assumes** byte-identity or virtual byte-identity with the CBS media. **Not hash-verified.**
+**What he did with the data / the story:**
+
+- Drafted Mac Isaac’s October 2020 “clarifying statement” and shopped it to outlets; Just the News published it ([Delaware Supreme Court 2025](https://law.justia.com/cases/delaware/supreme-court/2025/448-2024.html) recites this).
+- Told the [Washington Post (30 Mar 2022)](https://www.washingtonpost.com/technology/2022/03/30/hunter-biden-laptop-data-examined/) how Mac Isaac recovered the damaged Mac (boot, copy until crash, repeat) and that Mac Isaac made a copy **before** the 9 Dec 2019 FBI surrender “in case he was ever thrown under the bus.”
+- Provided CBS News what he called an **“exact copy”** of the data given to federal investigators — the copy CBS/CFS examined as **untampered, no new files after April 2019** ([CBS, 21 Nov 2022](https://www.cbsnews.com/news/hunter-biden-laptop-data-analysis/)). He called it “clean” because it **predates** widely circulated political clones.
+- This project’s JPMI drive arrived via Della Rocca → Todd Sanders ([mailing packet](MAILING_PACKET.md)). Same attorney, same purpose → **assumed** virtual byte-identity with the CBS media; **not hash-verified**.
+- Appeared with Mac Isaac on *Tucker Carlson Tonight* after Hunter Biden’s Jan 2023 DOJ letters ([Fox](https://www.foxnews.com/media/hunter-biden-laptop-repairman-responds-legal-threats-presidents-son-gotten-used-it)).
+- In Feb 2023, rejected Abbe Lowell’s claim that Yaacov Apelbaum was “working with Senator Ron Johnson’s office”; Della Rocca wrote Apelbaum **never worked with Johnson** and was asked to **analyze**, not copy ([NY Post, 6 Feb 2023](https://nypost.com/2023/02/06/john-paul-mac-isaac-asks-for-hunter-biden-probe-over-false-laptop-report/)). That is counsel’s wording; it sits in tension with Mac Isaac’s book (forensic image + Apelbaum retaining a copy — see [Apelbaum](APELBAUM.md)).
+
+He is **not** a forensic examiner of JPMI in this repository’s pipeline. He is a **custody/public-record bridge**.
+
+## Yaacov Apelbaum (computer / AI analyst)
+
+Founder/CEO of **XRVision** (facial-recognition / AI video analytics; New York / founded Singapore 2015). Israeli-born, immigrated to the U.S. in the 1980s; later described himself as a U.S. citizen who renounced Israeli citizenship ([AZ Central profile](https://www.azcentral.com/story/news/local/arizona-investigations/2023/11/16/xrvision-owner-yaacov-apelbaum-exposes-voting-machine-breach-plots/71583389007/); his own EDVA complaint). Not to be confused with security researcher Jacob Appelbaum.
+
+**Connection to the laptop data (October 2020, after NY Post):**
+
+- On **15 Oct 2020** he published AI/face-recognition tests on NY Post laptop **photos** on his blog *The Illustrated Primer*, claiming authenticity / no deepfake ([Apelbaum, 15 Oct 2020](https://www.yaacovapelbaum.com/2020/10/15/hunter-biden-laptop-images-are-authentic/)).
+- Mac Isaac’s *American Injustice* (Nov 2022), as quoted in [Hunter Biden’s Delaware Supreme Court brief](https://courts.delaware.gov/supreme/oralarguments/download.aspx?id=5406), says Apelbaum came to Mac Isaac’s **Delaware home in October 2020** to try to create a **forensic image** of the data Mac Isaac still held, and that Mac Isaac **allowed Apelbaum to retain a copy**.
+- Hunter Biden’s Jan 2023 DOJ letter named Apelbaum among people to investigate, repeating the book’s Johnson-office claim ([DocumentCloud letter](https://s3.documentcloud.org/documents/23595947/letter-to-ns-aag-re-request-for-investigation.pdf)). Della Rocca denied the Johnson link (above).
+- Apelbaum is **not** in the JPMI acquisition note, not the CBS/CFS examiner, and not the Sanders mailing-packet recipient. His work is a **separate 2020 handling of Mac Isaac’s retained copy**, plus public image-authentication of press stills.
+
+**See also:** [Apelbaum](APELBAUM.md), [Fox / Tucker attempt](FOX_TUCKER.md).
 
 ## Todd Sanders
 
