@@ -20,6 +20,7 @@
 - [x] Explain why report-level metadata/hash evidence remains sufficient for accurate structural/timeline/provenance analysis despite the absence of public source-file bytes.
 - [x] Add a claim/source matrix.
 - [x] Keep post-2020 discussion limited mainly to evidence that the direct-copy lineage was opened, analyzed, indexed, and used for forensic reporting.
+- [x] Encyclopedia IA: main article, article index, MOS, glossary, and companion articles so a nerd can enter by object (X6, `Untitled`, E01), person, date, or integrity question without reading `01`–`09` in order.
 
 ## Technical publication workflow
 
@@ -60,6 +61,7 @@ These checks require the project database/runtime and cannot be executed through
 ## Publication acceptance criteria
 
 - [x] The README is understandable without prior knowledge of the broader laptop-data ecosystem.
+- [x] The README functions as a Wikipedia-style main article (hatnote, infobox, lead finding, timeline digest, portal) with `docs/INDEX.md` as the article map.
 - [x] Court-recited facts, participant accounts, JPMI-internal findings, and independent forensic findings are clearly distinguished.
 - [x] No public conclusion claims Mac Isaac literally used `dd` without a source log proving it.
 - [x] The Crucial X6 is consistently described as a later custody medium.

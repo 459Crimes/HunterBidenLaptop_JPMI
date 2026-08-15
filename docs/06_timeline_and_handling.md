@@ -1,5 +1,7 @@
 # 6. Timeline and Handling
 
+> **Encyclopedia.** Compact index: [Timeline](TIMELINE.md). Integrity: [Integrity](INTEGRITY.md). 2022 vs 2024: [discrepancy](2022_2024_DISCREPANCY.md). Sources: [Source matrix](09_source_matrix.md). This file is the canonical sourced narrative; Stage 55 republishes it to `build/reports/03_known_datetime_stamps_of_use.md`.
+
 The JPMI records contain multiple layers of time. The most important task is to distinguish **original user/application activity**, **the repair-shop recovery**, **creation of later copies**, **later opening/indexing of those copies**, and **the chronology of the forensic reports themselves**.
 
 This page deliberately interweaves two classes of evidence:

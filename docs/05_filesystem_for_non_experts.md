@@ -1,5 +1,7 @@
 # 5. The JPMI Filesystem, Explained for Non-Experts
 
+> **Encyclopedia.** Term list: [Glossary](GLOSSARY.md). Objects: [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md) · [Forensic image](FORENSIC_IMAGE.md) · [Timestamps](TIMESTAMPS.md). [Index](INDEX.md).
+
 Digital-forensic reports often become unreadable because they start with filesystem terminology. This page explains only the terms needed to understand JPMI.
 
 ## Disk image

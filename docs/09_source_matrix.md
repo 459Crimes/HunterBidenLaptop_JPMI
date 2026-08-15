@@ -1,5 +1,7 @@
 # 9. Source Matrix — JPMI Custody and Integrity Claims
 
+> **Encyclopedia.** Reading list: [Bibliography](BIBLIOGRAPHY.md). People: [People](PEOPLE.md). House MOS: [Manual of Style](MANUAL_OF_STYLE.md). [Index](INDEX.md).
+
 This page shows **which source supports which part of the JPMI story**. It separates court-recited facts, Mac Isaac's own later technical account, contemporaneous reporting, independent forensic review, and this repository's internal forensic reporting.
 
 ## Source hierarchy

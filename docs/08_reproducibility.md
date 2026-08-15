@@ -1,5 +1,7 @@
 # 8. Reproducibility
 
+> **Encyclopedia.** [Architecture](../ARCHITECTURE.md) · [Data contract](../DATA_CONTRACT.md) · [Forensic image](FORENSIC_IMAGE.md) · [Index](INDEX.md). Historical claims are not generated from PostgreSQL; they live in `06` / `09` and the wiki articles.
+
 The public narrative in this repository is backed by machine-readable JPMI tables **and a separately sourced historical custody record**.
 
 The technical pipeline should rebuild the JPMI-derived summaries without using another laptop-data corpus. Historical custody events—court decisions, the FBI subpoena sequence, the New York Post publication date, and the independent CBS review—are maintained as cited public-source material rather than fabricated from filesystem timestamps.

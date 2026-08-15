@@ -1,5 +1,7 @@
 # 7. Limits and Open Questions
 
+> **Encyclopedia.** Wording rules: [Manual of Style](MANUAL_OF_STYLE.md). Integrity finding: [Integrity](INTEGRITY.md). Scope: [Scope](SCOPE.md). [Index](INDEX.md).
+
 A provenance repository is more credible when it states both what the evidence **supports** and what it **cannot prove**.
 
 The JPMI material is substantial, but this public GitHub repository does not contain the restricted source E01 bytes. It contains detailed forensic reports, manifests, and derived tables from the Mac Isaac direct-copy lineage.

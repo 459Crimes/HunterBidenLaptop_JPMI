@@ -1,5 +1,7 @@
 # 2. JPMI Provenance — The 5 Ws and How
 
+> **Encyclopedia.** [People](PEOPLE.md) · [The Mac Shop](THE_MAC_SHOP.md) · [Copy lineages](COPY_LINEAGES.md) · [Source matrix](09_source_matrix.md) · [Index](INDEX.md).
+
 Provenance means the history and identity of evidence: **who handled it, what it is, when relevant events occurred, where those events occurred, why the copy exists, and how the copy was made or preserved.**
 
 For JPMI, some of those answers are established directly by the forensic records. Others are known only at a broader historical level. A few remain unresolved.

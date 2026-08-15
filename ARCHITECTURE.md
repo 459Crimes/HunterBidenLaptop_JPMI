@@ -6,19 +6,32 @@ This repository documents **JPMI — the John Paul Mac Isaac copy — as a stand
 
 The architecture has four layers:
 
-1. **Public narrative** — explain provenance and filesystem evidence to a reader with no digital-forensics background.
+1. **Public encyclopedia** — Wikipedia-style articles (lead, infobox, hatnotes, source classes) so a technically literate stranger can find *any* fact about this disk lineage without already knowing the numbered tutorial order.
 2. **Historical source record** — maintain court/news/participant sources for the 2019–2020 custody story separately from filesystem-derived facts.
 3. **Machine-readable JPMI evidence** — publish the inventories and summaries that support the technical narrative.
 4. **Reproducibility pipeline** — regenerate and validate the technical artifacts and republish the sourced custody timeline.
 
 No comparative laptop-data corpus is required to explain JPMI.
 
-## Layer 1 — public narrative
+## Layer 1 — public encyclopedia
 
-The `docs/` directory is the recommended entry point.
+The recommended entry points are [`README.md`](README.md) (main article) and [`docs/INDEX.md`](docs/INDEX.md) (all pages).
+
+Numbered files `docs/01`–`09` remain the **stable narrative IDs** (Stage 55 still republishes `06`). Companion articles cover people, hardware, copy lineages, timestamps, integrity, and glossary without renaming those IDs.
 
 | Document | Purpose |
 |---|---|
+| `README.md` | Main article: infobox, lead finding, timeline digest, portal |
+| `docs/INDEX.md` | Article index / categories |
+| `docs/MANUAL_OF_STYLE.md` | Evidence classes and banned overclaims |
+| `docs/GLOSSARY.md` | Terms of art |
+| `docs/PEOPLE.md` / `THE_MAC_SHOP.md` | Actors and the April 2019 recovery |
+| `docs/COPY_LINEAGES.md` / `MAILING_PACKET.md` | Devices vs copies vs this GitHub tree |
+| `docs/CRUCIAL_X6.md` / `HFS_VOLUME_UNTITLED.md` / `FORENSIC_IMAGE.md` | Storage objects |
+| `docs/CONTENTS_CENSUS.md` / `TIMESTAMPS.md` / `INTEGRITY.md` | Populations, time, tampering |
+| `docs/2022_2024_DISCREPANCY.md` | Later report-lineage collision |
+| `docs/SCOPE.md` / `BIBLIOGRAPHY.md` | Boundary and sources |
+| `docs/TIMELINE.md` | Compact event index into `06` |
 | `01_what_is_jpmi.md` | Define the evidence source and qualified `dd`-style analogy |
 | `02_provenance_5ws.md` | Who, What, When, Where, Why, and How |
 | `03_chain_of_custody.md` | April repair, FBI-copy lineage, Costello/New York Post route, Todd Sanders delivery bridge |

@@ -1,12 +1,14 @@
 # Status
 
-Updated: 2026-08-12
+Updated: 2026-08-15
 
 ## Current state
 
-`PUBLIC JPMI PROVENANCE REWRITE VALIDATED — READY FOR MERGE`
+`PUBLIC JPMI ENCYCLOPEDIA — WIKI LAYER ADDED ON VALIDATED PROVENANCE`
 
-The repository is a **standalone JPMI evidence repository for general readers**. It combines JPMI's own disk/filesystem reporting with a separately sourced 2019–2020 custody history drawn from court opinions, contemporaneous reporting, participant accounts, and independent forensic review. The full pipeline was regenerated from the canonical `rhb_forensics` database and passed the local validation gate.
+The repository is a **standalone JPMI evidence encyclopedia**. The 2026-08-12 database-backed rewrite remains the evidentiary baseline. The 2026-08-15 work reorganizes that material so the Git tree reads like a technically literate Wikipedia: main-article lead and infobox, article index, hatnotes, people/hardware/lineage/timestamp/integrity companions, and the same bounded integrity language.
+
+Entry points: [`README.md`](README.md), [`docs/INDEX.md`](docs/INDEX.md).
 
 ## Completed in this rewrite
 
@@ -30,6 +32,7 @@ The repository is a **standalone JPMI evidence repository for general readers**.
 - [x] Expanded the explanation that the public repository lacks individual source-file bytes but contains enough disk/filesystem/hash/timestamp/CNID/system-state reporting for accurate, reproducible structural and provenance analysis.
 - [x] Added `scripts/55_publish_custody_timeline.py` so a future database rebuild republishes the sourced custody narrative after the database-derived report stage.
 - [x] Preserved the separate reported 2022 E01 / 2024 HFS+ last-write chronology discrepancy as an unresolved later report-lineage issue rather than making it the center of the 2019–2020 story.
+- [x] Reorganized the public Git tree as an encyclopedia (2026-08-15): `README` main article + infobox; `docs/INDEX.md`; Manual of Style; glossary; people; Mac Shop; copy lineages; Crucial X6; HFS+ `Untitled`; forensic image; mailing packet; contents census; timestamps; integrity; 2022/2024 discrepancy; scope; bibliography; compact timeline index. Numbered `01`–`09` IDs retained (Stage 55 still publishes `06`).
 
 ## Technical evidence in the branch
 

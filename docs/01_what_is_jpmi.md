@@ -1,5 +1,7 @@
 # 1. What Is JPMI?
 
+> **Encyclopedia.** Main article: [README](../README.md). Index: [all pages](INDEX.md). Related: [Glossary](GLOSSARY.md) · [Crucial X6](CRUCIAL_X6.md) · [Scope](SCOPE.md).
+
 **JPMI** is the shorthand used in this project for the **John Paul Mac Isaac copy**: the Mac Isaac-lineage copy of data recovered from the computer associated with Hunter Biden and left at a Wilmington, Delaware repair shop in 2019.
 
 This repository is about that copy alone.

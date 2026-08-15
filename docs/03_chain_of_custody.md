@@ -1,5 +1,7 @@
 # 3. JPMI Chain of Custody
 
+> **Encyclopedia.** Narrative companion to [Copy lineages](COPY_LINEAGES.md) and [Timeline](TIMELINE.md). Full sourced chronology: [06](06_timeline_and_handling.md). Exhibit: [Mailing packet](MAILING_PACKET.md). [Index](INDEX.md).
+
 A digital chain of custody should identify **which device or copy existed at each stage, what operation was performed, who handled it, and what evidence supports the transition**.
 
 JPMI has a partially documented chain. The strongest public evidence comes from Delaware court opinions incorporating Mac Isaac's pleadings, Mac Isaac's own later accounts, the December 2019 FBI subpoena sequence, and a later independent forensic examination of an exact-copy Mac Isaac/FBI-lineage dataset.

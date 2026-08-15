@@ -1,5 +1,7 @@
 # 4. What Is on the JPMI Copy?
 
+> **Encyclopedia.** Nerd-depth census: [Contents census](CONTENTS_CENSUS.md). Generated rollup: [environment report](../build/reports/02_os_version.md). [Index](INDEX.md).
+
 JPMI is best understood as a **Mac user environment inside a later HFS+ custody volume**, not as a folder containing only the files that later became newsworthy.
 
 The current inventory contains **576,249 paths**.
