@@ -31,6 +31,12 @@
 
 - Washington Post, 30 Mar 2022 — repair/recovery and custody sequence via Della Rocca. https://www.washingtonpost.com/technology/2022/03/30/hunter-biden-laptop-data-examined/
 - Mac Isaac interview, 27 Mar 2022 — store-server and father/FBI account. https://www.breitbart.com/politics/2022/03/27/nolte-hunter-biden-laptop-whistleblower-john-paul-mac-isaac-the-breitbart-news-interview/
+- Marco Polo, *Report on the Biden Laptop*, 4th printing (2024), ISBN 978-1-7371866-3-2. Shop/FBI extract: [Marco Polo v4](MARCO_POLO.md). Analyzed Hayes’s **bootable APFS** descendant of JPMI plus **0728**; **not** the JPMI copy.
+
+## Project identity
+
+- *George News*, “A Cold Front In Democracy” (7 Feb 2024). Public narrative of Marco Polo member **Marc De Giovanni** (this encyclopedia’s author, **Marc Aaron DeGiovanni** / **459Crimes**). Original: https://www.georgenews.org/p/a-cold-front-in-democracy — archived: https://web.archive.org/web/20250321004405/https://www.georgenews.org/p/a-cold-front-in-democracy — article: [Author](AUTHOR.md).
+- *FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf* (28 Jul 2026). Author’s FBI referral on 0728 as potentially hacked. **Not hosted here; not part of the JPMI analysis.** See [Author](AUTHOR.md).
 
 ## Public-record affiliation (Sanders / America Project)
 
@@ -50,3 +56,4 @@
 
 - [Manual of Style](MANUAL_OF_STYLE.md) (source hierarchy)
 - [People](PEOPLE.md)
+- [Author](AUTHOR.md)

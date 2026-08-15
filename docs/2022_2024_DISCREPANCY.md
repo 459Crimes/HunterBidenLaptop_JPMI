@@ -1,6 +1,6 @@
 # 2022/2024 chronology discrepancy
 
-> **Hatnote.** This is a **later report-lineage** problem. It is **not** the 2019–2020 direct-copy story. Do not import it into April 2019. See [Integrity](INTEGRITY.md) and [Forensic image](FORENSIC_IMAGE.md).
+> **Hatnote.** This is a **later report-lineage** problem. It is **not** the 2019–2020 direct-copy story and is not part of the April 2019 repair chronology. See [Integrity](INTEGRITY.md) and [Forensic image](FORENSIC_IMAGE.md).
 
 ## The collision
 

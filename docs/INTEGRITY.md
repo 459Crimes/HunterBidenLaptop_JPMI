@@ -2,17 +2,19 @@
 
 > **Hatnote.** This is the encyclopedia article on **what the JPMI reporting shows about alteration**. It is not a general essay on every laptop copy on the internet. See [Scope](SCOPE.md).
 
-## Bounded finding (preferred language)
+## Bounded finding
 
 > **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** Later JPMI metadata is consistent with custody and forensic handling, not with intrusion or planted user files.
 
 “No evidence identified” ≠ “undetectable change is logically impossible.”
 
-## Where non-laptop provenance *is* attributed (not this repo)
+## Where unknown-origin files *are* attributed (not this repo)
 
-Files that 459Crimes investigative work treats as originating from a **non-laptop** provenance are **solely** a separate corpus: a shared folder named **Extra Found Files**, provided via **MEGA** by **Conan Hayes after 28 July 2021**, and referred to as **0728** in other 459Crimes work.
+**Extra Found Files / 0728** (MEGA, Conan Hayes, after 28 July 2021) did **not** come from the laptop files per se. It is a large collection **related to** laptop material: many items of **unknown origin**, and some **completely unknown to the laptop**.
 
-A tip and a later report on that 0728 body of files were submitted to the FBI. **That matter is outside the scope of this JPMI analysis.** Do not import Extra Found Files / 0728 rows, hashes, or conclusions into a sentence about Quote #7469, the Mac Shop recovery, the FBI-seized MacBook/WD pair, or the Crucial X6 / `HB-IMAGE-2022-04-29.E01` reports. See [Scope](SCOPE.md).
+The author submitted an FBI source-attribution referral on 0728 as **potentially hacked** (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`, 28 July 2026). That referral is **outside this JPMI analysis**; it is described on [Author](AUTHOR.md). It is not a finding about Quote #7469, the Mac Shop recovery, the FBI-seized MacBook/WD pair, or the Crucial X6 / E01 reports.
+
+**Marco Polo** analyzed a **bootable laptop produced by Hayes** that used **APFS** — a **later, more altered copy of the JPMI disk**. It **did not analyze JPMI**. “Altered” names later conversion/handling of a descendant disk, not a finding that JPMI was hacked. See [Marco Polo v4](MARCO_POLO.md) and [Scope](SCOPE.md).
 
 ## Two independent layers
 
@@ -56,7 +58,7 @@ The copy was **used as a disk** after Hunter-era authorship stopped:
 A Mac home directory routinely contains migrated years. Creation on a prior Mac, restore from backup, or iPhone sync does not require the 2019 chassis to have existed in 2017.
 
 **“October 2020 timestamps mean planted files.”**  
-Look at the **object type**. Finder and versioning directories changing in October 2020 is the expected signature of **someone opening the copy**, which Mac Isaac and later examiners had every reason to do once the story existed.
+The **object type** matters. Finder and versioning directories changing in October 2020 is the expected signature of **someone opening the copy**, which Mac Isaac and later examiners had every reason to do once the story existed.
 
 **“2022 access times mean the data was written in 2022.”**  
 Accessed ≠ modified ≠ created. The 2022 access cluster is huge; the 2022 **modified** user-document population is not.

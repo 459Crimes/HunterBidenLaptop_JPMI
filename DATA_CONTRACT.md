@@ -4,7 +4,7 @@ All published tables in this repository describe **JPMI only**.
 
 TSV files are UTF-8, LF-terminated, tab-separated, and contain a header row. Shards of the same logical export use identical columns.
 
-Timestamp fields preserve the convention supplied by the originating forensic report unless a file explicitly says that normalization has been applied. Do not silently compare timestamps from different report families as though every field uses the same timezone.
+Timestamp fields preserve the convention supplied by the originating forensic report unless a file explicitly says that normalization has been applied. Timestamps from different report families are not interchangeable as if every field used the same timezone.
 
 ## `build/file_tree/`
 

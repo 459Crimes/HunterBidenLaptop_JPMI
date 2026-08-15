@@ -32,7 +32,7 @@ ABC later summarized Mac Isaac’s own later account as having sought to distrib
 
 On or about **28–30 Oct 2020**, Carlson told viewers a producer-mailed **flash drive of “Hunter Biden docs”** had gone missing at UPS; UPS told Daily Beast the parcel was in a UPS facility; Carlson then said they had **made copies before mailing** ([NY Mag / Intelligencer](https://nymag.com/intelligencer/2020/10/why-did-tucker-carlson-send-a-flash-drive-through-the-mail.html)).
 
-That segment does **not** identify Mac Isaac, LaCorte, or Apelbaum as the source. Do not equate it with the September family→LaCorte→Tucker plan without a source that names the drive.
+That segment does **not** identify Mac Isaac, LaCorte, or Apelbaum as the source. No source cited here names that flash drive as the September family→LaCorte→Tucker object.
 
 A later, **separate** path: Jack Maxey (from Bannon’s copy) went to Switzerland; Hunter Biden’s DOJ letter says **Carlson went to Switzerland to meet Maxey** ([letter](https://s3.documentcloud.org/documents/23595947/letter-to-ns-aag-re-request-for-investigation.pdf)). That is **not** the 2020 Mac Isaac shop copy.
 

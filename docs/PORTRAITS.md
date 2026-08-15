@@ -17,7 +17,7 @@
 | Funeral-home memorial portrait (typical for this obituary layout) | [French Funerals, Rio Rancho — Steve MacIsaac, 4 Feb 1947 – 24 Jan 2025](https://www.frenchfunerals.com/obituaries/richard-macisaac) | Family-published memorial page. Open the page for the image; this repo does not mirror it |
 | Service biography (text; aircraft photos on the association site are **gunships**, not necessarily his portrait) | [AC-119 Gunship Association — Mac Isaac, Richard “Steve”](https://www.ac119gunships.com/mac-isaac-richard-steve/) | 18th SOS 1972 |
 
-No widely syndicated news headshot of Col. Mac Isaac at the Albuquerque FBI office has been found. Do not use random “Richard MacIsaac” people-search thumbnails; they are not chain-of-custody evidence and are often mis-hits.
+No widely syndicated news headshot of Col. Mac Isaac at the Albuquerque FBI office has been found. Unidentified “Richard MacIsaac” people-search thumbnails are not chain-of-custody evidence and are often mis-hits.
 
 ## Ronald J. Scott, Jr.
 
@@ -31,7 +31,7 @@ No photograph of Scott delivering packets to Congress has been found.
 
 **No photographs of the 2019 home meeting or 9 Dec shop seizure have been located.** Fox News published **document images** (repair authorization, subpoena pages, receipt) attributed to SA Joshua Wilson’s paperwork, not portraits ([Fox News laptop/money-laundering piece](https://www.foxnews.com/politics/laptop-hunter-biden-linked-fbi-money-laundering-probe)). Court-filed photographs of the same class of papers are hosted in [Exhibits](EXHIBITS.md).
 
-Do not scrape social media for people with those surnames. Wilson later appears as a **named quote** in Delaware FBI press (e.g. [WDEL, 2026 fugitive surge](https://www.wdel.com/news/over-100-caught-in-regional-fbi-surge/article_cff2d1c7-4993-42ad-a532-7be77e661eb1.html)); that is a later public-affairs still if the outlet ran one, not a picture of the Mac Shop counter in 2019.
+This encyclopedia does not use unidentified social-media photographs of people with those surnames. Wilson later appears as a **named quote** in Delaware FBI press (e.g. [WDEL, 2026 fugitive surge](https://www.wdel.com/news/over-100-caught-in-regional-fbi-surge/article_cff2d1c7-4993-42ad-a532-7be77e661eb1.html)); that is a later public-affairs still if the outlet ran one, not a picture of the Mac Shop counter in 2019.
 
 ## The Mac Shop (21A Trolley Square)
 

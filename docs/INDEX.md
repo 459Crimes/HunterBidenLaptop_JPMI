@@ -21,9 +21,11 @@ Main article: [README](../README.md).
 | Who / what / when / where / why / how | [Provenance — 5 Ws](02_provenance_5ws.md) |
 | The custody story as a chain | [Chain of custody](03_chain_of_custody.md) |
 | The full sourced chronology | [Timeline and handling](06_timeline_and_handling.md) · [Timeline index](TIMELINE.md) |
+| Who wrote this encyclopedia | [Author](AUTHOR.md) |
 | Who the people are (father, uncle, FBI agents, Della Rocca, Apelbaum) | [People](PEOPLE.md) |
 | Yaacov Apelbaum / XRVision | [Apelbaum](APELBAUM.md) |
 | Attempt to get a copy to Tucker Carlson at Fox | [Fox / Tucker](FOX_TUCKER.md) |
+| Marco Polo 4th printing (shop/FBI extract only) | [Marco Polo v4](MARCO_POLO.md) |
 | Photos of the men and the shop (links only) | [Portraits and premises](PORTRAITS.md) |
 | Signed quote, invoice email, FBI subpoena photos | [Exhibits](EXHIBITS.md) |
 | House Judiciary / Oversight laptop reports | [Congressional reports](CONGRESS.md) |
@@ -47,7 +49,7 @@ Main article: [README](../README.md).
 
 ## Numbered narrative (stable IDs)
 
-These nine files are the original public-narrative sequence. Stage 55 of the build republishes `06` into `build/reports/03_known_datetime_stamps_of_use.md`. Do not rename them without updating `scripts/55_publish_custody_timeline.py`.
+These nine files are the original public-narrative sequence. Stage 55 of the build republishes `06` as `build/reports/03_known_datetime_stamps_of_use.md`. Those IDs are stable in this repository.
 
 | ID | Article |
 |---|---|
@@ -75,7 +77,7 @@ These nine files are the original public-narrative sequence. Stage 55 of the bui
 
 ## Categories
 
-- **Provenance:** 02, 03, 06, 09, PEOPLE, PORTRAITS, THE_MAC_SHOP, EXHIBITS, CONGRESS, COPY_LINEAGES, MAILING_PACKET
+- **Provenance:** 02, 03, 06, 09, PEOPLE, AUTHOR, PORTRAITS, THE_MAC_SHOP, EXHIBITS, CONGRESS, COPY_LINEAGES, MAILING_PACKET
 - **Storage objects:** CRUCIAL_X6, HFS_VOLUME_UNTITLED, FORENSIC_IMAGE
 - **Contents:** 04, CONTENTS_CENSUS, 05, GLOSSARY, TIMESTAMPS
 - **Integrity:** INTEGRITY, 2022_2024_DISCREPANCY, 07, SCOPE

@@ -6,7 +6,7 @@
 
 **Yaacov Apelbaum** is founder/CEO (also described as CTO) of **XRVision**, an AI / facial-recognition / video-analytics firm. Public profiles: Israeli-born, U.S. Social Security issued Massachusetts 1988; XRVision founded in Singapore 2015 with co-founder Guy Ron; New York–based in later filings ([AZ Central, 16 Nov 2023](https://www.azcentral.com/story/news/local/arizona-investigations/2023/11/16/xrvision-owner-yaacov-apelbaum-exposes-voting-machine-breach-plots/71583389007/)). He blogs at [yaacovapelbaum.com](https://www.yaacovapelbaum.com/) (*The Illustrated Primer*).
 
-Do not confuse him with **Jacob Appelbaum** (Tor / security researcher).
+He is a different person from **Jacob Appelbaum** (Tor / security researcher).
 
 ## What he did with laptop data
 

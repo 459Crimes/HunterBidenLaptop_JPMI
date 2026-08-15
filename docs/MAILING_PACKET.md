@@ -32,9 +32,9 @@ Mac Isaac direct-copy / FBI lineage
 - Identification of the **original laptop SSD**.
 - A complete chain of every clone Mac Isaac made.
 
-## Caption discipline
+## Caption
 
-Treat the file as an exhibit: sender, recipient, that it contained the drive copy as recorded by this project. Do not turn the caption into a political biography of the America Project. Affiliation context belongs in [People](PEOPLE.md) and [Source matrix](09_source_matrix.md), sourced to American Oversight and court/CBS records.
+The photograph is an exhibit of sender, recipient, and that it contained the drive copy as recorded by this project. Affiliation of Sanders with the America Project is in [People](PEOPLE.md) and [Source matrix](09_source_matrix.md), sourced to American Oversight and court/CBS records.
 
 ## See also
 

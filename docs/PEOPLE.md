@@ -1,6 +1,6 @@
 # People
 
-> **Hatnote.** This page lists persons and organizations **as they appear in the JPMI custody story**. It is not a biography project. Roles below are limited to what court opinions, attributed interviews, public-record reporting, or this repository’s exhibits support. See [Source matrix](09_source_matrix.md). Public photographs are **linked, not copied** ([Portraits and premises](PORTRAITS.md)).
+> **Hatnote.** This page lists persons and organizations **as they appear in the JPMI custody story**. It is not a biography project. Roles below are limited to what court opinions, attributed interviews, public-record reporting, or this repository’s exhibits support — except the closing **author** entry, which is [project identity](AUTHOR.md). See [Source matrix](09_source_matrix.md). Public photographs are **linked, not copied** ([Portraits and premises](PORTRAITS.md)).
 
 ## John Paul Mac Isaac
 
@@ -44,7 +44,7 @@ The JPMI HFS+ creation date (26 Sep 2019) is a **chronology correlation** with t
 | [Just the News, 25 Jan 2021](https://justthenews.com/accountability/russia-and-ukraine-scandals/delaware-computer-shop-owner-describes-fbis-first) | **September 2019** |
 | Della Rocca Exhibit D | After late-July concern; “soon thereafter”; FBI callback **mid-October 2019** |
 | Mac Isaac book excerpt via [Fox News, 17 May 2022](https://www.foxnews.com/politics/hunter-biden-laptop-repairmen-says-fbi-didnt-seem-interested-reviewing-hard-drive) | Father’s visit **8 Oct 2019**; John Paul got the report that night ~8 p.m. |
-| Mac Isaac video transcript via [World Tribune](https://worldtribune.com/john-paul-mac-isaac-faces-ruin-after-going-to-fbi-with-bidens-abandoned-laptop/) | **9 Oct 2019** walk-in |
+| Mac Isaac video transcript via [World Tribune](https://worldtribune.com/john-paul-mac-isaac-faces-ruin-after-going-to-fbi-with-bidens-abandoned-laptop/); Marco Polo v4 timeline | **9 Oct 2019** walk-in |
 
 This encyclopedia records the scatter rather than picking a single day.
 
@@ -74,8 +74,9 @@ These names are **not** in the Delaware Supreme Court chronology, which says onl
 | Person | Role in Mac Isaac’s telling | Independent corroboration | Photo |
 |---|---|---|---|
 | **Walk-in agent, Albuquerque** | Refused to give a name; copied repair paperwork; told Col. Mac Isaac to lawyer up | None identified. Della Rocca and John Paul agree the office **turned the father away** | None public (unnamed) |
-| **Joshua Wilson** (“Agent Joshua”) | Child-exploitation specialist; called the father **1 Nov 2019** (JP video); met John Paul at home **21 Nov 2019** with a second agent; handed the **9 Dec 2019** grand-jury subpoena at the shop ~11 a.m. | [Fox News](https://www.foxnews.com/politics/laptop-hunter-biden-linked-fbi-money-laundering-probe) reported an FBI **Receipt for Property** and related papers **signed by Special Agent Joshua Wilson** (case ID handwritten `272D-BA-3065729` in that report). The complaint’s Exhibit B includes a photographed **AO 110 proof of service** naming **Joshua Wilson, Special Agent, FBI**, Wilmington RA ([photo](exhibits/fbi/grand_jury_subpoena_proof_of_service_joshua_wilson.jpg)). A [WDEL 2026](https://www.wdel.com/news/over-100-caught-in-regional-fbi-surge/article_cff2d1c7-4993-42ad-a532-7be77e661eb1.html) story quotes Delaware-based **Supervisory Special Agent Joshua Wilson** on a later fugitive surge — consistent with the same public FBI officer, not a photo of the 2019 meetings | No 2019 meeting photo found. Do not treat later press stills as the shop encounter |
-| **Mike DeMeo** (“Agent Mike”) | Second agent at the 21 Nov home meeting; texted for a timeline; ~9:50 a.m. 9 Dec asked for the external-drive serial; after seizure became the text-only contact and, Mac Isaac says, asked for help mounting the drive | Last name **DeMeo** appears in Mac Isaac’s book as quoted by the [New York Post (11 Aug 2022)](https://nypost.com/2022/08/11/hunter-biden-laptop-repairman-says-fbi-threatened-him-to-stay-silent/) (“Agent Wilson kept walking but Agent DeMeo paused…”). First name **Mike** is from Mac Isaac’s video. No FBI press confirmation of DeMeo’s role found here | None found |
+| **Joshua Wilson** (“Agent Joshua”) | Child-exploitation specialist; called the father **1 Nov 2019** (JP video); met John Paul at home **21 Nov 2019** with a second agent; handed the **9 Dec 2019** grand-jury subpoena at the shop ~11 a.m. | [Fox News](https://www.foxnews.com/politics/laptop-hunter-biden-linked-fbi-money-laundering-probe) reported an FBI **Receipt for Property** and related papers **signed by Special Agent Joshua Wilson** (case ID handwritten `272D-BA-3065729` in that report). The complaint’s Exhibit B includes a photographed **AO 110 proof of service** naming **Joshua Wilson, Special Agent, FBI**, Wilmington RA ([photo](exhibits/fbi/grand_jury_subpoena_proof_of_service_joshua_wilson.jpg)). A [WDEL 2026](https://www.wdel.com/news/over-100-caught-in-regional-fbi-surge/article_cff2d1c7-4993-42ad-a532-7be77e661eb1.html) story quotes Delaware-based **Supervisory Special Agent Joshua Wilson** on a later fugitive surge — consistent with the same public FBI officer, not a photo of the 2019 meetings | No 2019 meeting photo found. Later press stills are not photographs of the shop encounter |
+| **Mike DeMeo** (“Agent Mike”) | Second agent at the 21 Nov home meeting; texted for a timeline; ~9:50 a.m. 9 Dec asked for the external-drive serial; after seizure became the text-only contact and, Mac Isaac says, asked for help mounting the drive | Last name **DeMeo** appears in Mac Isaac’s book as quoted by the [New York Post (11 Aug 2022)](https://nypost.com/2022/08/11/hunter-biden-laptop-repairman-says-fbi-threatened-him-to-stay-silent/). First name **Mike** is from Mac Isaac’s video | None found |
+| **Mike Dzielak** | Same “second agent / Agent Mike” role in Marco Polo v4 (Wilmington RA / BAFO child-exploitation investigator; home visit, serial text, shop subpoena, same-day call for drive access) | Marco Polo 4th printing (2024) compilation, citing LinkedIn/public child-porn reporting. **Not** the same string as DeMeo. Recorded as an **unresolved name conflict** for one role, not as two proven agents on the couch | None found |
 
 Mac Isaac’s **interpretation** that DeMeo’s “nothing ever happens to people who don’t talk” line was a threat is **his**. The FBI has not, in the sources used here, published a rebuttal naming those agents.
 
@@ -157,7 +158,7 @@ Court-recited: material reached the *New York Post* through Giuliani after the C
 
 ## George Mesires
 
-Hunter Biden’s attorney (then Faegre Drinker). Court record: contacted Mac Isaac **13 October 2020** regarding possession of the laptop. The email scan is Exhibit C ([photo](exhibits/shop/mesires_2020-10-13_email.jpg)). That is **not** the April 2019 completion/invoice email ([Exhibits](EXHIBITS.md)).
+Hunter Biden’s attorney (then Faegre Drinker). Court record: contacted Mac Isaac **13 October 2020** regarding possession of the laptop. The email scan is Exhibit C ([photo](exhibits/shop/mesires_2020-10-13_email.jpg)). That is **not** the April 2019 completion/invoice email ([Exhibits](EXHIBITS.md)). Marco Polo v4 (citing S.D. Fla. Doc. 44-20 and contemporaneous tweets) adds that Mesires was reacting to the *Post* and conveyed a **2017** drop-off date, which does not match Quote #7469 (**12 April 2019**).
 
 ## Computer Forensics Services (CFS) / CBS News
 
@@ -169,10 +170,16 @@ This is **independent forensic review of a Mac Isaac/FBI-lineage copy**. It is n
 
 December 9, 2019 grand-jury subpoena **19-3-LFWS-V-136** (AUSA **Lesley F. Wolf**): laptop **FVFXC2MMHV29**, Western Digital **WX21A19ATFF3**, paperwork. Photographs: [Exhibits](EXHIBITS.md). Open questions recorded here: why those originals have not been returned to anyone; how many copies existed in the preservation period; whether FBI holdings match JPMI/CBS media. **Only the FBI can verify the FBI-side history.**
 
+## Marc Aaron DeGiovanni / 459Crimes (this encyclopedia)
+
+Author of **this** repository. Marco Polo member working with Garrett Ziegler from **May 2021**; first downloader of **0728** from Conan Hayes. **Not** a custodian in the Della Rocca → Sanders chain. Holds copies similar to those used by **Dimitrelos** and **Maryman** (APFS-structure, not JPMI). FBI 0728 referral is out of scope. Public narrative: [A Cold Front In Democracy](https://www.georgenews.org/p/a-cold-front-in-democracy) (*George News*, 7 Feb 2024) and [archived copy](https://web.archive.org/web/20250321004405/https://www.georgenews.org/p/a-cold-front-in-democracy). Full page: [Author](AUTHOR.md).
+
 ## See also
 
+- [Author](AUTHOR.md)
 - [Chain of custody](03_chain_of_custody.md)
 - [Copy lineages](COPY_LINEAGES.md)
+- [Marco Polo v4](MARCO_POLO.md)
 - [Exhibits](EXHIBITS.md)
 - [Congressional reports](CONGRESS.md)
 - [Bibliography](BIBLIOGRAPHY.md)

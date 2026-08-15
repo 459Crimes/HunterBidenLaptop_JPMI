@@ -36,11 +36,9 @@ Those are **congressional-staff / transcribed-interview** propositions. This enc
 
 Mac Isaac’s uncle, Col. Ronald J. Scott, Jr., and Mac Isaac himself describe **2020 outreach to congressional offices**. Those contacts are **participant history** ([People](PEOPLE.md)); they are not the same thing as a committee report exhibit of Quote #7469.
 
-## How to use these reports in this encyclopedia
+## What these reports establish
 
-- Use them for **FBI / platform / 51-officials** chronology.
-- Do **not** treat a staff report’s paraphrase of “the laptop” as identification of the JPMI Crucial X6 or of volume `Untitled`.
-- Shop serials and the signed quote live in [Exhibits](EXHIBITS.md), which come from **court filings**, not from these PDFs.
+They are used here for **FBI / platform / 51-officials** chronology. A staff report’s paraphrase of “the laptop” is not an identification of the JPMI Crucial X6 or of volume `Untitled`. Shop serials and the signed quote are in [Exhibits](EXHIBITS.md), from **court filings**, not from these PDFs.
 
 ## See also
 

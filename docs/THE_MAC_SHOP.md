@@ -12,8 +12,9 @@
 | City | Wilmington, Delaware **19806** |
 | Neighborhood | Trolley Square shopping center |
 | EIN (business-directory class) | 27-2084791, Delaware corporation, address first seen 2009 in some EIN aggregators |
+| Delaware file | **4794855** — The Mac Shop, Inc. registered **2 March 2010** (Marco Polo v4 citing Division of Corporations) |
 | Established (self-description in old business listings) | 2010, Greater Wilmington Mac service |
-| Closed | **November 2020** “for the foreseeable future” after the laptop story ([Delaware Business Now](https://www.delawarebusinessnow.com/news/analysis/john-paul-s-mac-shop-closes-for-the-foreseeable-future/article_3a7cc4a7-fd6e-520a-9f0b-566898306935.html); customer-recommendation note: [dannyschweers.com](https://dannyschweers.com/recommended-apple-macintosh-repair-wilmington-delaware/)) |
+| Closed | In-person **November 2020** “for the foreseeable future” ([Delaware Business Now](https://www.delawarebusinessnow.com/news/analysis/john-paul-s-mac-shop-closes-for-the-foreseeable-future/article_3a7cc4a7-fd6e-520a-9f0b-566898306935.html)). Marco Polo v4: **Dissolution-Short Form 31 December 2020** |
 
 Yelp and similar directories still list the closed shop at [21A Trolley Sq](https://www.yelp.com/biz/the-mac-shop-wilmington) and host **customer photos of the storefront/interior** — those are premises pictures, not forensic exhibits.
 
@@ -56,7 +57,7 @@ The server-first workflow is technically important: later Mac Isaac copies **nee
 
 Mac Isaac sent an **$85** electronic invoice on **17 April 2019**. Pleadings state the laptop and external drive were not reclaimed or paid for despite contact attempts.
 
-The signed in-shop form is **Quote #7469** (same $85, bill-to Hunter Biden, email `rhbdc@icloud.com`, scope including “recover data to store server and contact customer when complete”). The **emailed** invoice is a later CRM/iCloud object: government **GTX 40** in the 2024 Delaware gun trial (“The Mac Shop Invoice Emailed to rhbdc@icloud.com”). Photographs and the distinction: [Exhibits](EXHIBITS.md). Congressional FBI/laptop reports: [Congress](CONGRESS.md).
+The signed in-shop form is **Quote #7469** (same $85, bill-to Hunter Biden, email `rhbdc@icloud.com`, scope including “recover data to store server and contact customer when complete”). Marco Polo v4 also cites an internal inventory invoice **#6077**. Those can be two CRM objects for one job; only 7469 is hosted here. The **emailed** invoice is a later object: government **GTX 40** in the 2024 Delaware gun trial (“The Mac Shop Invoice Emailed to rhbdc@icloud.com”). Photographs and the distinction: [Exhibits](EXHIBITS.md). Congressional FBI/laptop reports: [Congress](CONGRESS.md). Compilation notes: [Marco Polo v4](MARCO_POLO.md).
 
 JPMI’s substantive user/application modifications are overwhelmingly **before** this repair window. Later activity in the current reports is sparse and metadata-dominated. Nothing in the JPMI reporting analyzed here establishes hacking or injection of substantive external user files during April–July 2019. **No hacking is attributed to this or any other laptop-derived medium**; non-laptop provenance is **0728 Extra Found Files** only (out of scope). See [Integrity](INTEGRITY.md).
 

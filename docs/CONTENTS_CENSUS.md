@@ -13,7 +13,7 @@ From [`02_top_level_summary.tsv`](../build/file_tree/02_top_level_summary.tsv):
 | EFI System Partition | 6 | 209.7 MB | 0% |
 | GPT / unpartitioned | 7 | 134.3 MB | 0% |
 
-Do **not** add 215 GB + 283 GB and call it “Hunter’s unique files.” The structural byte total includes filesystem objects and unallocated-range accounting.
+The 215 GB user-tree figure and the 283 GB structural figure are different accounting classes. Added together they are not “Hunter’s unique files.” The structural byte total includes filesystem objects and unallocated-range accounting.
 
 User-tree `max_modified_ts` in that rollup is **2020-10-15 21:20:53** — the Finder cluster, not a 2022 authorship date. Structural partition `max_modified_ts` runs to **2024-11-21**.
 

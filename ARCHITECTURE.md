@@ -23,7 +23,7 @@ Numbered files `docs/01`–`09` remain the **stable narrative IDs** (Stage 55 st
 |---|---|
 | `README.md` | Main article: infobox, lead finding, timeline digest, portal |
 | `docs/INDEX.md` | Article index / categories |
-| `docs/MANUAL_OF_STYLE.md` | Evidence classes and banned overclaims |
+| `docs/MANUAL_OF_STYLE.md` | Evidence classes and unestablished claims |
 | `docs/GLOSSARY.md` | Terms of art |
 | `docs/PEOPLE.md` / `THE_MAC_SHOP.md` | Actors and the April 2019 recovery |
 | `docs/COPY_LINEAGES.md` / `MAILING_PACKET.md` | Devices vs copies vs this GitHub tree |

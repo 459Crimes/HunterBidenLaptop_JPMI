@@ -236,7 +236,7 @@ The bounded conclusion is:
 
 > **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.
 
-Non-laptop provenance is attributed solely to **0728 Extra Found Files** (Conan Hayes / MEGA, after 28 July 2021). A tip and later FBI report on that corpus are outside this analysis. See [Integrity](INTEGRITY.md) and [Scope](SCOPE.md).
+**0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). **Marco Polo** analyzed a Hayes bootable **APFS** later copy of the JPMI disk, not JPMI. Those matters are outside this analysis. See [Integrity](INTEGRITY.md) and [Scope](SCOPE.md).
 
 This conclusion is independently consistent with CBS's examination of an exact-copy Mac Isaac/FBI-lineage dataset, which reported no tampering and no new files originating after April 2019.
 

@@ -14,7 +14,7 @@ A timestamp is **not a person**. It does not name Hunter Biden, Mac Isaac, a rep
 
 ## Timezone trap
 
-Reports mix **CDT/CST labels**, unlabeled DB fields, and TSK conventions. Example: volume creation `2019-09-26 22:59:02 CDT` vs journal objects at `2019-09-27 01:59:02` in another export. Do **not** invent a story from a three-hour offset until families are normalized ([Limits](07_limits_and_open_questions.md) item 14).
+Reports mix **CDT/CST labels**, unlabeled DB fields, and TSK conventions. Example: volume creation `2019-09-26 22:59:02 CDT` vs journal objects at `2019-09-27 01:59:02` in another export. A three-hour offset is not a narrative until the families are normalized ([Limits](07_limits_and_open_questions.md) item 14).
 
 ## User-era shape (created / modified)
 
@@ -32,7 +32,7 @@ Created-year row counts (inventory time table):
 
 2019 created **months** (same table): January 55,462; **February 241,603**; March 56,597; September 15. That is a living account heading into the repair, then a cliff — consistent with CBS’s “use stops around March 2019,” without treating every February row as a unique document.
 
-Oddities such as a **year-1984 created** row (count 1, size 0) are classic filesystem/sentinel noise. Do not write a 1984 user biography from them.
+Oddities such as a **year-1984 created** row (count 1, size 0) are classic filesystem/sentinel noise. They are not a 1984 user biography.
 
 ## Access-era shape (the examiner’s footprint)
 
@@ -61,7 +61,7 @@ The *New York Post* story was **14 October 2020**. The correct sentence is: **th
 
 ## Volume vs file time
 
-HFS+ **volume creation** (26 Sep 2019) is the birthday of `Untitled`. Files inside can be years older (copied in) or metadata-younger (indexes). Never promote volume last-write (2024) into “the data was authored in 2024.”
+HFS+ **volume creation** (26 Sep 2019) is the birthday of `Untitled`. Files inside can be years older (copied in) or metadata-younger (indexes). Volume last-write (2024) is not evidence that the data was authored in 2024.
 
 ## See also
 

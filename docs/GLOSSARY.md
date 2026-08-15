@@ -2,6 +2,10 @@
 
 > **Hatnote.** Terms of art used in the JPMI encyclopedia. For a tutorial in reading order, see [Filesystem for non-experts](05_filesystem_for_non_experts.md). For house wording, see [Manual of Style](MANUAL_OF_STYLE.md).
 
+## 459Crimes
+
+Publisher of this encyclopedia. **Marc Aaron DeGiovanni** (also **Marc De Giovanni**). See [Author](AUTHOR.md). Not a JPMI filesystem term.
+
 ## Acquisition
 
 The recorded forensic imaging event. JPMI’s acquisition record names tool **ADI4.7.1.2**, case **HB-2022-04-29**, image **HB-IMAGE-2022-04-29.E01**, and image hashes. `created_at` in the same table is this **project’s database ingest time** (2026-07-22), not the 2019 copy date.
@@ -13,6 +17,10 @@ Multiple paths can name one catalog object. The alias map has **655,330** rows: 
 ## Allocated / unallocated
 
 Allocated space belongs to currently represented filesystem objects. JPMI reports ~**280 GB** of unallocated *ranges*. That is a storage-state category, not a count of recoverable deleted user files.
+
+## APFS (459Crimes corpus name)
+
+In other 459Crimes reports, **APFS** names a **later, more altered copy of the JPMI disk**, used as a **bootable laptop** produced by **Conan Hayes**. Marco Polo analyzed that machine. **Dimitrelos** and **Maryman** used copies whose structure **correlates to this corpus**. It is **not** the JPMI HFS+ volume `Untitled` / E01 in this repo. The corpus label is distinct from Apple’s APFS format in the abstract.
 
 ## CNID (Catalog Node ID)
 
@@ -40,7 +48,7 @@ Small GPT partition used for firmware/boot machinery. JPMI has one (GUID `54bcfb
 
 ## Extra Found Files (0728)
 
-Out of scope. A shared folder provided via **MEGA** by **Conan Hayes after 28 July 2021**. In other 459Crimes work this corpus is called **0728**. Non-laptop provenance is attributed **solely** here—not to JPMI or other laptop-derived media. FBI tip/report on 0728: not analyzed in this encyclopedia. See [Scope](SCOPE.md).
+Out of scope. MEGA share from **Conan Hayes after 28 July 2021**. Did **not** come from the laptop files per se: a large collection **related to** laptop material, with many items of unknown origin and some **completely unknown to the laptop**. Marco Polo had this sidecar set in addition to Hayes’s bootable APFS machine; it did **not** analyze JPMI. Author’s FBI referral (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`) is **not** analyzed here. See [Scope](SCOPE.md) and [Author](AUTHOR.md).
 
 ## `.emlx`
 
@@ -76,7 +84,7 @@ Internal report-layer labels in the acquisition notes. The note `hb-reports-3 ra
 
 ## Slack (`*.jpg-slack`, etc.)
 
-Filesystem slack / remnant representations in some inventories. Slack rows often have size 0 and inflate extension counts. Do not add them to “number of photographs.”
+Filesystem slack / remnant representations in some inventories. Slack rows often have size 0 and inflate extension counts. They are not included in photograph counts.
 
 ## Spotlight (`.Spotlight-V100`)
 

@@ -17,7 +17,10 @@ Digital provenance fails when people collapse five objects into the phrase “th
 | **NY Post material** | Published 14 Oct 2020 via Giuliani | Public event; not a disk serial |
 | **CBS / CFS “exact copy”** | Della Rocca → CBS, examined 2022 | Independent forensic result on a Mac Isaac/FBI-lineage copy |
 | **Sanders / JPMI media** | Della Rocca → Sanders (mailing packet) → reports in this repo | Later custody medium is the **Crucial X6**; image `HB-IMAGE-2022-04-29.E01` |
-| **This GitHub repository** | Metadata/hash witness | **No source-file bytes** |
+| **Hayes APFS** | **Later, more altered copy of the JPMI disk**, presented as a **bootable laptop** by Conan Hayes | Descendant of JPMI-line data, **not** the JPMI reports here. Marco Polo’s machine. **Dimitrelos** and **Maryman** copies **correlate to this structure**; the author holds similar copies |
+| **0728 Extra Found Files** | MEGA share from Hayes after 28 July 2021 | Did **not** come from the laptop files per se. Related collection; many unknown origin; some **completely unknown to the laptop**. Author FBI referral 28 Jul 2026 is **out of scope** |
+| **Marco Polo Report v4** | Published compilation (4th printing 2024) | Analyzed the Hayes **bootable APFS** machine + 0728. **Did not analyze JPMI** |
+| **This GitHub repository** | Metadata/hash witness by **459Crimes / Marc Aaron DeGiovanni** | **No source-file bytes**. [Author](AUTHOR.md) |
 
 ## Diagram
 
@@ -50,6 +53,10 @@ Three damaged laptops — Wilmington — 2019-04-12
                                                       |
                                                       v
                                                JPMI reports (this repo)
+                                                      |
+                                                      `--> later, more altered copy (APFS)
+                                                              bootable laptop (Conan Hayes)
+                                                              --> Marco Polo (not this repo)
 ```
 
 ## What “direct copy” means here
@@ -71,4 +78,5 @@ Unknown. Mac Isaac describes copies he made. The public record does not establis
 - [Chain of custody](03_chain_of_custody.md)
 - [Crucial X6](CRUCIAL_X6.md)
 - [Mailing packet](MAILING_PACKET.md)
+- [Marco Polo v4](MARCO_POLO.md)
 - [Integrity](INTEGRITY.md)

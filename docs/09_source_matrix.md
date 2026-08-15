@@ -14,7 +14,7 @@ The repository generally gives the most weight to:
 4. contemporaneous reporting quoting identified participants;
 5. later participant recollections/interviews, clearly labeled as such.
 
-A later interview can explain technical details absent from a court opinion, but it should not silently be promoted into an independently verified fact.
+A later interview can explain technical details absent from a court opinion. It is not, by itself, an independently verified fact.
 
 ## Claim matrix
 
@@ -49,6 +49,8 @@ A later interview can explain technical details absent from a court opinion, but
 | JPMI reports therefore sit in the same Mac Isaac-centered provenance network | Combined internal/external chain | **Supported provenance inference** |
 | JPMI media is byte-identical or virtually byte-identical to the CBS-examined copy | Same attorney supplied both for the same purpose | **Assumed from common source and purpose; not independently hash-verified** |
 | Any 2022–2024 data alteration occurred during analysis, probably a read-write mount on a Mac | Todd Sanders' communications with this project | **Participant account; not independently verified; only the FBI can verify** |
+| This encyclopedia is authored by 459Crimes / Marc Aaron DeGiovanni | [Author](AUTHOR.md); *George News* 7 Feb 2024 (live + archive) | **Project identity**, not a JPMI table |
+| DeGiovanni first downloaded 0728 from Hayes; was Marco Polo member from May 2021 | Author identification | **Project identity**; does not make Marco Polo’s corpus into JPMI |
 
 ## Primary legal sources
 
@@ -152,23 +154,25 @@ https://americanoversight.org/co-defendants-and-unindicted-co-conspirators-what-
 
 The America Project also publicly supported Mac Isaac's 2022 litigation. The direct Della Rocca → Sanders handoff, combined with the fact that the same attorney supplied CBS its exact-copy dataset for the same purpose, supports this project's assumption that the JPMI media and the CBS-examined copy are **byte-identical or virtually byte-identical**; that equivalence is not yet confirmed by an independent side-by-side hash comparison.
 
-## Repository-wide integrity language
+## Integrity finding
 
-Preferred language:
+> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. The later activity identified is consistent with opening, browsing, indexing, copying, and forensic examination. **0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin). **Marco Polo** analyzed a Hayes bootable **APFS** later copy of the JPMI disk, not JPMI. **Dimitrelos** and **Maryman** used copies that correlate to **APFS structure**, not JPMI. The author’s FBI 0728 referral is outside this analysis.
 
-> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. The later activity identified is consistent with opening, browsing, indexing, copying, and forensic examination. Non-laptop provenance is attributed solely to **0728 Extra Found Files** (Conan Hayes / MEGA, after 28 July 2021), which is outside this analysis.
-
-Preferred byte-access limitation:
+## Byte-access limitation
 
 > **This repository does not contain the individual JPMI source-file bytes, but the received forensic reports contain sufficient disk, filesystem, path, timestamp, hash, CNID, alias, and system-state reporting to support reproducible structural and provenance analysis.**
 
-Avoid:
+## Claims not established
+
+The present record does not support:
 
 - “Nothing could possibly have been changed.”
 - “The literal `dd` command was used.”
 - “Todd Sanders had a hash-verified byte-identical copy of the disk CBS examined.”
 - “Every post-April timestamp proves tampering.”
-- “Extra Found Files / 0728 came from the laptop / JPMI / FBI-seized MacBook.”
+- “Extra Found Files / 0728 came from the laptop filesystem.”
+- “Marco Polo analyzed the JPMI / Della Rocca / Sanders copy.”
+- “Dimitrelos or Maryman examined the JPMI copy.”
 - “Every historical artifact was created on the 2019 repair-shop Mac.”
 
-Those stronger propositions are not established by the current record. (Byte-identity with the CBS-examined copy is assumed from the common source and purpose, but is not independently hash-verified.)
+Byte-identity with the CBS-examined copy is assumed from the common source and purpose, but is not independently hash-verified.

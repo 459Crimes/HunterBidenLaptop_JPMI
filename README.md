@@ -20,7 +20,8 @@ This GitHub repository is an **encyclopedia of that disk lineage**, not a dump o
 | **Inventory paths** | 576,249 (normalized) |
 | **CNIDs / hash-manifest paths / distinct SHA-256** | 397,440 / 655,330 / 180,046 |
 | **This GitHub tree contains** | Reports, manifests, derived tables — **not** the E01 or individual source-file bytes |
-| **Integrity finding (bounded)** | No hacking attributed to JPMI or other laptop-derived media; later JPMI metadata = handling. Non-laptop provenance is **0728 Extra Found Files** only (out of scope) |
+| **Integrity finding (bounded)** | No hacking attributed to JPMI. **0728** is not laptop files per se. Marco Polo used Hayes **APFS** laptop, not JPMI. |
+| **Author** | **459Crimes / Marc Aaron DeGiovanni**. [Author](docs/AUTHOR.md) · [*George News* essay](https://www.georgenews.org/p/a-cold-front-in-democracy) · [archive](https://web.archive.org/web/20250321004405/https://www.georgenews.org/p/a-cold-front-in-democracy) |
 
 **Contents**
 
@@ -44,7 +45,7 @@ The formulation used throughout this encyclopedia:
 
 > **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.
 
-Where 459Crimes investigative work identifies files of **non-laptop provenance**, that is **solely** the **Extra Found Files** folder provided via MEGA by **Conan Hayes after 28 July 2021** (**0728**). A tip and later FBI report on 0728 are **outside this analysis**. Full treatment: [Integrity](docs/INTEGRITY.md) · [Scope](docs/SCOPE.md).
+**0728 Extra Found Files** did **not** come from the laptop files per se. It is a large related collection (many unknown origin; some completely unknown to the laptop). The author’s FBI referral on 0728 as potentially hacked is **outside this analysis**. **Marco Polo** analyzed Hayes’s **bootable APFS** descendant of JPMI, not this copy. Dimitrelos and Maryman worked from **APFS-structure** copies, not JPMI. Full treatment: [Integrity](docs/INTEGRITY.md) · [Scope](docs/SCOPE.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Author](docs/AUTHOR.md).
 
 That is an evidentiary finding, not a claim that undetectable alteration is philosophically impossible.
 
@@ -105,7 +106,7 @@ The editorial rule is:
 
 > **Observed fact → interpretation → limitation**
 
-Court-recited facts, Mac Isaac's later technical account, JPMI-internal measurements, and CBS's exam are **not interchangeable**. The [source matrix](docs/09_source_matrix.md) is the claim index. The [manual of style](docs/MANUAL_OF_STYLE.md) is the house MOS.
+Court-recited facts, Mac Isaac's later technical account, JPMI-internal measurements, and CBS's exam are **not interchangeable**. The [source matrix](docs/09_source_matrix.md) is the claim index. The [manual of style](docs/MANUAL_OF_STYLE.md) records how evidence classes are labeled.
 
 Start with articles, not with `build/` TSVs, unless you already know which measurement you want.
 
@@ -138,7 +139,7 @@ See the **[article index](docs/INDEX.md)** for the full map. Core reading order:
 8. [Reproducibility](docs/08_reproducibility.md)
 9. [Source matrix](docs/09_source_matrix.md)
 
-Nerd-depth companions: [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
+Nerd-depth companions: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
 
 ---
 

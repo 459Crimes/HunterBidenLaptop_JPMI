@@ -17,6 +17,7 @@
 
 | Date | Layer | Event | Article |
 |---|---|---|---|
+| 2010-03-02 | 2 | The Mac Shop, Inc. Delaware file 4794855 | [The Mac Shop](THE_MAC_SHOP.md) |
 | Years ≤ 2018 | 1 | Account content, migrations, backups accumulate | [Contents census](CONTENTS_CENSUS.md) |
 | 2019-01 … 2019-03 | 1 | Created/modified counts peak (e.g. Feb 2019: ~241k created rows) | [Timestamps](TIMESTAMPS.md) |
 | 2019-04-12 | 2 | Three laptops; one retained | [The Mac Shop](THE_MAC_SHOP.md) |
@@ -31,7 +32,7 @@
 | 2020-01-01 | 5 | Home / Library `.DS_Store` cluster | [Timestamps](TIMESTAMPS.md) |
 | 2020-08-26 | 5 | Costello copy | [Copy lineages](COPY_LINEAGES.md) |
 | 2020-10-13 | 5 | Mesires inquiry | [People](PEOPLE.md) |
-| 2020-10-14 | 5 | *New York Post* story | [06](06_timeline_and_handling.md) |
+| 2020-10-20 | 5 | Marco Polo: Costello copy to New Castle County PD (not JPMI) | [Marco Polo v4](MARCO_POLO.md) |
 | 2020-10-15 ~21:16–21:20 | 5 | Desktop/Documents/Public `.DS_Store`; DocumentRevisions dirs; TemporaryItems | [Integrity](INTEGRITY.md) |
 | 2020-10-26 | 5 | `.com.apple.timemachine.donotpresent` | [HFS+ volume](HFS_VOLUME_UNTITLED.md) |
 | 2022-03-31 … 2022-04-12 | 6 | Volume root, Spotlight Store-V2 build, huge **accessed** cluster (~532k rows in Mar 2022) | [Timestamps](TIMESTAMPS.md) |

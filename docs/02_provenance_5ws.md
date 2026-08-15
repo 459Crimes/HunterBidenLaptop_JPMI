@@ -74,7 +74,7 @@ Those facts cannot both describe a simple chronology in which one immutable E01 
 
 The current evidence does **not** establish which explanation is correct.
 
-A provenance analysis should therefore preserve both reported values and flag the conflict rather than silently converting the 2024 value into “activity after the 2022 E01 acquisition.”
+A provenance analysis therefore preserves both reported values and flags the conflict. The 2024 value is not converted into “activity after the 2022 E01 acquisition.”
 
 ## Where?
 

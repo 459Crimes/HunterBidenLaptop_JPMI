@@ -39,7 +39,7 @@ Reference: [CBS News, Nov. 21, 2022](https://www.cbsnews.com/news/hunter-biden-l
 
 The defensible claim is that the forensic indicators presently available do **not show** the hacking/injection theory in this direct-copy lineage—or, as attributed in related 459Crimes work, on other **laptop-derived** media.
 
-Files of **non-laptop provenance** are attributed **solely** to the **Extra Found Files** MEGA corpus provided by **Conan Hayes after 28 July 2021** (**0728**). A tip and a later FBI report on that corpus are **outside this analysis**. See [Scope](SCOPE.md) and [Integrity](INTEGRITY.md).
+**0728 Extra Found Files** did **not** come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). The author’s FBI referral on 0728 is **outside this analysis**. Marco Polo analyzed a Hayes **bootable APFS** later copy of the JPMI disk, **not** JPMI. Dimitrelos and Maryman used copies that **correlate to APFS structure**. See [Scope](SCOPE.md), [Integrity](INTEGRITY.md), and [Author](AUTHOR.md).
 
 ## 2. The project does not publish the restricted source bytes
 

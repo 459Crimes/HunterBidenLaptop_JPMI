@@ -50,7 +50,7 @@ An empty deleted-file catalog is **not** proof that nothing was ever deleted. HF
 
 ## Last-write 2024
 
-An immutable E01 acquired in April 2022 cannot itself pick up a November 2024 filesystem write. Treat the pairing as a **report-lineage problem**. See [2022/2024 discrepancy](2022_2024_DISCREPANCY.md).
+An immutable E01 acquired in April 2022 cannot itself pick up a November 2024 filesystem write. The pairing is a **report-lineage problem**. See [2022/2024 discrepancy](2022_2024_DISCREPANCY.md).
 
 ## See also
 
