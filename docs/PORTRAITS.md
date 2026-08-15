@@ -29,7 +29,7 @@ No photograph of Scott delivering packets to Congress has been found.
 
 ## FBI agents (Joshua Wilson, Mike DeMeo, unnamed Albuquerque agent)
 
-**No photographs of the 2019 home meeting or 9 Dec shop seizure have been located.** Fox News published **document images** (repair authorization, subpoena pages, receipt) attributed to SA Joshua Wilson’s paperwork, not portraits ([Fox News laptop/money-laundering piece](https://www.foxnews.com/politics/laptop-hunter-biden-linked-fbi-money-laundering-probe)).
+**No photographs of the 2019 home meeting or 9 Dec shop seizure have been located.** Fox News published **document images** (repair authorization, subpoena pages, receipt) attributed to SA Joshua Wilson’s paperwork, not portraits ([Fox News laptop/money-laundering piece](https://www.foxnews.com/politics/laptop-hunter-biden-linked-fbi-money-laundering-probe)). Court-filed photographs of the same class of papers are hosted in [Exhibits](EXHIBITS.md).
 
 Do not scrape social media for people with those surnames. Wilson later appears as a **named quote** in Delaware FBI press (e.g. [WDEL, 2026 fugitive surge](https://www.wdel.com/news/over-100-caught-in-regional-fbi-surge/article_cff2d1c7-4993-42ad-a532-7be77e661eb1.html)); that is a later public-affairs still if the outlet ran one, not a picture of the Mac Shop counter in 2019.
 
@@ -43,6 +43,7 @@ Do not scrape social media for people with those surnames. Wilson later appears 
 
 ## See also
 
+- [Exhibits](EXHIBITS.md) (signed Quote #7469, Mesires email, FBI subpoena photos)
 - [People](PEOPLE.md)
 - [The Mac Shop](THE_MAC_SHOP.md)
 - [Bibliography](BIBLIOGRAPHY.md)

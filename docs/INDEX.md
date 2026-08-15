@@ -25,6 +25,8 @@ Main article: [README](../README.md).
 | Yaacov Apelbaum / XRVision | [Apelbaum](APELBAUM.md) |
 | Attempt to get a copy to Tucker Carlson at Fox | [Fox / Tucker](FOX_TUCKER.md) |
 | Photos of the men and the shop (links only) | [Portraits and premises](PORTRAITS.md) |
+| Signed quote, invoice email, FBI subpoena photos | [Exhibits](EXHIBITS.md) |
+| House Judiciary / Oversight laptop reports | [Congressional reports](CONGRESS.md) |
 | The shop address and three laptops | [The Mac Shop](THE_MAC_SHOP.md) |
 | How many copies and which is which | [Copy lineages](COPY_LINEAGES.md) |
 | The USB SSD in the acquisition record | [Crucial X6](CRUCIAL_X6.md) |
@@ -73,7 +75,7 @@ These nine files are the original public-narrative sequence. Stage 55 of the bui
 
 ## Categories
 
-- **Provenance:** 02, 03, 06, 09, PEOPLE, PORTRAITS, THE_MAC_SHOP, COPY_LINEAGES, MAILING_PACKET
+- **Provenance:** 02, 03, 06, 09, PEOPLE, PORTRAITS, THE_MAC_SHOP, EXHIBITS, CONGRESS, COPY_LINEAGES, MAILING_PACKET
 - **Storage objects:** CRUCIAL_X6, HFS_VOLUME_UNTITLED, FORENSIC_IMAGE
 - **Contents:** 04, CONTENTS_CENSUS, 05, GLOSSARY, TIMESTAMPS
 - **Integrity:** INTEGRITY, 2022_2024_DISCREPANCY, 07

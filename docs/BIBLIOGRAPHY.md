@@ -8,6 +8,20 @@
 - Delaware Superior Court, *Mac Isaac v. Cable News Network, Inc.*, C.A. No. S22C-10-012 RHR (30 Sep 2024). Repair authorization, 13 Apr drive, invoice, FBI contacts, subpoena, retained copy, Aug 2020 Costello transfer. https://law.justia.com/cases/delaware/superior-court/2024/s22c-10-012-rhr.html
 - S.D. Florida, *Mac Isaac v. Twitter, Inc.*, No. 1:21-cv-20684 (30 Aug 2021). Earlier recitation of April 2019 through NY Post. https://law.justia.com/cases/federal/district-courts/florida/flsdce/1%3A2021cv20684/587211/59/
 
+## Congressional staff reports (hosted)
+
+- House Judiciary / Weaponization, *Election Interference: How the FBI “Prebunked” a True Story…* (30 Oct 2024). [local PDF](exhibits/congress/FBI-Election-Interference-Report-2024-10-30.pdf)
+- House Oversight, *A President Compromised* interim staff report (Nov 2022). [local PDF](exhibits/congress/Oversight-Interim-A-President-Compromised-2022-11.pdf)
+- House Judiciary / Weaponization / HPSCI, *The Hunter Biden Statement* (10 May 2023). [local PDF](exhibits/congress/Judiciary-Hunter-Biden-Statement-2023-05-10.pdf)
+- Narrative index: [Congressional reports](CONGRESS.md)
+
+## Shop / FBI paperwork (hosted)
+
+- Mac Shop Quote #7469 (signed repair authorization / $85). D. Del. 1:23-cv-00247 Doc. 3-3. [Exhibits](EXHIBITS.md)
+- Grand-jury subpoena photos (AO 110, Wilson proof of service, Attachment A serials). Doc. 3-4.
+- Mesires email, 13 Oct 2020. Doc. 3-5.
+- *U.S. v. Biden*, 1:23-cr-00061, admitted-exhibit list (GTX 40 = Mac Shop invoice emailed to `rhbdc@icloud.com`). [PDF](exhibits/court/US_v_Biden_23cr61_exhibit_list.pdf)
+
 ## Independent forensic reporting
 
 - CBS News, “Hunter Biden's laptop data analyzed by cybersecurity experts” (21 Nov 2022). Della Rocca “exact copy”; CFS: no user-data modification/fabrication/tampering; no new files after April 2019. https://www.cbsnews.com/news/hunter-biden-laptop-data-analysis/
@@ -25,6 +39,7 @@
 
 ## Repository exhibits
 
+- [`docs/exhibits/`](exhibits/README.md) — Quote #7469, Mesires email, FBI subpoena photos, House staff-report PDFs.
 - [`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg) — mailing packet, Mac Isaac home address → Todd Sanders.
 - [`build/disk_info/01_acquisition.tsv`](../build/disk_info/01_acquisition.tsv) — device, E01, hashes, Sanders note.
 - [`build/volume_info/01_volume_identity.tsv`](../build/volume_info/01_volume_identity.tsv) — `Untitled`, 2019-09-26 creation, 2024 last-write.

@@ -1,0 +1,18 @@
+# Exhibit files
+
+SHA-256 of each hosted file. Narrative captions: [EXHIBITS.md](../EXHIBITS.md), [CONGRESS.md](../CONGRESS.md).
+
+```
+3d3ce20016942e84dd21d4cf36909c36bf593ffd86c47f96c21fc6ca60555ab0  congress/FBI-Election-Interference-Report-2024-10-30.pdf
+481584d77edd35797f74608497379b8990515042e2e6800f7cfd3eb9af584f73  congress/Judiciary-Hunter-Biden-Statement-2023-05-10.pdf
+ee268b9bb696104547f1594b3eda8877374d6e9ed83e34e8910b06878cdb42b4  congress/Oversight-Interim-A-President-Compromised-2022-11.pdf
+646e7272fa58ff83477c09f64d3045a597fdf581a54a5fe34e45d266e9b8a2a0  court/US_v_Biden_23cr61_exhibit_list.pdf
+dbb0603d8b91f6f8ba6ded8a511d988670eca4c6577f349e4cd17f70a02f5575  fbi/grand_jury_subpoena_AO110_2019-12-09.jpg
+b05de15b3eecadeda78faf3c4820274b139b9867f6596f3c33a8449b65e3696b  fbi/grand_jury_subpoena_attachment_a_serials.jpg
+bdb00c8a1e55f68b86c3ecaf42c7126e76b8f06d6cea6aa6848b3ee57b5ebdd3  fbi/grand_jury_subpoena_photos_exhibit_B.pdf
+a1028420d966c24a30ddf91ff5833db66a9a4d71a26b6108a4dece8ca2b7dc42  fbi/grand_jury_subpoena_proof_of_service_joshua_wilson.jpg
+12e64b8a298d58e7a1537ed6a2472a249aa5bb3f318fa80156d6021f6d8ede97  shop/mac_shop_quote_7469_repair_authorization.jpg
+cafb534a0283c3873d86c2f03753bebd14834445b29b7d9754b1b5ba26a03964  shop/mac_shop_quote_7469_repair_authorization.pdf
+d98f1b0b5d4d9c7b43bb4a509ef085ce209a240e2876338b3b6281fc957229e2  shop/mesires_2020-10-13_email.jpg
+b1cd94f048d2d426c5f458bf9921b47696241fb5e51e84aa65c48ecb7e7337a1  shop/mesires_2020-10-13_email.pdf
+```

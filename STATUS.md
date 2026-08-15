@@ -33,6 +33,7 @@ Entry points: [`README.md`](README.md), [`docs/INDEX.md`](docs/INDEX.md).
 - [x] Added `scripts/55_publish_custody_timeline.py` so a future database rebuild republishes the sourced custody narrative after the database-derived report stage.
 - [x] Preserved the separate reported 2022 E01 / 2024 HFS+ last-write chronology discrepancy as an unresolved later report-lineage issue rather than making it the center of the 2019–2020 story.
 - [x] Reorganized the public Git tree as an encyclopedia (2026-08-15): `README` main article + infobox; `docs/INDEX.md`; Manual of Style; glossary; people; Mac Shop; copy lineages; Crucial X6; HFS+ `Untitled`; forensic image; mailing packet; contents census; timestamps; integrity; 2022/2024 discrepancy; scope; bibliography; compact timeline index. Numbered `01`–`09` IDs retained (Stage 55 still publishes `06`).
+- [x] Hosted court-filed **Quote #7469** (signed $85 repair authorization), Mesires 13 Oct 2020 email, FBI subpoena photographs (Wilson / Attachment A serials), House Judiciary 30 Oct 2024 FBI “prebunk” report and related Oversight/51-officials PDFs; documented GTX 40 (invoice emailed to `rhbdc@icloud.com`) from the gun-trial exhibit list.
 
 ## Technical evidence in the branch
 

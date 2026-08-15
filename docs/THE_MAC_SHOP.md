@@ -29,7 +29,7 @@ The Delaware Supreme Court’s 2025 opinion (including the dissent’s summary o
 2. Mac Isaac supplied a **keyboard** that made **one** machine usable.
 3. **One** machine was considered **unrecoverable**.
 4. The **remaining** laptop was left for **data recovery**.
-5. A **repair authorization** was signed.
+5. A **repair authorization** was signed ([Quote #7469](EXHIBITS.md)).
 
 This is why “the laptop” is a journalistic shorthand, not a serial-number identification. JPMI’s `roberthunter` tree can contain **migrated** and **multi-device** material (iPhone/iPad backups, iCloud, older `roberts-MacBook-Air` diagnostics). Older artifacts do **not** prove they were created on the one physical Mac left for recovery.
 
@@ -56,6 +56,8 @@ The server-first workflow is technically important: later Mac Isaac copies **nee
 
 Mac Isaac sent an **$85** electronic invoice on **17 April 2019**. Pleadings state the laptop and external drive were not reclaimed or paid for despite contact attempts.
 
+The signed in-shop form is **Quote #7469** (same $85, bill-to Hunter Biden, email `rhbdc@icloud.com`, scope including “recover data to store server and contact customer when complete”). The **emailed** invoice is a later CRM/iCloud object: government **GTX 40** in the 2024 Delaware gun trial (“The Mac Shop Invoice Emailed to rhbdc@icloud.com”). Photographs and the distinction: [Exhibits](EXHIBITS.md). Congressional FBI/laptop reports: [Congress](CONGRESS.md).
+
 JPMI’s substantive user/application modifications are overwhelmingly **before** this repair window. Later activity in the current reports is sparse and metadata-dominated. Nothing in the JPMI reporting analyzed here establishes hacking or injection of substantive external user files during April–July 2019. See [Integrity](INTEGRITY.md).
 
 ## What the shop event is not
@@ -66,6 +68,7 @@ JPMI’s substantive user/application modifications are overwhelmingly **before*
 
 ## See also
 
+- [Exhibits](EXHIBITS.md)
 - [People](PEOPLE.md)
 - [Chain of custody](03_chain_of_custody.md)
 - [Limits](07_limits_and_open_questions.md)

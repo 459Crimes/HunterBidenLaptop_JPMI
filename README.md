@@ -62,13 +62,13 @@ Full sourced narrative: [Timeline and handling](docs/06_timeline_and_handling.md
 
 | When | What | Evidence class |
 |---|---|---|
-| **12 Apr 2019** | Three damaged laptops presented at The Mac Shop. One usable with a supplied keyboard; one unrecoverable; one left for recovery; repair authorization signed. | Court-recited pleaded history |
+| **12 Apr 2019** | Three damaged laptops presented at The Mac Shop. One usable with a supplied keyboard; one unrecoverable; one left for recovery; **Quote #7469** signed ($85; recover to store server). | Court exhibit — [scan](docs/EXHIBITS.md) |
 | **13 Apr 2019** | Customer returned with an external hard drive. Recovery/transfer completed that day. Mac Isaac later said data was first staged on the **store server**. | Court record + participant account (server logs not held) |
-| **17 Apr 2019** | $85 invoice sent. Laptop and drive not retrieved, per pleadings. | Court-recited |
+| **17 Apr 2019** | $85 electronic invoice sent to `rhbdc@icloud.com` (later **GTX 40** at the 2024 gun trial). Laptop and drive not retrieved, per pleadings. | Court-recited + trial exhibit list |
 | **Late Jul 2019** | Mac Isaac's FBI-related contacts begin. | Court-recited |
 | **Sep–Oct 2019** | Mac Isaac says he made a copy for his father, Col. Richard “Steve” Mac Isaac, to take to the FBI in Albuquerque. | Participant account; exact physical drive unproved |
 | **26 Sep 2019** | JPMI reports HFS+ volume `Untitled` created `2019-09-26 22:59:02 CDT`. | Direct JPMI metadata; **chronology correlation**, not physical-device ID |
-| **9 Dec 2019** | FBI subpoena: laptop, customer drive, paperwork surrendered. Delaware Supreme Court: Mac Isaac made an **exact copy before parting with the original**. | Strongest public custody anchor |
+| **9 Dec 2019** | FBI subpoena **19-3-LFWS-V-136** (SA Wilson / AUSA Wolf): MacBook Pro `FVFXC2MMHV29`, WD `WX21A19ATFF3`. Delaware Supreme Court: Mac Isaac made an **exact copy before parting with the original**. | Court photos — [Exhibits](docs/EXHIBITS.md) |
 | **26 Aug 2020** | Copy provided to Robert Costello (Giuliani's attorney). | Court-recited |
 | **13 Oct 2020** | George Mesires contacted Mac Isaac about the laptop. | Court-recited |
 | **14 Oct 2020** | *New York Post* first laptop story. | Public event |
@@ -136,7 +136,7 @@ See the **[article index](docs/INDEX.md)** for the full map. Core reading order:
 8. [Reproducibility](docs/08_reproducibility.md)
 9. [Source matrix](docs/09_source_matrix.md)
 
-Nerd-depth companions: [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
+Nerd-depth companions: [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
 
 ---
 

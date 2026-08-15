@@ -21,6 +21,7 @@
 - [x] Add a claim/source matrix.
 - [x] Keep post-2020 discussion limited mainly to evidence that the direct-copy lineage was opened, analyzed, indexed, and used for forensic reporting.
 - [x] Encyclopedia IA: main article, article index, MOS, glossary, and companion articles so a nerd can enter by object (X6, `Untitled`, E01), person, date, or integrity question without reading `01`–`09` in order.
+- [x] Host congressional laptop/FBI staff reports and court photographs of Quote #7469, the Mesires email, and the 9 Dec 2019 subpoena; label GTX 40 vs the signed work order.
 
 ## Technical publication workflow
 
