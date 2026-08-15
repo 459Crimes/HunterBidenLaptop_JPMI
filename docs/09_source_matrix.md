@@ -156,7 +156,7 @@ The America Project also publicly supported Mac Isaac's 2022 litigation. The dir
 
 Preferred language:
 
-> **No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. The later activity identified is consistent with opening, browsing, indexing, copying, and forensic examination.**
+> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. The later activity identified is consistent with opening, browsing, indexing, copying, and forensic examination. Non-laptop provenance is attributed solely to **0728 Extra Found Files** (Conan Hayes / MEGA, after 28 July 2021), which is outside this analysis.
 
 Preferred byte-access limitation:
 
@@ -168,6 +168,7 @@ Avoid:
 - “The literal `dd` command was used.”
 - “Todd Sanders had a hash-verified byte-identical copy of the disk CBS examined.”
 - “Every post-April timestamp proves tampering.”
+- “Extra Found Files / 0728 came from the laptop / JPMI / FBI-seized MacBook.”
 - “Every historical artifact was created on the 2019 repair-shop Mac.”
 
 Those stronger propositions are not established by the current record. (Byte-identity with the CBS-examined copy is assumed from the common source and purpose, but is not independently hash-verified.)

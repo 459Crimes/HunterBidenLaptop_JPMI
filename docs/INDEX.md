@@ -36,7 +36,7 @@ Main article: [README](../README.md).
 | File populations | [What is on the copy](04_what_is_on_the_copy.md) · [Contents census](CONTENTS_CENSUS.md) |
 | GPT, HFS+, CNID, Spotlight | [Filesystem for non-experts](05_filesystem_for_non_experts.md) · [Glossary](GLOSSARY.md) |
 | Created / modified / accessed clusters | [Timestamps](TIMESTAMPS.md) |
-| Tampering / injection / CBS | [Integrity](INTEGRITY.md) |
+| Tampering / injection / CBS / 0728 boundary | [Integrity](INTEGRITY.md) · [Scope](SCOPE.md) |
 | The 2022 E01 vs 2024 last-write | [2022/2024 discrepancy](2022_2024_DISCREPANCY.md) |
 | What this repo is *not* | [Scope](SCOPE.md) |
 | What remains unproved | [Limits and open questions](07_limits_and_open_questions.md) |
@@ -78,5 +78,5 @@ These nine files are the original public-narrative sequence. Stage 55 of the bui
 - **Provenance:** 02, 03, 06, 09, PEOPLE, PORTRAITS, THE_MAC_SHOP, EXHIBITS, CONGRESS, COPY_LINEAGES, MAILING_PACKET
 - **Storage objects:** CRUCIAL_X6, HFS_VOLUME_UNTITLED, FORENSIC_IMAGE
 - **Contents:** 04, CONTENTS_CENSUS, 05, GLOSSARY, TIMESTAMPS
-- **Integrity:** INTEGRITY, 2022_2024_DISCREPANCY, 07
+- **Integrity:** INTEGRITY, 2022_2024_DISCREPANCY, 07, SCOPE
 - **Method:** 08, ARCHITECTURE, DATA_CONTRACT, MANUAL_OF_STYLE, SCOPE

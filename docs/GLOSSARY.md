@@ -38,6 +38,10 @@ A common forensic disk-image container (Expert Witness / EnCase format family). 
 
 Small GPT partition used for firmware/boot machinery. JPMI has one (GUID `54bcfba5-c609-44c0-a45d-b07090d2c996`). Presence shows partitioned Mac-oriented layout, not that this USB disk was booted at a particular moment.
 
+## Extra Found Files (0728)
+
+Out of scope. A shared folder provided via **MEGA** by **Conan Hayes after 28 July 2021**. In other 459Crimes work this corpus is called **0728**. Non-laptop provenance is attributed **solely** here—not to JPMI or other laptop-derived media. FBI tip/report on 0728: not analyzed in this encyclopedia. See [Scope](SCOPE.md).
+
 ## `.emlx`
 
 Apple Mail on-disk message file. Characterization reports ~**128,847** `.emlx` **paths**. Extension-distribution TSV counts differ because of slack rows, path vs extension rules, and Mail attachments living beside `.emlx` files. Always say which table you used.

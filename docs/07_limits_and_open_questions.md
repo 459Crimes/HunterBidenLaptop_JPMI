@@ -6,11 +6,11 @@ A provenance repository is more credible when it states both what the evidence *
 
 The JPMI material is substantial, but this public GitHub repository does not contain the restricted source E01 bytes. It contains detailed forensic reports, manifests, and derived tables from the Mac Isaac direct-copy lineage.
 
-## 1. No identified hacking or post-dropoff substantive-file injection
+## 1. No identified hacking on laptop-derived media
 
 The most important positive finding should not be buried in caveats:
 
-> **No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting analyzed here.**
+> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting analyzed here.
 
 The copy does contain later activity. But the later activity identified in the current reporting is dominated by:
 
@@ -37,7 +37,9 @@ Reference: [CBS News, Nov. 21, 2022](https://www.cbsnews.com/news/hunter-biden-l
 
 “No evidence identified” is not the same as proving that an undetectable alteration was logically impossible.
 
-The defensible claim is that the forensic indicators presently available do **not show** the hacking/injection theory in this direct-copy lineage.
+The defensible claim is that the forensic indicators presently available do **not show** the hacking/injection theory in this direct-copy lineage—or, as attributed in related 459Crimes work, on other **laptop-derived** media.
+
+Files of **non-laptop provenance** are attributed **solely** to the **Extra Found Files** MEGA corpus provided by **Conan Hayes after 28 July 2021** (**0728**). A tip and a later FBI report on that corpus are **outside this analysis**. See [Scope](SCOPE.md) and [Integrity](INTEGRITY.md).
 
 ## 2. The project does not publish the restricted source bytes
 

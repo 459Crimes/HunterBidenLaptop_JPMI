@@ -43,6 +43,8 @@ Do not write these as settled fact:
 - “`Untitled` is the Albuquerque FBI drive.”
 - “JPMI and the CBS disk are hash-identical.”
 - “Nothing could possibly have been changed.”
+- “The Extra Found Files / 0728 MEGA share is a laptop copy.”
+- “JPMI (or the FBI-seized MacBook) is the source of the 0728 non-laptop corpus.”
 - “Every timestamp is Hunter Biden.”
 - “Every pre-2019 file was created on the 2019 repair-shop Mac.”
 - “280 GB of deleted files.”
@@ -57,6 +59,7 @@ Preferred integrity language is in [Integrity](INTEGRITY.md).
 | **JPMI** | John Paul Mac Isaac **copy lineage** as examined here — not Mac Isaac the person |
 | **The laptop** | Informal shorthand; the recovery involved **three** damaged machines plus an external drive |
 | **Direct copy** | A Mac Isaac-made copy existing before/at FBI surrender, as distinct from later mixed political dumps |
+| **0728 / Extra Found Files** | Out-of-scope MEGA corpus (Conan Hayes, after 28 July 2021). Not a laptop-derived medium. Do not mix into JPMI sentences |
 | **Custody medium** | The physical device later imaged (here: Crucial X6) |
 | **Source bytes** | Contents of the restricted E01; **not** in this GitHub tree |
 

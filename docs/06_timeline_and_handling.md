@@ -128,11 +128,15 @@ It does **not** show a newly inserted Hunter document, altered email, fabricated
 
 That distinction should be repeated whenever the 2020 timestamp is discussed.
 
-## No identified post-dropoff hacking or external-file injection
+## No identified hacking on laptop-derived media
 
 The public record contains many allegations about “hacked,” “infected,” “tampered,” or politically circulated laptop data. Those allegations often concern later copies that moved through different people and organizations.
 
-This repository is narrower.
+This repository is narrower, and the attribution rule is:
+
+> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.**
+
+Files of **non-laptop provenance**, in related 459Crimes investigative work, are attributed **solely** to **Extra Found Files**, a MEGA share from **Conan Hayes after 28 July 2021** (**0728**). A tip and a later FBI report on that corpus are **outside this analysis**.
 
 For the **JPMI direct-copy reporting** available here:
 
@@ -144,7 +148,7 @@ For the **JPMI direct-copy reporting** available here:
 
 The correct public formulation is therefore:
 
-> **We found evidence that the Mac Isaac copy was opened, browsed, indexed, copied, and forensically examined. We did not find evidence in the JPMI reporting that substantive external files were hacked into or injected into the copy after Hunter Biden's data was left for recovery.**
+> **We found evidence that the Mac Isaac copy was opened, browsed, indexed, copied, and forensically examined. We did not find evidence in the JPMI reporting that substantive external files were hacked into or injected into the copy after Hunter Biden's data was left for recovery. No hacking is attributed to this or any other laptop-derived medium; non-laptop provenance is 0728 Extra Found Files only, which is out of scope here.**
 
 This is an evidentiary finding, not a metaphysical claim that no undetectable alteration could ever have occurred.
 
@@ -234,7 +238,7 @@ The combined JPMI and public-custody record supports these bounded conclusions:
 6. Mac Isaac provided a copy to Robert Costello in August 2020; Giuliani later supplied material to the New York Post.
 7. The New York Post story broke October 14, 2020; JPMI's Desktop `.DS_Store` changed the following day, consistent with opening/browsing the copy.
 8. That Finder metadata is **not evidence of injected substantive files**.
-9. No hacking, malware, or post-April bulk external-file injection has been identified in the JPMI reporting analyzed here.
+9. No hacking is attributed to JPMI or any other laptop-derived medium. No malware or post-April bulk external-file injection has been identified in the JPMI reporting analyzed here. Non-laptop provenance is attributed solely to 0728 Extra Found Files (Conan Hayes / MEGA, after 28 July 2021), which is outside this analysis.
 10. CBS's independent examination of an exact-copy Mac Isaac/FBI-lineage dataset likewise reported no tampering and no new files originating after April 2019.
 11. The repository's manifest delivery is attributed internally to Todd Sanders, who received the drive copy directly from Mac Isaac's attorney Brian Della Rocca (mailing-packet photograph in this repository); the same attorney supplied CBS its exact-copy dataset, and this project assumes the two media are byte-identical or virtually byte-identical, an equivalence not yet confirmed by an independent hash comparison.
 

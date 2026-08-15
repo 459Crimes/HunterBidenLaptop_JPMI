@@ -28,7 +28,7 @@ Entry points: [`README.md`](README.md), [`docs/INDEX.md`](docs/INDEX.md).
 - [x] Recorded Todd Sanders' participant account of the 2022/2024 discrepancy — any alteration occurred during analysis, probably a read-write mount on a Mac — labeled as unverified, with only the FBI able to verify.
 - [x] Added the open FBI-side questions: why the original laptop/external drive have not been returned to anyone, and how many copies were made in the preservation-copy period.
 - [x] Added `docs/09_source_matrix.md` separating court-recited facts, participant accounts, JPMI-internal findings, and independent forensic results.
-- [x] Added repeated, bounded integrity language: **no evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting**.
+- [x] Added repeated, bounded integrity language: **no hacking is attributed to JPMI or any other laptop-derived medium**; non-laptop provenance is **0728 Extra Found Files** (Conan Hayes / MEGA, after 28 July 2021) only, with FBI tip/report on that corpus **out of scope**.
 - [x] Expanded the explanation that the public repository lacks individual source-file bytes but contains enough disk/filesystem/hash/timestamp/CNID/system-state reporting for accurate, reproducible structural and provenance analysis.
 - [x] Added `scripts/55_publish_custody_timeline.py` so a future database rebuild republishes the sourced custody narrative after the database-derived report stage.
 - [x] Preserved the separate reported 2022 E01 / 2024 HFS+ last-write chronology discrepancy as an unresolved later report-lineage issue rather than making it the center of the 2019–2020 story.

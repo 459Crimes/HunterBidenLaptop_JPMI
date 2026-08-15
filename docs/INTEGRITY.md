@@ -4,9 +4,15 @@
 
 ## Bounded finding (preferred language)
 
-> **No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.**
+> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** Later JPMI metadata is consistent with custody and forensic handling, not with intrusion or planted user files.
 
 “No evidence identified” ≠ “undetectable change is logically impossible.”
+
+## Where non-laptop provenance *is* attributed (not this repo)
+
+Files that 459Crimes investigative work treats as originating from a **non-laptop** provenance are **solely** a separate corpus: a shared folder named **Extra Found Files**, provided via **MEGA** by **Conan Hayes after 28 July 2021**, and referred to as **0728** in other 459Crimes work.
+
+A tip and a later report on that 0728 body of files were submitted to the FBI. **That matter is outside the scope of this JPMI analysis.** Do not import Extra Found Files / 0728 rows, hashes, or conclusions into a sentence about Quote #7469, the Mac Shop recovery, the FBI-seized MacBook/WD pair, or the Crucial X6 / `HB-IMAGE-2022-04-29.E01` reports. See [Scope](SCOPE.md).
 
 ## Two independent layers
 

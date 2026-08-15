@@ -129,7 +129,7 @@ The raw JPMI E01 is not published here.
 - The September 26, 2019 HFS+ creation date is chronologically consistent with his described preservation/FBI-copy period, but does not by itself identify the exact physical FBI-intended drive.
 - The Delaware Supreme Court's recitation that Mac Isaac made an **exact copy before the December 9, 2019 FBI surrender** is the strongest public anchor for the direct-copy lineage.
 - Later `.DS_Store`, Spotlight, DocumentRevisions, and software-scale access activity is custody/system-state evidence, not automatically evidence of substantive document injection.
-- **No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting analyzed here.**
+- **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** Non-laptop provenance is **0728 Extra Found Files** only (out of scope here).
 - CBS's separate exact-copy Mac Isaac/FBI-lineage review is corroborating external forensic evidence and remains separately attributed.
 - The JPMI acquisition note identifying Todd Sanders, combined with public evidence of his America Project affiliation, supports a Mac Isaac-centered provenance-network inference but not yet physical identity with CBS's media.
 - Historical hardware diagnostics may be migrated data and should not automatically identify the 2019 repair-shop machine.

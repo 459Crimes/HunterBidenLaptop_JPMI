@@ -16,7 +16,7 @@
 - [x] Add the Todd Sanders source-delivery provenance bridge including the **direct transfer record** (drive received directly from Della Rocca; mailing-packet photograph `photo_20260716_120324.jpg` with Mac Isaac's home address as sender), and the source-derived assumption that the JPMI media is byte-identical or virtually byte-identical to the CBS-examined copy pending an independent hash comparison.
 - [x] Record Todd Sanders' participant account of the 2022/2024 discrepancy (analysis handling, likely read-write mount on a Mac) as unverified.
 - [x] Add the open FBI-side questions: why the original laptop/external drive have not been returned to anyone, and how many copies were made in the preservation-copy period.
-- [x] Repeatedly state the bounded integrity conclusion: no evidence of post-dropoff hacking or external substantive-file injection has been identified in JPMI reporting.
+- [x] Repeatedly state the bounded integrity conclusion: no hacking attributed to JPMI or other laptop-derived media; 0728 Extra Found Files is the sole non-laptop provenance corpus and is out of scope.
 - [x] Explain why report-level metadata/hash evidence remains sufficient for accurate structural/timeline/provenance analysis despite the absence of public source-file bytes.
 - [x] Add a claim/source matrix.
 - [x] Keep post-2020 discussion limited mainly to evidence that the direct-copy lineage was opened, analyzed, indexed, and used for forensic reporting.
@@ -80,4 +80,4 @@ The public repository should answer one question well:
 
 > **What does the John Paul Mac Isaac direct-copy lineage itself show?**
 
-The answer presently supported by the reporting is that it preserves a broad pre-repair Mac user environment, was copied and later examined, and **does not show identified evidence of post-dropoff hacking or substantive external-file injection**.
+The answer presently supported by the reporting is that it preserves a broad pre-repair Mac user environment, was copied and later examined, and **does not show identified evidence of post-dropoff hacking or substantive external-file injection**. No hacking is attributed to this or any other laptop-derived medium. Non-laptop provenance is **0728 Extra Found Files** only (outside this analysis).

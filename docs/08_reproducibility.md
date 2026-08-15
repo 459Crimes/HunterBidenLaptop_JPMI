@@ -155,14 +155,14 @@ The following should **not** be presented as if PostgreSQL itself proved them:
 
 Those claims are sourced in [`docs/09_source_matrix.md`](09_source_matrix.md).
 
-## No-injection finding: two evidence layers
+## No-hacking finding: laptop media vs 0728
 
-The repository's conclusion that no post-dropoff hacking or substantive external-file injection has been identified rests on two distinct layers:
+The repository attributes **no hacking** to JPMI or any other **laptop-derived** medium. That rests on two JPMI/CBS layers, plus a **scope** rule that non-laptop provenance is **0728 Extra Found Files** only (not examined here):
 
 1. **JPMI reporting:** later changed rows are dominated by Finder/Spotlight/system/application metadata rather than a substantive later user-file population.
 2. **Independent Mac Isaac/FBI-lineage examination:** CBS reported that Computer Forensics Services found no user-data modification/fabrication/tampering and no new files originating after April 2019 on the exact-copy dataset supplied by Mac Isaac's lawyer.
 
-Those layers reinforce each other, but should remain separately attributed.
+Those layers reinforce each other, but should remain separately attributed. Do not treat Extra Found Files / 0728 as a laptop copy.
 
 ## No source bytes: what reproducibility means here
 

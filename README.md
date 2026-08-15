@@ -20,7 +20,7 @@ This GitHub repository is an **encyclopedia of that disk lineage**, not a dump o
 | **Inventory paths** | 576,249 (normalized) |
 | **CNIDs / hash-manifest paths / distinct SHA-256** | 397,440 / 655,330 / 180,046 |
 | **This GitHub tree contains** | Reports, manifests, derived tables — **not** the E01 or individual source-file bytes |
-| **Integrity finding (bounded)** | No evidence of post-dropoff hacking or external substantive-file injection identified in the JPMI reporting |
+| **Integrity finding (bounded)** | No hacking attributed to JPMI or other laptop-derived media; later JPMI metadata = handling. Non-laptop provenance is **0728 Extra Found Files** only (out of scope) |
 
 **Contents**
 
@@ -42,9 +42,11 @@ Later modified rows identified in JPMI are overwhelmingly Finder, filesystem, Sp
 
 The formulation used throughout this encyclopedia:
 
-> **No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.**
+> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.
 
-That is an evidentiary finding, not a claim that undetectable alteration is philosophically impossible. Full treatment: [Integrity](docs/INTEGRITY.md).
+Where 459Crimes investigative work identifies files of **non-laptop provenance**, that is **solely** the **Extra Found Files** folder provided via MEGA by **Conan Hayes after 28 July 2021** (**0728**). A tip and later FBI report on 0728 are **outside this analysis**. Full treatment: [Integrity](docs/INTEGRITY.md) · [Scope](docs/SCOPE.md).
+
+That is an evidentiary finding, not a claim that undetectable alteration is philosophically impossible.
 
 ## What JPMI is
 

@@ -25,6 +25,7 @@ Questions this repo is built to answer:
 | Retrying the political media war of 2020 | Not required to describe the disk |
 | Identifying every email’s newsworthiness | Census and provenance, not a content magazine |
 | FBI unreleased holdings | Open questions only; we cannot verify them from here |
+| **Extra Found Files / 0728** | A MEGA share from **Conan Hayes after 28 July 2021**. 459Crimes investigative work attributes **non-laptop provenance** solely to that corpus—not to JPMI or other laptop-derived media. A tip and later FBI report on 0728 exist; they are **not** analyzed here |
 
 ## Disambiguation: “the Hunter Biden laptop”
 
@@ -35,9 +36,10 @@ That phrase is used in public for, at least:
 3. **Mac Isaac preservation copies** (JPMI’s family);
 4. **FBI-held** originals;
 5. **Costello / Giuliani / press** extracts;
-6. later **mixed internet archives**.
+6. later **mixed internet archives**;
+7. the **0728 Extra Found Files** MEGA corpus (Conan Hayes, after 28 July 2021)—**not** a laptop-derived medium.
 
-This encyclopedia is about **(3) as instantiated in the reports of (the X6 / E01)**. Mixing (6) into a sentence about (3) is a category error.
+This encyclopedia is about **(3) as instantiated in the reports of (the X6 / E01)**. Mixing (6) or **(7)** into a sentence about (3) is a category error. Hacking or non-laptop file origin is **not** attributed here to (1)–(5). Where 459Crimes work attributes non-laptop provenance, it is **only** (7). [Integrity](INTEGRITY.md).
 
 ## See also
 
