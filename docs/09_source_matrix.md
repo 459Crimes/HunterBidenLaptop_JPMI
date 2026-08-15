@@ -42,7 +42,7 @@ A later interview can explain technical details absent from a court opinion. It 
 | CBS examiners found no new files originating after April 2019 | CBS News / Computer Forensics Services | **Independent forensic result** |
 | JPMI reporting does not identify post-dropoff hacking or bulk substantive-file injection | JPMI post-repair timeline/system-state analysis | **Finding from this repository's reporting** |
 | JPMI acquisition note attributes rank-2 manifest to Todd Sanders | `build/disk_info/01_acquisition.tsv` | **Internal source-delivery record** |
-| Sanders received the drive copy directly from Della Rocca | Mailing-packet photograph `photo_20260716_120324.jpg` (Mac Isaac home address as sender, Sanders as recipient) | **Direct custody/transfer record in this repository** |
+| Sanders received the drive copy from Della Rocca, who coordinated the shipment | Mailing-packet photograph `photo_20260716_120324.jpg` (Mac Isaac home address as sender, Sanders as recipient) + Sanders' account | **Direct custody/transfer record in this repository** |
 | Todd Sanders was affiliated with the America Project | American Oversight public-record reporting | **Externally documented affiliation** |
 | America Project supported/funded Mac Isaac's 2022 litigation | Public statements/reporting about the lawsuit | **Externally documented support relationship** |
 | Della Rocca represented Mac Isaac and supplied CBS the exact-copy dataset | Delaware court record + CBS News | **Externally documented** |
@@ -144,7 +144,7 @@ The JPMI acquisition record itself says:
 notes: hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
 ```
 
-**Direct transfer record.** Todd Sanders received the drive copy directly from Brian Della Rocca, Mac Isaac's attorney. The repository holds a photograph of the mailing packet in which the drive copy was shipped to Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg)); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient.
+**Direct transfer record.** Todd Sanders received the drive copy from Brian Della Rocca, Mac Isaac's attorney, who **coordinated the shipment**; Sanders states that Della Rocca arranged the delivery. The repository holds a photograph of the mailing packet in which the drive copy was shipped to Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg)); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient.
 
 American Oversight's public-record reporting additionally identifies Todd Sanders as affiliated with Patrick Byrne's **America Project** and describes his operational role in America Project-funded efforts.
 
