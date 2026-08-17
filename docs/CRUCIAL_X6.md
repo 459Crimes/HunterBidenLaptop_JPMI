@@ -40,7 +40,7 @@ EFI presence means **Mac-oriented partitioned storage**, not “this stick was t
 
 ## How this device entered the examined lineage
 
-Todd Sanders received a drive copy **directly from Brian Della Rocca**. The [mailing packet](MAILING_PACKET.md) photograph documents shipment from Mac Isaac’s home address to Sanders. The acquisition note attributes the rank-2 manifest to Sanders (TSK 4.14.0). Whether the X6 in the E01 is the exact shipped stick, or a subsequent clone of it, is answered only insofar as the acquisition record describes **this** serial as the custody device that was imaged.
+Todd Sanders received a drive copy from **Brian Della Rocca**, who **coordinated the shipment** (per Sanders). The [mailing packet](MAILING_PACKET.md) photograph documents shipment from Mac Isaac's home address to Sanders. The acquisition note attributes the rank-2 manifest to Sanders (TSK 4.14.0). Whether the X6 in the E01 is the exact shipped stick, or a subsequent clone of it, is answered only insofar as the acquisition record describes **this** serial as the custody device that was imaged.
 
 ## See also
 

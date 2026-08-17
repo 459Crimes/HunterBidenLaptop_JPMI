@@ -57,7 +57,7 @@ It does **not** mean Mac Isaac has been proved to have typed the Unix `dd` comma
 
 The **Crucial X6** described in the acquisition record is a **later custody medium**, not the original internal SSD of the laptop left for repair. See [Crucial X6](docs/CRUCIAL_X6.md), [HFS+ volume Untitled](docs/HFS_VOLUME_UNTITLED.md), and [Forensic image](docs/FORENSIC_IMAGE.md).
 
-The reports examined here were delivered through **Todd Sanders**, who received a drive copy **directly from Della Rocca**. This repository holds a photograph of the mailing packet ([`photo_20260716_120324.jpg`](photo_20260716_120324.jpg)). Because the same attorney supplied both this project's media and the CBS-examined copy for the same purpose, the two are **byte-identical or virtually byte-identical**. That equivalence is **not** a published side-by-side hash comparison. See [Copy lineages](docs/COPY_LINEAGES.md) and [Mailing packet](docs/MAILING_PACKET.md).
+The reports examined here were delivered through **Todd Sanders**, who received a drive copy from **Della Rocca**, who coordinated the shipment. This repository holds a photograph of the mailing packet ([`photo_20260716_120324.jpg`](photo_20260716_120324.jpg)). Because the same attorney supplied both this project's media and the CBS-examined copy for the same purpose, the two are **byte-identical or virtually byte-identical**. That equivalence is **not** a published side-by-side hash comparison. See [Copy lineages](docs/COPY_LINEAGES.md) and [Mailing packet](docs/MAILING_PACKET.md).
 
 ## Historical timeline
 

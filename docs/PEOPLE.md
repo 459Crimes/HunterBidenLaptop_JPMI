@@ -140,9 +140,9 @@ Named in the JPMI acquisition note:
 hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
 ```
 
-Direct recipient of the Della Rocca / Mac Isaac-address shipment. Public-record reporting (American Oversight) identifies Sanders as affiliated with Patrick Byrne's **America Project**. The America Project publicly supported/funded Mac Isaac's 2022 litigation.
+Direct recipient of the Della Rocca / Mac Isaac-address shipment; Sanders states that **Della Rocca coordinated the shipment**. Public-record reporting (American Oversight) identifies Sanders as affiliated with Patrick Byrne's **America Project**. The America Project publicly supported/funded Mac Isaac's 2022 litigation.
 
-Sanders attributes any 2022–2024 filesystem alteration to **analysis handling**, probably a **read-write mount on a Mac**. Only the FBI (or examination of the acquired image) can verify the FBI-side and the true cause of the 2024 last-write. See [2022/2024 discrepancy](2022_2024_DISCREPANCY.md).
+Sanders attributes any 2022–2024 filesystem alteration to **analysis handling**, a **read-write mount on a Mac**. Only the FBI (or examination of the acquired image) can verify the FBI-side and the true cause of the 2024 last-write. See [2022/2024 discrepancy](2022_2024_DISCREPANCY.md).
 
 ## Patrick Byrne / America Project
 

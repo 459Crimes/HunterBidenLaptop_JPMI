@@ -4,7 +4,7 @@
 
 ## What the exhibit is
 
-A photograph of the **mailing packet** in which a drive copy was shipped to **Todd Sanders**. The mailing label reflects **Mac Isaac’s home address as sender** and **Sanders as recipient**. The project records that Sanders received the drive **directly from Brian Della Rocca**, Mac Isaac’s attorney.
+A photograph of the **mailing packet** in which a drive copy was shipped to **Todd Sanders**. The mailing label reflects **Mac Isaac’s home address as sender** and **Sanders as recipient**. Sanders states that **Brian Della Rocca**, Mac Isaac's attorney, **coordinated the shipment**.
 
 That is a **handoff record** in the Mac Isaac–centered network:
 

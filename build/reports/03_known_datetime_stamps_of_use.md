@@ -178,7 +178,7 @@ hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)
 
 Public records independently identify **Todd Sanders as affiliated with Patrick Byrne's America Project**. The America Project also publicly supported/funded John Paul Mac Isaac's 2022 defamation litigation, in which Brian Della Rocca represented Mac Isaac.
 
-**Direct transfer record.** Todd Sanders received the drive copy **directly from Brian Della Rocca**, Mac Isaac's attorney. The repository holds a photograph of the mailing packet in which the drive copy was shipped to Todd Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg), committed with this source-analysis record); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient. The photograph provides a direct physical-custody record of the Mac Isaac → Della Rocca → Sanders handoff.
+**Direct transfer record.** Todd Sanders received the drive copy from **Brian Della Rocca**, Mac Isaac's attorney, who **coordinated the shipment**; Sanders states that Della Rocca arranged the delivery. The repository holds a photograph of the mailing packet in which the drive copy was shipped to Todd Sanders ([`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg), committed with this source-analysis record); the mailing label reflects Mac Isaac's home address as the sender and Todd Sanders as the direct recipient. The photograph provides a direct physical-custody record of the Mac Isaac → Della Rocca → Sanders handoff.
 
 This creates an important provenance bridge:
 
@@ -241,6 +241,6 @@ The combined JPMI and public-custody record supports these bounded conclusions:
 8. That Finder metadata is **not evidence of injected substantive files**.
 9. No hacking is attributed to JPMI. No malware or post-April bulk external-file injection has been identified in the JPMI reporting analyzed here. 0728 Extra Found Files did not come from the laptop files per se (related collection; many unknown origin). Marco Polo analyzed a Hayes bootable APFS later copy of the JPMI disk, not JPMI. Dimitrelos and Maryman used APFS-structure copies. The author's FBI 0728 referral is outside this analysis.
 10. CBS's independent examination of an exact-copy Mac Isaac/FBI-lineage dataset likewise reported no tampering and no new files originating after April 2019.
-11. The repository's manifest delivery is attributed internally to Todd Sanders, who received the drive copy directly from Mac Isaac's attorney Brian Della Rocca (mailing-packet photograph in this repository); the same attorney supplied CBS its exact-copy dataset, and the two media are byte-identical or virtually byte-identical, an equivalence not yet confirmed by an independent hash comparison.
+11. The repository's manifest delivery is attributed internally to Todd Sanders, who received the drive copy from Mac Isaac's attorney Brian Della Rocca, who coordinated the shipment (mailing-packet photograph in this repository; Sanders' account); the same attorney supplied CBS its exact-copy dataset, and the two media are byte-identical or virtually byte-identical, an equivalence not yet confirmed by an independent hash comparison.
 
 The detailed JPMI row set remains available in [`build/reports/04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md).
