@@ -18,7 +18,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib.common import (BUILD, Sink, connect, load_limits, section_manifest,
-                        write_single)
+                        to_source_uri, write_single)
 
 ALIAS_QUERY = """
 SELECT a.cnid, c.size, c.alloc, max(a.n_paths) AS n_paths, a.sha256,
@@ -93,7 +93,8 @@ def main():
             )
             c.execute(DEEP_QUERY)
             for row in c:
-                deep_sink.row(row)
+                sha, cnid, size, vol, rel = row
+                deep_sink.row((sha, cnid, size, vol, to_source_uri(rel)))
     pg.close()
 
     cnid_out = Sink(
@@ -103,7 +104,8 @@ def main():
         budget,
     )
     for cnid, size, alloc, n_paths, sha, canon in alias_rows:
-        cnid_out.row((cnid, size or "", alloc or "", n_paths, sha, canon or ""))
+        cnid_out.row((cnid, size or "", alloc or "", n_paths, sha,
+                      to_source_uri(canon) or ""))
     cnid_files, cnid_rows = cnid_out.close()
 
     total_paths, hashed_paths, distinct_cnids, distinct_hashes, alias_count = counts

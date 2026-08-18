@@ -26,13 +26,13 @@ Numbered files `docs/01`–`09` remain the **stable narrative IDs**. The `06` ti
 | `docs/MANUAL_OF_STYLE.md` | Evidence classes and unestablished claims |
 | `docs/GLOSSARY.md` | Terms of art |
 | `docs/PEOPLE.md` / `THE_MAC_SHOP.md` | Actors and the April 2019 recovery |
-| `docs/COPY_LINEAGES.md` / `MAILING_PACKET.md` | Devices vs copies vs this GitHub tree |
+| `docs/COPY_LINEAGES.md` / `COPY_METHOD.md` / `MAILING_PACKET.md` | Devices vs copies; how files left the laptop |
 | `docs/CRUCIAL_X6.md` / `HFS_VOLUME_UNTITLED.md` / `FORENSIC_IMAGE.md` | Storage objects |
 | `docs/CONTENTS_CENSUS.md` / `TIMESTAMPS.md` / `INTEGRITY.md` | Populations, time, tampering |
 | `docs/2022_2024_DISCREPANCY.md` | Later report-lineage collision |
 | `docs/SCOPE.md` / `BIBLIOGRAPHY.md` | Boundary and sources |
 | `docs/TIMELINE.md` | Compact event index into `06` |
-| `01_what_is_jpmi.md` | Define the evidence source and qualified `dd`-style analogy |
+| `01_what_is_jpmi.md` | Define the evidence source; file-aware `Untitled` populate vs later X6 clone |
 | `02_provenance_5ws.md` | Who, What, When, Where, Why, and How |
 | `03_chain_of_custody.md` | April repair, FBI-copy lineage, Costello/New York Post route, Todd Sanders delivery bridge |
 | `04_what_is_on_the_copy.md` | Explain user, application, media, and filesystem populations |
@@ -76,7 +76,7 @@ Records the HFS+ destination, including the reported **September 26, 2019** crea
 
 ### `build/file_tree/`
 
-Records the JPMI path hierarchy and `Users/roberthunter` rollups.
+Records the JPMI path hierarchy and `JPMI://Users/roberthunter` rollups. Published paths use the `JPMI://` source URI (inventory `jpmi_metadata/` is rewritten on export).
 
 ### `build/hash_manifest/`
 
@@ -123,8 +123,9 @@ The raw JPMI E01 is not published here.
 
 ## Integrity and provenance rules
 
-- The Crucial X6 is a later custody device, not automatically the original laptop SSD.
-- “`dd`-style” is an explanatory analogy, not proof that `dd` was literally used.
+- The Crucial X6 is a later custody device. It is a 2020+ product and cannot be the original 26 Sep 2019 format target unless the volume was cloned onto it.
+- The examined `Untitled` volume is a **file-aware copy** (preserved timestamps, empty hard-link dirs), not a sector copy of the laptop partition. See [COPY_METHOD](docs/COPY_METHOD.md).
+- A later **volume clone** put `Untitled` on the X6. The 2022 E01 is a **forensic image of that X6**.
 - Mac Isaac's store-server step is attributed to his account until server logs are produced.
 - The September 26, 2019 HFS+ creation date is chronologically consistent with his described preservation/FBI-copy period, but does not by itself identify the exact physical FBI-intended drive.
 - The Delaware Supreme Court's recitation that Mac Isaac made an **exact copy before the December 9, 2019 FBI surrender** is the strongest public anchor for the direct-copy lineage.

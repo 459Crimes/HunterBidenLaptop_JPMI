@@ -9,8 +9,8 @@
     {
       "file": "volume_info/02_volume_metadata.tsv",
       "rows": 116,
-      "sha256": "d3b721502fd306549c1811648951462a09ff5c89a9d8dc8307bbe457118f7124",
-      "size": 18147
+      "sha256": "36bec9ecd8fc4c328854a9a339320e2a80018fe0ad4937aa0a7b1a419af3ecf3",
+      "size": 17335
     },
     {
       "file": "volume_info/03_volume_system_state.tsv",

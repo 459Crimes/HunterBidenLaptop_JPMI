@@ -29,20 +29,23 @@ The next day, at Mac Isaac's request, Biden returned with an **external hard dri
 
 Mac Isaac later gave a more technical account: he first copied recoverable data from the damaged laptop to his **secure store server**, then transferred the recovered data from that server to the customer-supplied external hard drive.
 
-That server-first account describes a multi-stage recovery process rather than a single pristine sector-for-sector operation:
+That server-first account describes a multi-stage **file recovery**, not a proved sector copy of the internal SSD:
 
 ```text
 Damaged laptop
      |
      v
-Mac Isaac recovery / store server
+Mac Isaac recovery / store server     [logs not held]
      |
      +--> customer-supplied external hard drive
      |
-     +--> later preservation copies
+     +--> 26 Sep 2019: new HFS+ Untitled (file-aware copy of roberthunter)
+               |
+               v
+          later volume clone onto Crucial X6 (after Aug 2020)
 ```
 
-The present repository does not hold the store-server logs, original copy commands, or first-generation hashes. The server step is therefore attributed to Mac Isaac's account rather than independently reconstructed from JPMI metadata; the server-side records would be required to verify it further.
+The present repository does not hold the store-server logs, original copy commands, or first-generation hashes. The server step is Mac Isaac's account. What JPMI **does** show is the September destination: a new volume, preserved user timestamps, empty hard-link directories — not a cloned laptop partition. See [COPY_METHOD](COPY_METHOD.md).
 
 ## Stage 3 — April–July 2019: completed repair, no pickup
 
@@ -86,7 +89,7 @@ Mac Isaac continued to possess a preservation copy after the FBI took the origin
 
 During the first Trump impeachment proceedings and afterward, he attempted to alert members of Congress.
 
-In August 2020, Mac Isaac contacted Robert Costello, attorney for Rudy Giuliani. Court records state that Mac Isaac supplied Costello with a copy of the recovered data and the repair authorization.
+In August 2020, Mac Isaac contacted Robert Costello, attorney for Rudy Giuliani. Court records state that Mac Isaac supplied Costello with a copy of the recovered data and the repair authorization. That copy is **BOOT01**, not JPMI `Untitled`. *New York* magazine later reported that Costello **booted** that class of drive to a **Robert Hunter** Apple login. Comparative ColorSync/ByHost dates: [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 On October 13, 2020, Hunter Biden's attorney George Mesires contacted Mac Isaac asking whether he still possessed Biden's laptop.
 
@@ -95,7 +98,7 @@ On October 14, 2020, the New York Post published the first laptop story after re
 The following day, JPMI records:
 
 ```text
-Users/roberthunter/Desktop/.DS_Store
+JPMI://Users/roberthunter/Desktop/.DS_Store
 modified: 2020-10-15 21:18:17
 ```
 
@@ -232,7 +235,7 @@ The bounded conclusion is:
 
 > **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.
 
-**0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). **Marco Polo** analyzed a Hayes bootable **APFS** later copy of the JPMI disk, not JPMI. Those matters are outside this analysis. See [Integrity](INTEGRITY.md) and [Scope](SCOPE.md).
+**0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). **Marco Polo** analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021), not JPMI. Those matters are outside this analysis. See [Integrity](INTEGRITY.md) and [Scope](SCOPE.md).
 
 This conclusion is independently consistent with CBS's examination of an exact-copy Mac Isaac/FBI-lineage dataset, which reported no tampering and no new files originating after April 2019.
 
@@ -255,8 +258,8 @@ Mac Isaac stages recovery on store server
                          v
 Preservation / FBI-copy activity — Sep–Oct 2019
                          |
-             JPMI HFS+ "Untitled" created 2019-09-26
-             [chronological match; physical identity unproved]
+             JPMI HFS+ "Untitled" created 2019-09-26  [home-only]
+             BOOT01 after 2019-09-26 [18G103; Costello's later object]
                          |
                          v
 FBI subpoena and surrender — 2019-12-09
@@ -264,7 +267,9 @@ FBI subpoena and surrender — 2019-12-09
        Mac Isaac exact copy retained before surrender
                          |
                          v
-Costello copy — Aug. 2020 → Giuliani → New York Post
+Costello copy — Aug. 2020  (**BOOT01**, never JPMI)
+     → Giuliani → New York Post
+     (boot 28–31 Aug host/monitor writes on APFS/GAI)
                          |
                          v
 NY Post story 2020-10-14
@@ -297,7 +302,9 @@ The most valuable missing records are specific:
 7. how many copies were made in the preservation-copy period, and where each went;
 8. the complete acquisition worksheets associated with `HB-IMAGE-2022-04-29.E01`;
 9. reconciliation of the separate 2022 E01 date and reported 2024 HFS+ last-write (Sanders attributes any 2022–2024 alteration to analysis handling, likely a read-write mount on a Mac);
-10. any FBI-side disclosure, including why the original laptop and external drive seized December 9, 2019 have not been returned to anyone; only the FBI can verify the FBI-side custody history.
+10. any FBI-side disclosure, including why the original laptop and external drive seized December 9, 2019 have not been returned to anyone; only the FBI can verify the FBI-side custody history;
+11. which Mac Isaac copy Costello received (bootable OS clone vs home-only `Untitled`); host UUIDs `42800DC4-…` / `E139561C-…` are unnamed as to owner;
+12. UUID/hash bridge from Todd’s Trimarco-made bootable to the Hayes SanDisk APFS image.
 
 ## Primary/public sources
 
@@ -306,4 +313,6 @@ The most valuable missing records are specific:
 - [S.D. Florida, *Mac Isaac v. Twitter*, Aug. 30, 2021](https://law.justia.com/cases/federal/district-courts/florida/flsdce/1%3A2021cv20684/587211/59/)
 - [CBS News, Nov. 21, 2022 — independent exact-copy forensic review](https://www.cbsnews.com/news/hunter-biden-laptop-data-analysis/)
 - [Washington Post, Mar. 30, 2022 — repair and copy account from Della Rocca](https://www.washingtonpost.com/technology/2022/03/30/hunter-biden-laptop-data-examined/)
+- [New York magazine, Sep. 12, 2022 — Costello login “Robert Hunter”](https://nymag.com/intelligencer/article/hunter-biden-laptop-investigation.html)
+- [*Biden v. Giuliani* complaint, C.D. Cal. 2:23-cv-8032](https://storage.courtlistener.com/recap/gov.uscourts.cacd.899829/gov.uscourts.cacd.899829.1.0.pdf)
 - [Mac Isaac interview, Mar. 27, 2022 — store-server and father/FBI account](https://www.breitbart.com/politics/2022/03/27/nolte-hunter-biden-laptop-whistleblower-john-paul-mac-isaac-the-breitbart-news-interview/)

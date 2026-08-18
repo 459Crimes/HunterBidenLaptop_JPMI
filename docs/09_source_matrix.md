@@ -33,6 +33,13 @@ A later interview can explain technical details absent from a court opinion. It 
 | FBI subpoenaed and took the laptop, external drive, and paperwork Dec. 9, 2019 | Court opinions and subpoena reporting | **Strong custody anchor** |
 | Mac Isaac made an exact copy before surrendering the original | Delaware Supreme Court 2025 opinion | **Strong court-recited custody fact** |
 | Mac Isaac provided a copy to Robert Costello in Aug. 2020 | Delaware Supreme Court / Superior Court / S.D. Florida | **Repeated in court records** |
+| That copy was **BOOT01**, not JPMI `Untitled` | 18G103 public 26 Sep 2019; JPMI has no `/System`; ColorSync 28–31 Aug 2020 on APFS/GAI only | **Interpretation** from comparative inventory + Apple release date; [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md) |
+| Costello booted a drive to Apple login “Robert Hunter” | *New York* magazine, 12 Sep 2022 | **Contemporaneous journalism**; not a JPMI table |
+| Complaint alleges Costello “booted up” FedEx drive and made “bootable copies” | C.D. Cal. 2:23-cv-8032 (Sep 2023; later dropped) | **Complaint allegation** |
+| APFS/GAI have ColorSync iMac + two Dells and ByHost UUIDs dated 28–31 Aug 2020; JPMI does not | `rhb_forensics` `files` sources 1, 116, 122 | **Comparative inventory**; APFS/GAI bytes not in this GitHub tree |
+| APFS `HB Boot Drive` constructed 12 Dec 2020 / CCC snapshots 5 Jan 2021 | APFS Spotlight/CCC paths; parent-project custody synthesis | **Comparative inventory** |
+| GAI HFS+ volume activity 17 May 2021 with full OS | GAI volume/files inventory | **Comparative inventory** |
+| Todd received a Trimarco copy that he had to alter to boot | CybrJstr chat 16 Jul 2026 | **Participant account (this project)**; not the Della Rocca mailing packet |
 | Giuliani provided the material to the New York Post | Delaware Supreme Court | **Court-recited history** |
 | New York Post first story published Oct. 14, 2020 | New York Post / Delaware Supreme Court | **Public event** |
 | JPMI Desktop `.DS_Store` modified Oct. 15, 2020 | JPMI file-time reporting | **Directly reported JPMI metadata** |
@@ -158,7 +165,7 @@ The America Project also publicly supported Mac Isaac's 2022 litigation. The dir
 
 ## Integrity finding
 
-> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. The later activity identified is consistent with opening, browsing, indexing, copying, and forensic examination. **0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin). **Marco Polo** analyzed a Hayes bootable **APFS** later copy of the JPMI disk, not JPMI. **Dimitrelos** and **Maryman** used copies that correlate to **APFS structure**, not JPMI. The author's FBI 0728 referral is outside this analysis.
+> **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. The later activity identified is consistent with opening, browsing, indexing, copying, and forensic examination. **0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin). **Marco Polo** analyzed **MPOLO** (Hayes bootable laptop, Jun 2021), not JPMI. **Dimitrelos** (**GUSTAV**) and **MARYMAN** used copies that correlate to **APFS structure**, not JPMI. The author's FBI 0728 referral is outside this analysis. Costello/Trimarco **bootable** handling is documented on APFS/GAI, not on examined `Untitled`: [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 ## Byte-access limitation
 
@@ -169,12 +176,16 @@ The America Project also publicly supported Mac Isaac's 2022 litigation. The dir
 The present record does not support:
 
 - “Nothing could possibly have been changed.”
-- “The literal `dd` command was used.”
+- “The laptop partition was sector-copied onto the examined `Untitled` volume.”
 - “Todd Sanders had a hash-verified byte-identical copy of the disk CBS examined.”
 - “Every post-April timestamp proves tampering.”
 - “Extra Found Files / 0728 came from the laptop filesystem.”
 - “Marco Polo analyzed the JPMI / Della Rocca / Sanders copy.”
 - “Dimitrelos or Maryman examined the JPMI copy.”
 - “Every historical artifact was created on the 2019 repair-shop Mac.”
+- “The examined JPMI `Untitled` volume is the disk Costello booted in Manhasset.”
+- “Todd’s Trimarco bootable is hash-identical to the Hayes SanDisk APFS image.”
+- “Costello logged into Hunter’s account by mounting JPMI on his own Mac.”
+- “Costello received the examined JPMI `Untitled` volume.”
 
 Byte-identity with the CBS-examined copy is established from the common source and purpose, but is not independently hash-verified.

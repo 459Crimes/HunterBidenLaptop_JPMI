@@ -17,7 +17,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from lib.common import BUILD, connect, section_manifest, write_single
+from lib.common import (BUILD, connect, inventory_relpath, section_manifest,
+                        to_source_uri, write_single)
 
 VOLUME_OBJECTS = """
 SELECT f.relative_path, f.size, t.modified_ts
@@ -71,7 +72,7 @@ VOLUME_REPORTED = [
 
 
 def classify(path):
-    low = ("/" + path.lstrip("jpmi_metadata/")).lower()
+    low = ("/" + inventory_relpath(path)).lower()
     for name, rule in BUCKET_RULES:
         if rule(low):
             return name
@@ -114,8 +115,9 @@ def main():
     for path, size, mtime in vol_objects:
         note = "HFS+ journal" if path.endswith(".journal") else (
             "HFS+ journal info block" if path.endswith(".journal_info_block") else "")
-        vol_rows.append((path, size or "", mtime.strftime("%Y-%m-%d %H:%M:%S")
-                         if mtime else "", note))
+        vol_rows.append((to_source_uri(path), size or "",
+                         mtime.strftime("%Y-%m-%d %H:%M:%S") if mtime else "",
+                         note))
     vol_out = write_single(vol_dir, "02_volume_metadata.tsv",
                            ["object", "size_bytes", "modified_ts", "note"],
                            vol_rows)

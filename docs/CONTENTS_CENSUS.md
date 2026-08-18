@@ -4,20 +4,23 @@
 
 ## Top-level inventory
 
-From [`02_top_level_summary.tsv`](../build/file_tree/02_top_level_summary.tsv):
+From [`02_top_level_summary.tsv`](../build/file_tree/02_top_level_summary.tsv) and the HFS+ `[unallocated space]` rollup in the directory tree:
 
-| Area | File rows | Represented bytes | SHA-256 coverage |
-|---|---:|---:|---:|
-| `Users` | 572,743 | 215.5 GB | 331,906 paths (58%) |
-| HFS+ data-partition structures | 3,435 | 283.0 GB | 0% (includes unallocated representations) |
-| EFI System Partition | 6 | 209.7 MB | 0% |
-| GPT / unpartitioned | 7 | 134.3 MB | 0% |
+| Area | File rows | Represented bytes | What it is |
+|---|---:|---:|---|
+| `JPMI://Users` | 572,743 | 215.5 GB | Allocated `roberthunter` files (SHA-256 on 331,906 paths) |
+| HFS+ **unallocated ranges** | 3,352 | **281.9 GB** (281,908,244,480) | Unused space on the 500 GB destination — not cloned laptop slack |
+| Other HFS+ data-partition objects | 83 | **~1.0 GB** | Journal, Spotlight, catalog/attributes special files, DocumentRevisions, etc. |
+| EFI System Partition | 6 | 209.7 MB | Created when Disk Utility (or equivalent) formats a GPT Mac disk |
+| GPT / unpartitioned | 7 | 134.3 MB | GPT headers / protective gap |
 
-The 215 GB user-tree figure and the 283 GB structural figure are different accounting classes. Added together they are not “Hunter's unique files.” The structural byte total includes filesystem objects and unallocated-range accounting.
+The published “HFS+ data-partition structures … 3,435 rows / 283.0 GB” line **is the unallocated ranges plus those ~83 objects**. 215.5 + 283.0 + EFI + GPT ≈ **499 GB**, which is the capacity of the Crucial X6 (500,107,862,016 bytes), not 500 GB of copied Hunter files.
+
+A file-aware copy onto a newly formatted 500 GB HFS+ volume **must** create GPT, EFI, and a journal. Those objects are **destination filesystem machinery**, not proof that the laptop partition was sector-copied. See [COPY_METHOD](COPY_METHOD.md).
 
 User-tree `max_modified_ts` in that rollup is **2020-10-15 21:20:53** — the Finder cluster, not a 2022 authorship date. Structural partition `max_modified_ts` runs to **2024-11-21**.
 
-## Home directory (`Users/roberthunter`)
+## Home directory (`JPMI://Users/roberthunter`)
 
 | Directory | Rows | Bytes | Notes |
 |---|---:|---:|---|
@@ -61,7 +64,7 @@ The characterization report additionally records **~128,847 `.emlx` paths**, **~
 | Normalized paths | 576,249 | Inventory locations |
 | CNIDs | 397,440 | Catalog objects |
 | Canonical hashed CNIDs | 332,097 | Files with SHA-256 in CNID hash export |
-| Alias-map rows | 655,330 | Path↔CNID including aliases |
+| Alias-map rows | 655,330 | Path↔CNID; extra paths are TSK slack, not Unix hard links |
 | Distinct SHA-256 | 180,046 | Distinct **reported** contents |
 | TSK events | 1,259,300 | Timeline events, not files |
 

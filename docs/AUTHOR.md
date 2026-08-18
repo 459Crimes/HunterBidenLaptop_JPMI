@@ -21,7 +21,7 @@ Both URLs are cited. The essay is a **George News** account of the author, not t
 - He **pushed Ziegler to move off election-fraud investigations and onto the Biden laptop**.
 - He was the **first person to download the 0728 Extra Found Files** corpus from **Conan Hayes** (MEGA, after 28 July 2021).
 
-Marco Polo’s published *Report on the Biden Laptop* still did **not** analyze the JPMI copy in this repository. It used Hayes’s **bootable APFS** later copy of the JPMI disk, plus the **0728** sidecar set. See [Marco Polo v4](MARCO_POLO.md).
+Marco Polo’s published *Report on the Biden Laptop* still did **not** analyze the JPMI copy in this repository. It used Hayes’s **bootable laptop** (**MPOLO**, Jun 2021), plus the **0728** sidecar set. The author’s later **APFS*** image is **Jun 2022**. See [Marco Polo v4](MARCO_POLO.md).
 
 This encyclopedia is a **later, separate** 459Crimes publication about **JPMI forensics only**. Membership in Marco Polo does not make Marco Polo’s page counts or email database into JPMI results.
 
@@ -53,8 +53,9 @@ After that first 0728 download, the author assembled the **largest laptop-relate
 | Holding | What it is in 459Crimes usage | In *this* GitHub encyclopedia |
 |---|---|---|
 | **JPMI forensics** | Mac Isaac direct-copy lineage; Crucial X6 / `HB-IMAGE-2022-04-29.E01` reports | **Yes** — the object of this repo |
-| **APFS** | Later, more altered **copy of the JPMI disk**, as a Hayes **bootable laptop** | Named for disambiguation; **not** analyzed here |
-| **GAI** | Government Accountability Institute version (`hb.img` / truncated HFS+) | Out of scope |
+| **APFS** | TRIMARCO→APFS family (`HB Boot Drive`); CCC 5 Jan 2021 | Named for disambiguation; **not** analyzed here |
+| **APFS*** | Hayes MEGA **13 Jun 2022** `RHB_Boot.imgc` to this author | Out of scope for JPMI tables |
+| **GAI** | Government Accountability Institute version (`GAI://`; image `hb.img` / truncated HFS+) | Out of scope |
 | **0728 Extra Found Files** | Hayes MEGA share after 28 July 2021; **not** from the laptop files per se | Out of scope |
 | **BHR emails** | Bohai Harvest RST correspondence including Devon Archer, Hunter Biden, and others, into **spring 2023** | Out of scope |
 | **Bevan Cooney email collection** | Separate mailbox corpus | Out of scope |

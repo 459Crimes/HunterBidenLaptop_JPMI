@@ -17,6 +17,55 @@ CONFIG = ROOT / "config" / "limits.json"
 
 DEFAULT_DSN = "dbname=rhb_forensics"
 
+# Published corpus roots. Inventory rows still store jpmi_metadata/ in
+# PostgreSQL; exports and citations rewrite that prefix to JPMI://.
+SOURCE_URI = {
+    "JPMI": "JPMI://",
+    "APFS": "APFS://",
+    "GAI": "GAI://",
+    "0728": "0728://",
+}
+INVENTORY_ROOT = "jpmi_metadata"
+
+
+def to_source_uri(path, source="JPMI"):
+    """Map an inventory path onto the published source URI.
+
+    jpmi_metadata/Users/roberthunter/Desktop/.DS_Store becomes
+    JPMI://Users/roberthunter/Desktop/.DS_Store. Already-schemed paths
+    (APFS://, GAI://, 0728://, JPMI://) are left unchanged.
+    """
+    if path is None:
+        return None
+    s = str(path)
+    if s == "":
+        return s
+    for scheme in SOURCE_URI.values():
+        if s.startswith(scheme):
+            return s
+    scheme = SOURCE_URI[source]
+    prefix = INVENTORY_ROOT + "/"
+    if s in (INVENTORY_ROOT, prefix):
+        return scheme
+    if s.startswith(prefix):
+        return scheme + s[len(prefix):]
+    return s
+
+
+def inventory_relpath(path):
+    """Strip JPMI:// or the jpmi_metadata/ inventory prefix for matching."""
+    if path is None:
+        return ""
+    s = str(path)
+    if s.startswith(SOURCE_URI["JPMI"]):
+        return s[len(SOURCE_URI["JPMI"]):]
+    prefix = INVENTORY_ROOT + "/"
+    if s.startswith(prefix):
+        return s[len(prefix):]
+    if s in (INVENTORY_ROOT, SOURCE_URI["JPMI"]):
+        return ""
+    return s
+
 
 def dsn():
     return os.environ.get("RHB_PG_DSN", DEFAULT_DSN)

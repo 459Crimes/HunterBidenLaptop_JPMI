@@ -19,7 +19,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib.common import (BUILD, Sink, connect, load_limits, section_manifest,
-                        sha256, write_single)
+                        sha256, to_source_uri, write_single)
 
 TIME_YEAR_QUERY = """
 SELECT 'created' AS event, extract(year FROM created_ts)::int AS bucket,
@@ -156,7 +156,16 @@ def main():
                              "relative_path", "file_id"], budget)
                 c.execute(query)
                 for row in c:
-                    sink.row(row)
+                    if name == "file_times_full":
+                        path, size, sha, created, modified, accessed, deleted = row
+                        sink.row((to_source_uri(path), size, sha, created,
+                                  modified, accessed, deleted))
+                    elif name == "alias_map_full":
+                        cnid, sha, n_paths, role, vol, rel, file_id = row
+                        sink.row((cnid, sha, n_paths, role, vol,
+                                  to_source_uri(rel), file_id))
+                    else:
+                        sink.row(row)
                 deep_sinks[name] = sink
     pg.close()
 

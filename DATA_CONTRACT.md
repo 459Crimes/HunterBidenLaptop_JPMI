@@ -30,7 +30,7 @@ Columns:
 
 `home_subdir`, `file_count`, `size_bytes`, `hash_count`, `hash_pct`, `min_modified_ts`, `max_modified_ts`
 
-Rollup for direct children of `Users/roberthunter`.
+Rollup for direct children of `JPMI://Users/roberthunter`.
 
 ## `build/hash_manifest/`
 
@@ -101,7 +101,7 @@ Columns:
 
 `metric`, `value`
 
-Canonical/alias and hard-link metrics from `jpmi_alias_map`.
+Canonical/alias path metrics from `jpmi_alias_map`. Two-path CNIDs in the current table are TSK file + `*-slack`, not Unix hard links. See [COPY_METHOD](docs/COPY_METHOD.md).
 
 ## `build/volume_info/`
 
@@ -175,7 +175,7 @@ Archive parts are derived JPMI metadata. They are not source-image bytes.
 
 The following terms are not interchangeable:
 
-- **path** — a represented filesystem location;
+- **path** — a represented filesystem location, published as a source URI (`JPMI://…`; likewise `APFS://`, `GAI://`, `0728://` for those copies);
 - **CNID** — an HFS+ catalog identity;
 - **hash** — reported byte-content fingerprint;
 - **device** — a physical custody medium;

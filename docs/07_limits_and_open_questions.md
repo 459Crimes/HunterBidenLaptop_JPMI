@@ -39,7 +39,7 @@ Reference: [CBS News, Nov. 21, 2022](https://www.cbsnews.com/news/hunter-biden-l
 
 The defensible claim is that the forensic indicators presently available do **not show** the hacking/injection theory in this direct-copy lineage—or, as attributed in related 459Crimes work, on other **laptop-derived** media.
 
-**0728 Extra Found Files** did **not** come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). The author's FBI referral on 0728 is **outside this analysis**. Marco Polo analyzed a Hayes **bootable APFS** later copy of the JPMI disk, **not** JPMI. Dimitrelos and Maryman used copies that **correlate to APFS structure**. See [Scope](SCOPE.md), [Integrity](INTEGRITY.md), and [Author](AUTHOR.md).
+**0728 Extra Found Files** did **not** come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). The author's FBI referral on 0728 is **outside this analysis**. Marco Polo analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021), **not** JPMI. Dimitrelos (**GUSTAV**) and **MARYMAN** used copies that **correlate to APFS structure**. See [Scope](SCOPE.md), [Integrity](INTEGRITY.md), and [Author](AUTHOR.md).
 
 ## 2. The project does not publish the restricted source bytes
 
@@ -94,21 +94,22 @@ The SHA-256 values in this repository are important evidence, but they are recei
 
 The accurate statement is “The JPMI manifest reports this SHA-256,” rather than “this GitHub checkout independently read the restricted JPMI object and computed this SHA-256.”
 
-## 4. The exact April 2019 recovery implementation remains unresolved
+## 4. How the files left the laptop (amended)
 
-Mac Isaac has described a recovery workflow in which data was first copied to his **store server**, then transferred to the customer-supplied external hard drive.
+Full evaluation: [How the files left the laptop](COPY_METHOD.md).
 
-That account is historically useful and technically plausible, but this repository does not presently have:
+Mac Isaac has described a recovery workflow in which data was first copied to his **store server**, then transferred to the customer-supplied external hard drive. That April utility remains unnamed; this repository does not have server logs, copy-tool logs, command history, or first-generation hashes.
 
-- the store-server image;
-- server logs;
-- copy-tool logs;
-- command history;
-- first-generation hashes.
+The **examined** volume is described by what the catalog and timestamps show:
 
-The server operation is therefore attributed to Mac Isaac's account rather than presented as an independent reconstruction.
+- `Untitled` was **formatted 26 September 2019** (new journal, new volume id, default name).
+- User-file created/modified times from 2016–March 2019 were **preserved**; only ~15 objects were created in September 2019.
+- Catalog root is `roberthunter` plus HFS+ machinery — not `/System`.
+- HFS+ hard-link private directories are **empty**; `jpmi_alias_map` two-path CNIDs are **TSK slack**, not Unix `ln`.
+- The Crucial X6 is a **2020+** product, so the 2019 header reached it by a later **volume clone**.
+- The 2022 E01 is a **forensic image of that X6**.
 
-The evidence does not force a literal `dd` story. “`dd`-style” remains a public analogy for the broad filesystem-preserving evidentiary form.
+April 2019 off-laptop recovery remains unnamed (store-server account). The E01 is a bit-stream of the **custody stick**, not of the laptop SSD.
 
 ## 5. The September 26, 2019 HFS+ creation date is a strong correlation, not yet a physical-device identification
 
@@ -243,4 +244,8 @@ The following materials would materially strengthen the JPMI provenance chain:
 8. the restricted JPMI E01 for independent read-only verification;
 9. the complete acquisition/report lineage needed to reconcile the 2022 E01 record with the 2024 reported last-write;
 10. normalized timezone documentation;
-11. any FBI-side disclosure, including why the original laptop and external drive seized December 9, 2019 have not been returned to anyone; only the FBI can verify the FBI-side custody history and whether the data it holds matches the JPMI/CBS media.
+11. any FBI-side disclosure, including why the original laptop and external drive seized December 9, 2019 have not been returned to anyone; only the FBI can verify the FBI-side custody history and whether the data it holds matches the JPMI/CBS media;
+12. which Mac Isaac copy Costello received, and who owned host UUIDs `42800DC4-…` / `E139561C-…` on 28–31 Aug 2020;
+13. UUID/hash identity between Todd’s Trimarco-made bootable and the Hayes SanDisk APFS image.
+
+Sibling-copy chronology: [Where the copies split](BRANCH_DEVIATIONS.md).

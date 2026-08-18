@@ -26,7 +26,7 @@ The project therefore has two reproducible evidence layers:
 | `jpmi_file_times` | Created / modified / accessed timestamps |
 | `jpmi_sha256_allpaths` | Reported SHA-256 values and paths |
 | `jpmi_cnid_map` | HFS+ catalog identity and parent relationships |
-| `jpmi_alias_map` | Canonical/alias and hard-link relationships |
+| `jpmi_alias_map` | Canonical/alias path rows (TSK file + slack in current data; not Unix `nlink`) |
 | `jpmi_tsk_timeline` | TSK filesystem timeline and system-state events |
 
 Comparative overlap tables are outside the scope of this standalone JPMI publication.

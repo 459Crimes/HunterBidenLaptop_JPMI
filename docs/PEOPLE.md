@@ -97,7 +97,7 @@ Mac Isaac interpreted DeMeo's “nothing ever happens to people who don't talk�
 The copied macOS environment is organized principally under:
 
 ```text
-Users/roberthunter/
+JPMI://Users/roberthunter/
 ```
 
 That is **account and tree evidence**. It does not prove one human personally created every object in the tree. Mail attachments, cloud downloads, mobile backups, Dr.Fone recoveries, caches, and migrated diagnostics all live inside one home folder.
@@ -144,13 +144,27 @@ Direct recipient of the Della Rocca / Mac Isaac-address shipment; Sanders states
 
 Sanders attributes any 2022–2024 filesystem alteration to **analysis handling**, a **read-write mount on a Mac**. Only the FBI (or examination of the acquired image) can verify the FBI-side and the true cause of the 2024 last-write. See [2022/2024 discrepancy](2022_2024_DISCREPANCY.md).
 
+**Second inbound copy (not JPMI).** In a 16 Jul 2026 CybrJstr chat recorded by this project, Sanders said the working copy “ours was from Mark Trimarco,” that content was dropped on the Desktop, that he “had to monkey with it.. to get it to boot,” and that he “made my bootable right after I got it.” That describes the **Costello/Trimarco** object, not the Della Rocca mailing-packet stick that generated these reports. [Where the copies split](BRANCH_DEVIATIONS.md).
+
 ## Patrick Byrne / America Project
 
 Public-record context for Sanders' affiliation and for support of Mac Isaac's 2022 litigation. That network membership is a **provenance-bridge fact**. It is not a substitute for image hashes.
 
 ## Robert Costello
 
-Attorney for Rudy Giuliani. Court records: Mac Isaac emailed him 26 August 2020 and provided a copy of recovered data plus the repair authorization.
+Attorney for Rudy Giuliani. Court records: Mac Isaac emailed him **26 August 2020** and provided a copy of recovered data plus the repair authorization.
+
+**He did not receive JPMI.** The FedEx object is **BOOT01** (18G103 bootable copy, created after 26 Sep 2019). Examined `Untitled` is a home-only sibling. [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+
+**Journalism.** [*New York* magazine, 12 Sep 2022](https://nymag.com/intelligencer/article/hunter-biden-laptop-investigation.html): Mac Isaac sent a copy to Costello’s home; Costello **booted** the drive with his son’s help; in Manhasset he showed reporters a small external drive and a login window **“Robert Hunter.”** Costello said the drive had been **cleaned up** before it reached him.
+
+**Complaint allegation.** *Biden v. Giuliani*, C.D. Cal. 2:23-cv-8032 (Sep 2023, later dropped): FedEx of an “external drive” to Costello’s NY residence; defendants “booted up” the drive, used the account, and created “bootable copies.” [RECAP PDF](https://storage.courtlistener.com/recap/gov.uscourts.cacd.899829/gov.uscourts.cacd.899829.1.0.pdf).
+
+Booting to that login is **not** what attaching the examined JPMI home-only volume does. August 2020 iMac/Dell ColorSync files sit on **APFS/GAI**, not JPMI. [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+
+## Michael (“Mike”) / “Mark” Trimarco
+
+New York businessman in Giuliani’s 2020 orbit. [Raw Story, 13 Apr 2022](https://www.rawstory.com/michael-trimarco/): told Ann Vandersteel in **October 2020** he had been analyzing Hunter Biden laptop contents; Byrne Westin hotel operation. [LA Times, 17 Jun 2022](https://www.latimes.com/politics/story/2022-06-17/jan-6-behind-scenes-trump-election-maga-world-search-fraud): Giuliani asked him to look at documents on the laptop. Sanders’ chat says **“Mark Trimarco”**; the press name is **Mike/Michael**. Recorded as likely the same person, not proved by a hash.
 
 ## Rudy Giuliani
 

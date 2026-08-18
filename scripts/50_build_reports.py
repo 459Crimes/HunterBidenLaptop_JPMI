@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from lib.common import BUILD, connect, load_limits
+from lib.common import BUILD, connect, load_limits, to_source_uri
 
 REPORTS = BUILD / "reports"
 SOURCE_ID = 122
@@ -228,8 +228,9 @@ def report_01(data):
         "\nThe destination is represented as a GPT-partitioned Mac-oriented disk with an EFI System Partition and a journaled HFS+ data volume. "
         "The acquisition record identifies an E01 image.\n\n"
         "## Interpretation\n\n"
-        "For a non-specialist, JPMI is reasonably described as a **whole-volume / `dd`-style copy lineage**, meaning that the evidence retains filesystem context rather than only a curated folder of documents. "
-        "The phrase does not prove that Mac Isaac literally used the `dd` program.\n\n"
+        "The destination is a GPT-partitioned Mac-oriented disk with EFI and journaled HFS+ `Untitled`. "
+        "Volume creation 26 September 2019, preserved 2016–March 2019 file timestamps, empty HFS+ hard-link private directories, and a `roberthunter` home at volume root support a **file-aware copy onto a newly formatted volume**. "
+        "The Crucial X6 is a 2020+ product; the 2019 volume reached it by a later volume clone. The E01 is a forensic image of that stick. See docs/COPY_METHOD.md.\n\n"
         "## Historical hardware artifacts inside the user tree\n\n"
         f"The inventory contains {mba} path rows referencing `roberts-MacBook-Air`, {serial} referencing serial `C02S953UH3QF`, and {wd} referencing WirelessDiagnostics material. "
         "These are useful evidence that older Mac diagnostic data is represented inside the account. They are **not sufficient by themselves to identify the particular computer left for repair in 2019**, because Mac home data can be migrated, restored, or copied forward across machines.\n\n"
@@ -321,7 +322,8 @@ def report_04(data, boundary):
     )
     rows = []
     for path, size, created, modified, accessed in data["post_rows"]:
-        rows.append((path, size or "", fmt_ts(created), fmt_ts(modified), fmt_ts(accessed)))
+        rows.append((to_source_uri(path), size or "", fmt_ts(created),
+                     fmt_ts(modified), fmt_ts(accessed)))
     text += md_table(["Path", "Size", "Created", "Modified", "Accessed"], rows)
     text += (
         "\n## Limitation\n\n"
@@ -352,7 +354,9 @@ def report_05(data, limits):
         "## Source boundary\n\n"
         "The GitHub project publishes received JPMI metadata/hash evidence and derived reports. The restricted E01 image itself is not published here. Therefore a reported manifest hash is distinguished from a hash freshly recomputed by this checkout from restricted source bytes.\n\n"
         "## Copy-method boundary\n\n"
-        "The evidence supports describing JPMI as a whole-volume/filesystem-preserving copy lineage for public explanation. It does not establish the literal original repair-shop copy command or every intermediate storage device.\n\n"
+        "Volume `Untitled` was formatted 26 September 2019 and populated by a timestamp-preserving file-aware copy of `roberthunter`. "
+        "A later volume clone put that filesystem onto the Crucial X6 (a 2020+ product). "
+        "The E01 is a forensic image of that X6. The April 2019 store-server utility remains unnamed. See docs/COPY_METHOD.md.\n\n"
         "## Acquisition chronology boundary\n\n"
         f"The acquisition record reports `{a.get('source_image')}` with date `{a.get('reported_at')}`, while delivered HFS+ metadata reports a 2024 last-write. An immutable E01 actually acquired in 2022 cannot later acquire a 2024 filesystem write. The relationship between those records is unresolved and requires the original acquisition/report lineage.\n\n"
         "## Size policy\n\n"

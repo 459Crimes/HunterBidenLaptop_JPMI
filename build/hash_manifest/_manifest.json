@@ -3,14 +3,14 @@
     {
       "file": "hash_manifest/01_sha256_by_cnid_00001.tsv",
       "rows": 221807,
-      "sha256": "158f7d6116fc35cfd28df8c8138e7da62048587bd8614ae78c78e8aaf354387d",
-      "size": 52428786
+      "sha256": "d8bc80612fa1f701f254161d7538697506f0a125933d3954c071fc1894f63b35",
+      "size": 50876375
     },
     {
       "file": "hash_manifest/01_sha256_by_cnid_00002.tsv",
       "rows": 110314,
-      "sha256": "455e8cdc9e41cf763fbdd63550210a576cecee6422c8265846bcf0ef7a78f3e6",
-      "size": 25234577
+      "sha256": "d69979372e8dc5c465352fbefadea09681ffa0239e2435b6817363b63235077f",
+      "size": 24462869
     },
     {
       "file": "hash_manifest/04_coverage.tsv",

@@ -22,7 +22,7 @@ The GitHub project publishes received JPMI metadata/hash evidence and derived re
 
 ## Copy-method boundary
 
-The evidence supports describing JPMI as a whole-volume/filesystem-preserving copy lineage for public explanation. It does not establish the literal original repair-shop copy command or every intermediate storage device.
+Volume `Untitled` was formatted 26 September 2019 and populated by a timestamp-preserving file-aware copy of `roberthunter`. A later volume clone put that filesystem onto the Crucial X6 (a 2020+ product). The E01 is a forensic image of that X6. The April 2019 store-server utility remains unnamed. See docs/COPY_METHOD.md.
 
 ## Acquisition chronology boundary
 

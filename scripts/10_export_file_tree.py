@@ -18,8 +18,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from lib.common import (BUILD, Sink, connect, load_limits, section_manifest,
-                        sha256, write_single)
+from lib.common import (BUILD, INVENTORY_ROOT, Sink, connect, load_limits,
+                        section_manifest, sha256, to_source_uri, write_single)
 
 QUERY = """
 SELECT f.relative_path, f.size, f.sha256, t.modified_ts
@@ -62,7 +62,8 @@ def main():
             continue
         mtime_s = mtime.strftime("%Y-%m-%d %H:%M:%S") if mtime else None
         if deep_sink:
-            deep_sink.row((rel_path, size or "", sha or "", mtime_s or ""))
+            deep_sink.row((to_source_uri(rel_path), size or "", sha or "",
+                           mtime_s or ""))
         parent = "/".join(parts[:-1])
         d = parent_direct[parent]
         d["file_count"] += 1
@@ -110,7 +111,9 @@ def main():
         parent = d.rsplit("/", 1)[0] if "/" in d else ""
         pct = (round(100.0 * r["hash_count"] / r["file_count"], 1)
                if r["file_count"] else 0.0)
-        tree_rows.append((d, depth, parent, dir_count[d], r["file_count"],
+        tree_rows.append((to_source_uri(d), depth,
+                          to_source_uri(parent) if parent else "",
+                          dir_count[d], r["file_count"],
                           r["size"], r["hash_count"], pct,
                           r["min_m"].strftime("%Y-%m-%d %H:%M:%S") if r["min_m"] else "",
                           r["max_m"].strftime("%Y-%m-%d %H:%M:%S") if r["max_m"] else ""))
@@ -139,9 +142,9 @@ def main():
             top_keys[parts[1]] = None
         if len(parts) >= 3 and parts[1] == "Users" and parts[2] == "roberthunter":
             home_keys[parts[3] if len(parts) > 3 else ""] = None
-    top_rows = [(k, *subtree(f"jpmi_metadata/{k}"))
+    top_rows = [(k, *subtree(f"{INVENTORY_ROOT}/{k}"))
                 for k in sorted(top_keys) if k]
-    home_rows = [(k, *subtree(f"jpmi_metadata/Users/roberthunter/{k}"))
+    home_rows = [(k, *subtree(f"{INVENTORY_ROOT}/Users/roberthunter/{k}"))
                  for k in sorted(home_keys) if k]
 
     top_out = write_single(

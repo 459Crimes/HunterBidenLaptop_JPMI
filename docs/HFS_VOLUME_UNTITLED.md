@@ -42,7 +42,13 @@ Selected objects from [`02_volume_metadata.tsv`](../build/volume_info/02_volume_
 | `.fseventsd/` | FSEvents | 2022-06-01 |
 | `.com.apple.timemachine.donotpresent` | Time Machine hint on external disks | 2020-10-26 |
 
-A folder dump of emails does not need this kit. That is the empirical basis for the **`dd`-style / whole-volume** analogy.
+A folder dump of emails does not need this kit. Native HFS+ machinery plus a `roberthunter` home at volume root is the empirical basis for a **file-aware copy onto a formatted Mac disk**. See [How the files left the laptop](COPY_METHOD.md).
+
+## Empty hard-link directories
+
+Volume-root CNIDs **18** (`^^^^HFS+ Private Data`) and **19** (`.HFS+ Private Directory Data`) are allocated and have **no children**. Live HFS+ file hard links occupy Private Data; Time Machine-style directory hard links occupy Private Directory Data. Empty folders after a September 2019 format are consistent with a **file-aware copy that did not recreate hard links**. They are not proof the laptop never had any.
+
+The published alias map’s two-path CNIDs are **TSK file + `*-slack`**, not Unix hard links. See [COPY_METHOD](COPY_METHOD.md) and [Glossary](GLOSSARY.md).
 
 ## Empty deleted catalog
 

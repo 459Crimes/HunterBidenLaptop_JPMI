@@ -52,10 +52,10 @@ Oddities such as a **year-1984 created** row (count 1, size 0) are classic files
 From the post-repair modified list, within minutes:
 
 - Dr.Fone recovery-folder `.DS_Store` files ~21:16
-- `Users/roberthunter/Desktop/.DS_Store` **21:18:17**
-- `Public/.DS_Store` 21:18:42
+- `JPMI://Users/roberthunter/Desktop/.DS_Store` **21:18:17**
+- `JPMI://Users/roberthunter/Public/.DS_Store` 21:18:42
 - `.DocumentRevisions-V100` subdirs and `.TemporaryItems` 21:19:22
-- `Documents/.DS_Store` 21:20:53
+- `JPMI://Users/roberthunter/Documents/.DS_Store` 21:20:53
 
 The *New York Post* story was **14 October 2020**. The supported sentence is: **the copied environment appears to have been opened**. The unsupported sentence is: **Hunter files were planted the next day**.
 

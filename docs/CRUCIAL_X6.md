@@ -34,9 +34,10 @@ EFI presence means **Mac-oriented partitioned storage**, not “this stick was t
 ## Why it is not the laptop SSD
 
 1. Mac Isaac describes **server staging** then a **customer external drive**, then **later preservation copies**.
-2. The HFS+ destination reports **creation 26 September 2019**, months after the April repair.
-3. A 500 GB-class USB SSD with a volume named `Untitled` is the geometry of a **copy destination**, not a proof of original internal hardware.
-4. Historical diagnostics inside the user tree (`roberts-MacBook-Air`, serial `C02S953UH3QF`) are **migratable data**, not a chassis tag on this X6.
+2. The HFS+ destination reports **creation 26 September 2019**, months after the April repair — a **new volume**, not a cloned laptop header. See [COPY_METHOD](COPY_METHOD.md).
+3. A 500 GB-class USB SSD named `Untitled` is copy-destination geometry, not proof of original internal hardware.
+4. The Crucial X6 portable SSD was **announced 25 August 2020** (shipping ~1 September 2020). It **cannot** be the disk formatted on 26 September 2019 unless the 2019 volume was **cloned onto later hardware**.
+5. Historical diagnostics inside the user tree (`roberts-MacBook-Air`, serial `C02S953UH3QF`) are **migratable data**, not a chassis tag on this X6.
 
 ## How this device entered the examined lineage
 

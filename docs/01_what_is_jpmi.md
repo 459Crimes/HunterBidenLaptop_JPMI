@@ -4,37 +4,21 @@
 
 **JPMI** is the shorthand used in this project for the **John Paul Mac Isaac copy**: the Mac Isaac-lineage copy of data recovered from the computer associated with Hunter Biden and left at a Wilmington, Delaware repair shop in 2019.
 
-This repository is about that copy alone. It is a **laptop-derived** medium. **No hacking is attributed to JPMI.** **0728 Extra Found Files** did not come from the laptop files per se. **Marco Polo** analyzed a Hayes **bootable APFS** later copy of the JPMI disk, not this copy. See [Scope](SCOPE.md).
+This repository is about that copy alone. It is a **laptop-derived** medium. **No hacking is attributed to JPMI.** **0728 Extra Found Files** did not come from the laptop files per se. **Marco Polo** analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021), not this copy. See [Scope](SCOPE.md) · [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 ## A useful mental model
 
-For a general reader, JPMI is best understood as a **disk/volume copy**, not a folder of selected documents.
+For a general reader, JPMI is a **copied Mac home on a later HFS+ disk**, not a folder of selected documents.
 
-A common technical analogy is a `dd`-style clone. The Unix utility `dd` can copy storage at the block level, producing a destination that represents the structure of the source rather than merely copying visible documents one by one.
+The destination has GPT, EFI, a journaled HFS+ volume, CNIDs, Spotlight, Mail/Library/Photos state, and unallocated space. A hand-curated PDF dump does not need those structures.
 
-That analogy fits the JPMI evidence, which contains features expected from a copied Mac storage environment:
-
-- a GPT partition map;
-- an EFI System Partition;
-- a journaled HFS+ data volume;
-- an HFS+ journal;
-- a filesystem volume identifier;
-- CNID and parent-CNID relationships;
-- Spotlight indexing structures;
-- DocumentRevisions state;
-- allocated and unallocated space;
-- a normal macOS user-home hierarchy under `roberthunter`;
-- application databases, Mail state, Photos state, contacts, caches, preferences, and device-backup material.
-
-A hand-curated document dump does not need most of those structures.
+Volume `Untitled` was created **26 September 2019**; user-file created/modified times from 2016–March 2019 were preserved; the HFS+ hard-link private directories are empty; the home sits at volume root as `roberthunter`. That is a **file-aware copy onto a newly formatted volume**. The Crucial X6 is a 2020+ product, so the 2019 volume reached it by a later **volume clone**. The 2022 E01 is a **forensic image of that stick**. Evaluation: [How the files left the laptop](COPY_METHOD.md).
 
 ## Important technical qualification
 
-Calling JPMI “`dd`-style” does **not** establish that John Paul Mac Isaac literally used the `dd` program, or that the final 500 GB external disk was made in one direct sector-for-sector operation from the original laptop SSD.
+The April 2019 recovery utility is **not** established. Mac Isaac’s account is store-server staging, then the customer drive. The accurate formulation is:
 
-The exact original recovery/copy command is not established by the source material. The accurate formulation is:
-
-> **JPMI is a Mac Isaac-lineage, filesystem-preserving or block-oriented copy represented to this project by a later forensic E01 acquisition.**
+> **JPMI is a Mac Isaac-lineage copy: file-aware populate of HFS+ `Untitled` (26 Sep 2019), later volume-cloned onto a Crucial X6, represented here by a forensic E01 of that X6.**
 
 ## The physical medium described by the forensic record
 

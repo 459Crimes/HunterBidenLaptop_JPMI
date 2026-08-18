@@ -31,7 +31,7 @@ The destination is represented as a GPT-partitioned Mac-oriented disk with an EF
 
 ## Interpretation
 
-For a non-specialist, JPMI is reasonably described as a **whole-volume / `dd`-style copy lineage**, meaning that the evidence retains filesystem context rather than only a curated folder of documents. The phrase does not prove that Mac Isaac literally used the `dd` program.
+The destination is a GPT-partitioned Mac-oriented disk with EFI and journaled HFS+ `Untitled`. Volume creation 26 September 2019, preserved 2016–March 2019 file timestamps, empty HFS+ hard-link private directories, and a `roberthunter` home at volume root support a **file-aware copy onto a newly formatted volume**. The Crucial X6 is a 2020+ product; the 2019 volume reached it by a later volume clone. The E01 is a forensic image of that stick. See docs/COPY_METHOD.md.
 
 ## Historical hardware artifacts inside the user tree
 

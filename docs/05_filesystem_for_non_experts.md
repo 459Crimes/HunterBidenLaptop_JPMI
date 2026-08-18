@@ -1,6 +1,6 @@
 # 5. The JPMI Filesystem, Explained for Non-Experts
 
-> **Encyclopedia.** Term list: [Glossary](GLOSSARY.md). Objects: [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md) · [Forensic image](FORENSIC_IMAGE.md) · [Timestamps](TIMESTAMPS.md). [Index](INDEX.md).
+> **Encyclopedia.** Term list: [Glossary](GLOSSARY.md) (copy method). Objects: [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md) · [Forensic image](FORENSIC_IMAGE.md) · [Timestamps](TIMESTAMPS.md). Origin: [How the files left the laptop](COPY_METHOD.md). [Index](INDEX.md).
 
 Digital-forensic reports often become unreadable because they start with filesystem terminology. This page explains only the terms needed to understand JPMI.
 
@@ -18,15 +18,19 @@ An **E01** is a common forensic-image format. It is designed to preserve a stora
 
 The important public point is simple: the later JPMI custody disk was forensically preserved as an image rather than analyzed only by opening documents on the live external disk.
 
-## `dd`-style clone
+## Copy method
 
-`dd` is a Unix program that can copy raw storage blocks from one device or image to another.
+What this encyclopedia measured is **how the examined disk was built**, from HFS+ catalog identity, timestamps, empty hard-link directories, TSK slack pairs, and the Crucial X6 product date — not a named April 2019 command log.
 
-When this repository calls JPMI **“`dd`-style”**, it means:
+Three operations, with different evidence:
 
-> Think “whole storage environment,” not “someone dragged a few folders onto a thumb drive.”
+| Operation | What it is | What JPMI shows |
+|---|---|---|
+| **File-aware copy** | Copy files and folders onto a formatted volume (new CNIDs; timestamps can be preserved) | `Untitled` created **26 Sep 2019**; `roberthunter` copied in; 2016–March 2019 created/modified times kept; hard-link private directories empty |
+| **Volume clone** | Copy a whole already-formatted volume onto another disk (headers, allocated files, free space) | 2019 volume name/id/create date on a Crucial X6 that was **not sold until 2020** |
+| **Forensic image (E01)** | Bit-stream image of a custody disk for later analysis | `HB-IMAGE-2022-04-29.E01` of that X6 (ADI), not of the 2019 laptop SSD |
 
-It does **not** mean Mac Isaac has been proved to have literally typed a `dd` command.
+GPT, EFI, and an HFS+ journal are created by **formatting a Mac disk**. They do not mean the laptop’s sectors were copied. Full evaluation: [How the files left the laptop](COPY_METHOD.md).
 
 ## GPT
 
@@ -92,7 +96,7 @@ The JPMI CNID map contains **397,440 unique catalog entries** after deduplicatio
 A **path** is the human-readable location of a file or directory, for example:
 
 ```text
-Users/roberthunter/Library/Mail/...
+JPMI://Users/roberthunter/Library/Mail/...
 ```
 
 A path is not the same thing as byte identity. Two paths can point to identical content, and one underlying file can sometimes be represented by multiple paths.

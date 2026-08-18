@@ -1,6 +1,6 @@
 # Deep Export Archives (partitioned)
 
-`build/deep/` is intentionally gitignored (full per-file exports, ~768 MiB). These parts are the GitHub-trackable form.
+`build/deep/` is intentionally gitignored (full per-file exports, ~751 MiB). These parts are the GitHub-trackable form.
 
 ## Reassembly
 

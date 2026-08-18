@@ -13,7 +13,7 @@ For JPMI, some of those answers are established directly by the forensic records
 The copied Mac environment is organized principally around the account:
 
 ```text
-Users/roberthunter/
+JPMI://Users/roberthunter/
 ```
 
 The account contains the ordinary mixture expected from a long-used Apple environment: Mail, contacts, documents, photographs, movies, downloads, messages, application support, iCloud-related state, mobile-device material, preferences, and caches.
@@ -106,15 +106,13 @@ The questions it answers:
 
 ## How?
 
-The exact original repair-shop copy utility is unresolved.
+Three operations, not one command. Full evaluation: [How the files left the laptop](COPY_METHOD.md).
 
-The evidence does support a more bounded statement: the JPMI lineage preserved far more than a curated user-document folder. The represented destination includes native Mac filesystem and indexing structures, a normal home hierarchy, filesystem catalog relationships, and unallocated space.
+1. **April 2019.** Quote #7469 and Mac Isaac’s account: recover to the **store server**, then the customer external drive. Tool unnamed; server logs not held. Not reconstructed as a sector copy of the laptop partition.
+2. **26 September 2019.** New HFS+ `Untitled`. Timestamp-preserving **file-aware** copy of `roberthunter` (created times remain 2016–March 2019; only ~15 September-created objects). Symlinks preserved; destination hard-link private directories empty.
+3. **After August 2020.** **Volume clone** of `Untitled` onto the Crucial X6 (product announced 25 August 2020). **29 April 2022** E01 of that X6 (ADI). The E01 is a forensic image of the **custody stick**, not of the 2019 laptop SSD.
 
-For non-specialists, **“`dd`-style clone”** is the useful analogy for that evidentiary form, with a qualification:
-
-> The phrase means a whole-volume or filesystem-preserving copy lineage. It does not assert that the Unix `dd` command was literally used or that every block on the final Crucial X6 came directly from the original laptop SSD in one operation.
-
-The later preservation record identifies an **E01 forensic image** with recorded acquisition hashes. The exact relationship between that 2022-labeled image record and the separately reported 2024 volume last-write remains unresolved.
+The exact relationship between that 2022-labeled image record and the separately reported 2024 volume last-write remains unresolved.
 
 ## Provenance confidence table
 
@@ -123,11 +121,13 @@ The later preservation record identifies an **E01 forensic image** with recorded
 | The analyzed custody device is a 500 GB-class Crucial X6 USB SSD | **Directly reported** |
 | The acquisition record identifies `HB-IMAGE-2022-04-29.E01` | **Directly reported** |
 | The destination uses GPT + EFI + journaled HFS+ | **Directly reported** |
-| The primary user tree is `Users/roberthunter` | **Directly observed in inventory** |
+| The primary user tree is `JPMI://Users/roberthunter` | **Directly observed in inventory** |
 | The HFS+ destination was created after the April 2019 repair event | **Supported by reported 2019-09-26 volume creation** |
 | The represented copy lineage contains post-2019 system-state timestamps | **Directly reported** |
 | The 2024 last-write occurred inside an immutable E01 actually acquired in 2022 | **Not supported; chronology is internally unresolved** |
 | The final external SSD is the original laptop SSD | **Not supported; it is a later custody medium** |
-| Mac Isaac literally used `dd` | **Not established** |
+| The laptop partition was sector-copied onto `Untitled` | **Contradicted for the examined volume** (new format date, empty hard-link dirs, home-only tree) |
+| `Untitled` was formatted 26 Sep 2019 and populated by a file-aware copy | **Supported by volume header + preserved user timestamps + empty hard-link dirs** |
+| The Crucial X6 is the original 26 Sep 2019 format target | **Not supported; X6 is a 2020+ product — later volume clone** |
 | Every file timestamp represents Hunter Biden activity | **Not supported** |
 | Every pre-2019 artifact originated on the particular 2019 repair-shop Mac | **Not established; migration, cloud sync, backups, and older devices can preserve earlier material** |

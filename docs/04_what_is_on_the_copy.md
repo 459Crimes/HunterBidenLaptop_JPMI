@@ -15,11 +15,12 @@ From [`build/file_tree/02_top_level_summary.tsv`](../build/file_tree/02_top_leve
 | Area | File rows | Approx. bytes represented |
 |---|---:|---:|
 | `Users` | 572,743 | 215.5 GB |
-| HFS+ data-partition structures | 3,435 | 283.0 GB |
+| HFS+ unallocated ranges (inside the 283 GB line) | 3,352 | 281.9 GB |
+| Other HFS+ partition objects (journal, Spotlight, catalog, …) | 83 | ~1.0 GB |
 | EFI System Partition | 6 | 209.7 MB |
 | GPT/unpartitioned structures | 7 | 134.3 MB |
 
-The large HFS+ structural byte total includes filesystem-level objects and unallocated-space representations; it is not added to the user-tree total and described as unique user content.
+The published rollup **“HFS+ data-partition structures / 3,435 rows / 283.0 GB”** is unallocated space **plus** those ~83 filesystem objects. GPT + EFI + journal appear because **formatting a Mac external disk as journaled HFS+ creates them**. They are destination machinery, not a sector copy of the laptop. 215.5 GB of files on a 500 GB stick leaves ~280 GB unused; TSK reports that unused space as thousands of unallocated-range rows. See [Contents census](CONTENTS_CENSUS.md) and [COPY_METHOD](COPY_METHOD.md).
 
 ## The `roberthunter` home directory
 
@@ -117,7 +118,7 @@ Those structures help answer questions about copying, mounting, browsing, indexi
 
 The published inventory reports **331,906 inventory paths with SHA-256 values**. The deeper rank-1 manifest contains **655,330 path-level hash records**, while the CNID mapping contains **397,440 unique catalog entries**.
 
-Those numbers differ because a filesystem can represent the same underlying object through multiple paths, aliases, hard links, or report layers. The repository therefore avoids using one raw row count as though it were a count of unique files.
+Those numbers differ because a filesystem can represent the same underlying object through multiple paths, TSK slack siblings, aliases, or report layers. The alias map’s extra paths are **slack**, not Unix hard links ([COPY_METHOD](COPY_METHOD.md)). The repository therefore avoids using one raw row count as though it were a count of unique files.
 
 ## What is not byte-accessible in this GitHub repository
 

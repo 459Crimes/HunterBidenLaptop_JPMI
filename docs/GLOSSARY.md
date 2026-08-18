@@ -12,7 +12,13 @@ The recorded forensic imaging event. JPMI’s acquisition record names tool **AD
 
 ## Alias / hard link
 
-Multiple paths can name one catalog object. The alias map has **655,330** rows: **332,097** canonical and **323,233** alias rows; `max_paths_for_cnid` is **2**. This is why path counts exceed CNID counts.
+Multiple paths can name one catalog object. The alias map has **655,330** rows: **332,097** canonical and **323,233** alias rows; `max_paths_for_cnid` is **2**.
+
+Those two-path CNIDs are **all** TSK `file` + `file-*-slack` (same CNID, slack size 0). They are **not** Unix hard links. HFS+ `^^^^HFS+ Private Data` and `.HFS+ Private Directory Data` exist at volume root and have **zero children**, so this volume has **no live file or directory hard links**. Duplicate SHA-256 on different CNIDs is repeated content (Dr.Fone dumps, iMovie templates, Mail attachments), not a map of broken `ln` pairs. Evaluation: [COPY_METHOD](COPY_METHOD.md).
+
+## BOOT01
+
+Project name for the Mac Isaac **bootable** copy that contains macOS **10.14.6 / 18G103**. Created **after 26 Sep 2019** (the public ship date of that build). The 19–21 Sep mtimes on `SystemVersion.plist` and ~26k System/Applications files are **Apple payload dates**, not BOOT01’s create date. **COSTELLO** received this lineage, **not JPMI**. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 ## Allocated / unallocated
 
@@ -20,15 +26,47 @@ Allocated space belongs to currently represented filesystem objects. JPMI report
 
 ## APFS (459Crimes corpus name)
 
-In other 459Crimes reports, **APFS** names a **later, more altered copy of the JPMI disk**, used as a **bootable laptop** produced by **Conan Hayes**. Marco Polo analyzed that machine. **Dimitrelos** and **Maryman** used copies whose structure **correlates to this corpus**. It is **not** the JPMI HFS+ volume `Untitled` / E01 in this repo. The corpus label is distinct from Apple’s APFS format in the abstract.
+Hayes SanDisk **bootable** macOS (`HB Boot Drive`). **TRIMARCO → APFS** conversion date unknown; CCC snapshots **5 Jan 2021**. After that date the node fans out to **MARYMAN**, **GUSTAV**, and **TODD → HAYES**. Not a clone of JPMI `Untitled`. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+
+## APFS*
+
+**Jun 2022** / MEGA **13 Jun 2022** Hayes `RHB_Boot.imgc` sent to **Marc Aaron DeGiovanni**. Downstream of **HAYES**. Not JPMI.
+
+## GUSTAV
+
+**Gus Dimitrelos** APFS-family examination for the Washington Examiner (**May–Jun 2022**). After **5 Jan 2021**. Not JPMI.
+
+## HAYES
+
+Conan Hayes working copies, after **5 Jan 2021**, from **TODD**. Splits to **MPOLO** (Jun 2021 bootable laptop) and **APFS*** (Jun 2022 to DeGiovanni).
+
+## MARYMAN
+
+Maryman & Associates imaging **4 Apr 2021** of SanDisk `20142M400253`. APFS-family, after **5 Jan 2021**. Not JPMI.
+
+## MPOLO
+
+Marco Polo’s claimed receipt **Jun 2021** (report p. 579): Hayes **bootable laptop**, not JPMI.
+
+## TODD
+
+Sanders’s APFS-family working copy after **5 Jan 2021**, distinct from the Della Rocca **JPMI** packet. Points to **HAYES**.
 
 ## CNID (Catalog Node ID)
 
 HFS+ internal identity for a catalog object, more stable than a filename. JPMI’s CNID map: **397,440** unique entries after deduplication (**65,343** directories, **332,097** files, max depth **19**).
 
-## `dd`-style
+## Copy method
 
-Public analogy: whole-volume / filesystem-preserving copy rather than a folder dump. **Not** proof that the Unix `dd` program was used.
+How the examined JPMI disk was built, in three operations. See [COPY_METHOD](COPY_METHOD.md).
+
+| Term | Meaning here |
+|---|---|
+| **File-aware copy** | Files and folders written onto a formatted volume. New catalog IDs. Created/modified times can be preserved. This is how `Untitled` received `roberthunter` on **26 Sep 2019**. |
+| **Volume clone** | The whole formatted volume copied onto another disk (headers, files, free space). This is how the 2019 `Untitled` header appears on the Crucial X6, a **2020+** product. |
+| **Forensic image (E01)** | Bit-stream image of the custody stick for analysis. `HB-IMAGE-2022-04-29.E01` images the **X6**, not the laptop SSD. |
+
+Formatting a Mac disk as journaled HFS+ always creates GPT, EFI, and a journal; that is destination machinery, not a sector copy of the laptop.
 
 ## `.DS_Store`
 
@@ -76,7 +114,20 @@ HFS+ transaction log. JPMI reports `.journal` at **41,943,040** bytes, created w
 
 ## Path
 
-Human-readable location (`Users/roberthunter/Library/Mail/...`). Not the same as byte identity or CNID.
+Human-readable location inside a named copy (`JPMI://Users/roberthunter/Library/Mail/...`). Not the same as byte identity or CNID.
+
+## Source URI
+
+Published file citations use a corpus-root scheme rather than a working-tree prefix:
+
+| Scheme | Copy |
+|---|---|
+| `JPMI://` | This copy. Rewritten from inventory `jpmi_metadata/` |
+| `APFS://` | Hayes bootable APFS descendant |
+| `GAI://` | GAI truncated HFS+ image (`hb.img`) |
+| `0728://` | Extra Found Files / 0728 |
+
+This repository’s tables are JPMI-only. The other schemes exist so a path from another copy is not mistaken for a JPMI row.
 
 ## Rank-1 / rank-2 manifest
 
@@ -104,5 +155,6 @@ HFS+ volume id reported as `dfe8079582e21400` for `Untitled`.
 
 ## See also
 
-- [Filesystem for non-experts](05_filesystem_for_non_experts.md)
+- [Filesystem for non-experts](05_filesystem_for_non_experts.md) (copy method)
+- [How the files left the laptop](COPY_METHOD.md)
 - [Data contract](../DATA_CONTRACT.md)

@@ -51,7 +51,7 @@ Mac Isaac store server / recovery workspace     [logs not held]
         +--> later preservation / FBI / safekeeping copies
 ```
 
-The server-first workflow is technically important: later Mac Isaac copies **need not preserve the original laptop's native disk geometry** while still preserving a broad user environment. That is one reason the later Crucial X6 is described as a **custody medium**, not “the laptop SSD.”
+The server-first workflow is technically important: later Mac Isaac copies **need not preserve the original laptop's native disk geometry** while still preserving a broad user environment. JPMI’s `Untitled` volume is a **September 2019 file-aware copy**. See [COPY_METHOD](COPY_METHOD.md). That is one reason the later Crucial X6 is a **custody medium**, not “the laptop SSD”.
 
 ## Invoice and non-pickup
 
@@ -65,6 +65,7 @@ JPMI's substantive user/application modifications are overwhelmingly **before** 
 
 - It is not a proof of the **make/model/serial of the retained laptop**. Historical WirelessDiagnostics packages naming `roberts-MacBook-Air` / serial `C02S953UH3QF` show **older Mac data is represented**; they do not independently identify the 2019 drop-off machine ([device report](../build/reports/01_computer_information.md)).
 - It is not a proof of the **literal copy command**.
+- The examined volume was formatted 26 Sep 2019 (file-aware copy), not a sector copy of the laptop partition. See [COPY_METHOD](COPY_METHOD.md).
 - It is not the FBI seizure (that is **9 December 2019**).
 
 ## See also
@@ -73,3 +74,4 @@ JPMI's substantive user/application modifications are overwhelmingly **before** 
 - [People](PEOPLE.md)
 - [Chain of custody](03_chain_of_custody.md)
 - [Limits](07_limits_and_open_questions.md)
+- [How the files left the laptop](COPY_METHOD.md)

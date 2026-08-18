@@ -29,9 +29,13 @@
 
 ## Participant / contemporaneous reporting
 
-- Washington Post, 30 Mar 2022 — repair/recovery and custody sequence via Della Rocca. https://www.washingtonpost.com/technology/2022/03/30/hunter-biden-laptop-data-examined/
+- Washington Post, 30 Mar 2022 — repair/recovery and custody sequence via Della Rocca; Maxey-drive post-FBI access. https://www.washingtonpost.com/technology/2022/03/30/hunter-biden-laptop-data-examined/
+- *New York* magazine (Rice/Nuzzi), “The Sordid Saga of Hunter Biden’s Laptop,” 12 Sep 2022 — Costello boots a small external drive in Manhasset; Apple login **Robert Hunter**; drive “cleaned up” before it reached him; Maxey password `password`; Burra folder names. https://nymag.com/intelligencer/article/hunter-biden-laptop-investigation.html
+- *Biden v. Giuliani*, C.D. Cal. No. 2:23-cv-8032 (complaint Sep 2023; later dropped) — FedEx to Costello; “booted up”; “bootable copies.” https://storage.courtlistener.com/recap/gov.uscourts.cacd.899829/gov.uscourts.cacd.899829.1.0.pdf
+- Raw Story, 13 Apr 2022 — Mike Trimarco / Vandersteel, October 2020 laptop analysis claim. https://www.rawstory.com/michael-trimarco/
+- Los Angeles Times, 17 Jun 2022 — Giuliani asked Trimarco to look at laptop documents; Byrne/Sanders/Hayes election network. https://www.latimes.com/politics/story/2022-06-17/jan-6-behind-scenes-trump-election-maga-world-search-fraud
 - Mac Isaac interview, 27 Mar 2022 — store-server and father/FBI account. https://www.breitbart.com/politics/2022/03/27/nolte-hunter-biden-laptop-whistleblower-john-paul-mac-isaac-the-breitbart-news-interview/
-- Marco Polo, *Report on the Biden Laptop*, 4th printing (2024), ISBN 978-1-7371866-3-2. Shop/FBI extract: [Marco Polo v4](MARCO_POLO.md). Analyzed Hayes’s **bootable APFS** descendant of JPMI plus **0728**; **not** the JPMI copy.
+- Marco Polo, *Report on the Biden Laptop*, 4th printing (2024), ISBN 978-1-7371866-3-2. Shop/FBI extract: [Marco Polo v4](MARCO_POLO.md). Analyzed Hayes’s **bootable APFS** descendant plus **0728**; **not** the JPMI copy.
 
 ## Project identity
 
@@ -58,6 +62,7 @@
 - [`build/volume_info/01_volume_identity.tsv`](../build/volume_info/01_volume_identity.tsv) — `Untitled`, 2019-09-26 creation, 2024 last-write.
 - [`build/reports/04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md) — 141 post-repair modified rows.
 - [`docs/06_timeline_and_handling.md`](06_timeline_and_handling.md) — canonical sourced narrative (also published as `build/reports/03_known_datetime_stamps_of_use.md`).
+- [`docs/BRANCH_DEVIATIONS.md`](BRANCH_DEVIATIONS.md) — JPMI vs Costello vs Todd vs APFS/GAI split points.
 
 ## See also
 

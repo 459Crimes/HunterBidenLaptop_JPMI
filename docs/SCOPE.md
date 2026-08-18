@@ -20,8 +20,8 @@ Questions this repo is built to answer:
 | Topic | Why it lives elsewhere |
 |---|---|
 | Cross-corpus hash matching to other “laptop” dumps | Separate comparative project; this repo is JPMI-only |
-| GAI (`hb.img`) | Separate truncated HFS+ image in the broader RHB work; not this GitHub tree |
-| **APFS** (Hayes bootable) | A **later, more altered copy of the JPMI disk**, used as a **bootable laptop** produced by **Conan Hayes**. Marco Polo analyzed that machine, **not** the JPMI reports here |
+| GAI (`GAI://`, image `hb.img`) | Separate truncated HFS+ image in the broader RHB work; not this GitHub tree |
+| **APFS** / **MARYMAN** / **GUSTAV** / **TODD** / **HAYES** / **MPOLO** / **APFS*** | Costello-line APFS family after **5 Jan 2021**. Marco Polo used **MPOLO** (Hayes **bootable laptop**, Jun 2021). This author holds **APFS*** (Jun 2022). **Not** JPMI |
 | **Extra Found Files / 0728** | MEGA share from Hayes after 28 July 2021. Did **not** come from the laptop files per se. The author’s FBI referral (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`) treats it as **potentially hacked**; **not** analyzed here. See [Author](AUTHOR.md) |
 | *Beyond the Diary* / digital diary release | Separate author publications ([BeyondTheDiary.com](https://BeyondTheDiary.com), [ShowersWithMy.Dad](https://ShowersWithMy.Dad)); **not** JPMI analysis. See [Author](AUTHOR.md) |
 | Publishing E01 or user-file bytes | Restricted source; this tree is a metadata/hash witness |
@@ -39,10 +39,10 @@ That phrase is used in public for, at least:
 4. **FBI-held** originals;
 5. **Costello / Giuliani / press** extracts;
 6. later **mixed internet archives**;
-7. the **Hayes APFS** bootable — a **later, more altered copy of the JPMI disk**, not the JPMI reports in this repo;
+7. the **APFS** family (TRIMARCO conversion; then MARYMAN / GUSTAV / TODD→HAYES→MPOLO and APFS*) — Costello-line **bootable** siblings, not clones of examined JPMI `Untitled` ([BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md));
 8. **0728 Extra Found Files** — related to laptop material but **not from the laptop files per se**; many unknown origin; some completely unknown to the laptop.
 
-This encyclopedia is about **(3) as instantiated in the reports of (the X6 / E01)**. Mixing (6), **(7)**, or **(8)** into a sentence about (3) as if they were the same object is a category error. **Marco Polo** used a Hayes **bootable APFS** machine **(7)** plus **(8)**; it **did not analyze JPMI**. Hacking is **not** attributed to (1)–(5) or to JPMI. Files of unknown origin relative to the laptop live in **(8)**. [Integrity](INTEGRITY.md) · [Marco Polo v4](MARCO_POLO.md).
+This encyclopedia is about **(3) as instantiated in the reports of (the X6 / E01)**. Mixing (6), **(7)**, or **(8)** into a sentence about (3) as if they were the same object is a category error. **Marco Polo** used **MPOLO** (Hayes **bootable laptop**, Jun 2021) plus **(8)**; it **did not analyze JPMI**. Hacking is **not** attributed to (1)–(5) or to JPMI. Files of unknown origin relative to the laptop live in **(8)**. [Integrity](INTEGRITY.md) · [Marco Polo v4](MARCO_POLO.md).
 
 ## See also
 

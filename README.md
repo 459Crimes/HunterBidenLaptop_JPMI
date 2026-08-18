@@ -2,7 +2,7 @@
 
 > This article is about the **Mac Isaac direct-copy lineage** documented in this repository. For other laptop-data collections that circulated after October 2020, see [Scope](docs/SCOPE.md). For how claims are sourced, see [Sourcing and terminology](docs/MANUAL_OF_STYLE.md).
 
-The **John Paul Mac Isaac copy** (**JPMI**) is this project's name for one specific evidence lineage in the Hunter Biden laptop matter: a **filesystem-preserving copy** of data recovered at **The Mac Shop** in Wilmington, Delaware, in April 2019, later preserved by the shop's proprietor **John Paul Mac Isaac**, and represented here by forensic reports from a later **500 GB Micron Crucial X6** USB SSD imaged as `HB-IMAGE-2022-04-29.E01`.
+The **John Paul Mac Isaac copy** (**JPMI**) is this project's name for one specific evidence lineage in the Hunter Biden laptop matter: a **file-aware copy of a Mac home** recovered at **The Mac Shop** in Wilmington, Delaware, in April 2019, later preserved by the shop's proprietor **John Paul Mac Isaac**, and represented here by forensic reports from a later **500 GB Micron Crucial X6** USB SSD imaged as `HB-IMAGE-2022-04-29.E01`.
 
 This GitHub repository is an **encyclopedia of that disk lineage**, not a dump of the restricted source bytes. It publishes disk identity, HFS+ catalog structure, path inventories, timestamps, reported hashes, and a sourced 2019–2020 custody history. It is the full technical record of *this* copy: where it came from, what is on it, which dates mean what, and what the metadata does and does not prove.
 
@@ -16,11 +16,11 @@ This GitHub repository is an **encyclopedia of that disk lineage**, not a dump o
 | **Forensic image** | `HB-IMAGE-2022-04-29.E01` (E01; ADI 4.7.1.2; case `HB-2022-04-29`) |
 | **Image MD5 / SHA-1** | `682619c1884e6fe006664ba31deed698` / `fe918f0cff3304ab52875b984c88fee78ec05197` |
 | **Filesystem** | GPT + EFI + journaled HFS+ |
-| **Primary account** | `Users/roberthunter` |
+| **Primary account** | `JPMI://Users/roberthunter` |
 | **Inventory paths** | 576,249 (normalized) |
 | **CNIDs / hash-manifest paths / distinct SHA-256** | 397,440 / 655,330 / 180,046 |
 | **This GitHub tree contains** | Reports, manifests, derived tables — **not** the E01 or individual source-file bytes |
-| **Integrity finding (bounded)** | No hacking attributed to JPMI. **0728** is not laptop files per se. Marco Polo used Hayes **APFS** laptop, not JPMI. |
+| **Integrity finding (bounded)** | No hacking attributed to JPMI. **0728** is not laptop files per se. Marco Polo used **MPOLO** (Hayes bootable laptop), not JPMI. |
 | **Author** | **459Crimes / Marc Aaron DeGiovanni**. [Author](docs/AUTHOR.md) · [*Beyond the Diary*](https://BeyondTheDiary.com) · [diary release](https://ShowersWithMy.Dad) |
 
 **Contents**
@@ -45,19 +45,19 @@ The formulation used throughout this encyclopedia:
 
 > **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.
 
-**0728 Extra Found Files** did **not** come from the laptop files per se. It is a large related collection (many unknown origin; some completely unknown to the laptop). The author’s FBI referral on 0728 as potentially hacked is **outside this analysis**. **Marco Polo** analyzed Hayes’s **bootable APFS** descendant of JPMI, not this copy. Dimitrelos and Maryman worked from **APFS-structure** copies, not JPMI. Full treatment: [Integrity](docs/INTEGRITY.md) · [Scope](docs/SCOPE.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Author](docs/AUTHOR.md).
+**0728 Extra Found Files** did **not** come from the laptop files per se. It is a large related collection (many unknown origin; some completely unknown to the laptop). The author’s FBI referral on 0728 as potentially hacked is **outside this analysis**. **Marco Polo** analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021), not this copy. Dimitrelos (**GUSTAV**) and **MARYMAN** worked from **APFS-structure** copies, not JPMI. Full treatment: [Integrity](docs/INTEGRITY.md) · [Scope](docs/SCOPE.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Author](docs/AUTHOR.md).
 
 That is an evidentiary finding, not a claim that undetectable alteration is philosophically impossible.
 
 ## What JPMI is
 
-For a non-specialist, the easiest analogy is a **whole-volume, `dd`-style forensic copy rather than a hand-picked folder of documents**. The analogy describes *form*: JPMI preserves a partitioned Mac volume, catalog identifiers, application state, a normal home directory, timestamps, and hundreds of thousands of file records.
+JPMI is a **copied Mac home on a later HFS+ disk**, not a hand-picked folder of documents. The examined disk has GPT + EFI + journaled HFS+, a `roberthunter` tree with Mail/Library/Photos state, timestamps, and catalog identifiers.
 
-It does **not** mean Mac Isaac has been proved to have typed the Unix `dd` command. The exact repair-shop copy utility and every intermediate custody step remain unresolved. Mac Isaac's own account is that recoverable data was first staged on his **store server**, then written to a customer external drive. Server logs are not held here.
+That is a **file-aware copy onto a newly formatted volume** (`Untitled`, **26 September 2019**): 2016–March 2019 file times preserved; HFS+ hard-link private directories empty. The Crucial X6 did not exist until August 2020, so the 2019 volume reached that stick by a later **volume clone**. The 2022 E01 is a **forensic image of the X6**. Mac Isaac’s account is that April 2019 recovery first staged data on his **store server**; that utility is unnamed. Full evaluation: [How the files left the laptop](docs/COPY_METHOD.md).
 
-The **Crucial X6** described in the acquisition record is a **later custody medium**, not the original internal SSD of the laptop left for repair. See [Crucial X6](docs/CRUCIAL_X6.md), [HFS+ volume Untitled](docs/HFS_VOLUME_UNTITLED.md), and [Forensic image](docs/FORENSIC_IMAGE.md).
+The **Crucial X6** is a **later custody medium**, not the original internal SSD. See [Crucial X6](docs/CRUCIAL_X6.md), [HFS+ volume Untitled](docs/HFS_VOLUME_UNTITLED.md), and [Forensic image](docs/FORENSIC_IMAGE.md).
 
-The reports examined here were delivered through **Todd Sanders**, who received a drive copy from **Della Rocca**, who coordinated the shipment. This repository holds a photograph of the mailing packet ([`photo_20260716_120324.jpg`](photo_20260716_120324.jpg)). Because the same attorney supplied both this project's media and the CBS-examined copy for the same purpose, the two are **byte-identical or virtually byte-identical**. That equivalence is **not** a published side-by-side hash comparison. See [Copy lineages](docs/COPY_LINEAGES.md) and [Mailing packet](docs/MAILING_PACKET.md).
+The reports examined here were delivered through **Todd Sanders**, who received a drive copy from **Della Rocca**, who coordinated the shipment. This repository holds a photograph of the mailing packet ([`photo_20260716_120324.jpg`](photo_20260716_120324.jpg)). Because the same attorney supplied both this project's media and the CBS-examined copy for the same purpose, the two are **byte-identical or virtually byte-identical**. That equivalence is **not** a published side-by-side hash comparison. Sanders separately described a **Trimarco** copy he had to alter to boot — that is **not** this X6. See [Copy lineages](docs/COPY_LINEAGES.md), [Where the copies split](docs/BRANCH_DEVIATIONS.md), and [Mailing packet](docs/MAILING_PACKET.md).
 
 ## Historical timeline
 
@@ -70,13 +70,17 @@ Full sourced narrative: [Timeline and handling](docs/06_timeline_and_handling.md
 | **17 Apr 2019** | $85 electronic invoice sent to `rhbdc@icloud.com` (later **GTX 40** at the 2024 gun trial). Laptop and drive not retrieved, per pleadings. | Court-recited + trial exhibit list |
 | **Late Jul 2019** | Mac Isaac's FBI-related contacts begin. | Court-recited |
 | **Sep–Oct 2019** | Mac Isaac made a copy for his father, Col. Richard “Steve” Mac Isaac, to take to the FBI in Albuquerque. | Participant account; exact physical drive unproved |
-| **26 Sep 2019** | JPMI reports HFS+ volume `Untitled` created `2019-09-26 22:59:02 CDT`. | Direct JPMI metadata; **chronology correlation**, not physical-device ID |
+| **26 Sep 2019** | Apple ships 10.14.6 Supplemental Update 2 (**18G103**). Same evening: JPMI HFS+ `Untitled` created (home-only). **BOOT01** (OS copy Costello later received) can exist only **after** this release. | Apple support note + JPMI volume field — [splits](docs/BRANCH_DEVIATIONS.md) |
 | **9 Dec 2019** | FBI subpoena **19-3-LFWS-V-136** (SA Wilson / AUSA Wolf): MacBook Pro `FVFXC2MMHV29`, WD `WX21A19ATFF3`. Delaware Supreme Court: Mac Isaac made an **exact copy before parting with the original**. | Court photos — [Exhibits](docs/EXHIBITS.md) |
-| **26 Aug 2020** | Copy provided to Robert Costello (Giuliani's attorney). | Court-recited |
+| **26 Aug 2020** | **BOOT01** provided to Robert Costello (Giuliani's attorney). **Not JPMI.** *New York* (2022): Costello **booted** to login **Robert Hunter**. APFS/GAI: ColorSync iMac then Dells **28–31 Aug**. | Court-recited + journalism + comparative inventory — [splits](docs/BRANCH_DEVIATIONS.md) |
 | **13 Oct 2020** | George Mesires contacted Mac Isaac about the laptop. | Court-recited |
 | **14 Oct 2020** | *New York Post* first laptop story. | Public event |
-| **15 Oct 2020** | JPMI: `Users/roberthunter/Desktop/.DS_Store` modified. Consistent with Finder browsing, **not** file injection. | Direct JPMI metadata + forensic interpretation |
+| **15 Oct 2020** | JPMI: `JPMI://Users/roberthunter/Desktop/.DS_Store` modified. Consistent with Finder browsing, **not** file injection. | Direct JPMI metadata + forensic interpretation |
+| **12 Dec 2020** | APFS construction markers (not JPMI). CCC snapshots **5 Jan 2021**. TRIMARCO→APFS date otherwise unknown. | Comparative inventory |
+| **17 May 2021** | GAI HFS+ `Biden Lap 2` volume activity (full OS; same Aug 2020 ICCs). | Comparative inventory |
+| **Jun 2021** | **MPOLO**: Marco Polo schematic claims receipt. Hayes bootable laptop. | Their report p. 579 |
 | **29 Apr 2022** | Acquisition record names `HB-IMAGE-2022-04-29.E01`. | Direct acquisition field |
+| **Jun 2022 / 13 Jun 2022** | **APFS***: Hayes `RHB_Boot.imgc` via MEGA to Marc Aaron DeGiovanni. | Author holding; not JPMI |
 | **21 Nov 2022** | CBS reports independent exam: no user-data tampering; no new files originating after April 2019. | Independent forensic review |
 | **21 Nov 2024** | Delivered HFS+ last-write. **Cannot** be a write into an immutable E01 actually acquired in 2022; report-lineage issue, with Sanders' account of a read-write mount during analysis. | Open discrepancy — [2022/2024](docs/2022_2024_DISCREPANCY.md) |
 
@@ -139,7 +143,7 @@ See the **[article index](docs/INDEX.md)** for the full map. Core reading order:
 8. [Reproducibility](docs/08_reproducibility.md)
 9. [Source matrix](docs/09_source_matrix.md)
 
-Companion articles: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Apelbaum, Fox, Tucker](docs/APELBAUM_FOX.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
+Companion articles: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Where the copies split](docs/BRANCH_DEVIATIONS.md) · [How the files left the laptop](docs/COPY_METHOD.md) · [Apelbaum, Fox, Tucker](docs/APELBAUM_FOX.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
 
 ---
 
