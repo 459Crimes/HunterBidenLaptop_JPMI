@@ -14,7 +14,7 @@
 
 ## Method
 
-The pipeline performs read-only queries against JPMI tables, writes derived public artifacts under `build/`, shards large exports under the configured file-size budget, and validates section manifests and checksums. This standalone repository intentionally does not generate comparison tables.
+These figures are derived from the JPMI forensic reports published in this repository. Large tables are split into shards. Checksums are in `build/manifest.tsv`. This standalone publication does not include comparison tables against other laptop-data corpora. See [How to verify](../../docs/08_reproducibility.md) and the [evidence catalog](../../docs/catalog/README.md).
 
 ## Source boundary
 
@@ -30,4 +30,4 @@ The acquisition record reports `HB-IMAGE-2022-04-29.E01` with date `2022-04-29`,
 
 ## Size policy
 
-Per-file budget: 52,428,800 bytes. Hard cap: 94,371,840 bytes.
+Published files in this tree are kept under 50 MiB so they can be hosted on GitHub without Git LFS.

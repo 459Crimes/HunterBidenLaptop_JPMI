@@ -1,170 +1,54 @@
-# 8. Reproducibility and method
+# 8. How to verify the published tables
 
-> **Encyclopedia.** [Architecture](../ARCHITECTURE.md) · [Data contract](../DATA_CONTRACT.md) · [Forensic image](FORENSIC_IMAGE.md) · [Index](INDEX.md). Historical claims are maintained as cited source material; they are not generated from PostgreSQL.
+> **Encyclopedia.** The articles are the entry point; the [evidence catalog](catalog/README.md) names the files behind them. [Forensic image](FORENSIC_IMAGE.md) · [Index](INDEX.md). Historical claims are cited public sources; they are not generated from filesystem timestamps.
 
-The public narrative in this repository is backed by machine-readable JPMI tables **and a separately sourced historical custody record**.
+This repository is a **metadata and hash witness**. A reader can check that the published tables match the checksums in this tree. A reader **cannot** re-open the restricted E01 from this GitHub checkout.
 
-The technical pipeline rebuilds the JPMI-derived summaries from the JPMI tables alone, without drawing on any other laptop-data corpus. Historical custody events — court decisions, the FBI subpoena sequence, the New York Post publication date, and the independent CBS review — are maintained as cited public-source material rather than derived from filesystem timestamps.
+## Two evidence layers
 
-## Evidence boundary
+1. **Forensic-report layer** — paths, hashes, timestamps, CNIDs, disk/volume identity, and system-state records, published under `build/` and listed in the catalogs.
+2. **Historical-source layer** — court, news, and participant chronology in [Timeline and handling](06_timeline_and_handling.md) and [Source matrix](09_source_matrix.md).
 
-The pipeline reads JPMI-related tables in the project's forensic PostgreSQL database and writes derived artifacts under `build/`.
+## Checksums
 
-The restricted JPMI E01 image is not stored in GitHub.
-
-The project therefore has two reproducible evidence layers:
-
-1. **forensic-report layer** — database-derived paths, hashes, timestamps, CNIDs, disk/volume identity, and system-state records;
-2. **historical-source layer** — sourced public custody chronology maintained in `docs/06_timeline_and_handling.md` and `docs/09_source_matrix.md`.
-
-## Core JPMI tables
-
-| Table | Role |
+| File | Role |
 |---|---|
-| `jpmi_acquisition` | Custody device, E01 identity, partition and volume identity |
-| `files` for the JPMI source | Normalized path inventory |
-| `jpmi_file_times` | Created / modified / accessed timestamps |
-| `jpmi_sha256_allpaths` | Reported SHA-256 values and paths |
-| `jpmi_cnid_map` | HFS+ catalog identity and parent relationships |
-| `jpmi_alias_map` | Canonical/alias path rows (TSK file + slack in current data; not Unix `nlink`) |
-| `jpmi_tsk_timeline` | TSK filesystem timeline and system-state events |
+| [`build/manifest.tsv`](../build/manifest.tsv) | Path, size, SHA-256, and data-row count for every published `build/` object |
+| [`build/manifest.sha256`](../build/manifest.sha256) | Same hashes in `sha256sum` form |
+| Section `_manifest.json` files | Per-folder file list (disk, volume, file tree, hash, metadata) |
+| [`build/archives/_manifest.tsv`](../build/archives/_manifest.tsv) | Deep-archive part sizes and hashes |
 
-Comparative overlap tables are outside the scope of this standalone JPMI publication.
+To verify a checkout, recompute SHA-256 of each path in `manifest.tsv` and compare.
 
-## Build stages
+## Claim → catalog
 
-<!-- diagram:pipeline -->
-```mermaid
-%% JPMI export pipeline under scripts/.
-flowchart LR
-  classDef step fill:#dbeafe,stroke:#1d4ed8,color:#111
+| Public claim | Catalog | File |
+|---|---|---|
+| Custody device is a Crucial X6 | [Disk identity](catalog/disk_info.md) | `01_acquisition.tsv` |
+| E01 name and acquisition hashes | [Disk identity](catalog/disk_info.md) | `01_acquisition.tsv` |
+| Sanders named on the rank-2 manifest | [Disk identity](catalog/disk_info.md) | `01_acquisition.tsv` |
+| HFS+ `Untitled`, 26 Sep 2019 creation | [Volume identity](catalog/volume_info.md) | `01_volume_identity.tsv` |
+| GPT / EFI / HFS+ layout | [Disk identity](catalog/disk_info.md) | `02_partition_map.tsv` |
+| Home-folder populations | [File tree](catalog/file_tree.md) | `03_home_overview.tsv` |
+| Top-level Users vs unallocated vs EFI | [File tree](catalog/file_tree.md) | `02_top_level_summary.tsv` |
+| Timestamp clusters | [Metadata](catalog/metadata.md) | `01_time_distribution.tsv` |
+| Oct. 15, 2020 Desktop `.DS_Store` | [Reports](catalog/reports.md) | `04_post_2019_03_31_timeline.md` |
+| CNID / alias populations | [Metadata](catalog/metadata.md) | `05_cnid_summary.tsv`, `06_alias_summary.tsv` |
+| Reported SHA-256 identities | [Hash manifest](catalog/hash_manifest.md) | `01_sha256_by_cnid_*.tsv` |
+| Later activity is system/application metadata | [Reports](catalog/reports.md) | `04_post_2019_03_31_timeline.md` |
 
-  s10["10_export_file_tree.py"]:::step --> s20["20_export_hash_manifest.py"]:::step
-  s20 --> s30["30_export_metadata.py"]:::step
-  s30 --> s40["40_export_volume_disk.py"]:::step
-  s40 --> s50["50_build_reports.py"]:::step
-  s50 --> s55["55_publish_custody_timeline.py"]:::step
-  s55 --> s60["60_archive_deep_exports.py"]:::step
-  s60 --> s90["90_validate_exports.py"]:::step
-```
+Row-level path/time/hash/CNID dumps: [Deep archives](catalog/archives.md).
 
-Export: [SVG](diagrams/pipeline.svg) · [JPG](diagrams/pipeline.jpg)
-<!-- /diagram:pipeline -->
+## Claims that rest on historical sources
 
-### Stage 10 — file tree
-
-Produces directory and user-home rollups from JPMI paths.
-
-### Stage 20 — JPMI hash identities
-
-Produces JPMI-only SHA-256 identity tables. Reported hashes are distinguished from hashes independently recomputed from restricted source bytes.
-
-### Stage 30 — metadata
-
-Produces timestamp, extension, type, permission, CNID, and alias summaries.
-
-### Stage 40 — disk and volume identity
-
-Produces acquisition, partition, disk, HFS+ volume, and filesystem-system-state summaries.
-
-### Stage 50 — database-derived reports
-
-Produces technical reports from the JPMI database.
-
-These reports follow:
-
-> **Observation → interpretation → limitation**
-
-### Stage 55 — sourced public custody timeline
-
-`55_publish_custody_timeline.py` publishes the sourced narrative in `docs/06_timeline_and_handling.md` into the legacy generated datetime-report location:
-
-```text
-build/reports/03_known_datetime_stamps_of_use.md
-```
-
-This stage exists so a database rebuild does not erase the sourced 2019–2020 custody history or revert to a filesystem-only timeline.
-
-The underlying machine-readable timestamp data remains in:
-
-- `build/metadata/01_time_distribution.tsv`;
-- `build/reports/04_post_2019_03_31_timeline.md`.
-
-Historical assertions in Stage 55 are not generated from PostgreSQL. They remain tied to the sources listed in `docs/09_source_matrix.md`.
-
-### Stage 60 — deep metadata archives
-
-Large detailed exports remain partitioned into GitHub-safe archive parts.
-
-### Stage 90 — validation
-
-The validator checks per-file limits, manifests, archive integrity, published checksums, and expected row counts.
-
-## Reproduction commands
-
-```bash
-export RHB_PG_DSN="dbname=rhb_forensics"
-python3 scripts/10_export_file_tree.py
-python3 scripts/20_export_hash_manifest.py
-python3 scripts/30_export_metadata.py
-python3 scripts/40_export_volume_disk.py
-python3 scripts/50_build_reports.py
-python3 scripts/55_publish_custody_timeline.py
-python3 scripts/60_archive_deep_exports.py
-python3 scripts/90_validate_exports.py
-python3 scripts/embed_diagrams.py
-python3 scripts/render_diagrams.py
-```
-
-## Claims reproducible from JPMI reporting
-
-| Public claim | Evidence artifact |
-|---|---|
-| Custody device is a Crucial X6 | `build/disk_info/01_acquisition.tsv` |
-| E01 image name and acquisition hashes | `build/disk_info/01_acquisition.tsv` |
-| JPMI source note identifies Todd Sanders | `build/disk_info/01_acquisition.tsv` |
-| HFS+ volume name and identifier | `build/volume_info/01_volume_identity.tsv` |
-| Sept. 26, 2019 HFS+ creation | `build/volume_info/01_volume_identity.tsv` |
-| GPT/EFI/HFS+ partition layout | `build/disk_info/02_partition_map.tsv` |
-| Home-folder populations | `build/file_tree/03_home_overview.tsv` |
-| Overall user/system populations | `build/file_tree/02_top_level_summary.tsv` |
-| Timestamp clusters | `build/metadata/01_time_distribution.tsv` |
-| Oct. 15, 2020 Desktop `.DS_Store` modification | `build/reports/04_post_2019_03_31_timeline.md` / underlying file-time data |
-| CNID population | `build/metadata/05_cnid_summary.tsv` |
-| Alias/hard-link population | `build/metadata/06_alias_summary.tsv` |
-| JPMI hash identities | `build/hash_manifest/01_sha256_by_cnid_*.tsv` |
-| Later activity is dominated by system/application metadata | post-repair report + row set |
-
-## Claims that rest on historical/public sources
-
-The following rest on historical/public sources, not on PostgreSQL:
-
-- three damaged laptops were presented April 12, 2019;
-- the keyboard/unrecoverable-laptop sequence;
-- Mac Isaac's store-server account;
-- the father/FBI Albuquerque copy effort;
-- the Dec. 9 FBI subpoena and Mac Isaac's retained exact copy;
-- the Costello/Giuliani/New York Post chain;
-- CBS's independent exact-copy forensic findings;
-- Todd Sanders' external affiliation with the America Project.
-
-Those claims are sourced in [`docs/09_source_matrix.md`](09_source_matrix.md).
+Court sequence, store-server account, father/FBI copy, Costello/Giuliani/*New York Post* chain, CBS findings, and Sanders' America Project affiliation are **not** filesystem derivations. They are sourced in [Source matrix](09_source_matrix.md).
 
 ## No-hacking finding: laptop media vs 0728
 
-The repository attributes **no hacking** to JPMI or any other **laptop-derived** medium. That rests on two JPMI/CBS layers. **0728 Extra Found Files** is a separate collection (not from the laptop files per se) and is not examined here:
+The repository attributes **no hacking** to JPMI or any other **laptop-derived** medium. That rests on JPMI post-repair rows plus CBS/CFS. **0728 Extra Found Files** is a separate collection and is not examined here. See [Integrity](INTEGRITY.md).
 
-1. **JPMI reporting:** later changed rows are dominated by Finder/Spotlight/system/application metadata rather than a substantive later user-file population.
-2. **Independent Mac Isaac/FBI-lineage examination:** CBS reported that Computer Forensics Services found no user-data modification/fabrication/tampering and no new files originating after April 2019 on the exact-copy dataset supplied by Mac Isaac's lawyer.
+## What “reproducible” means without source bytes
 
-Those layers reinforce each other and remain separately attributed. Extra Found Files / 0728 is not a laptop filesystem copy.
+Checking checksums and re-reading the published TSVs can show that two analysts reach the same structural and timeline conclusions from the same reports.
 
-## No source bytes: what reproducibility means here
-
-A reproducible analysis of the received metadata can prove that analysts reach the same structural/timeline conclusions from the same reports.
-
-It does **not** prove that this GitHub checkout independently re-read every source byte.
-
-Without the restricted source image, the repository cannot freshly recompute every source-object hash or inspect every file's internal contents. It can still accurately reproduce the disk structure, file-tree populations, timestamps, catalog relationships, reported hashes, and system-state patterns contained in the forensic reporting.
-
-That higher byte-level verification question depends on the original acquisition records and independent read-only access to the restricted source image.
+It does **not** prove this GitHub checkout independently re-read every source byte or recomputed every object hash. That depends on the original acquisition records and read-only access to the restricted image.

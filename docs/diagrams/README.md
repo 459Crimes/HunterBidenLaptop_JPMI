@@ -1,13 +1,6 @@
 # Diagrams
 
-Canonical **Mermaid** sources for this encyclopedia. Articles embed the same files. Optional raster/vector exports live beside each `.mmd`.
-
-Rebuild:
-
-```bash
-python3 scripts/embed_diagrams.py
-python3 scripts/render_diagrams.py
-```
+Canonical **Mermaid** sources for this encyclopedia. Articles embed the same files. Raster/vector exports live beside each `.mmd`.
 
 | File | What it shows |
 |---|---|
@@ -20,6 +13,7 @@ python3 scripts/render_diagrams.py
 | [fox_tucker.mmd](fox_tucker.mmd) | Mac Isaac retained-copy routes toward press / Fox orbit |
 | [marco_polo_schematic.mmd](marco_polo_schematic.mmd) | Marco Polo report p. 579 drawing (their claim) |
 | [x6_gpt.mmd](x6_gpt.mmd) | Crucial X6 GPT / EFI / HFS+ `Untitled` |
-| [pipeline.mmd](pipeline.mmd) | Export scripts |
 
 Green = JPMI family. Amber = BOOT01 / Costello bootable line. Blue = shop / hardware. Violet = examiner or later-author copies. Gray dashed = **0728 Extra Found Files** (separate corpus, not a clone).
+
+Landing page: [README](../../README.md). Article index: [INDEX](../INDEX.md).

@@ -2,7 +2,7 @@
 
 This directory is the **JPMI encyclopedia**: the full record of the disk lineage that originated in John Paul Mac Isaac's Wilmington repair shop — what it contains, how it moved, and what its metadata does and does not establish.
 
-Main article: [README](../README.md).
+Landing page: [README](../README.md). Tables: [Evidence catalog](catalog/README.md).
 
 ## Portal
 
@@ -19,30 +19,28 @@ Main article: [README](../README.md).
 | The attempt to get a copy to Tucker Carlson at Fox | [Fox / Tucker](FOX_TUCKER.md) |
 | Marco Polo 4th printing (shop/FBI extract only) | [Marco Polo v4](MARCO_POLO.md) |
 | Photos of the men and the shop (links only) | [Portraits and premises](PORTRAITS.md) |
-| Signed quote, invoice email, FBI subpoena photos | [Exhibits](EXHIBITS.md) |
+| Signed quote, invoice email, FBI subpoena photos | [Exhibits](EXHIBITS.md) · [exhibits catalog](catalog/exhibits.md) |
 | House Judiciary / Oversight laptop reports | [Congressional reports](CONGRESS.md) |
 | The shop address and three laptops | [The Mac Shop](THE_MAC_SHOP.md) |
 | How many copies and which is which | [Copy lineages](COPY_LINEAGES.md) · [Diagrams](diagrams/README.md) |
 | Where JPMI, Costello, APFS, MPOLO, APFS*, and GAI split | [Where the copies split](BRANCH_DEVIATIONS.md) |
 | How files left the laptop (file-aware copy, then volume clone) | [How the files left the laptop](COPY_METHOD.md) |
-| The USB SSD in the acquisition record | [Crucial X6](CRUCIAL_X6.md) |
-| The HFS+ volume `Untitled` | [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md) |
-| The E01 and hashes | [Forensic image](FORENSIC_IMAGE.md) |
+| The USB SSD in the acquisition record | [Crucial X6](CRUCIAL_X6.md) · [disk catalog](catalog/disk_info.md) |
+| The HFS+ volume `Untitled` | [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md) · [volume catalog](catalog/volume_info.md) |
+| The E01 and hashes | [Forensic image](FORENSIC_IMAGE.md) · [hash catalog](catalog/hash_manifest.md) |
 | The Della Rocca → Sanders shipment | [Mailing packet](MAILING_PACKET.md) |
-| File populations | [What is on the copy](04_what_is_on_the_copy.md) · [Contents census](CONTENTS_CENSUS.md) |
+| File populations | [What is on the copy](04_what_is_on_the_copy.md) · [Contents census](CONTENTS_CENSUS.md) · [file-tree catalog](catalog/file_tree.md) |
 | GPT, HFS+, CNID, Spotlight | [Filesystem for non-experts](05_filesystem_for_non_experts.md) · [Glossary](GLOSSARY.md) |
-| Created / modified / accessed clusters | [Timestamps](TIMESTAMPS.md) |
+| Created / modified / accessed clusters | [Timestamps](TIMESTAMPS.md) · [metadata catalog](catalog/metadata.md) |
 | Tampering / injection / CBS / 0728 boundary | [Integrity](INTEGRITY.md) · [Scope](SCOPE.md) |
 | The 2022 E01 vs 2024 last-write | [2022/2024 discrepancy](2022_2024_DISCREPANCY.md) |
 | What this repo is *not* | [Scope](SCOPE.md) |
 | What remains unproved | [Limits and open questions](07_limits_and_open_questions.md) |
 | Which source supports which claim | [Source matrix](09_source_matrix.md) · [Bibliography](BIBLIOGRAPHY.md) |
-| How tables are generated | [Reproducibility](08_reproducibility.md) · [Architecture](../ARCHITECTURE.md) · [Data contract](../DATA_CONTRACT.md) |
+| How to check the published tables | [How to verify](08_reproducibility.md) |
 | Evidence classes and terminology | [Sourcing and terminology](MANUAL_OF_STYLE.md) |
 
 ## Numbered narrative (stable IDs)
-
-These nine files are the primary narrative sequence. The `06` timeline is also published as `build/reports/03_known_datetime_stamps_of_use.md`.
 
 | ID | Article |
 |---|---|
@@ -53,20 +51,23 @@ These nine files are the primary narrative sequence. The `06` timeline is also p
 | 05 | [Filesystem for non-experts](05_filesystem_for_non_experts.md) |
 | 06 | [Timeline and handling](06_timeline_and_handling.md) |
 | 07 | [Limits and open questions](07_limits_and_open_questions.md) |
-| 08 | [Reproducibility](08_reproducibility.md) |
+| 08 | [How to verify](08_reproducibility.md) |
 | 09 | [Source matrix](09_source_matrix.md) |
 
-## Machine-readable appendices
+The `06` timeline is also copied to `build/reports/03_known_datetime_stamps_of_use.md` ([reports catalog](catalog/reports.md)).
 
-| Path | What it is |
+## Evidence catalogs
+
+| Catalog | What it is |
 |---|---|
-| [`build/disk_info/`](../build/disk_info/) | Device, image, partition identity |
-| [`build/volume_info/`](../build/volume_info/) | HFS+ volume and system-state objects |
-| [`build/file_tree/`](../build/file_tree/) | Directory / home rollups |
-| [`build/hash_manifest/`](../build/hash_manifest/) | SHA-256 identities (JPMI-only) |
-| [`build/metadata/`](../build/metadata/) | Time, extension, type, CNID, alias summaries |
-| [`build/reports/`](../build/reports/) | Generated forensic summaries |
-| [`build/archives/`](../build/archives/) | Partitioned deep metadata |
+| [Disk identity](catalog/disk_info.md) | Device, image, partition identity |
+| [Volume identity](catalog/volume_info.md) | HFS+ volume and system-state objects |
+| [File tree](catalog/file_tree.md) | Directory / home rollups |
+| [Hash manifest](catalog/hash_manifest.md) | SHA-256 identities (JPMI-only) |
+| [Metadata](catalog/metadata.md) | Time, extension, type, CNID, alias summaries |
+| [Reports](catalog/reports.md) | Generated forensic summaries |
+| [Deep archives](catalog/archives.md) | Partitioned full-volume metadata |
+| [Exhibits](catalog/exhibits.md) | Scans, mailing packet, transcripts |
 
 ## Categories
 
@@ -75,4 +76,4 @@ These nine files are the primary narrative sequence. The `06` timeline is also p
 - **Storage objects:** CRUCIAL_X6, HFS_VOLUME_UNTITLED, FORENSIC_IMAGE
 - **Contents:** 04, CONTENTS_CENSUS, 05, GLOSSARY, TIMESTAMPS
 - **Integrity:** INTEGRITY, 2022_2024_DISCREPANCY, 07, SCOPE
-- **Method:** 08, ARCHITECTURE, DATA_CONTRACT, MANUAL_OF_STYLE, SCOPE
+- **Method:** 08, catalog/, MANUAL_OF_STYLE, SCOPE

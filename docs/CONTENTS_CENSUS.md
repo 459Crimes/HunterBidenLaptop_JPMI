@@ -1,10 +1,10 @@
 # Contents census
 
-> **Hatnote.** Populations on the JPMI copy. Path counts are **not** unique-document counts. Companion: [What is on the copy](04_what_is_on_the_copy.md). Generated OS/environment rollup: [`02_os_version.md`](../build/reports/02_os_version.md).
+> **Hatnote.** Populations on the JPMI copy. Path counts are **not** unique-document counts. Companion: [What is on the copy](04_what_is_on_the_copy.md). Tables: [file-tree catalog](catalog/file_tree.md) · [volume catalog](catalog/volume_info.md). Environment rollup: [reports catalog](catalog/reports.md).
 
 ## Top-level inventory
 
-From [`02_top_level_summary.tsv`](../build/file_tree/02_top_level_summary.tsv) and the HFS+ `[unallocated space]` rollup in the directory tree:
+From [`02_top_level_summary.tsv`](../build/file_tree/02_top_level_summary.tsv) ([file-tree catalog](catalog/file_tree.md)) and the HFS+ `[unallocated space]` rollup in the directory tree:
 
 | Area | File rows | Represented bytes | What it is |
 |---|---:|---:|---|
@@ -38,7 +38,7 @@ User-tree `max_modified_ts` in that rollup is **2020-10-15 21:20:53** — the Fi
 
 ## System-area rollup (different cutter)
 
-[`03_volume_system_state.tsv`](../build/volume_info/03_volume_system_state.tsv) uses **category** rules, so numbers will not match home-folder rows 1:1:
+[`03_volume_system_state.tsv`](../build/volume_info/03_volume_system_state.tsv) ([volume catalog](catalog/volume_info.md)) uses **category** rules, so numbers will not match home-folder rows 1:1:
 
 | Area | Object count | Notes |
 |---|---:|---|
@@ -72,7 +72,7 @@ The characterization report additionally records **~128,847 `.emlx` paths**, **~
 
 ## Mobile / cloud / migration
 
-Dr.Fone trees named like `Hunter's iPad 10-30-2018…` show **device-recovery tooling** inside Documents. iCloud `.icloud` placeholders show cloud-backed names without local bytes. WirelessDiagnostics / `roberts-MacBook-Air` / serial `C02S953UH3QF` show **older Mac diagnostic packages** in the account ([device report](../build/reports/01_computer_information.md): 33 / 1,090 / 1,298 path rows respectively). None of those, alone, serializes the 2019 drop-off chassis.
+Dr.Fone trees named like `Hunter's iPad 10-30-2018…` show **device-recovery tooling** inside Documents. iCloud `.icloud` placeholders show cloud-backed names without local bytes. WirelessDiagnostics / `roberts-MacBook-Air` / serial `C02S953UH3QF` show **older Mac diagnostic packages** in the account ([device report](../build/reports/01_computer_information.md); [reports catalog](catalog/reports.md): 33 / 1,090 / 1,298 path rows respectively). None of those, alone, serializes the 2019 drop-off chassis.
 
 ## What this GitHub tree cannot show
 
@@ -81,4 +81,4 @@ It cannot open the JPEG. It records the path, size, timestamps, CNID, and **repo
 ## See also
 
 - [Glossary](GLOSSARY.md) (slack, alias, path)
-- [Data contract](../DATA_CONTRACT.md)
+- [Evidence catalog](catalog/README.md)

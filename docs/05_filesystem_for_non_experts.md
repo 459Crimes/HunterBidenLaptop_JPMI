@@ -1,6 +1,6 @@
 # 5. The JPMI Filesystem, Explained for Non-Experts
 
-> **Encyclopedia.** Term list: [Glossary](GLOSSARY.md) (copy method). Objects: [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md) · [Forensic image](FORENSIC_IMAGE.md) · [Timestamps](TIMESTAMPS.md). Origin: [How the files left the laptop](COPY_METHOD.md). [Index](INDEX.md).
+> **Encyclopedia.** Term list: [Glossary](GLOSSARY.md) (copy method). Objects: [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md) · [Forensic image](FORENSIC_IMAGE.md) · [Timestamps](TIMESTAMPS.md). Origin: [How the files left the laptop](COPY_METHOD.md). Tables: [disk catalog](catalog/disk_info.md) · [volume catalog](catalog/volume_info.md). [Index](INDEX.md).
 
 Digital-forensic reports often become unreadable because they start with filesystem terminology. This page explains only the terms needed to understand JPMI.
 

@@ -1,6 +1,6 @@
 # 4. What Is on the JPMI Copy?
 
-> **Encyclopedia.** Detailed census: [Contents census](CONTENTS_CENSUS.md). Generated rollup: [environment report](../build/reports/02_os_version.md). [Index](INDEX.md).
+> **Encyclopedia.** Detailed census: [Contents census](CONTENTS_CENSUS.md). Tables: [file-tree catalog](catalog/file_tree.md). Environment rollup: [reports catalog](catalog/reports.md) (`02_os_version.md`). [Index](INDEX.md).
 
 JPMI is best understood as a **Mac user environment inside a later HFS+ custody volume**, not as a folder containing only the files that later became newsworthy.
 
@@ -10,7 +10,7 @@ The current inventory contains **576,249 paths**.
 
 The inventory is divided between the user tree and filesystem/disk structures.
 
-From [`build/file_tree/02_top_level_summary.tsv`](../build/file_tree/02_top_level_summary.tsv):
+From the [file-tree catalog](catalog/file_tree.md) ([`02_top_level_summary.tsv`](../build/file_tree/02_top_level_summary.tsv)):
 
 | Area | File rows | Approx. bytes represented |
 |---|---:|---:|
@@ -26,7 +26,7 @@ The published rollup **“HFS+ data-partition structures / 3,435 rows / 283.0 GB
 
 The principal user environment has the familiar layout of a Mac home folder.
 
-From [`build/file_tree/03_home_overview.tsv`](../build/file_tree/03_home_overview.tsv):
+From the [file-tree catalog](catalog/file_tree.md) ([`03_home_overview.tsv`](../build/file_tree/03_home_overview.tsv)):
 
 | Directory | File rows | Approx. represented size |
 |---|---:|---:|
@@ -116,7 +116,7 @@ Those structures help answer questions about copying, mounting, browsing, indexi
 
 ## Hash coverage
 
-The published inventory reports **331,906 inventory paths with SHA-256 values**. The deeper rank-1 manifest contains **655,330 path-level hash records**, while the CNID mapping contains **397,440 unique catalog entries**.
+The published inventory reports **331,906 inventory paths with SHA-256 values**. The deeper rank-1 manifest contains **655,330 path-level hash records**, while the CNID mapping contains **397,440 unique catalog entries**. Tables: [hash-manifest catalog](catalog/hash_manifest.md).
 
 Those numbers differ because a filesystem can represent the same underlying object through multiple paths, TSK slack siblings, aliases, or report layers. The alias map’s extra paths are **slack**, not Unix hard links ([COPY_METHOD](COPY_METHOD.md)). The repository therefore avoids using one raw row count as though it were a count of unique files.
 

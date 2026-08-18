@@ -1,6 +1,6 @@
 # Timeline (index)
 
-> **Hatnote.** Compact event index. The **canonical sourced narrative** (court + participant + JPMI timestamps interleaved) remains [Timeline and handling](06_timeline_and_handling.md), republished to `build/reports/03_known_datetime_stamps_of_use.md`. Row-level post-repair mtimes: [04_post_2019_03_31_timeline.md](../build/reports/04_post_2019_03_31_timeline.md). Distributions: [01_time_distribution.tsv](../build/metadata/01_time_distribution.tsv).
+> **Hatnote.** Compact event index. Canonical sourced narrative: [Timeline and handling](06_timeline_and_handling.md). Post-repair modified rows: [reports catalog](catalog/reports.md). Time buckets: [metadata catalog](catalog/metadata.md).
 
 ## Layers of time
 

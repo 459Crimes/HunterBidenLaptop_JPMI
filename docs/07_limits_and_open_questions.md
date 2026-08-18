@@ -1,6 +1,6 @@
 # 7. Limits and Open Questions
 
-> **Encyclopedia.** Sourcing and terminology: [Sourcing and terminology](MANUAL_OF_STYLE.md). Integrity finding: [Integrity](INTEGRITY.md). Scope: [Scope](SCOPE.md). [Index](INDEX.md).
+> **Encyclopedia.** Sourcing and terminology: [Sourcing and terminology](MANUAL_OF_STYLE.md). Integrity finding: [Integrity](INTEGRITY.md). Scope: [Scope](SCOPE.md). Tables: [Evidence catalog](catalog/README.md). [How to verify](08_reproducibility.md). [Index](INDEX.md).
 
 A provenance repository is more credible when it states both what the evidence **supports** and what it **cannot prove**.
 

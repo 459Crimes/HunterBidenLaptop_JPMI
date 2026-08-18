@@ -72,7 +72,7 @@ JPMI's substantive user/application modifications are overwhelmingly **before** 
 
 ## What the shop event is not
 
-- It is not a proof of the **make/model/serial of the retained laptop**. Historical WirelessDiagnostics packages naming `roberts-MacBook-Air` / serial `C02S953UH3QF` show **older Mac data is represented**; they do not independently identify the 2019 drop-off machine ([device report](../build/reports/01_computer_information.md)).
+- It is not a proof of the **make/model/serial of the retained laptop**. Historical WirelessDiagnostics packages naming `roberts-MacBook-Air` / serial `C02S953UH3QF` show **older Mac data is represented**; they do not independently identify the 2019 drop-off machine ([device report](../build/reports/01_computer_information.md); [reports catalog](catalog/reports.md)).
 - It is not a proof of the **literal copy command**.
 - The examined volume was formatted 26 Sep 2019 (file-aware copy), not a sector copy of the laptop partition. See [COPY_METHOD](COPY_METHOD.md).
 - It is not the FBI seizure (that is **9 December 2019**).

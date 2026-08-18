@@ -1,6 +1,6 @@
 # 6. Timeline and Handling
 
-> **Encyclopedia.** Compact index: [Timeline](TIMELINE.md). Integrity: [Integrity](INTEGRITY.md). 2022 vs 2024: [discrepancy](2022_2024_DISCREPANCY.md). Sources: [Source matrix](09_source_matrix.md). This file is the canonical sourced narrative, also published as `build/reports/03_known_datetime_stamps_of_use.md`.
+> **Encyclopedia.** Compact index: [Timeline](TIMELINE.md). Integrity: [Integrity](INTEGRITY.md). 2022 vs 2024: [discrepancy](2022_2024_DISCREPANCY.md). Sources: [Source matrix](09_source_matrix.md). Canonical sourced narrative; also copied under [reports catalog](catalog/reports.md) as `03_known_datetime_stamps_of_use.md`.
 
 The JPMI records contain multiple layers of time. The most important task is to distinguish **original user/application activity**, **the repair-shop recovery**, **creation of later copies**, **later opening/indexing of those copies**, and **the chronology of the forensic reports themselves**.
 
@@ -276,4 +276,4 @@ The combined JPMI and public-custody record supports these bounded conclusions:
 10. CBS's independent examination of an exact-copy Mac Isaac/FBI-lineage dataset likewise reported no tampering and no new files originating after April 2019.
 11. The repository's manifest delivery is attributed internally to Todd Sanders, who received the drive copy from Mac Isaac's attorney Brian Della Rocca, who coordinated the shipment (mailing-packet photograph in this repository; Sanders' account); the same attorney supplied CBS its exact-copy dataset, and the two media are byte-identical or virtually byte-identical, an equivalence not yet confirmed by an independent hash comparison.
 
-The detailed JPMI row set remains available in `[build/reports/04_post_2019_03_31_timeline.md](../build/reports/04_post_2019_03_31_timeline.md)`.
+The detailed JPMI row set remains in the [reports catalog](catalog/reports.md) (`04_post_2019_03_31_timeline.md`).

@@ -1,6 +1,6 @@
 # Shop and FBI exhibits (photographs of the paperwork)
 
-> **Hatnote.** Public-record scans from Mac Isaac’s Delaware filings and the later federal gun-trial exhibit list. These are **paperwork photographs**, not laptop contents. Congressional staff reports: [Congress](CONGRESS.md). Portraits of people and the storefront: [Portraits](PORTRAITS.md).
+> **Hatnote.** Public-record scans from Mac Isaac’s Delaware filings and the later federal gun-trial exhibit list. These are **paperwork photographs**, not laptop contents. File list: [exhibits catalog](catalog/exhibits.md). Congressional staff reports: [Congress](CONGRESS.md). Portraits of people and the storefront: [Portraits](PORTRAITS.md).
 
 The documents below are the ordinary repair-shop and FBI paperwork that start the JPMI chain. They are **not** hashes of the Crucial X6 or of `HB-IMAGE-2022-04-29.E01`.
 

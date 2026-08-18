@@ -18,7 +18,7 @@
 | Notes | `hb-reports-3 rank2 manifest from Todd Sanders (TSK 4.14.0)` |
 | DB `created_at` | 2026-07-22 19:35:50 — **project ingest**, not imaging day |
 
-Source: [`build/disk_info/01_acquisition.tsv`](../build/disk_info/01_acquisition.tsv).
+Source: [disk-identity catalog](catalog/disk_info.md) ([`01_acquisition.tsv`](../build/disk_info/01_acquisition.tsv)).
 
 ## What E01 means here
 
@@ -39,7 +39,7 @@ The accurate statement: “The JPMI manifest reports this SHA-256,” not “thi
 
 ## Coverage numbers
 
-From [`build/reports/05_coverage_and_method.md`](../build/reports/05_coverage_and_method.md):
+From the [reports catalog](catalog/reports.md) ([`05_coverage_and_method.md`](../build/reports/05_coverage_and_method.md)):
 
 | Metric | Value |
 |---|---:|
@@ -62,5 +62,5 @@ The complete acquisition worksheet package for `HB-IMAGE-2022-04-29.E01` is list
 
 ## See also
 
-- [Reproducibility](08_reproducibility.md)
-- [GitHub size policy](../GITHUB_SIZE_POLICY.md)
+- [How to verify](08_reproducibility.md)
+- [Hash-manifest catalog](catalog/hash_manifest.md)

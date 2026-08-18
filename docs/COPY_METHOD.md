@@ -22,17 +22,17 @@ The files on the examined disk are a **macOS user environment** (`roberthunter`)
 
 | Observation | Source |
 |---|---|
-| GPT disk + EFI + one journaled HFS+ data partition named `Untitled`, id `dfe8079582e21400` | `build/disk_info/`, `build/volume_info/01_volume_identity.tsv` |
+| GPT disk + EFI + one journaled HFS+ data partition named `Untitled`, id `dfe8079582e21400` | [Disk catalog](catalog/disk_info.md) · [volume catalog](catalog/volume_info.md) |
 | Volume creation **2019-09-26 22:59:02 CDT**; new `.journal` (~40 MB) and Spotlight Store-V1 | volume identity + `02_volume_metadata.tsv` |
-| Volume-root catalog children include HFS+ special files (`$CatalogFile`, `$AttributesFile`, …), `^^^^HFS+ Private Data`, `.HFS+ Private Directory Data`, Spotlight, Trashes, and directory **`roberthunter`** — not a full OS (`/System`, volume-root `/Library`, `/Applications`) | `jpmi_cnid_map` parent_cnid = 2 |
-| Private Data / Private Directory Data: **zero children** | `jpmi_cnid_map` |
-| User-tree inventory **572,743** file rows (~215.5 GB); ~280 GB unallocated ranges; empty deleted catalog | census / volume identity |
-| Created-time rows: 2017 **107,817**; 2018 **107,185**; Jan–Mar 2019 **353,662**; **September 2019: 15** | `build/metadata/01_time_distribution.tsv` |
-| `Library/Mail/V6` modified **2019-09-27 01:56:35** in the same report family as `.journal` created **01:59:02** | `build/reports/04_post_2019_03_31_timeline.md` |
-| `jpmi_alias_map`: 332,097 canonical + 323,233 alias; `max_paths_for_cnid` = 2; **all** two-path CNIDs are `file` + `file-*-slack` | PostgreSQL query 2026-08-17 |
-| File-type `l` (symlink): **6,994** (`lrwxr-xr-x`), including framework `Versions/Current` and `Library/Containers/…` | `jpmi_file_report` |
-| `$AttributesFile` **203,423,744** bytes; **10,832** `._` AppleDouble names as separate catalog files | `jpmi_cnid_map` |
-| Custody device: Micron Crucial X6 serial `2145E498755E`, 500,107,862,016 bytes; E01 via ADI 4.7.1.2 | `build/disk_info/01_acquisition.tsv` |
+| Volume-root catalog children include HFS+ special files (`$CatalogFile`, `$AttributesFile`, …), `^^^^HFS+ Private Data`, `.HFS+ Private Directory Data`, Spotlight, Trashes, and directory **`roberthunter`** — not a full OS (`/System`, volume-root `/Library`, `/Applications`) | CNID map (see [archives catalog](catalog/archives.md)) |
+| Private Data / Private Directory Data: **zero children** | same |
+| User-tree inventory **572,743** file rows (~215.5 GB); ~280 GB unallocated ranges; empty deleted catalog | [file-tree catalog](catalog/file_tree.md) · [contents census](CONTENTS_CENSUS.md) |
+| Created-time rows: 2017 **107,817**; 2018 **107,185**; Jan–Mar 2019 **353,662**; **September 2019: 15** | [metadata catalog](catalog/metadata.md) (`01_time_distribution.tsv`) |
+| `Library/Mail/V6` modified **2019-09-27 01:56:35** in the same report family as `.journal` created **01:59:02** | [reports catalog](catalog/reports.md) (`04_post_2019_03_31_timeline.md`) |
+| Alias map: 332,097 canonical + 323,233 alias; `max_paths_for_cnid` = 2; **all** two-path CNIDs are `file` + `file-*-slack` | [metadata catalog](catalog/metadata.md) (`06_alias_summary.tsv`) |
+| File-type `l` (symlink): **6,994** (`lrwxr-xr-x`), including framework `Versions/Current` and `Library/Containers/…` | type / permission summaries in [metadata catalog](catalog/metadata.md) |
+| `$AttributesFile` **203,423,744** bytes; **10,832** `._` AppleDouble names as separate catalog files | [volume catalog](catalog/volume_info.md) / CNID map |
+| Custody device: Micron Crucial X6 serial `2145E498755E`, 500,107,862,016 bytes; E01 via ADI 4.7.1.2 | [disk catalog](catalog/disk_info.md) |
 
 Inventory URIs use `JPMI://Users/roberthunter/…`. The HFS+ catalog places that home at **volume root** as `roberthunter` (CNID 102). The `Users/` prefix is a report-layer path, not proof of a full `/Users` OS layout.
 
@@ -138,7 +138,7 @@ Delaware Supreme Court: Mac Isaac made an **exact copy** before the 9 December 2
 
 ## Hard links, slack, and “two files / one inode”
 
-**Observed fact.** `jpmi_alias_map` was summarized as canonical/alias and “hard-link” metrics (`build/metadata/06_alias_summary.tsv`). Direct query of the same table shows:
+**Observed fact.** The alias summary records canonical/alias and “hard-link” metrics ([`06_alias_summary.tsv`](../build/metadata/06_alias_summary.tsv); [metadata catalog](catalog/metadata.md)). Direct inspection of the same mapping shows:
 
 | Test | Result |
 |---|---|

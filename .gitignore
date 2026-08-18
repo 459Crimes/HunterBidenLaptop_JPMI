@@ -1,9 +1,8 @@
+# Operator-only: scripts, hooks, deployment notes, agent working files.
+# Not published on GitHub.
+.local-use-only/
+
 # Deep full-volume exports are local analysis products only.
 # They are intentionally NOT part of the GitHub-ready build/ tree.
 build/deep/
 __pycache__/
-
-# Archived internal project-management documents.
-# STATUS.md and TASKS.md were completed and archived on 2026-08-15;
-# they are working notes, not part of the published report.
-archive/

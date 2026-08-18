@@ -25,7 +25,7 @@ The author submitted an FBI source-attribution referral on 0728 as **potentially
 - Those rows are dominated by `.DS_Store`, Spotlight, DocumentRevisions, directories, temporary/system state — not a later corpus of Hunter-authored documents.
 - No JPMI report presently identifies malware establishing intrusion, a remote-access event, a bulk post-April import of external user files, or an identified injected email/photo/document/video.
 
-Full row set: [`build/reports/04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md).
+Full row set: [reports catalog](catalog/reports.md) ([`04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md)).
 
 ### 2. CBS / Computer Forensics Services (Nov 2022)
 

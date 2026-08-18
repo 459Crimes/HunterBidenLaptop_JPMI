@@ -56,12 +56,12 @@
 
 ## Repository exhibits
 
-- [`docs/exhibits/`](exhibits/README.md) — Quote #7469, Mesires email, FBI subpoena photos, House staff-report PDFs.
+- [`docs/exhibits/`](exhibits/README.md) — Quote #7469, Mesires email, FBI subpoena photos, House staff-report PDFs. [Exhibits catalog](catalog/exhibits.md).
 - [`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg) — mailing packet, Mac Isaac home address → Todd Sanders.
-- [`build/disk_info/01_acquisition.tsv`](../build/disk_info/01_acquisition.tsv) — device, E01, hashes, Sanders note.
-- [`build/volume_info/01_volume_identity.tsv`](../build/volume_info/01_volume_identity.tsv) — `Untitled`, 2019-09-26 creation, 2024 last-write.
-- [`build/reports/04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md) — 141 post-repair modified rows.
-- [`docs/06_timeline_and_handling.md`](06_timeline_and_handling.md) — canonical sourced narrative (also published as `build/reports/03_known_datetime_stamps_of_use.md`).
+- [Disk catalog](catalog/disk_info.md) — device, E01, hashes, Sanders note.
+- [Volume catalog](catalog/volume_info.md) — `Untitled`, 2019-09-26 creation, 2024 last-write.
+- [Reports catalog](catalog/reports.md) — 141 post-repair modified rows.
+- [`docs/06_timeline_and_handling.md`](06_timeline_and_handling.md) — canonical sourced narrative.
 - [`docs/BRANCH_DEVIATIONS.md`](BRANCH_DEVIATIONS.md) — JPMI vs Costello vs Todd vs APFS/GAI split points.
 
 ## See also

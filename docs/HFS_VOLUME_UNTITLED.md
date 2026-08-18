@@ -16,7 +16,7 @@ The data partition is a **journaled HFS+** volume:
 | Unallocated ranges | ~280 GB |
 | Journal size | 41,943,040 bytes (`.journal`) |
 
-Source: [`build/volume_info/01_volume_identity.tsv`](../build/volume_info/01_volume_identity.tsv).
+Source: [volume catalog](catalog/volume_info.md) ([`01_volume_identity.tsv`](../build/volume_info/01_volume_identity.tsv)).
 
 ## Why 26 September 2019 matters
 
@@ -28,7 +28,7 @@ Mac Isaac’s accounts place preservation/FBI-copy work in **September–October
 
 ## Native filesystem machinery (not user documents)
 
-Selected objects from [`02_volume_metadata.tsv`](../build/volume_info/02_volume_metadata.tsv):
+Selected objects from [`02_volume_metadata.tsv`](../build/volume_info/02_volume_metadata.tsv) ([volume catalog](catalog/volume_info.md)):
 
 | Object | Forensic role | Notable times |
 |---|---|---|

@@ -1,6 +1,6 @@
 # Timestamps
 
-> **Hatnote.** How to read time in JPMI. Distributions: [`build/metadata/01_time_distribution.tsv`](../build/metadata/01_time_distribution.tsv). Event index: [Timeline](TIMELINE.md).
+> **Hatnote.** How to read time in JPMI. Distributions: [metadata catalog](catalog/metadata.md) ([`01_time_distribution.tsv`](../build/metadata/01_time_distribution.tsv)). Event index: [Timeline](TIMELINE.md).
 
 ## Three fields
 

@@ -1,6 +1,6 @@
 # 3. JPMI Chain of Custody
 
-> **Encyclopedia.** Narrative companion to [Copy lineages](COPY_LINEAGES.md) and [Timeline](TIMELINE.md). Full sourced chronology: [06](06_timeline_and_handling.md). Exhibit: [Mailing packet](MAILING_PACKET.md). [Index](INDEX.md).
+> **Encyclopedia.** Narrative companion to [Copy lineages](COPY_LINEAGES.md) and [Timeline](TIMELINE.md). Full sourced chronology: [06](06_timeline_and_handling.md). Exhibit: [Mailing packet](MAILING_PACKET.md). Tables: [disk catalog](catalog/disk_info.md). [Index](INDEX.md).
 
 A digital chain of custody identifies **which device or copy existed at each stage, what operation was performed, who handled it, and what evidence supports the transition**.
 

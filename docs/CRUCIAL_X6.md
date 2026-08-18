@@ -8,7 +8,7 @@ The acquisition record describes a **Micron Crucial X6 SSD USB Device**, serial 
 
 | Field | Value | Source |
 |---|---|---|
-| Model | Micron Crucial X6 SSD USB Device | `build/disk_info/01_acquisition.tsv` |
+| Model | Micron Crucial X6 SSD USB Device | [disk catalog](catalog/disk_info.md) |
 | Serial | `2145E498755E` | same |
 | Size | 500,107,862,016 bytes | same |
 | Sector size | 512 | same |
@@ -57,4 +57,5 @@ Todd Sanders received a drive copy from **Brian Della Rocca**, who **coordinated
 ## See also
 
 - [Copy lineages](COPY_LINEAGES.md)
-- [Device report](../build/reports/01_computer_information.md)
+- [Device report](../build/reports/01_computer_information.md) ([reports catalog](catalog/reports.md))
+- [Disk-identity catalog](catalog/disk_info.md)

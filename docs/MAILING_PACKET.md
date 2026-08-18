@@ -1,6 +1,6 @@
 # Mailing packet (Della Rocca / Mac Isaac → Todd Sanders)
 
-> **Hatnote.** Physical-custody exhibit for how JPMI reporting entered this project. Photograph: [`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg). Not a hash of the E01.
+> **Hatnote.** Physical-custody exhibit for how JPMI reporting entered this project. Photograph: [`photo_20260716_120324.jpg`](../photo_20260716_120324.jpg). File list: [exhibits catalog](catalog/exhibits.md). Not a hash of the E01.
 
 ## What the exhibit is
 

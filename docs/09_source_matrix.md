@@ -48,7 +48,7 @@ A later interview can explain technical details absent from a court opinion. It 
 | CBS examiners found no user-data modification, fabrication, or tampering | CBS News / Computer Forensics Services | **Independent forensic result** |
 | CBS examiners found no new files originating after April 2019 | CBS News / Computer Forensics Services | **Independent forensic result** |
 | JPMI reporting does not identify post-dropoff hacking or bulk substantive-file injection | JPMI post-repair timeline/system-state analysis | **Finding from this repository's reporting** |
-| JPMI acquisition note attributes rank-2 manifest to Todd Sanders | `build/disk_info/01_acquisition.tsv` | **Internal source-delivery record** |
+| JPMI acquisition note attributes rank-2 manifest to Todd Sanders | [disk catalog](catalog/disk_info.md) (`01_acquisition.tsv`) | **Internal source-delivery record** |
 | Sanders received the drive copy from Della Rocca, who coordinated the shipment | Mailing-packet photograph `photo_20260716_120324.jpg` (Mac Isaac home address as sender, Sanders as recipient) + Sanders' account | **Direct custody/transfer record in this repository** |
 | Todd Sanders was affiliated with the America Project | American Oversight public-record reporting | **Externally documented affiliation** |
 | America Project supported/funded Mac Isaac's 2022 litigation | Public statements/reporting about the lawsuit | **Externally documented support relationship** |

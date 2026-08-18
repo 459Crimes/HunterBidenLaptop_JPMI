@@ -16,7 +16,7 @@ These classes are kept distinct:
 
 | Class | Typical sources | Attribution |
 |---|---|---|
-| **Direct JPMI report** | `build/disk_info`, `volume_info`, file times, CNIDs, hashes | “JPMI reports…” / “the acquisition record identifies…” |
+| **Direct JPMI report** | [Evidence catalog](catalog/README.md) (`build/disk_info`, volume, file times, CNIDs, hashes) | “JPMI reports…” / “the acquisition record identifies…” |
 | **Court-recited** | Delaware Supreme Court 2025; Superior Court 2024; S.D. Florida 2021 | “The court recounts…” / “the opinion states…” |
 | **Complaint allegation** | C.D. Cal. 2:23-cv-8032 | Pleading language; not an affidavit |
 | **Contemporaneous journalism** | *New York* magazine 2022; Washington Post 2022; Raw Story; LA Times | Named reporter observation or attributed quote |
@@ -103,4 +103,5 @@ The mailing-packet photograph is a **custody exhibit**. Captions record sender a
 
 - [Source matrix](09_source_matrix.md)
 - [Limits](07_limits_and_open_questions.md)
-- [Reproducibility](08_reproducibility.md)
+- [How to verify](08_reproducibility.md)
+- [Evidence catalog](catalog/README.md)

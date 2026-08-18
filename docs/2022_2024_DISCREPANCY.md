@@ -36,7 +36,7 @@ This is Sanders' account. **Only the FBI** (or forensic examination of the acqui
 
 ## What 2024 rows look like
 
-Post-repair **modified** slice: **30 rows in 2024**, coinciding with Spotlight live indexes, DocumentRevisions SQLite/WAL, TemporaryItems, and similar system state — the same class of objects a read-write Mac mount would touch. See the 2024 tail of [`04_post_2019_03_31_timeline.md`](../build/reports/04_post_2019_03_31_timeline.md).
+Post-repair **modified** slice: **30 rows in 2024**, coinciding with Spotlight live indexes, DocumentRevisions SQLite/WAL, TemporaryItems, and similar system state — the same class of objects a read-write Mac mount would touch. See the 2024 tail in the [reports catalog](catalog/reports.md) (`04_post_2019_03_31_timeline.md`).
 
 That pattern is **consistent with** Sanders' mount account. Consistency is not verification.
 

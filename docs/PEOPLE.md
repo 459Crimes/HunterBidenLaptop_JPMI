@@ -117,7 +117,7 @@ Maryland/DC-area lawyer (Compass Law Partners, Rockville; later Della Rocca Law,
 - Appeared with Mac Isaac on *Tucker Carlson Tonight* after Hunter Biden's Jan 2023 DOJ letters ([Fox](https://www.foxnews.com/media/hunter-biden-laptop-repairman-responds-legal-threats-presidents-son-gotten-used-it)).
 - In Feb 2023, rejected Abbe Lowell's claim that Yaacov Apelbaum was “working with Senator Ron Johnson's office”; Della Rocca wrote Apelbaum **never worked with Johnson** and was asked to **analyze**, not copy ([NY Post, 6 Feb 2023](https://nypost.com/2023/02/06/john-paul-mac-isaac-asks-for-hunter-biden-probe-over-false-laptop-report/)). That is counsel's wording; it sits in tension with Mac Isaac's book (forensic image + Apelbaum retaining a copy — see [Apelbaum](APELBAUM.md)).
 
-He is **not** a forensic examiner of JPMI in this repository's pipeline. He is a **custody/public-record bridge**.
+He is **not** a forensic examiner of JPMI in this encyclopedia. He is a **custody/public-record bridge**.
 
 ## Yaacov Apelbaum (computer / AI analyst)
 

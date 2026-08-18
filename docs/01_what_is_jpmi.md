@@ -38,7 +38,7 @@ The acquisition record describes the custody device as:
 | MD5 | `682619c1884e6fe006664ba31deed698` |
 | SHA-1 | `fe918f0cff3304ab52875b984c88fee78ec05197` |
 
-These values are published in [`build/disk_info/01_acquisition.tsv`](../build/disk_info/01_acquisition.tsv).
+These values are published in the [disk-identity catalog](catalog/disk_info.md) ([`01_acquisition.tsv`](../build/disk_info/01_acquisition.tsv)).
 
 The Crucial X6 is a **custody medium**. It is not the original internal storage hardware of the laptop left at the repair shop.
 
