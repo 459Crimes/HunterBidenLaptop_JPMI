@@ -139,7 +139,7 @@ See the **[article index](docs/INDEX.md)** for the full map. Core reading order:
 8. [Reproducibility](docs/08_reproducibility.md)
 9. [Source matrix](docs/09_source_matrix.md)
 
-Companion articles: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
+Companion articles: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Apelbaum, Fox, Tucker](docs/APELBAUM_FOX.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
 
 ---
 

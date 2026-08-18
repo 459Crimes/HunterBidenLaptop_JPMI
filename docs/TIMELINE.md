@@ -32,6 +32,7 @@
 | 2020-01-01 | 5 | Home / Library `.DS_Store` cluster | [Timestamps](TIMESTAMPS.md) |
 | 2020-08-26 | 5 | Costello copy | [Copy lineages](COPY_LINEAGES.md) |
 | 2020-10-13 | 5 | Mesires inquiry | [People](PEOPLE.md) |
+| Oct 2020 | 5 | Apelbaum at Mac Isaac home; retained JPMI-lineage copy; later Fox/Tucker attempt | [Apelbaum, Fox, Tucker](APELBAUM_FOX.md) |
 | 2020-10-20 | 5 | Marco Polo: Costello copy to New Castle County PD (not JPMI) | [Marco Polo v4](MARCO_POLO.md) |
 | 2020-10-15 ~21:16–21:20 | 5 | Desktop/Documents/Public `.DS_Store`; DocumentRevisions dirs; TemporaryItems | [Integrity](INTEGRITY.md) |
 | 2020-10-26 | 5 | `.com.apple.timemachine.donotpresent` | [HFS+ volume](HFS_VOLUME_UNTITLED.md) |
@@ -40,7 +41,9 @@
 | 2022-06-01 | 6 | fseventsd / further Spotlight live indexes | [HFS+ volume](HFS_VOLUME_UNTITLED.md) |
 | 2022-11-21 | 6 | CBS publishes CFS results | [Integrity](INTEGRITY.md) |
 | 2024-11-21 | 7 | Volume last-write / Spotlight+DocumentRevisions | [2022/2024 discrepancy](2022_2024_DISCREPANCY.md) |
+| 2025-03-11 | 5 | Apelbaum–DeGiovanni call: JPMI copy to Fox/Tucker | [11 Mar 2025 call](APELBAUM_TUCKER_2025-03-11.md) |
 | 2026-07-22 | 8 | Project DB acquisition-row `created_at` | [Forensic image](FORENSIC_IMAGE.md) |
+| 2026-08-10 | 5 | Carlson interviews Hunter Biden; Israeli-source CSAM *allegation* | [Apelbaum, Fox, Tucker](APELBAUM_FOX.md) |
 
 ## Post-repair modified-row census
 

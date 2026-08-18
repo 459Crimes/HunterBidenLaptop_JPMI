@@ -40,6 +40,11 @@
 - *Beyond the Diary: the Tempest Within Ashley Biden*. https://BeyondTheDiary.com — separate 459Crimes publication; not a JPMI table. See [Author](AUTHOR.md).
 - Full digital diary release. https://ShowersWithMy.Dad — separate publication; not hosted or analyzed here.
 
+## Apelbaum / Fox / Carlson
+
+- Apelbaum–DeGiovanni telephone recording, 11 Mar 2025 (`Yaacov_Tucker_discussion.mp3`, SHA-256 `6730dafbab412352d32fcd546dc05aca549a2a06585db2c23d9a97477b89f0e8`). Apelbaum describes a hotel-room USB handoff of a **JPMI-lineage** laptop copy to Carlson’s executive producer. [Incident](APELBAUM_FOX.md) · [Transcript](APELBAUM_TUCKER_2025-03-11.md).
+- Tucker Carlson Show interview with Hunter Biden (released 10 Aug 2026). Israeli-source / Netanyahu-connected producer meeting; abuse-of-minors *allegation*. Transcript: https://singjupost.com/transcript-of-hunter-biden-interview-on-tucker-carlson-show/ — [The Independent](https://www.independent.co.uk/news/world/americas/us-politics/tucker-carlson-hunter-biden-laptop-b3030658.html) — [Newsweek](https://www.newsweek.com/tucker-carlson-hunter-biden-interview-key-takeaways-12304361).
+
 ## Public-record affiliation (Sanders / America Project)
 
 - American Oversight, Patrick Byrne / America Project documents (Sanders affiliation). https://americanoversight.org/in-the-documents-patrick-byrnes-continued-involvement-in-election-denying-efforts/

@@ -17,6 +17,7 @@ Digital provenance fails when people collapse five objects into the phrase “th
 | **NY Post material** | Published 14 Oct 2020 via Giuliani | Public event; not a disk serial |
 | **CBS / CFS “exact copy”** | Della Rocca → CBS, examined 2022 | Independent forensic result on a Mac Isaac/FBI-lineage copy |
 | **Sanders / JPMI media** | Della Rocca → Sanders (mailing packet) → reports in this repo | Later custody medium is the **Crucial X6**; image `HB-IMAGE-2022-04-29.E01` |
+| **Apelbaum retained copy** | Oct 2020 imaging of Mac Isaac’s still-held copy | **JPMI lineage**, not hash-identical to the X6 E01. The copy Apelbaum tried to get to Fox / Tucker. **Not** 0728 |
 | **Hayes APFS** | **Later, more altered copy of the JPMI disk**, presented as a **bootable laptop** by Conan Hayes | Descendant of JPMI-line data, **not** the JPMI reports here. Marco Polo’s machine. **Dimitrelos** and **Maryman** copies **correlate to this structure**; the author holds similar copies |
 | **0728 Extra Found Files** | MEGA share from Hayes after 28 July 2021 | Did **not** come from the laptop files per se. Related collection; many unknown origin; some **completely unknown to the laptop**. Author FBI referral 28 Jul 2026 is **out of scope** |
 | **Marco Polo Report v4** | Published compilation (4th printing 2024) | Analyzed the Hayes **bootable APFS** machine + 0728. **Did not analyze JPMI** |

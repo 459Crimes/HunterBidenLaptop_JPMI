@@ -17,7 +17,7 @@ He is a different person from **Jacob Appelbaum** (Tor / security researcher).
 | **21 Oct 2020** | Blog post tying the repair authorization / WD USB serial to Hunter, arguing not a Russian op | [“No Russians Need Apply”](https://www.yaacovapelbaum.com/2020/10/21/no-russians-need-apply/) |
 | **Feb 2023** | Della Rocca: Apelbaum **never worked with Sen. Ron Johnson’s office**; was asked to **analyze**, not copy | [NY Post, 6 Feb 2023](https://nypost.com/2023/02/06/john-paul-mac-isaac-asks-for-hunter-biden-probe-over-false-laptop-report/) |
 
-The **analyze vs copy** split is a real conflict between **counsel’s 2023 letter** and **Mac Isaac’s 2022 book**. This encyclopedia records both. It does **not** treat Apelbaum’s retained copy as the JPMI Crucial X6 / `HB-IMAGE-2022-04-29.E01`.
+The **analyze vs copy** split is a real conflict between **counsel’s 2023 letter** and **Mac Isaac’s 2022 book**. This encyclopedia records both. Apelbaum’s retained copy is **not** hash-identified with the JPMI Crucial X6 / `HB-IMAGE-2022-04-29.E01`. It **is** identified as the same **Mac Isaac direct-copy lineage (JPMI)**. That is the copy he tried to get to Fox News / Tucker Carlson. It is **not** Extra Found Files / 0728 and **not** hacked sidecar material. See [Apelbaum, Fox, Tucker](APELBAUM_FOX.md).
 
 ## Relation to JPMI integrity
 
@@ -26,4 +26,5 @@ CBS/CFS examined a Della Rocca–supplied **FBI-lineage “exact copy”** and r
 ## See also
 
 - [Fox / Tucker](FOX_TUCKER.md)
+- [Apelbaum, Fox, Tucker](APELBAUM_FOX.md)
 - [Integrity](INTEGRITY.md)

@@ -15,6 +15,7 @@ Main article: [README](../README.md).
 | Who wrote this encyclopedia | [Author](AUTHOR.md) |
 | Who the people are (father, uncle, FBI agents, Della Rocca, Apelbaum) | [People](PEOPLE.md) |
 | Yaacov Apelbaum / XRVision | [Apelbaum](APELBAUM.md) |
+| Apelbaum’s attempt to get the JPMI copy to Fox / Tucker | [Apelbaum, Fox, Tucker](APELBAUM_FOX.md) · [11 Mar 2025 call](APELBAUM_TUCKER_2025-03-11.md) |
 | The attempt to get a copy to Tucker Carlson at Fox | [Fox / Tucker](FOX_TUCKER.md) |
 | Marco Polo 4th printing (shop/FBI extract only) | [Marco Polo v4](MARCO_POLO.md) |
 | Photos of the men and the shop (links only) | [Portraits and premises](PORTRAITS.md) |
@@ -67,7 +68,7 @@ These nine files are the primary narrative sequence. The `06` timeline is also p
 
 ## Categories
 
-- **Provenance:** 02, 03, 06, 09, PEOPLE, AUTHOR, PORTRAITS, THE_MAC_SHOP, EXHIBITS, CONGRESS, COPY_LINEAGES, MAILING_PACKET
+- **Provenance:** 02, 03, 06, 09, PEOPLE, AUTHOR, PORTRAITS, THE_MAC_SHOP, EXHIBITS, CONGRESS, COPY_LINEAGES, MAILING_PACKET, FOX_TUCKER, APELBAUM, APELBAUM_FOX
 - **Storage objects:** CRUCIAL_X6, HFS_VOLUME_UNTITLED, FORENSIC_IMAGE
 - **Contents:** 04, CONTENTS_CENSUS, 05, GLOSSARY, TIMESTAMPS
 - **Integrity:** INTEGRITY, 2022_2024_DISCREPANCY, 07, SCOPE

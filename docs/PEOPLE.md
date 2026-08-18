@@ -128,9 +128,9 @@ Founder/CEO of **XRVision** (facial-recognition / AI video analytics; New York /
 - On **15 Oct 2020** he published AI/face-recognition tests on NY Post laptop **photos** on his blog *The Illustrated Primer*, claiming authenticity / no deepfake ([Apelbaum, 15 Oct 2020](https://www.yaacovapelbaum.com/2020/10/15/hunter-biden-laptop-images-are-authentic/)).
 - Mac Isaac's *American Injustice* (Nov 2022), as quoted in [Hunter Biden's Delaware Supreme Court brief](https://courts.delaware.gov/supreme/oralarguments/download.aspx?id=5406), says Apelbaum came to Mac Isaac's **Delaware home in October 2020** to try to create a **forensic image** of the data Mac Isaac still held, and that Mac Isaac **allowed Apelbaum to retain a copy**.
 - Hunter Biden's Jan 2023 DOJ letter named Apelbaum among people to investigate, repeating the book's Johnson-office claim ([DocumentCloud letter](https://s3.documentcloud.org/documents/23595947/letter-to-ns-aag-re-request-for-investigation.pdf)). Della Rocca denied the Johnson link (above).
-- Apelbaum is **not** in the JPMI acquisition note, not the CBS/CFS examiner, and not the Sanders mailing-packet recipient. His work is a **separate 2020 handling of Mac Isaac's retained copy**, plus public image-authentication of press stills.
+- Apelbaum is **not** in the JPMI acquisition note, not the CBS/CFS examiner, and not the Sanders mailing-packet recipient. His October 2020 work is handling of **Mac Isaac’s retained copy** (JPMI lineage, not 0728). He later discussed getting that copy to Fox / Tucker Carlson ([11 Mar 2025 call](APELBAUM_TUCKER_2025-03-11.md); [incident](APELBAUM_FOX.md)).
 
-**See also:** [Apelbaum](APELBAUM.md), [Fox / Tucker attempt](FOX_TUCKER.md).
+**See also:** [Apelbaum](APELBAUM.md), [Apelbaum, Fox, Tucker](APELBAUM_FOX.md), [Fox / Tucker](FOX_TUCKER.md).
 
 ## Todd Sanders
 

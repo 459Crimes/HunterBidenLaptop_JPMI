@@ -51,6 +51,8 @@ A later interview can explain technical details absent from a court opinion. It 
 | Any 2022–2024 data alteration occurred during analysis, a read-write mount on a Mac | Todd Sanders' communications with this project | **Participant account; only the FBI can verify** |
 | This encyclopedia is authored by 459Crimes / Marc Aaron DeGiovanni | [Author](AUTHOR.md); *George News* 7 Feb 2024 (live + archive) | **Project identity**, not a JPMI table |
 | DeGiovanni first downloaded 0728 from Hayes; was Marco Polo member from May 2021 | Author identification | **Project identity**; does not make Marco Polo's corpus into JPMI |
+| Apelbaum tried to get a Mac Isaac copy to Fox / Tucker Carlson | 11 Mar 2025 Apelbaum–DeGiovanni recording; Mac Isaac book (Oct 2020 home imaging) | **JPMI lineage**, not 0728. Audio SHA-256 `6730dafbab412352…` |
+| Carlson said Israelis / a Netanyahu-connected man pushed abuse-of-minors allegations to a Fox producer | Tucker Carlson Show interview with Hunter Biden, 10 Aug 2026 | Carlson’s account; he did not name Apelbaum |
 
 ## Primary legal sources
 

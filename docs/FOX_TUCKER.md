@@ -32,7 +32,7 @@ ABC later summarized Mac Isaac's own later account as having sought to distribut
 
 On or about **28–30 Oct 2020**, Carlson told viewers a producer-mailed **flash drive of “Hunter Biden docs”** had gone missing at UPS; UPS told Daily Beast the parcel was in a UPS facility; Carlson then said they had **made copies before mailing** ([NY Mag / Intelligencer](https://nymag.com/intelligencer/2020/10/why-did-tucker-carlson-send-a-flash-drive-through-the-mail.html)).
 
-That segment does **not** identify Mac Isaac, LaCorte, or Apelbaum as the source. No source cited here names that flash drive as the September family→LaCorte→Tucker object.
+On the **11 Mar 2025** call, Apelbaum identifies that UPS episode as the **USB he had given Carlson’s executive producer**, while Carlson was in **California interviewing Tony Bobulinski** ([transcript](APELBAUM_TUCKER_2025-03-11.md)). The contemporaneous Fox segment still does **not** name Apelbaum or Mac Isaac as the source on air.
 
 A later, **separate** path: Jack Maxey (from Bannon’s copy) went to Switzerland; Hunter Biden’s DOJ letter says **Carlson went to Switzerland to meet Maxey** ([letter](https://s3.documentcloud.org/documents/23595947/letter-to-ns-aag-re-request-for-investigation.pdf)). That is **not** the 2020 Mac Isaac shop copy.
 
@@ -40,9 +40,13 @@ A later, **separate** path: Jack Maxey (from Bannon’s copy) went to Switzerlan
 
 Della Rocca did **not** originate the 2020 Fox pitch. He **did** appear with Mac Isaac **on** *Tucker Carlson Tonight* in **January 2023** to answer Hunter Biden’s letters naming Mac Isaac, Costello, Giuliani, Bannon, Ziegler, Maxey, and **Apelbaum** ([Fox](https://www.foxnews.com/media/hunter-biden-laptop-repairman-responds-legal-threats-presidents-son-gotten-used-it); [Newsweek](https://www.newsweek.com/hunter-biden-legal-letters-laptop-doj-irs-fox-news-tucker-carlson-1778449)). Carlson’s commentary that week treated the repair-authorization / 90-day clause as Mac Isaac’s defense ([Fox opinion](https://www.foxnews.com/opinion/tucker-carlson-hunter-biden-versus-laptop-repairman-doesnt-seem-fair-fight)).
 
-## 5. Carlson’s 2026 claim (not a Mac Isaac delivery)
+## 5. Carlson’s August 2026 interview (Israeli-source CSAM *allegation*)
 
-In an August 2026 interview with Hunter Biden, Carlson said **Israelis / a Netanyahu-connected man** had pushed **CSAM-on-the-laptop** claims to a Fox producer, and that he had not said so on Fox ([Independent](https://www.the-independent.com/news/world/americas/us-politics/tucker-carlson-hunter-biden-laptop-b3030658.html)). That is Carlson’s later political account. It is **not** sourced here to Mac Isaac, Della Rocca, or Apelbaum, and it is **not** a chain-of-custody fact about JPMI.
+On **10 August 2026** Carlson interviewed Hunter Biden. He said **Israelis / a man connected to Netanyahu** had his Fox **producer** meet them, and that **they** pushed an allegation of **abuse of minors** on the laptop — a claim he said he **did not** air on Fox ([Independent](https://www.independent.co.uk/news/world/americas/us-politics/tucker-carlson-hunter-biden-laptop-b3030658.html); [Singju transcript](https://singjupost.com/transcript-of-hunter-biden-interview-on-tucker-carlson-show/)). Full quotes and a table of what he did and did not name: [Apelbaum, Fox, Tucker](APELBAUM_FOX.md).
+
+Carlson **did** claim that child-abuse-material *allegations* were being pushed to him. He did **not** name Apelbaum in that interview, and he did **not** identify the disk as 0728.
+
+Separately: Apelbaum **did** try to get a **Mac Isaac / JPMI-lineage** copy to Fox / Carlson. That object is **not** hacked 0728 material. Primary for Apelbaum’s own discussion of the handoff: the **11 Mar 2025** Apelbaum–DeGiovanni call ([transcript](APELBAUM_TUCKER_2025-03-11.md)).
 
 ## Diagram
 
@@ -59,6 +63,9 @@ Mac Isaac retained copy (post-Dec 2019 FBI surrender)
         +-- Oct 2020 home --> Yaacov Apelbaum forensic-image attempt
         |                         (book: Apelbaum kept a copy;
         |                          Della Rocca 2023: analyze, not copy)
+        |                         Apelbaum then tried to get that
+        |                         **JPMI-lineage** copy to Fox / Tucker
+        |                         (11 Mar 2025 call with DeGiovanni)
         |
         +-- 2022 Della Rocca --> CBS/CFS "exact copy"  AND  Sanders/JPMI
 ```
@@ -66,4 +73,5 @@ Mac Isaac retained copy (post-Dec 2019 FBI surrender)
 ## See also
 
 - [Apelbaum](APELBAUM.md)
+- [Apelbaum, Fox, Tucker](APELBAUM_FOX.md)
 - [Mailing packet](MAILING_PACKET.md) (Della Rocca → Sanders, years later)
