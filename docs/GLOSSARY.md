@@ -86,7 +86,7 @@ Small GPT partition used for firmware/boot machinery. JPMI has one (GUID `54bcfb
 
 ## Extra Found Files (0728)
 
-Out of scope. MEGA share from **Conan Hayes after 28 July 2021**. Did **not** come from the laptop files per se: a large collection **related to** laptop material, with many items of unknown origin and some **completely unknown to the laptop**. Marco Polo had this sidecar set in addition to Hayes’s bootable APFS machine; it did **not** analyze JPMI. Author’s FBI referral (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`) is **not** analyzed here. See [Scope](SCOPE.md) and [Author](AUTHOR.md).
+**Completely separate corpus** from JPMI, APFS, and GAI. Hayes MEGA bag after **28 July 2021** (dashed distribution edge from **HAYES**, not volume identity). Blobs match **every combination** of those three inventories (all three, each pair, each singleton, and none). A large share has **original names and metadata stripped**, so path provenance is unknown. Out of scope. See [Copy lineages](COPY_LINEAGES.md#0728-is-a-separate-corpus).
 
 ## `.emlx`
 

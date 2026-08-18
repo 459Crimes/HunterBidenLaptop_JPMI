@@ -10,7 +10,7 @@
 
 ## Where unknown-origin files *are* attributed (not this repo)
 
-**Extra Found Files / 0728** (MEGA, Conan Hayes, after 28 July 2021) did **not** come from the laptop files per se. It is a large collection **related to** laptop material: many items of **unknown origin**, and some **completely unknown to the laptop**.
+**Extra Found Files / 0728** (MEGA, Conan Hayes, after 28 July 2021) is a **completely separate corpus**. It is not a clone of JPMI, APFS, or GAI. The same bag contains blobs that match **all three**, each **pair**, each **singleton**, and **none** of those inventories. A large portion has **original names and metadata stripped**. See [Copy lineages](COPY_LINEAGES.md#0728-is-a-separate-corpus).
 
 The author submitted an FBI source-attribution referral on 0728 as **potentially hacked** (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`, 28 July 2026). That referral is **outside this JPMI analysis**; it is described on [Author](AUTHOR.md). It is not a finding about Quote #7469, the Mac Shop recovery, the FBI-seized MacBook/WD pair, or the Crucial X6 / E01 reports.
 

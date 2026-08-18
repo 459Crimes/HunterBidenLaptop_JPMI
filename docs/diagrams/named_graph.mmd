@@ -1,10 +1,12 @@
 %% Canonical named copy graph.
 %% JPMI is not an ancestor of COSTELLO, TRIMARCO, APFS, HAYES, MPOLO, or APFS*.
+%% 0728 is a separate corpus (Hayes MEGA bag), not a clone of JPMI, APFS, or GAI.
 flowchart TB
   classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
   classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
   classDef boot fill:#fef3c7,stroke:#b45309,color:#111
   classDef exam fill:#ede9fe,stroke:#6d28d9,color:#111
+  classDef side fill:#f3f4f6,stroke:#111827,stroke-dasharray: 6 4,color:#111
 
   LAPTOP["LAPTOP<br/>user era to 2019-03<br/>intake 2019-04-12<br/>FVFXC2MMHV29"]:::shop
   SHOP["SHOP<br/>2019-04-12+ store server<br/>logs not held"]:::shop
@@ -33,6 +35,11 @@ flowchart TB
     APFSstar["APFS*<br/>Jun 2022 / MEGA 2022-06-13<br/>to Marc Aaron DeGiovanni"]:::exam
   end
 
+  subgraph SIDE["0728 Extra Found Files — completely separate corpus"]
+    direction TB
+    EFF["0728 Extra Found Files<br/>Hayes MEGA after 2021-07-28<br/>not a volume clone of JPMI, APFS, or GAI<br/>blobs match every combo of 3 / 2 / 1 / none<br/>large share: names and metadata stripped"]:::side
+  end
+
   LAPTOP -->|2019-04-12| SHOP
   SHOP -->|2019-04-13| RHB_WD
   SHOP -->|2019-09-26/27| JPMI
@@ -50,3 +57,4 @@ flowchart TB
   TODD --> HAYES
   HAYES --> MPOLO
   HAYES --> APFSstar
+  HAYES -.->|MEGA bag; not identity| EFF

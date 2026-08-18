@@ -11,7 +11,7 @@ python3 scripts/render_diagrams.py
 
 | File | What it shows |
 |---|---|
-| [named_graph.mmd](named_graph.mmd) | Full named copy graph (JPMI family vs BOOT01/Costello line) |
+| [named_graph.mmd](named_graph.mmd) | Full named copy graph (JPMI family vs BOOT01/Costello line vs **0728** sidecar) |
 | [shop_outbound.mmd](shop_outbound.mmd) | 2019 shop products: RHB_WD, JPMI, BOOT01 → COSTELLO |
 | [shop_recovery.mmd](shop_recovery.mmd) | April 2019 laptop → store server → WD / later copies |
 | [jpmi_family.mmd](jpmi_family.mmd) | Della Rocca → CBS and Sanders packet |
@@ -22,4 +22,4 @@ python3 scripts/render_diagrams.py
 | [x6_gpt.mmd](x6_gpt.mmd) | Crucial X6 GPT / EFI / HFS+ `Untitled` |
 | [pipeline.mmd](pipeline.mmd) | Export scripts |
 
-Green = JPMI family. Amber = BOOT01 / Costello bootable line. Blue = shop / hardware. Violet = examiner or later-author copies.
+Green = JPMI family. Amber = BOOT01 / Costello bootable line. Blue = shop / hardware. Violet = examiner or later-author copies. Gray dashed = **0728 Extra Found Files** (separate corpus, not a clone).

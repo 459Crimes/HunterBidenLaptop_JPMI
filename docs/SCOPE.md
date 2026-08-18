@@ -22,7 +22,7 @@ Questions this repo is built to answer:
 | Cross-corpus hash matching to other “laptop” dumps | Separate comparative project; this repo is JPMI-only |
 | GAI (`GAI://`, image `hb.img`) | Separate truncated HFS+ image in the broader RHB work; not this GitHub tree |
 | **APFS** / **MARYMAN** / **GUSTAV** / **TODD** / **HAYES** / **MPOLO** / **APFS*** | Costello-line APFS family after **5 Jan 2021**. Marco Polo used **MPOLO** (Hayes **bootable laptop**, Jun 2021). This author holds **APFS*** (Jun 2022). **Not** JPMI |
-| **Extra Found Files / 0728** | MEGA share from Hayes after 28 July 2021. Did **not** come from the laptop files per se. The author’s FBI referral (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`) treats it as **potentially hacked**; **not** analyzed here. See [Author](AUTHOR.md) |
+| **Extra Found Files / 0728** | Completely separate corpus (Hayes MEGA after 28 July 2021). Not a clone of JPMI, APFS, or GAI. Blobs match every combination of those three, plus a large stripped-name share of unknown provenance. FBI referral **not** analyzed here. [Copy lineages](COPY_LINEAGES.md#0728-is-a-separate-corpus) |
 | *Beyond the Diary* / digital diary release | Separate author publications ([BeyondTheDiary.com](https://BeyondTheDiary.com), [ShowersWithMy.Dad](https://ShowersWithMy.Dad)); **not** JPMI analysis. See [Author](AUTHOR.md) |
 | Publishing E01 or user-file bytes | Restricted source; this tree is a metadata/hash witness |
 | Retrying the political media war of 2020 | Not required to describe the disk |
