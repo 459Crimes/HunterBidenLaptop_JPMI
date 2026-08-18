@@ -21,13 +21,24 @@ The acquisition record describes a **Micron Crucial X6 SSD USB Device**, serial 
 
 ## Partition layout
 
-```text
-GPT disk  c93db56d-6e88-4965-94e5-8585a013d086
- ├── EFI System Partition   54bcfba5-c609-44c0-a45d-b07090d2c996
- └── HFS+ data partition    cf0fd7cc-b0c0-4667-affd-d1627e93c654
-                              volume name Untitled
-                              volume id   dfe8079582e21400
+<!-- diagram:x6_gpt -->
+```mermaid
+%% Partition map of the examined Crucial X6. Destination geometry, not the laptop SSD.
+flowchart TB
+  classDef disk fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef vol fill:#dcfce7,stroke:#15803d,color:#111
+
+  GPT["GPT disk<br/>c93db56d-6e88-4965-94e5-8585a013d086"]:::disk
+  EFI["EFI System Partition<br/>54bcfba5-c609-44c0-a45d-b07090d2c996"]:::disk
+  HFS["HFS+ data partition<br/>cf0fd7cc-b0c0-4667-affd-d1627e93c654"]:::vol
+  VOL["volume Untitled<br/>id dfe8079582e21400"]:::vol
+
+  GPT --> EFI
+  GPT --> HFS --> VOL
 ```
+
+Export: [SVG](diagrams/x6_gpt.svg) · [JPG](diagrams/x6_gpt.jpg)
+<!-- /diagram:x6_gpt -->
 
 EFI presence means **Mac-oriented partitioned storage**, not “this stick was the boot disk of the 2019 Mac.”
 

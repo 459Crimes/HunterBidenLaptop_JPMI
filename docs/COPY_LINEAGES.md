@@ -33,48 +33,64 @@ Digital provenance fails when people collapse five objects into the phrase “th
 
 ## Diagram
 
-```text
-LAPTOP — user era to 2019-03; intake 2019-04-12 (FVFXC2MMHV29)
-        |
-        v
-SHOP — 2019-04-12+ store server (logs not held)
-        |
-        +---------------------+----------------------+
-        v                     v                      v
-   RHB_WD              JPMI Untitled           BOOT01
-   2019-04-13          2019-09-26/27           after 2019-09-26
-   FBI 2019-12-09      home-only HFS+          18G103 OS + home
-   WX21A19ATFF3
-                              |                      |
-                    exact copy retained              v
-                    before FBI surrender        COSTELLO 26 Aug 2020
-                    later volume clone               |  (never JPMI)
-                    onto Crucial X6                  |
-                              |              +-------+--------+
-                              v              v                v
-                    Della Rocca “exact copy”  TRIMARCO        BLAP01
-                              |              ~Sep 2020+       ~Sep 2020+
-                              +--> CBS / CFS        |              |
-                              +--> Sanders packet   v              v
-                                      |          APFS          GAI HFS+
-                                      v          date unknown  May 2021
-                               Crucial X6 / E01  CCC 2021-01-05
-                                      |              |
-                                      v         +----+----+--------+
-                               JPMI reports     v         v        v
-                               (this repo)  MARYMAN   GUSTAV     TODD
-                                           2021-04-04  2022-05–06  after 2021-01-05
-                                                                    |
-                                                                    v
-                                                                  HAYES
-                                                                    |
-                                                           +--------+--------+
-                                                           v                 v
-                                                         MPOLO             APFS*
-                                                         Jun 2021          Jun 2022
-                                                         bootable laptop   MEGA 2022-06-13
-                                                                           to DeGiovanni
+<!-- diagram:named_graph -->
+```mermaid
+%% Canonical named copy graph.
+%% JPMI is not an ancestor of COSTELLO, TRIMARCO, APFS, HAYES, MPOLO, or APFS*.
+flowchart TB
+  classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+  classDef boot fill:#fef3c7,stroke:#b45309,color:#111
+  classDef exam fill:#ede9fe,stroke:#6d28d9,color:#111
+
+  LAPTOP["LAPTOP<br/>user era to 2019-03<br/>intake 2019-04-12<br/>FVFXC2MMHV29"]:::shop
+  SHOP["SHOP<br/>2019-04-12+ store server<br/>logs not held"]:::shop
+  RHB_WD["RHB_WD<br/>2019-04-13 customer WD<br/>FBI 2019-12-09<br/>WX21A19ATFF3"]:::shop
+
+  subgraph JP["JPMI family — this encyclopedia"]
+    direction TB
+    JPMI["JPMI Untitled<br/>2019-09-26/27 home-only<br/>no OS"]:::jpmi
+    CBS["CBS / CFS<br/>exact-copy exam 2022"]:::jpmi
+    X6["Crucial X6 / E01<br/>HB-IMAGE-2022-04-29"]:::jpmi
+  end
+
+  subgraph BOOT["BOOT01 / Costello line — never JPMI"]
+    direction TB
+    BOOT01["BOOT01<br/>after 2019-09-26<br/>18G103 OS + home"]:::boot
+    COSTELLO["COSTELLO<br/>2020-08-26<br/>boot 2020-08-28..31"]:::boot
+    TRIMARCO["TRIMARCO<br/>~2020-09-01+<br/>Burisma Desktop"]:::boot
+    BLAP01["BLAP01<br/>~2020-09-01+<br/>no Burisma dump"]:::boot
+    APFS["APFS HB Boot Drive<br/>conversion date unknown<br/>CCC 2021-01-05"]:::boot
+    GAI["GAI Biden Lap 2<br/>volume 2021-05-17"]:::boot
+    MARYMAN["MARYMAN<br/>imaged 2021-04-04"]:::exam
+    GUSTAV["GUSTAV<br/>Dimitrelos 2022-05–06"]:::exam
+    TODD["TODD<br/>after 2021-01-05"]:::boot
+    HAYES["HAYES<br/>after 2021-01-05"]:::boot
+    MPOLO["MPOLO<br/>Jun 2021<br/>bootable laptop"]:::exam
+    APFSstar["APFS*<br/>Jun 2022 / MEGA 2022-06-13<br/>to Marc Aaron DeGiovanni"]:::exam
+  end
+
+  LAPTOP -->|2019-04-12| SHOP
+  SHOP -->|2019-04-13| RHB_WD
+  SHOP -->|2019-09-26/27| JPMI
+  JPMI --> CBS
+  JPMI --> X6
+  SHOP -->|after 2019-09-26| BOOT01
+  BOOT01 -->|2020-08-26| COSTELLO
+  COSTELLO --> TRIMARCO
+  COSTELLO --> BLAP01
+  TRIMARCO -->|date unknown| APFS
+  BLAP01 --> GAI
+  APFS --> MARYMAN
+  APFS --> GUSTAV
+  APFS --> TODD
+  TODD --> HAYES
+  HAYES --> MPOLO
+  HAYES --> APFSstar
 ```
+
+Export: [SVG](diagrams/named_graph.svg) · [JPG](diagrams/named_graph.jpg)
+<!-- /diagram:named_graph -->
 
 ## What “direct copy” means here
 
@@ -92,6 +108,7 @@ Unknown. Mac Isaac describes copies he made. The public record does not establis
 
 ## See also
 
+- [Diagrams](diagrams/README.md)
 - [Chain of custody](03_chain_of_custody.md)
 - [How the files left the laptop](COPY_METHOD.md)
 - [Where the copies split](BRANCH_DEVIATIONS.md)

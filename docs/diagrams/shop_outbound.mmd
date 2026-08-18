@@ -1,0 +1,18 @@
+%% Shop outbound copies in September 2019. Costello never received JPMI.
+flowchart LR
+  classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+  classDef boot fill:#fef3c7,stroke:#b45309,color:#111
+
+  LAPTOP["LAPTOP<br/>intake 2019-04-12"]:::shop
+  SHOP["SHOP"]:::shop
+  RHB_WD["RHB_WD<br/>2019-04-13 / FBI 2019-12-09"]:::shop
+  JPMI["JPMI Untitled<br/>2019-09-26/27 home-only"]:::jpmi
+  BOOT01["BOOT01<br/>after 2019-09-26<br/>18G103 OS"]:::boot
+  COSTELLO["COSTELLO<br/>2020-08-26 never JPMI"]:::boot
+
+  LAPTOP -->|2019-04-12| SHOP
+  SHOP -->|2019-04-13| RHB_WD
+  SHOP -->|2019-09-26/27| JPMI
+  SHOP -->|after 2019-09-26| BOOT01
+  BOOT01 -->|2020-08-26| COSTELLO

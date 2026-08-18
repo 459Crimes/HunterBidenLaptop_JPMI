@@ -33,30 +33,23 @@ Comparative overlap tables are outside the scope of this standalone JPMI publica
 
 ## Build stages
 
-```text
-10_export_file_tree.py
-        |
-        v
-20_export_hash_manifest.py
-        |
-        v
-30_export_metadata.py
-        |
-        v
-40_export_volume_disk.py
-        |
-        v
-50_build_reports.py
-        |
-        v
-55_publish_custody_timeline.py
-        |
-        v
-60_archive_deep_exports.py
-        |
-        v
-90_validate_exports.py
+<!-- diagram:pipeline -->
+```mermaid
+%% JPMI export pipeline under scripts/.
+flowchart LR
+  classDef step fill:#dbeafe,stroke:#1d4ed8,color:#111
+
+  s10["10_export_file_tree.py"]:::step --> s20["20_export_hash_manifest.py"]:::step
+  s20 --> s30["30_export_metadata.py"]:::step
+  s30 --> s40["40_export_volume_disk.py"]:::step
+  s40 --> s50["50_build_reports.py"]:::step
+  s50 --> s55["55_publish_custody_timeline.py"]:::step
+  s55 --> s60["60_archive_deep_exports.py"]:::step
+  s60 --> s90["90_validate_exports.py"]:::step
 ```
+
+Export: [SVG](diagrams/pipeline.svg) · [JPG](diagrams/pipeline.jpg)
+<!-- /diagram:pipeline -->
 
 ### Stage 10 — file tree
 
@@ -119,6 +112,8 @@ python3 scripts/50_build_reports.py
 python3 scripts/55_publish_custody_timeline.py
 python3 scripts/60_archive_deep_exports.py
 python3 scripts/90_validate_exports.py
+python3 scripts/embed_diagrams.py
+python3 scripts/render_diagrams.py
 ```
 
 ## Claims reproducible from JPMI reporting

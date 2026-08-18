@@ -1,0 +1,20 @@
+%% JPMI custody chain only. Costello/BOOT01 is a sibling; see named_graph.
+flowchart TB
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+  classDef note fill:#f3f4f6,stroke:#6b7280,color:#111
+
+  T1["Three damaged laptops<br/>Wilmington 2019-04-12"]:::jpmi
+  T2["One retained; Quote 7469"]:::jpmi
+  T3["Customer WD 2019-04-13"]:::jpmi
+  T4["Store-server staging<br/>logs not held"]:::jpmi
+  T5["HFS+ Untitled created<br/>2019-09-26 home-only"]:::jpmi
+  T6["FBI subpoena 2019-12-09<br/>exact copy retained"]:::jpmi
+  T8["Della Rocca → CBS / CFS"]:::jpmi
+  T9["Della Rocca → Sanders packet"]:::jpmi
+  T10["JPMI reports in this repo"]:::jpmi
+  NOTE["BOOT01 / COSTELLO is not this chain<br/>see named copy graph"]:::note
+
+  T1 --> T2 --> T3 --> T4 --> T5 --> T6
+  T6 --> T8
+  T6 --> T9 --> T10
+  T5 -.-> NOTE

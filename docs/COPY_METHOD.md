@@ -53,6 +53,35 @@ Formatting an external disk as Mac OS Extended (Journaled) **always** writes GPT
 
 ## Interpretation — three copy layers
 
+<!-- diagram:copy_method -->
+```mermaid
+%% Three operations on the examined JPMI lineage.
+flowchart TB
+  classDef a fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef b fill:#dcfce7,stroke:#15803d,color:#111
+  classDef c fill:#fef3c7,stroke:#b45309,color:#111
+
+  subgraph A["Layer A — April 2019"]
+    L["Laptop"]:::a --> S["Store server"]:::a
+    S --> WD["Customer WD"]:::a
+  end
+
+  subgraph B["Layer B — 26 Sep 2019"]
+    ST["Shop staging"]:::b --> U["New HFS+ Untitled<br/>file-aware copy of roberthunter"]:::b
+  end
+
+  subgraph C["Layer C — after Aug 2020"]
+    U2["Untitled volume header<br/>dfe8079582e21400"]:::c --> X6["Crucial X6<br/>2145E498755E"]:::c
+    X6 --> E01["E01 forensic image<br/>2022-04-29"]:::c
+  end
+
+  S -.-> ST
+  U -.-> U2
+```
+
+Export: [SVG](diagrams/copy_method.svg) · [JPG](diagrams/copy_method.jpg)
+<!-- /diagram:copy_method -->
+
 ### Layer A — April 2019: laptop → shop server → customer WD
 
 **Court-recited:** 12 April 2019 three damaged laptops; Quote #7469 ($85) includes recover data to the **store server**; 13 April customer returned with an external drive; recovery/transfer completed that day.

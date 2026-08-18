@@ -30,6 +30,7 @@ This GitHub repository is an **encyclopedia of that disk lineage**, not a dump o
 - [Historical timeline](#historical-timeline)
 - [What is on the disk](#what-is-on-the-disk)
 - [How to read this encyclopedia](#how-to-read-this-encyclopedia)
+- [Diagrams](docs/diagrams/README.md)
 - [Technical evidence](#technical-evidence)
 - [All articles](#all-articles)
 
@@ -143,7 +144,7 @@ See the **[article index](docs/INDEX.md)** for the full map. Core reading order:
 8. [Reproducibility](docs/08_reproducibility.md)
 9. [Source matrix](docs/09_source_matrix.md)
 
-Companion articles: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Where the copies split](docs/BRANCH_DEVIATIONS.md) · [How the files left the laptop](docs/COPY_METHOD.md) · [Apelbaum, Fox, Tucker](docs/APELBAUM_FOX.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
+Companion articles: [Author](docs/AUTHOR.md) · [People](docs/PEOPLE.md) · [The Mac Shop](docs/THE_MAC_SHOP.md) · [Exhibits](docs/EXHIBITS.md) · [Congressional reports](docs/CONGRESS.md) · [Marco Polo v4](docs/MARCO_POLO.md) · [Copy lineages](docs/COPY_LINEAGES.md) · [Where the copies split](docs/BRANCH_DEVIATIONS.md) · [How the files left the laptop](docs/COPY_METHOD.md) · [Diagrams](docs/diagrams/README.md) · [Apelbaum, Fox, Tucker](docs/APELBAUM_FOX.md) · [Timestamps](docs/TIMESTAMPS.md) · [Integrity](docs/INTEGRITY.md) · [Glossary](docs/GLOSSARY.md)
 
 ---
 

@@ -31,19 +31,25 @@ Mac Isaac later gave a more technical account: he first copied recoverable data 
 
 That server-first account describes a multi-stage **file recovery**, not a proved sector copy of the internal SSD:
 
-```text
-Damaged laptop
-     |
-     v
-Mac Isaac recovery / store server     [logs not held]
-     |
-     +--> customer-supplied external hard drive
-     |
-     +--> 26 Sep 2019: new HFS+ Untitled (file-aware copy of roberthunter)
-               |
-               v
-          later volume clone onto Crucial X6 (after Aug 2020)
+<!-- diagram:shop_recovery -->
+```mermaid
+%% April 2019 shop recovery. Server logs are not held.
+flowchart TB
+  classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+
+  LAPTOP["Damaged laptop retained<br/>2019-04-12"]:::shop
+  SERVER["Shop store server<br/>logs not held"]:::shop
+  WD["Customer external HDD<br/>2019-04-13<br/>FBI 2019-12-09"]:::shop
+  LATER["Later preservation copies<br/>incl. JPMI Untitled 2019-09-26"]:::jpmi
+
+  LAPTOP --> SERVER
+  SERVER --> WD
+  SERVER --> LATER
 ```
+
+Export: [SVG](diagrams/shop_recovery.svg) · [JPG](diagrams/shop_recovery.jpg)
+<!-- /diagram:shop_recovery -->
 
 The present repository does not hold the store-server logs, original copy commands, or first-generation hashes. The server step is Mac Isaac's account. What JPMI **does** show is the September destination: a new volume, preserved user timestamps, empty hard-link directories — not a cloned laptop partition. See [COPY_METHOD](COPY_METHOD.md).
 
@@ -141,18 +147,26 @@ Public reporting and public-record research additionally identify **Todd Sanders
 
 This provides a meaningful provenance bridge:
 
-```text
-Mac Isaac direct copy
-       |
-       +--> FBI exact-copy lineage
-       |         |
-       |         +--> Della Rocca → CBS independent forensic review
-       |
-       +--> Della Rocca → drive shipped directly to Todd Sanders
-                 (mailing packet photo; Mac Isaac home address as sender)
-                          |
-                          +--> JPMI reports/manifests received here
+<!-- diagram:jpmi_family -->
+```mermaid
+%% Della Rocca split: CBS exam vs Sanders / JPMI reports.
+flowchart TB
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+
+  SRC["Mac Isaac direct-copy / FBI lineage"]:::jpmi
+  DR["Brian Della Rocca"]:::jpmi
+  CBS["CBS / CFS exact copy"]:::jpmi
+  PKT["Mailing packet to Todd Sanders<br/>Mac Isaac home as sender"]:::jpmi
+  REP["JPMI reports / Crucial X6 E01"]:::jpmi
+
+  SRC --> DR
+  DR --> CBS
+  DR --> PKT
+  PKT --> REP
 ```
+
+Export: [SVG](diagrams/jpmi_family.svg) · [JPG](diagrams/jpmi_family.jpg)
+<!-- /diagram:jpmi_family -->
 
 The supported conclusion is:
 
@@ -241,53 +255,34 @@ This conclusion is independently consistent with CBS's examination of an exact-c
 
 ## Chain diagram
 
-```text
-Three damaged laptops presented — Wilmington — 2019-04-12
-                         |
-                         v
-  One retained for recovery; repair authorization signed
-                         |
-                         v
-Customer external hard drive delivered — 2019-04-13
-                         |
-                         v
-Mac Isaac stages recovery on store server
-                         |
-             [server logs not held]
-                         |
-                         v
-Preservation / FBI-copy activity — Sep–Oct 2019
-                         |
-             JPMI HFS+ "Untitled" created 2019-09-26  [home-only]
-             BOOT01 after 2019-09-26 [18G103; Costello's later object]
-                         |
-                         v
-FBI subpoena and surrender — 2019-12-09
-                         |
-       Mac Isaac exact copy retained before surrender
-                         |
-                         v
-Costello copy — Aug. 2020  (**BOOT01**, never JPMI)
-     → Giuliani → New York Post
-     (boot 28–31 Aug host/monitor writes on APFS/GAI)
-                         |
-                         v
-NY Post story 2020-10-14
-                         |
-       JPMI Desktop .DS_Store modified 2020-10-15
-             [opening/browsing, not file injection]
-                         |
-                         v
-Mac Isaac/FBI exact-copy lineage independently examined
-              Della Rocca → CBS / CFS
-                         |
-                         v
-Della Rocca → drive shipped directly to Todd Sanders
-              [mailing packet photo; Mac Isaac home address as sender]
-                         |
-                         v
-JPMI forensic reports/manifests received by this project
+JPMI custody only. **BOOT01 / COSTELLO is a sibling shop product**, not a step on this chain. Full named graph: [Where the copies split](BRANCH_DEVIATIONS.md).
+
+<!-- diagram:chain_jpmi -->
+```mermaid
+%% JPMI custody chain only. Costello/BOOT01 is a sibling; see named_graph.
+flowchart TB
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+  classDef note fill:#f3f4f6,stroke:#6b7280,color:#111
+
+  T1["Three damaged laptops<br/>Wilmington 2019-04-12"]:::jpmi
+  T2["One retained; Quote 7469"]:::jpmi
+  T3["Customer WD 2019-04-13"]:::jpmi
+  T4["Store-server staging<br/>logs not held"]:::jpmi
+  T5["HFS+ Untitled created<br/>2019-09-26 home-only"]:::jpmi
+  T6["FBI subpoena 2019-12-09<br/>exact copy retained"]:::jpmi
+  T8["Della Rocca → CBS / CFS"]:::jpmi
+  T9["Della Rocca → Sanders packet"]:::jpmi
+  T10["JPMI reports in this repo"]:::jpmi
+  NOTE["BOOT01 / COSTELLO is not this chain<br/>see named copy graph"]:::note
+
+  T1 --> T2 --> T3 --> T4 --> T5 --> T6
+  T6 --> T8
+  T6 --> T9 --> T10
+  T5 -.-> NOTE
 ```
+
+Export: [SVG](diagrams/chain_jpmi.svg) · [JPG](diagrams/chain_jpmi.jpg)
+<!-- /diagram:chain_jpmi -->
 
 ## Remaining custody gaps
 

@@ -8,17 +8,26 @@ A photograph of the **mailing packet** in which a drive copy was shipped to **To
 
 That is a **handoff record** in the Mac Isaac–centered network:
 
-```text
-Mac Isaac direct-copy / FBI lineage
-        |
-        +--> Della Rocca --> CBS / CFS “exact copy”
-        |
-        +--> Della Rocca --> packet to Todd Sanders
-                              (photo in this repository)
-                                    |
-                                    v
-                              JPMI reports / Crucial X6 acquisition
+<!-- diagram:jpmi_family -->
+```mermaid
+%% Della Rocca split: CBS exam vs Sanders / JPMI reports.
+flowchart TB
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+
+  SRC["Mac Isaac direct-copy / FBI lineage"]:::jpmi
+  DR["Brian Della Rocca"]:::jpmi
+  CBS["CBS / CFS exact copy"]:::jpmi
+  PKT["Mailing packet to Todd Sanders<br/>Mac Isaac home as sender"]:::jpmi
+  REP["JPMI reports / Crucial X6 E01"]:::jpmi
+
+  SRC --> DR
+  DR --> CBS
+  DR --> PKT
+  PKT --> REP
 ```
+
+Export: [SVG](diagrams/jpmi_family.svg) · [JPG](diagrams/jpmi_family.jpg)
+<!-- /diagram:jpmi_family -->
 
 ## What it supports
 

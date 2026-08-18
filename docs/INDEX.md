@@ -22,7 +22,7 @@ Main article: [README](../README.md).
 | Signed quote, invoice email, FBI subpoena photos | [Exhibits](EXHIBITS.md) |
 | House Judiciary / Oversight laptop reports | [Congressional reports](CONGRESS.md) |
 | The shop address and three laptops | [The Mac Shop](THE_MAC_SHOP.md) |
-| How many copies and which is which | [Copy lineages](COPY_LINEAGES.md) |
+| How many copies and which is which | [Copy lineages](COPY_LINEAGES.md) · [Diagrams](diagrams/README.md) |
 | Where JPMI, Costello, APFS, MPOLO, APFS*, and GAI split | [Where the copies split](BRANCH_DEVIATIONS.md) |
 | How files left the laptop (file-aware copy, then volume clone) | [How the files left the laptop](COPY_METHOD.md) |
 | The USB SSD in the acquisition record | [Crucial X6](CRUCIAL_X6.md) |
@@ -71,6 +71,7 @@ These nine files are the primary narrative sequence. The `06` timeline is also p
 ## Categories
 
 - **Provenance:** 02, 03, 06, 09, PEOPLE, AUTHOR, PORTRAITS, THE_MAC_SHOP, EXHIBITS, CONGRESS, COPY_LINEAGES, COPY_METHOD, BRANCH_DEVIATIONS, MAILING_PACKET, FOX_TUCKER, APELBAUM, APELBAUM_FOX
+- **Diagrams:** [diagrams/](diagrams/README.md)
 - **Storage objects:** CRUCIAL_X6, HFS_VOLUME_UNTITLED, FORENSIC_IMAGE
 - **Contents:** 04, CONTENTS_CENSUS, 05, GLOSSARY, TIMESTAMPS
 - **Integrity:** INTEGRITY, 2022_2024_DISCREPANCY, 07, SCOPE

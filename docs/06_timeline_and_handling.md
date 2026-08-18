@@ -75,16 +75,25 @@ Mac Isaac has repeatedly described copying the recoverable data to a **secure st
 
 That account is technically significant because it creates a multi-stage chain:
 
-```text
-Damaged repair-shop laptop
-        |
-        v
-Mac Isaac store server / recovery workspace
-        |
-        +--> customer-supplied external hard drive
-        |
-        +--> later preservation / FBI / safekeeping copies
+<!-- diagram:shop_recovery -->
+```mermaid
+%% April 2019 shop recovery. Server logs are not held.
+flowchart TB
+  classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+
+  LAPTOP["Damaged laptop retained<br/>2019-04-12"]:::shop
+  SERVER["Shop store server<br/>logs not held"]:::shop
+  WD["Customer external HDD<br/>2019-04-13<br/>FBI 2019-12-09"]:::shop
+  LATER["Later preservation copies<br/>incl. JPMI Untitled 2019-09-26"]:::jpmi
+
+  LAPTOP --> SERVER
+  SERVER --> WD
+  SERVER --> LATER
 ```
+
+Export: [SVG](diagrams/shop_recovery.svg) · [JPG](diagrams/shop_recovery.jpg)
+<!-- /diagram:shop_recovery -->
 
 The present repository does not have the server logs, server disk image, copy command, or contemporaneous hashes needed to prove the exact implementation of that step.
 
@@ -192,16 +201,26 @@ Public records independently identify **Todd Sanders as affiliated with Patrick 
 
 This creates an important provenance bridge:
 
-```text
-Mac Isaac direct-copy / FBI lineage
-              |
-              +--> Della Rocca → CBS forensic examination (exact copy)
-              |
-              +--> Della Rocca → drive shipped directly to Todd Sanders
-                    (mailing packet photo, Mac Isaac home address as sender)
-                          |
-                          +--> JPMI reports/manifests received here
+<!-- diagram:jpmi_family -->
+```mermaid
+%% Della Rocca split: CBS exam vs Sanders / JPMI reports.
+flowchart TB
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+
+  SRC["Mac Isaac direct-copy / FBI lineage"]:::jpmi
+  DR["Brian Della Rocca"]:::jpmi
+  CBS["CBS / CFS exact copy"]:::jpmi
+  PKT["Mailing packet to Todd Sanders<br/>Mac Isaac home as sender"]:::jpmi
+  REP["JPMI reports / Crucial X6 E01"]:::jpmi
+
+  SRC --> DR
+  DR --> CBS
+  DR --> PKT
+  PKT --> REP
 ```
+
+Export: [SVG](diagrams/jpmi_family.svg) · [JPG](diagrams/jpmi_family.jpg)
+<!-- /diagram:jpmi_family -->
 
 The bounded conclusion is:
 

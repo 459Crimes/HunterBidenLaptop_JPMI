@@ -50,25 +50,28 @@ Separately: Apelbaum **did** try to get a **Mac Isaac / JPMI-lineage** copy to F
 
 ## Diagram
 
-```text
-Mac Isaac retained copy (post-Dec 2019 FBI surrender)
-        |
-        +-- Aug 2020 FedEx --> Costello --> Giuliani --> NY Post (14 Oct)
-        |
-        +-- Sep 2020 family --> ex-News Corp friend --> Ken LaCorte
-        |                         intended: share with Tucker Carlson at Fox
-        |                         documented result: ~29 email PDFs + subpoena
-        |                         self-published by LaCorte 14–15 Oct 2020
-        |
-        +-- Oct 2020 home --> Yaacov Apelbaum forensic-image attempt
-        |                         (book: Apelbaum kept a copy;
-        |                          Della Rocca 2023: analyze, not copy)
-        |                         Apelbaum then tried to get that
-        |                         **JPMI-lineage** copy to Fox / Tucker
-        |                         (11 Mar 2025 call with DeGiovanni)
-        |
-        +-- 2022 Della Rocca --> CBS/CFS "exact copy"  AND  Sanders/JPMI
+<!-- diagram:fox_tucker -->
+```mermaid
+%% Mac Isaac retained-copy outbounds toward press / Fox orbit.
+flowchart TB
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+  classDef boot fill:#fef3c7,stroke:#b45309,color:#111
+  classDef note fill:#ede9fe,stroke:#6d28d9,color:#111
+
+  SRC["Mac Isaac retained copy<br/>after 2019-12-09 FBI surrender"]:::jpmi
+  COST["Costello → Giuliani<br/>NY Post 14 Oct 2020"]:::boot
+  LC["Ken LaCorte via family / ex-News Corp<br/>intended: Tucker at Fox<br/>result: ~29 email PDFs + subpoena"]:::note
+  YA["Yaacov Apelbaum imaging attempt<br/>then JPMI-lineage to Fox / Tucker"]:::note
+  SPLIT["2022 Della Rocca<br/>CBS/CFS and Sanders/JPMI"]:::jpmi
+
+  SRC -->|Aug 2020 FedEx| COST
+  SRC -->|Sep 2020 family| LC
+  SRC -->|Oct 2020 home| YA
+  SRC -->|2022| SPLIT
 ```
+
+Export: [SVG](diagrams/fox_tucker.svg) · [JPG](diagrams/fox_tucker.jpg)
+<!-- /diagram:fox_tucker -->
 
 ## See also
 

@@ -1,0 +1,13 @@
+%% April 2019 shop recovery. Server logs are not held.
+flowchart TB
+  classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+
+  LAPTOP["Damaged laptop retained<br/>2019-04-12"]:::shop
+  SERVER["Shop store server<br/>logs not held"]:::shop
+  WD["Customer external HDD<br/>2019-04-13<br/>FBI 2019-12-09"]:::shop
+  LATER["Later preservation copies<br/>incl. JPMI Untitled 2019-09-26"]:::jpmi
+
+  LAPTOP --> SERVER
+  SERVER --> WD
+  SERVER --> LATER

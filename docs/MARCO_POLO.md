@@ -21,15 +21,30 @@ Source class: **published compilation** (often citing Mac Isaac's “The Truth�
 
 Marco Polo states it set out in **September 2021** already possessing a copy, and its chain-of-custody schematic (report p. 579) is:
 
-```text
-Hunter Biden
-    12 Apr 2019 --> Mac Isaac
-                       |-- FBI subpoena originals 9 Dec 2019
-                       |-- Mac Isaac made a copy Sep 2019
-                       `-- 28 Aug 2020 --> Costello / Giuliani
-                                              |-- copy to New Castle County (DE) police 20 Oct 2020
-                                              `-- Jun 2021 --> Marco Polo
+<!-- diagram:marco_polo_schematic -->
+```mermaid
+%% Marco Polo report p. 579 schematic. Their drawing, not a JPMI measurement.
+flowchart TB
+  classDef claim fill:#f3f4f6,stroke:#374151,color:#111
+
+  HB["Hunter Biden"]:::claim
+  MI["Mac Isaac"]:::claim
+  FBI["FBI subpoena originals<br/>9 Dec 2019"]:::claim
+  SEP["Mac Isaac made a copy<br/>Sep 2019"]:::claim
+  CG["Costello / Giuliani"]:::claim
+  NCC["New Castle County DE police<br/>20 Oct 2020"]:::claim
+  MP["Marco Polo<br/>Jun 2021"]:::claim
+
+  HB -->|12 Apr 2019| MI
+  MI --> FBI
+  MI --> SEP
+  MI -->|28 Aug 2020| CG
+  CG -->|20 Oct 2020| NCC
+  CG -->|Jun 2021| MP
 ```
+
+Export: [SVG](diagrams/marco_polo_schematic.svg) · [JPG](diagrams/marco_polo_schematic.jpg)
+<!-- /diagram:marco_polo_schematic -->
 
 That schematic is **Marco Polo's own drawing**. This encyclopedia maps their **Jun 2021** receipt to node **MPOLO**: a **bootable laptop** from **HAYES**, not JPMI `Untitled`. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 

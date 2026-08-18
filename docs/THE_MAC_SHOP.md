@@ -40,16 +40,25 @@ The next day, at Mac Isaac's request, Biden returned with an **external hard dri
 
 Mac Isaac first copied recoverable data to his **secure store server**, then from that server onto the customer drive. The repository does not hold server logs, the server image, copy-tool history, or first-generation hashes. No contradictory evidence has surfaced; independent verification would require those server-side records.
 
-```text
-Damaged laptop (retained for recovery)
-        |
-        v
-Mac Isaac store server / recovery workspace     [logs not held]
-        |
-        +--> customer-supplied external hard drive
-        |
-        +--> later preservation / FBI / safekeeping copies
+<!-- diagram:shop_recovery -->
+```mermaid
+%% April 2019 shop recovery. Server logs are not held.
+flowchart TB
+  classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+
+  LAPTOP["Damaged laptop retained<br/>2019-04-12"]:::shop
+  SERVER["Shop store server<br/>logs not held"]:::shop
+  WD["Customer external HDD<br/>2019-04-13<br/>FBI 2019-12-09"]:::shop
+  LATER["Later preservation copies<br/>incl. JPMI Untitled 2019-09-26"]:::jpmi
+
+  LAPTOP --> SERVER
+  SERVER --> WD
+  SERVER --> LATER
 ```
+
+Export: [SVG](diagrams/shop_recovery.svg) · [JPG](diagrams/shop_recovery.jpg)
+<!-- /diagram:shop_recovery -->
 
 The server-first workflow is technically important: later Mac Isaac copies **need not preserve the original laptop's native disk geometry** while still preserving a broad user environment. JPMI’s `Untitled` volume is a **September 2019 file-aware copy**. See [COPY_METHOD](COPY_METHOD.md). That is one reason the later Crucial X6 is a **custody medium**, not “the laptop SSD”.
 

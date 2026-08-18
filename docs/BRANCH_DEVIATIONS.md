@@ -26,30 +26,64 @@ Mac Isaac made **more than one** preservation copy. The examined JPMI volume is 
 
 ## The split is at Mac Isaac, not at Costello renaming JPMI
 
-```text
-Mac Isaac preservation copies (2019–2020)
-        |
-        +-- JPMI branch (this encyclopedia)
-        |     HFS+ Untitled, 26 Sep 2019
-        |     file-aware home at volume root; no OS
-        |     later volume-clone onto Crucial X6
-        |     Della Rocca → Sanders mailing packet → reports here
-        |     CBS/CFS “exact copy” is this *family*, not the Costello boot session
-        |
-        +-- Costello / Giuliani / press branch (Aug 2020+)
-              object Costello booted (NY Mag) / alleged “bootable copies” (complaint)
-                    |
-                    +-- host/monitor writes 28–31 Aug 2020 (iMac, then two Dells)
-                    |     preserved on later APFS and GAI inventories
-                    |
-                    +-- Trimarco (Oct 2020 public claim of analyzing contents)
-                    |     → TRIMARCO → APFS (conversion date unknown; CCC snapshots 5 Jan 2021)
-                    |     → APFS → MARYMAN / GUSTAV / TODD → HAYES
-                    |     → HAYES → MPOLO (Jun 2021 bootable laptop) and APFS* (Jun 2022 to DeGiovanni)
-                    |
-                    +-- GAI HFS+ “Biden Lap 2” (volume 17 May 2021; imaged 2023)
-                          same Aug 2020 ICCs; parallel HFS+ rebuild, not pre-OS
+<!-- diagram:named_graph -->
+```mermaid
+%% Canonical named copy graph.
+%% JPMI is not an ancestor of COSTELLO, TRIMARCO, APFS, HAYES, MPOLO, or APFS*.
+flowchart TB
+  classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+  classDef boot fill:#fef3c7,stroke:#b45309,color:#111
+  classDef exam fill:#ede9fe,stroke:#6d28d9,color:#111
+
+  LAPTOP["LAPTOP<br/>user era to 2019-03<br/>intake 2019-04-12<br/>FVFXC2MMHV29"]:::shop
+  SHOP["SHOP<br/>2019-04-12+ store server<br/>logs not held"]:::shop
+  RHB_WD["RHB_WD<br/>2019-04-13 customer WD<br/>FBI 2019-12-09<br/>WX21A19ATFF3"]:::shop
+
+  subgraph JP["JPMI family — this encyclopedia"]
+    direction TB
+    JPMI["JPMI Untitled<br/>2019-09-26/27 home-only<br/>no OS"]:::jpmi
+    CBS["CBS / CFS<br/>exact-copy exam 2022"]:::jpmi
+    X6["Crucial X6 / E01<br/>HB-IMAGE-2022-04-29"]:::jpmi
+  end
+
+  subgraph BOOT["BOOT01 / Costello line — never JPMI"]
+    direction TB
+    BOOT01["BOOT01<br/>after 2019-09-26<br/>18G103 OS + home"]:::boot
+    COSTELLO["COSTELLO<br/>2020-08-26<br/>boot 2020-08-28..31"]:::boot
+    TRIMARCO["TRIMARCO<br/>~2020-09-01+<br/>Burisma Desktop"]:::boot
+    BLAP01["BLAP01<br/>~2020-09-01+<br/>no Burisma dump"]:::boot
+    APFS["APFS HB Boot Drive<br/>conversion date unknown<br/>CCC 2021-01-05"]:::boot
+    GAI["GAI Biden Lap 2<br/>volume 2021-05-17"]:::boot
+    MARYMAN["MARYMAN<br/>imaged 2021-04-04"]:::exam
+    GUSTAV["GUSTAV<br/>Dimitrelos 2022-05–06"]:::exam
+    TODD["TODD<br/>after 2021-01-05"]:::boot
+    HAYES["HAYES<br/>after 2021-01-05"]:::boot
+    MPOLO["MPOLO<br/>Jun 2021<br/>bootable laptop"]:::exam
+    APFSstar["APFS*<br/>Jun 2022 / MEGA 2022-06-13<br/>to Marc Aaron DeGiovanni"]:::exam
+  end
+
+  LAPTOP -->|2019-04-12| SHOP
+  SHOP -->|2019-04-13| RHB_WD
+  SHOP -->|2019-09-26/27| JPMI
+  JPMI --> CBS
+  JPMI --> X6
+  SHOP -->|after 2019-09-26| BOOT01
+  BOOT01 -->|2020-08-26| COSTELLO
+  COSTELLO --> TRIMARCO
+  COSTELLO --> BLAP01
+  TRIMARCO -->|date unknown| APFS
+  BLAP01 --> GAI
+  APFS --> MARYMAN
+  APFS --> GUSTAV
+  APFS --> TODD
+  TODD --> HAYES
+  HAYES --> MPOLO
+  HAYES --> APFSstar
 ```
+
+Export: [SVG](diagrams/named_graph.svg) · [JPG](diagrams/named_graph.jpg)
+<!-- /diagram:named_graph -->
 
 **Costello never received JPMI.** He received **BOOT01** (or a clone of it): a Mac Isaac copy that already contained the **18G103** system tree. The examined `Untitled` volume is the **Della Rocca → Sanders** stick — a **home-only** sibling dated **26 Sep 2019**, with no OS. Those are **two outbound copies** from the same shop.
 
@@ -131,37 +165,37 @@ Apple published [10.14.6 Supplemental Update 2 (build 18G103) on 26 Sep 2019](ht
 
 Hunter could not have applied 18G103 in April 2019 (the build did not exist). **SHOP** applied that Mojave tree to **BOOT01 after 26 Sep 2019**. JPMI `Untitled` is the **home-only** job the same evening the update became public; it never received `/System`.
 
-```text
-LAPTOP [user era to 2019-03; intake 2019-04-12]
-        --2019-04-12-->  SHOP [2019-04-12+]
-SHOP    --2019-04-13-->  RHB_WD [2019-04-13; FBI 2019-12-09]
-SHOP    --2019-09-26/27-->  JPMI    [Untitled home-only; this encyclopedia]
-SHOP    --after 2019-09-26-->  BOOT01 [18G103 OS+home; payload mtimes 19–21 Sep]
-BOOT01  --2020-08-26-->  COSTELLO   [never JPMI]
+<!-- diagram:shop_outbound -->
+```mermaid
+%% Shop outbound copies in September 2019. Costello never received JPMI.
+flowchart LR
+  classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
+  classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
+  classDef boot fill:#fef3c7,stroke:#b45309,color:#111
+
+  LAPTOP["LAPTOP<br/>intake 2019-04-12"]:::shop
+  SHOP["SHOP"]:::shop
+  RHB_WD["RHB_WD<br/>2019-04-13 / FBI 2019-12-09"]:::shop
+  JPMI["JPMI Untitled<br/>2019-09-26/27 home-only"]:::jpmi
+  BOOT01["BOOT01<br/>after 2019-09-26<br/>18G103 OS"]:::boot
+  COSTELLO["COSTELLO<br/>2020-08-26 never JPMI"]:::boot
+
+  LAPTOP -->|2019-04-12| SHOP
+  SHOP -->|2019-04-13| RHB_WD
+  SHOP -->|2019-09-26/27| JPMI
+  SHOP -->|after 2019-09-26| BOOT01
+  BOOT01 -->|2020-08-26| COSTELLO
 ```
+
+Export: [SVG](diagrams/shop_outbound.svg) · [JPG](diagrams/shop_outbound.jpg)
+<!-- /diagram:shop_outbound -->
 
 ### 2020–2021: COSTELLO, then TRIMARCO vs BLAP01
 
-```text
-BOOT01 --2020-08-26--> COSTELLO     [court: Mac Isaac → Costello]
-COSTELLO live --2020-08-28..31--> iMac then DELL3007 + U2410 ColorSync
-                                  [identical mtimes on APFS and GAI]
+COSTELLO (26 Aug 2020) is **BOOT01**, never JPMI. Live ColorSync writes **28–31 Aug 2020** (iMac, then DELL3007 and U2410) are identical on APFS and GAI.
 
-COSTELLO --~2020-09-01+--> TRIMARCO --> APFS [unknown conversion date;
-    CCC snapshots 2021-01-05 are the earliest named APFS checkpoints]
-    APFS-only Burisma Desktop folders 31 Aug–2 Sep 2020
-    After 2021-01-05:
-      APFS --> MARYMAN [imaged 2021-04-04]
-      APFS --> GUSTAV  [Dimitrelos / Examiner, 2022-05–06]
-      APFS --> TODD --> HAYES   [both after 2021-01-05]
-        HAYES --> MPOLO  [Jun 2021; bootable laptop; Marco Polo schematic p. 579]
-        HAYES --> APFS*  [Jun 2022 / MEGA 2022-06-13; copy to Marc Aaron DeGiovanni]
-
-COSTELLO --~2020-09-01+--> BLAP01 --> GAI
-    no Hunter.Burisma / Desktop Documents trees
-    heavier 1–3 Sep 2020 mtime mass (319+497+639 vs APFS 36+75+53)
-    unique Color LCD 2020-10-28; volume Biden Lap 2 2021-05-17
-```
+- **TRIMARCO** (~1 Sep 2020+): APFS-only Burisma Desktop folders 31 Aug–2 Sep 2020. **TRIMARCO → APFS** conversion date unknown; CCC snapshots **5 Jan 2021**. Then **MARYMAN**, **GUSTAV**, **TODD → HAYES → MPOLO / APFS***.
+- **BLAP01** (~1 Sep 2020+): no Hunter.Burisma / Desktop Documents trees; heavier 1–3 Sep 2020 mtime mass (319+497+639 vs APFS 36+75+53); unique Color LCD 2020-10-28; GAI volume `Biden Lap 2` **17 May 2021**.
 
 **Last shared boot fingerprint:** 31 Aug 2020 Dell U2410 ICC (both inventories). **First clear APFS-only political staging:** 1–2 Sep 2020 Burisma Desktop folders (Washington Post later saw those names on a Maxey drive). **Color LCD profiles diverge 19–28 Oct 2020.** **TRIMARCO → APFS** conversion date is **unknown**; named CCC snapshots **5 Jan 2021** bound the APFS destination. Downstream examiner and author copies are **after that date**.
 
@@ -176,41 +210,8 @@ COSTELLO --~2020-09-01+--> BLAP01 --> GAI
 | **MPOLO** | **Jun 2021** | Marco Polo schematic (report p. 579): Costello/Giuliani line **Jun 2021 → Marco Polo**. This encyclopedia: they used Hayes’s **bootable laptop**, not JPMI. |
 | **APFS*** | **Jun 2022** / MEGA **13 Jun 2022** | Hayes `RHB_Boot.imgc` (HDD Raw Copy Tool) sent to **Marc Aaron DeGiovanni**. The indexed `rhb_drive` image in the broader project. **Not** JPMI. |
 
-```mermaid
-flowchart TD
-  LAPTOP["LAPTOP<br/>user era to 2019-03<br/>intake 2019-04-12<br/>FVFXC2MMHV29"]
-  SHOP["SHOP<br/>2019-04-12+ store server"]
-  RHB_WD["RHB_WD<br/>2019-04-13<br/>FBI 2019-12-09<br/>WX21A19ATFF3"]
-  JPMI["JPMI Untitled<br/>2019-09-26/27 home-only"]
-  BOOT01["BOOT01<br/>after 2019-09-26<br/>18G103 OS; payload 19-21 Sep"]
-  COSTELLO["COSTELLO<br/>2020-08-26 never JPMI<br/>boot 2020-08-28..31"]
-  TRIMARCO["TRIMARCO<br/>~2020-09-01+ Burisma Desktop"]
-  BLAP01["BLAP01<br/>~2020-09-01+ no Burisma dump"]
-  APFS["APFS HB Boot Drive<br/>TRIMARCO→APFS date unknown<br/>CCC snapshots 2021-01-05"]
-  GAI["GAI Biden Lap 2<br/>volume 2021-05-17"]
-  MARYMAN["MARYMAN<br/>after 2021-01-05<br/>imaged 2021-04-04"]
-  GUSTAV["GUSTAV<br/>after 2021-01-05<br/>Dimitrelos 2022-05–06"]
-  TODD["TODD<br/>after 2021-01-05"]
-  HAYES["HAYES<br/>after 2021-01-05"]
-  MPOLO["MPOLO<br/>Jun 2021<br/>bootable laptop"]
-  APFSstar["APFS*<br/>2022-06 / MEGA 2022-06-13<br/>to Marc Aaron DeGiovanni"]
+The same named graph is at the top of this article ([SVG](diagrams/named_graph.svg) · [JPG](diagrams/named_graph.jpg)).
 
-  LAPTOP -->|2019-04-12| SHOP
-  SHOP -->|2019-04-13| RHB_WD
-  SHOP -->|2019-09-26/27| JPMI
-  SHOP -->|after 2019-09-26| BOOT01
-  BOOT01 -->|2020-08-26| COSTELLO
-  COSTELLO --> TRIMARCO
-  COSTELLO --> BLAP01
-  TRIMARCO -->|date unknown| APFS
-  BLAP01 --> GAI
-  APFS --> MARYMAN
-  APFS --> GUSTAV
-  APFS --> TODD
-  TODD --> HAYES
-  HAYES --> MPOLO
-  HAYES --> APFSstar
-```
 
 **Probable, not proved:** BOOT01 is the object FedEx’d as COSTELLO (needs serial/hash). TRIMARCO → APFS conversion date is unknown; CCC snapshot names **5 Jan 2021** are the earliest dated APFS checkpoints. TODD → HAYES is attribution (chat + later deliveries), not a hash bridge. BLAP01 is a project label for GAI’s HFS+ ancestor. **JPMI is not an ancestor of COSTELLO, TRIMARCO, APFS, HAYES, MPOLO, or APFS*.**
 
@@ -220,6 +221,7 @@ The Della Rocca → Sanders **JPMI** reports remain a **home-folder preservation
 
 ## See also
 
+- [Diagrams](diagrams/README.md)
 - [Copy lineages](COPY_LINEAGES.md)
 - [How the files left the laptop](COPY_METHOD.md)
 - [People](PEOPLE.md) (Costello, Sanders, Trimarco)
