@@ -6,6 +6,21 @@ The **John Paul Mac Isaac copy** (**JPMI**) is one evidence lineage in the Hunte
 
 This GitHub repository is an **encyclopedia of that disk lineage**. It publishes disk identity, HFS+ catalog structure, path inventories, timestamps, reported hashes, and a sourced 2019–2020 custody history. It does **not** publish the E01 or individual source-file bytes.
 
+## 459Crimes — Hunter Biden laptop forensics catalog
+
+Rolling public encyclopedias from **459Crimes / Marc Aaron DeGiovanni**. Each volume is a **separate GitHub repository** with its own scope, hash tables, and integrity finding. They are designed to be read together; SHA-256 joins are how the volumes connect.
+
+| Volume | Repository | Primary object | Role in the matter |
+|---|---|---|---|
+| **JPMI** | **This repo** — [459Crimes/BidenLaptop_JPMI](https://github.com/459Crimes/BidenLaptop_JPMI) | Mac Isaac direct-copy lineage (Crucial X6 / `HB-IMAGE-2022-04-29.E01`) | Repair-shop HFS+ home; CBS-examined “exact copy” family |
+| **0728** | [459Crimes/BidenLaptop_0728](https://github.com/459Crimes/BidenLaptop_0728) | Extra Found Files (Hayes-attributed R-Studio export, Jul 2021) | Recovery-export tree; **94,635** hashes match none of APFS, GAI, or JPMI |
+| *(indexed, not yet encyclopedia)* | — | APFS bootable (`TRIMARCO` → `TODD` → `HAYES` / MPOLO / APFS*) | Hash-join target; Marco Polo’s bootable copy |
+| *(indexed, not yet encyclopedia)* | — | GAI truncated HFS+ (`hb.img`) | Hash-join target |
+
+**You are here:** JPMI. For Extra Found Files, Hayes custody, and the unmatched-hash problem, open **0728**. For how the lineages split and rejoin: [Copy lineages](docs/COPY_LINEAGES.md). Author inventory: [Author](docs/AUTHOR.md).
+
+Other 459Crimes publications (not laptop encyclopedias): [*Beyond the Diary*](https://BeyondTheDiary.com) · [diary release](https://ShowersWithMy.Dad).
+
 | | |
 |---|---|
 | **Lineage** | Mac Isaac direct copy (repair-shop recovery → preservation copies → FBI-era exact copy → later forensic reports) |
@@ -45,7 +60,7 @@ Later modified rows are overwhelmingly Finder, filesystem, Spotlight, DocumentRe
 
 > **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** Later metadata is consistent with custody and forensic handling.
 
-**0728 Extra Found Files** did **not** come from the laptop files per se. **Marco Polo** analyzed **MPOLO** (Hayes bootable laptop), not this copy. Dimitrelos (**GUSTAV**) and **MARYMAN** worked from **APFS-structure** copies, not JPMI. Full treatment: [Integrity](docs/INTEGRITY.md) · [Scope](docs/SCOPE.md) · [Marco Polo v4](docs/MARCO_POLO.md).
+**0728 Extra Found Files** did **not** come from the laptop files per se. **Marco Polo** analyzed **MPOLO** (a Hayes **bootable laptop with user files** — a **degraded** copy missing password vaults), not this copy. Dimitrelos (**GUSTAV**) and **MARYMAN** worked from **APFS-structure** copies, not JPMI. Full treatment: [Integrity](docs/INTEGRITY.md) · [Scope](docs/SCOPE.md) · [Marco Polo v4](docs/MARCO_POLO.md).
 
 Row-level post-repair modified list: [reports catalog](docs/catalog/reports.md) (`04_post_2019_03_31_timeline.md`).
 
@@ -72,6 +87,9 @@ Full sourced narrative: [Timeline and handling](docs/06_timeline_and_handling.md
 | **9 Dec 2019** | FBI subpoena **19-3-LFWS-V-136**. Mac Isaac made an **exact copy before parting with the original**. | Court photos — [Exhibits](docs/EXHIBITS.md) |
 | **26 Aug 2020** | **BOOT01** to Robert Costello. **Not JPMI.** | Court-recited + [splits](docs/BRANCH_DEVIATIONS.md) |
 | **14–15 Oct 2020** | *New York Post* story; JPMI Desktop `.DS_Store` modified (Finder browsing, not file injection). | Public event + JPMI metadata |
+| **12 Dec 2020** | **TRIMARCO → APFS** volume created (`HB Boot Drive`). CCC snapshots **5 Jan 2021**. Not JPMI. | [splits](docs/BRANCH_DEVIATIONS.md) |
+| **2 Jun 2021** | Hayes supplied the **IPHONE** backup password. **MPOLO** claimed Jun 2021. | [splits](docs/BRANCH_DEVIATIONS.md) |
+| **28 Jul 2021** | Hayes MEGA **0728 Extra Found Files** (separate corpus). | [Copy lineages](docs/COPY_LINEAGES.md) |
 | **29 Apr 2022** | Acquisition record names `HB-IMAGE-2022-04-29.E01`. | [Disk catalog](docs/catalog/disk_info.md) |
 | **21 Nov 2022** | CBS: no user-data tampering; no new files originating after April 2019. | Independent forensic review |
 | **21 Nov 2024** | Delivered HFS+ last-write. Cannot be a write into an immutable 2022 E01 as labeled. | [2022/2024](docs/2022_2024_DISCREPANCY.md) |

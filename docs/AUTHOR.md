@@ -31,8 +31,9 @@ The same author also publishes:
 
 - *[Beyond the Diary: the Tempest Within Ashley Biden](https://BeyondTheDiary.com)* — https://BeyondTheDiary.com
 - the **full digital release of the diary** — https://ShowersWithMy.Dad
+- the **0728 Extra Found Files** encyclopedia — https://github.com/459Crimes/BidenLaptop_0728
 
-Those sites are **separate publications**. They are not JPMI filesystem reports and are not analyzed in this repository.
+Those sites and repos are **separate publications**. The 0728 volume is the sibling encyclopedia in the [459Crimes laptop forensics catalog](../README.md#459crimes--hunter-biden-laptop-forensics-catalog).
 
 ## Competence relative to other analysts
 
@@ -48,15 +49,16 @@ That referral is **outside this JPMI encyclopedia**. It is listed so the record 
 
 ## Holdings (author / 459Crimes inventory)
 
-After that first 0728 download, the author assembled the **largest laptop-related file collection in existence**, and the **most complete** set of the named families below.
+After that first 0728 download, the author assembled the **largest laptop-related file collection in existence**, and the **most complete** set of the named families below. Compact graph: [investigative materials](diagrams/investigative_materials.svg) ([article](COPY_LINEAGES.md#provenance-of-investigative-materials)).
 
 | Holding | What it is in 459Crimes usage | In *this* GitHub encyclopedia |
 |---|---|---|
 | **JPMI forensics** | Mac Isaac direct-copy lineage; Crucial X6 / `HB-IMAGE-2022-04-29.E01` reports | **Yes** — the object of this repo |
-| **APFS** | TRIMARCO→APFS family (`HB Boot Drive`); CCC 5 Jan 2021 | Named for disambiguation; **not** analyzed here |
-| **APFS*** | Hayes MEGA **13 Jun 2022** `RHB_Boot.imgc` to this author | Out of scope for JPMI tables |
-| **GAI** | Government Accountability Institute version (`GAI://`; image `hb.img` / truncated HFS+) | Out of scope |
+| **APFS** | **TRIMARCO group** (`HB Boot Drive`); volume **12 Dec 2020**; CCC **5 Jan 2021** | Named for disambiguation; **not** analyzed here |
+| **GAI** | **BLAP01 / GAI** (`GAI://`; image `hb.img` / truncated HFS+); volume **17 May 2021** | Out of scope |
+| **TODD / HAYES / MPOLO / APFS*** | **Todd-altered copies** after **5 Jan 2021**. APFS* is Hayes MEGA **13 Jun 2022** `RHB_Boot.imgc` to this author | Out of scope for JPMI tables |
 | **0728 Extra Found Files** | Hayes MEGA share after 28 July 2021; **not** from the laptop files per se | Out of scope |
+| **IPHONE** | iPhone backup present on all copies; Hayes supplied the backup password **2021-06-02** | Named for disambiguation; **not** a JPMI table |
 | **BHR emails** | Bohai Harvest RST correspondence including Devon Archer, Hunter Biden, and others, into **spring 2023** | Out of scope |
 | **Bevan Cooney email collection** | Separate mailbox corpus | Out of scope |
 | **Sir Anthony Jolliffe email collection** | Separate mailbox corpus | Out of scope |
@@ -83,6 +85,7 @@ The essay’s political framing and Secret Service / lawsuit narrative are **out
 
 - [Scope](SCOPE.md)
 - [Copy lineages](COPY_LINEAGES.md)
+- [0728 encyclopedia](https://github.com/459Crimes/BidenLaptop_0728)
 - [Marco Polo v4](MARCO_POLO.md)
 - [People](PEOPLE.md)
 - [Bibliography](BIBLIOGRAPHY.md)
