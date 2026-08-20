@@ -39,7 +39,7 @@ Reference: [CBS News, Nov. 21, 2022](https://www.cbsnews.com/news/hunter-biden-l
 
 The defensible claim is that the forensic indicators presently available do **not show** the hacking/injection theory in this direct-copy lineage—or, as attributed in related 459Crimes work, on other **laptop-derived** media.
 
-**0728 Extra Found Files** did **not** come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). The author's FBI referral on 0728 is **outside this analysis**. Marco Polo analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021), **not** JPMI. Dimitrelos (**GUSTAV**) and **MARYMAN** used copies that **correlate to APFS structure**. See [Scope](SCOPE.md), [Integrity](INTEGRITY.md), and [Author](AUTHOR.md).
+**0728 Extra Found Files** did **not** come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). The author's FBI referral on 0728 is **outside this analysis**. Marco Polo analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021) on the COSTELLO/TRIMARCO/HAYES line, **not** JPMI. Dimitrelos (**GUSTAV**) and **MARYMAN** used **TRIMARCO-group** copies. See [Scope](SCOPE.md), [Integrity](INTEGRITY.md), and [Author](AUTHOR.md).
 
 ## 2. The project does not publish the restricted source bytes
 

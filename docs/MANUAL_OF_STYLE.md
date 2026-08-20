@@ -66,9 +66,14 @@ Integrity wording used in the articles is in [Integrity](INTEGRITY.md).
 | **The laptop** | Informal shorthand; the recovery involved **three** damaged machines plus an external drive |
 | **Direct copy** | A Mac Isaac-made copy existing before/at FBI surrender, as distinct from later mixed political dumps |
 | **0728 / Extra Found Files** | Sidecar MEGA corpus (Hayes, after 28 July 2021). Not from the laptop files per se; related collection; many unknown origin; some unknown to the laptop |
-| **APFS** (459Crimes corpus name) | TRIMARCO conversion of the Costello-line boot volume (`HB Boot Drive`). Date unknown; CCC snapshots **5 Jan 2021**. **Not** a clone of JPMI `Untitled` |
-| **APFS*** | **Jun 2022** Hayes image (`RHB_Boot.imgc`) sent to Marc Aaron DeGiovanni. Downstream of **HAYES**, not JPMI |
-| **MPOLO** | Marco Polo’s claimed **Jun 2021** receipt: Hayes **bootable laptop**, not JPMI |
+| **BOOT01 / COSTELLO** | Shop bootable (18G103, after **26 Sep 2019**); Costello receipt **26 Aug 2020**. Never JPMI |
+| **TRIMARCO group** | COSTELLO grandchild: TRIMARCO, APFS, MARYMAN, GUSTAV. **TRIMARCO → APFS** volume **12 Dec 2020**; CCC **5 Jan 2021** |
+| **BLAP01 / GAI** | COSTELLO grandchild without the Burisma Desktop dump; GAI `Biden Lap 2` **17 May 2021** |
+| **Todd-altered copies** | TODD, HAYES, APFS*, MPOLO. After **5 Jan 2021**. Todd **altered his copy to boot** |
+| **APFS** (459Crimes corpus name) | TRIMARCO conversion of the Costello-line boot volume (`HB Boot Drive`). Volume created **12 Dec 2020**; CCC snapshots **5 Jan 2021**. **Not** a clone of JPMI `Untitled` |
+| **APFS*** | Image file `RHB_Boot.imgc`. Hayes MEGA-sent it **directly** to Marc Aaron DeGiovanni on **13 June 2022** (file datestamp). When analyzed: APFS / Hayes’s APFS. Downstream of **HAYES**, not JPMI |
+| **MPOLO** | Marco Polo’s claimed **Jun 2021** receipt: Hayes **bootable laptop** — a **degraded** copy missing password vaults. Not JPMI |
+| **IPHONE** | iPhone backup present on the named copies. **Password provided by Hayes on 2021-06-02** |
 | **Custody medium** | The physical device later imaged (here: Crucial X6) |
 | **Source bytes** | Contents of the restricted E01; **not** in this GitHub tree |
 
@@ -81,7 +86,7 @@ File citations name the **corpus root**, then the path inside that copy. The wor
 | Scheme | Copy |
 |---|---|
 | `JPMI://` | This copy (Mac Isaac direct-copy lineage as examined here) |
-| `APFS://` | TRIMARCO→APFS bootable family (`HB Boot Drive`). Sibling of JPMI, not a descendant of examined `Untitled` |
+| `APFS://` | TRIMARCO→APFS bootable family (`HB Boot Drive`; volume **12 Dec 2020**). Sibling of JPMI, not a descendant of examined `Untitled` |
 | `GAI://` | Government Accountability Institute truncated HFS+ image (`hb.img`) |
 | `0728://` | Extra Found Files (Hayes MEGA share after 28 July 2021) |
 

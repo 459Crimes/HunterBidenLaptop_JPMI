@@ -8,10 +8,10 @@
 
 459Crimes investigative work attributes Marco Polo's access to:
 
-1. a **bootable laptop produced by Conan Hayes** (**MPOLO**, claimed receipt **Jun 2021**). That machine is downstream of **HAYES ← TODD ← APFS ← TRIMARCO ← COSTELLO ← BOOT01**, not of examined JPMI `Untitled`; and
+1. a **bootable laptop produced by Conan Hayes** (**MPOLO**, claimed receipt **Jun 2021**). That machine is a **degraded** Hayes outbound — a **bootable laptop with user files**, missing key user files including **password vaults**. It is downstream of **HAYES ← TODD ← APFS ← TRIMARCO ← COSTELLO ← BOOT01**, not of examined JPMI `Untitled`; and
 2. the **0728 Extra Found Files** MEGA share (Hayes, after 28 July 2021) — a **large sidecar collection**. It did **not** come from the laptop files per se. Many items are of **unknown origin**; the set is **related to** laptop material, but **some files are completely unknown to the laptop**.
 
-The later **APFS*** image (Hayes `RHB_Boot.imgc`, **Jun 2022** / MEGA **13 Jun 2022**) went to **Marc Aaron DeGiovanni**. It is a second HAYES outbound, not Marco Polo’s Jun 2021 laptop and not JPMI. APFS-family hashes are not combined with the JPMI E01. Marco Polo's email database, page counts, and contractors are not JPMI measurements. Shop/FBI **paperwork** they reprint can still be compared to court exhibits. See [Scope](SCOPE.md) and [Integrity](INTEGRITY.md).
+The later **APFS*** object (Hayes image file `RHB_Boot.imgc`, MEGA **13 June 2022**, file datestamp) went to **Marc Aaron DeGiovanni**. When analyzed it is **APFS** / Hayes’s APFS. It is a second HAYES outbound, not Marco Polo’s Jun 2021 laptop and not JPMI. APFS-family hashes are not combined with the JPMI E01. Marco Polo's email database, page counts, and contractors are not JPMI measurements. Shop/FBI **paperwork** they reprint can still be compared to court exhibits. See [Scope](SCOPE.md) and [Integrity](INTEGRITY.md).
 
 **459Crimes / Marc Aaron DeGiovanni**, the author of *this* JPMI encyclopedia, was a Marco Polo member working with Ziegler from **May 2021**, pressed the shift from election-fraud work onto the laptop, and was the first to download **0728** from Hayes. That does **not** mean Marco Polo analyzed JPMI. See [Author](AUTHOR.md).
 
@@ -46,7 +46,7 @@ flowchart TB
 Export: [SVG](diagrams/marco_polo_schematic.svg) · [JPG](diagrams/marco_polo_schematic.jpg)
 <!-- /diagram:marco_polo_schematic -->
 
-That schematic is **Marco Polo's own drawing**. This encyclopedia maps their **Jun 2021** receipt to node **MPOLO**: a **bootable laptop** from **HAYES**, not JPMI `Untitled`. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+That schematic is **Marco Polo's own drawing**. This encyclopedia maps their **Jun 2021** receipt to node **MPOLO**: a **degraded** Hayes **bootable laptop with user files** (missing password vaults), not JPMI `Untitled`. Hayes provided the **IPHONE** backup password on **2021-06-02**. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 ## Shop and hardware details worth recording
 
@@ -84,7 +84,7 @@ Phone numbers, dates of birth, and home addresses reprinted in Marco Polo are om
 - **Gus Dimitrelos** (ex–Secret Service): examiner analysis reported as finding the drive authentic and **no evidence of hacking or file manipulation** (*Washington Examiner*, May 2022).
 - **Maryman & Associates** (Brad Maryman / Joseph Greenfield): timestamps authentic; data not manufactured (*Daily Mail*, Apr 2021).
 
-**Correction to the record:** those contractors used **GUSTAV** / **MARYMAN** copies whose **structure correlates to APFS**, **not** the JPMI HFS+ `Untitled` / Crucial X6 reports in this repository. They are not JPMI-table results. The author of this encyclopedia **holds copies similar to the ones they worked from** (including **APFS***). Their work is a **partial** attempt at the same material. See [Author](AUTHOR.md) and [Copy lineages](COPY_LINEAGES.md).
+**Correction to the record:** those contractors used **GUSTAV** / **MARYMAN** copies in the **TRIMARCO group**, **not** the JPMI HFS+ `Untitled` / Crucial X6 reports in this repository. They are not JPMI-table results. The author of this encyclopedia **holds copies similar to the ones they worked from** (including **APFS***). Their work is a **partial** attempt at the same material. See [Author](AUTHOR.md) and [Copy lineages](COPY_LINEAGES.md).
 
 Dimitrelos and Maryman are therefore not examinations of the Della Rocca → Sanders JPMI media. They are also distinct from **CBS / CFS**, which examined a Della Rocca “exact copy” in the Mac Isaac/FBI-lineage network.
 

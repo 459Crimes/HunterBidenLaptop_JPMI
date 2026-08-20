@@ -1,10 +1,9 @@
-%% Canonical named copy graph.
-%% JPMI is not an ancestor of COSTELLO, TRIMARCO, APFS, HAYES, MPOLO, or APFS*.
-%% SHOP children: RHB_WD, JPMI, and BOOT01/COSTELLO at equal rank.
-%% COSTELLO grandchildren: TRIMARCO group vs BLAP01/GAI.
-%% TODD/HAYES/APFS*/MPOLO are a separate color: Todd altered his copy to boot.
-%% 0728 is a separate corpus (Hayes MEGA bag). MPOLO is a degraded Hayes outbound.
-%% IPHONE backup is on all copies; Hayes supplied the backup password 2021-06-02.
+%% Provenance of investigative materials held by 459Crimes.
+%% Separate from named_graph.mmd (full named copy graph).
+%% Compact SVG/JPG are hand-laid-out from this node set
+%% (docs/diagrams/_render_investigative_materials.py), not mermaid-cli.
+%% Possession edges: APFS*, 0728, GAI, JPMI (E01), IPHONE.
+%%{init: {"flowchart": {"curve": "linear", "htmlLabels": true, "padding": 6, "nodeSpacing": 16, "rankSpacing": 24}}}%%
 flowchart TB
   classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
   classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
@@ -14,6 +13,7 @@ flowchart TB
   classDef todd fill:#ddd6fe,stroke:#5b21b6,color:#111
   classDef side fill:#f3f4f6,stroke:#111827,stroke-dasharray: 6 4,color:#111
   classDef phone fill:#e0f2fe,stroke:#0369a1,color:#111
+  classDef hold fill:#fce7f3,stroke:#be185d,color:#111,stroke-width:2px
 
   LAPTOP["LAPTOP<br/>user era to 2019-03<br/>intake 2019-04-12<br/>FVFXC2MMHV29"]:::shop
   SHOP["SHOP<br/>2019-04-12+ store server<br/>logs not held"]:::shop
@@ -23,7 +23,7 @@ flowchart TB
     direction TB
     JPMI["JPMI Untitled<br/>2019-09-26/27 home-only<br/>no OS"]:::jpmi
     CBS["CBS / CFS<br/>exact-copy exam 2022"]:::jpmi
-    X6["Crucial X6 / E01<br/>HB-IMAGE-2022-04-29"]:::jpmi
+    X6["JPMI (E01)<br/>Crucial X6 / HB-IMAGE-2022-04-29"]:::jpmi
   end
 
   subgraph BOOT["BOOT01 / Costello — never JPMI"]
@@ -61,7 +61,12 @@ flowchart TB
 
   subgraph SIDE["0728 Extra Found Files — completely separate corpus"]
     direction TB
-    EFF["0728 Extra Found Files<br/>Hayes MEGA after 2021-07-28<br/>not a volume clone of JPMI, APFS, or GAI<br/>blobs match every combo of 3 / 2 / 1 / none<br/>large share: names and metadata stripped"]:::side
+    EFF["0728 Extra Found Files<br/>Hayes MEGA after 2021-07-28<br/>not a volume clone of JPMI, APFS, or GAI"]:::side
+  end
+
+  subgraph HOLD["Investigative materials"]
+    direction TB
+    CRIMES["459Crimes<br/>has possession of these five sources<br/>APFS* · 0728 · GAI · JPMI (E01) · IPHONE<br/>and has compiled the most in-depth<br/>analysis of the laptop ever conducted"]:::hold
   end
 
   LAPTOP -->|2019-04-12| SHOP
@@ -84,4 +89,8 @@ flowchart TB
   HAYES -.->|MEGA bag; not identity| EFF
   IPHONE -->|password provided by Hayes on 2021-06-02| HAYES
   IPHONE --> MPOLO
-  RHB_WD ~~~ EFF
+  APFSstar --> CRIMES
+  EFF --> CRIMES
+  GAI --> CRIMES
+  X6 --> CRIMES
+  IPHONE --> CRIMES

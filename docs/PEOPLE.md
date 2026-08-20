@@ -160,15 +160,21 @@ Attorney for Rudy Giuliani. Court records: Mac Isaac emailed him **26 August 202
 
 **Complaint allegation.** *Biden v. Giuliani*, C.D. Cal. 2:23-cv-8032 (Sep 2023, later dropped): FedEx of an “external drive” to Costello’s NY residence; defendants “booted up” the drive, used the account, and created “bootable copies.” [RECAP PDF](https://storage.courtlistener.com/recap/gov.uscourts.cacd.899829/gov.uscourts.cacd.899829.1.0.pdf).
 
-Booting to that login is **not** what attaching the examined JPMI home-only volume does. August 2020 iMac/Dell ColorSync files sit on **APFS/GAI**, not JPMI. [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+Booting to that login is **not** what attaching the examined JPMI home-only volume does. August 2020 iMac/Dell ColorSync files sit on **APFS/GAI**, not JPMI. COSTELLO then splits to the **TRIMARCO group** and **BLAP01 / GAI**. [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 ## Michael (“Mike”) / “Mark” Trimarco
 
 New York businessman in Giuliani’s 2020 orbit. [Raw Story, 13 Apr 2022](https://www.rawstory.com/michael-trimarco/): told Ann Vandersteel in **October 2020** he had been analyzing Hunter Biden laptop contents; Byrne Westin hotel operation. [LA Times, 17 Jun 2022](https://www.latimes.com/politics/story/2022-06-17/jan-6-behind-scenes-trump-election-maga-world-search-fraud): Giuliani asked him to look at documents on the laptop. Sanders’ chat says **“Mark Trimarco”**; the press name is **Mike/Michael**. Recorded as likely the same person, not proved by a hash.
 
+Graph node **TRIMARCO** is the COSTELLO grandchild that received the Burisma Desktop dump (~**1 Sep 2020+**). **TRIMARCO → APFS** volume **12 Dec 2020**; CCC snapshots **5 Jan 2021**. Sibling grandchild is **BLAP01** (no Burisma dump). [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+
 ## Rudy Giuliani
 
 Court-recited: material reached the *New York Post* through Giuliani after the Costello transfer.
+
+## Conan Hayes
+
+Working copies after **5 Jan 2021** from **TODD** (**Todd-altered** group). Outbounds: dashed **MPOLO** (Jun 2021; degraded bootable laptop missing password vaults); solid **APFS*** (image file `RHB_Boot.imgc`, MEGA **13 Jun 2022** to DeGiovanni); dashed **0728** MEGA bag after **28 Jul 2021**. Supplied the **IPHONE** backup password **2021-06-02**. Not JPMI. [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md) · [Author](AUTHOR.md).
 
 ## George Mesires
 

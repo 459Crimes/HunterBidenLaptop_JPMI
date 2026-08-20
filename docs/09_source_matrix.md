@@ -37,7 +37,9 @@ A later interview can explain technical details absent from a court opinion. It 
 | Costello booted a drive to Apple login “Robert Hunter” | *New York* magazine, 12 Sep 2022 | **Contemporaneous journalism**; not a JPMI table |
 | Complaint alleges Costello “booted up” FedEx drive and made “bootable copies” | C.D. Cal. 2:23-cv-8032 (Sep 2023; later dropped) | **Complaint allegation** |
 | APFS/GAI have ColorSync iMac + two Dells and ByHost UUIDs dated 28–31 Aug 2020; JPMI does not | `rhb_forensics` `files` sources 1, 116, 122 | **Comparative inventory**; APFS/GAI bytes not in this GitHub tree |
-| APFS `HB Boot Drive` constructed 12 Dec 2020 / CCC snapshots 5 Jan 2021 | APFS Spotlight/CCC paths; parent-project custody synthesis | **Comparative inventory** |
+| APFS `HB Boot Drive` volume created **12 Dec 2020**; CCC snapshots **5 Jan 2021** | APFS Spotlight/CCC paths; parent-project custody synthesis | **Comparative inventory** |
+| COSTELLO splits ~**1 Sep 2020+** to **TRIMARCO** (Burisma Desktop) vs **BLAP01** (no Burisma dump) | APFS vs GAI inventories | **Comparative inventory**; [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md) |
+| Hayes provided the **IPHONE** backup password **2021-06-02** | Named-graph / Hayes delivery record | **Participant/project identity**; not a JPMI table |
 | GAI HFS+ volume activity 17 May 2021 with full OS | GAI volume/files inventory | **Comparative inventory** |
 | Todd received a Trimarco copy that he had to alter to boot | CybrJstr chat 16 Jul 2026 | **Participant account (this project)**; not the Della Rocca mailing packet |
 | Giuliani provided the material to the New York Post | Delaware Supreme Court | **Court-recited history** |

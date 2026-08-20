@@ -124,7 +124,7 @@ A file-aware copy of a **home folder** onto a newly formatted disk does not tran
 
 The GPT, EFI, and journal **on JPMI** are **destination** objects: they were created by formatting/partitioning the copy target (and later volume-cloned with `Untitled` onto the X6). They are not the laptop’s GPT/EFI sitting in a new box.
 
-**Limitation.** This is a finding about **this lineage as examined**. It does not prove that Mac Isaac never imaged the internal SSD onto the shop server, or that the FBI-held laptop/WD lack a system volume. Those media are not in this repository. Later **APFS** / **MPOLO** / **APFS*** machines are **BOOT01 descendants** that carry an OS; they are not evidence that JPMI itself carried `/System`.
+**Limitation.** This is a finding about **this lineage as examined**. It does not prove that Mac Isaac never imaged the internal SSD onto the shop server, or that the FBI-held laptop/WD lack a system volume. Those media are not in this repository. Later **APFS** / **MPOLO** / **APFS*** machines are **BOOT01 descendants** (COSTELLO → TRIMARCO group and Todd-altered copies) that carry an OS; they are not evidence that JPMI itself carried `/System`.
 
 ### Layer C — after August 2020: volume clone onto the Crucial X6, then E01
 

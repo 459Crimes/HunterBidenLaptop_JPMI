@@ -1,6 +1,6 @@
-# Catalog: exhibits and transcripts
+# Catalog: exhibits
 
-> Paperwork photographs, congressional PDFs, the mailing-packet photo, and the Apelbaum–Tucker audio transcript. Narrative captions: [Exhibits](../EXHIBITS.md) · [Congress](../CONGRESS.md) · [Mailing packet](../MAILING_PACKET.md) · [11 Mar 2025 call](../APELBAUM_TUCKER_2025-03-11.md). Parent: [Evidence catalog](README.md).
+> Paperwork photographs, congressional PDFs, the mailing-packet photo, and the Apelbaum–Tucker audio. Narrative captions: [Exhibits](../EXHIBITS.md) · [Congress](../CONGRESS.md) · [Mailing packet](../MAILING_PACKET.md) · [11 Mar 2025 call](../APELBAUM_TUCKER_2025-03-11.md). Parent: [Evidence catalog](README.md).
 
 These are **not** laptop contents. They document shop paperwork, FBI subpoena photos, House staff reports, a custody shipment, and a later interview.
 
@@ -21,4 +21,4 @@ Listed in [`docs/exhibits/README.md`](../exhibits/README.md). Folders:
 | File | Notes |
 |---|---|
 | [`photo_20260716_120324.jpg`](../../photo_20260716_120324.jpg) | Mailing packet: Mac Isaac home address → Todd Sanders |
-| [`output/transcribe/apelbaum-tucker-2025-03-11/`](../../output/transcribe/apelbaum-tucker-2025-03-11/) | `.txt` / `.srt` / `.json` transcript of the audio exhibit |
+| [`Yaacov_Tucker_discussion.mp3`](../exhibits/audio/Yaacov_Tucker_discussion.mp3) | 11 Mar 2025 call. Transcript: [APELBAUM_TUCKER_2025-03-11](../APELBAUM_TUCKER_2025-03-11.md) |

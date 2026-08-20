@@ -14,7 +14,7 @@
 
 The author submitted an FBI source-attribution referral on 0728 as **potentially hacked** (`FBI_0728_Source_Attribution_Referral_FINAL_2026-07-28.pdf`, 28 July 2026). That referral is **outside this JPMI analysis**; it is described on [Author](AUTHOR.md). It is not a finding about Quote #7469, the Mac Shop recovery, the FBI-seized MacBook/WD pair, or the Crucial X6 / E01 reports.
 
-**Marco Polo** analyzed a **bootable laptop produced by Hayes** that used **APFS** — a **later, more altered copy of the JPMI disk**. It **did not analyze JPMI**. “Altered” names later conversion/handling of a descendant disk, not a finding that JPMI was hacked. See [Marco Polo v4](MARCO_POLO.md) and [Scope](SCOPE.md).
+**Marco Polo** analyzed **MPOLO**: a Hayes **bootable laptop with user files** (Jun 2021), a **degraded** copy missing password vaults. That machine is downstream of **HAYES ← TODD ← APFS ← TRIMARCO ← COSTELLO ← BOOT01**. It is **not** a descendant of examined JPMI `Untitled`, and Marco Polo **did not analyze JPMI**. Todd’s “altered to boot” describes the **Trimarco object he received**, not a finding that JPMI was hacked. See [Marco Polo v4](MARCO_POLO.md), [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md), and [Scope](SCOPE.md).
 
 ## Two independent layers
 

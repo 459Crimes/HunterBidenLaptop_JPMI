@@ -4,7 +4,7 @@
 
 **JPMI** is the shorthand used in this project for the **John Paul Mac Isaac copy**: the Mac Isaac-lineage copy of data recovered from the computer associated with Hunter Biden and left at a Wilmington, Delaware repair shop in 2019.
 
-This repository is about that copy alone. It is a **laptop-derived** medium. **No hacking is attributed to JPMI.** **0728 Extra Found Files** did not come from the laptop files per se. **Marco Polo** analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021), not this copy. See [Scope](SCOPE.md) · [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+This repository is about that copy alone. It is a **laptop-derived** medium. **No hacking is attributed to JPMI.** **0728 Extra Found Files** did not come from the laptop files per se. **Marco Polo** analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021) on the **COSTELLO → TRIMARCO → APFS → TODD → HAYES** line — **not** a descendant of examined `Untitled`, and **not** this copy. See [Scope](SCOPE.md) · [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 ## A useful mental model
 

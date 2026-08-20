@@ -21,7 +21,7 @@ Both URLs are cited. The essay is a **George News** account of the author, not t
 - He **pushed Ziegler to move off election-fraud investigations and onto the Biden laptop**.
 - He was the **first person to download the 0728 Extra Found Files** corpus from **Conan Hayes** (MEGA, after 28 July 2021).
 
-Marco Polo’s published *Report on the Biden Laptop* still did **not** analyze the JPMI copy in this repository. It used Hayes’s **bootable laptop** (**MPOLO**, Jun 2021), plus the **0728** sidecar set. The author’s later **APFS*** image is **Jun 2022**. See [Marco Polo v4](MARCO_POLO.md).
+Marco Polo’s published *Report on the Biden Laptop* still did **not** analyze the JPMI copy in this repository. It used Hayes’s **bootable laptop** (**MPOLO**, Jun 2021), plus the **0728** sidecar set. The author’s **APFS*** is the image file `RHB_Boot.imgc`, MEGA-sent by Hayes on **13 June 2022** (file datestamp). When analyzed: **APFS** / Hayes’s APFS. See [Marco Polo v4](MARCO_POLO.md).
 
 This encyclopedia is a **later, separate** 459Crimes publication about **JPMI forensics only**. Membership in Marco Polo does not make Marco Polo’s page counts or email database into JPMI results.
 
@@ -56,7 +56,7 @@ After that first 0728 download, the author assembled the **largest laptop-relate
 | **JPMI forensics** | Mac Isaac direct-copy lineage; Crucial X6 / `HB-IMAGE-2022-04-29.E01` reports | **Yes** — the object of this repo |
 | **APFS** | **TRIMARCO group** (`HB Boot Drive`); volume **12 Dec 2020**; CCC **5 Jan 2021** | Named for disambiguation; **not** analyzed here |
 | **GAI** | **BLAP01 / GAI** (`GAI://`; image `hb.img` / truncated HFS+); volume **17 May 2021** | Out of scope |
-| **TODD / HAYES / MPOLO / APFS*** | **Todd-altered copies** after **5 Jan 2021**. APFS* is Hayes MEGA **13 Jun 2022** `RHB_Boot.imgc` to this author | Out of scope for JPMI tables |
+| **TODD / HAYES / MPOLO / APFS*** | **Todd-altered copies** after **5 Jan 2021**. APFS* is Hayes MEGA **13 Jun 2022** image file `RHB_Boot.imgc` to this author (analyzed as APFS / Hayes’s APFS) | Out of scope for JPMI tables |
 | **0728 Extra Found Files** | Hayes MEGA share after 28 July 2021; **not** from the laptop files per se | Out of scope |
 | **IPHONE** | iPhone backup present on all copies; Hayes supplied the backup password **2021-06-02** | Named for disambiguation; **not** a JPMI table |
 | **BHR emails** | Bohai Harvest RST correspondence including Devon Archer, Hunter Biden, and others, into **spring 2023** | Out of scope |

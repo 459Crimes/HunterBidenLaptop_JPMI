@@ -17,7 +17,7 @@ Telephone recording of **Yaacov Apelbaum** and **Marc Aaron DeGiovanni**. Wiki a
 
 This is the **only known recording** of Apelbaum discussing the Fox / Tucker Carlson handoff. The copy he describes handing to Carlson’s executive producer is identified here as **JPMI-lineage** (Mac Isaac retained copy): **not** Extra Found Files / 0728, and **not** a hacked sidecar corpus.
 
-Speaker labels below are assigned from the conversation (Apelbaum telling the October 2020 story; DeGiovanni responding). 
+Speaker labels below are assigned from the conversation (Apelbaum telling the October 2020 story; DeGiovanni responding). The public transcript is this page. The audio exhibit is [`Yaacov_Tucker_discussion.mp3`](exhibits/audio/Yaacov_Tucker_discussion.mp3).
 
 ## Transcript
 
@@ -66,9 +66,7 @@ Apelbaum’s account on this call:
 
 **What the recording does not contain:** no discussion of child-sexual-abuse material, “abuse of minors,” or “inappropriate” files as the payload. The object Apelbaum describes handing over is the **laptop dump** he already associated with the Bureau — in this encyclopedia, the **Mac Isaac / JPMI** copy, not 0728.
 
-**Relation to Carlson’s August 2026 interview:** Carlson later said he sent a producer to meet a man “connected to Netanyahu” who pushed an **abuse-of-minors allegation**, and that he did not air that on Fox ([Apelbaum, Fox, Tucker](APELBAUM_FOX.md)). This 2025 call is Apelbaum describing a **hotel-room USB handoff** of the laptop to Carlson’s EP and tying it to the **UPS** episode. He does **not** name himself as a Netanyahu emissary, and he does **not** pitch CSAM on this tape. 
-
-Machine transcript files (working copies, not the exhibit): `output/transcribe/apelbaum-tucker-2025-03-11/`.
+**Relation to Carlson’s August 2026 interview:** Carlson later said he sent a producer to meet a man “connected to Netanyahu” who pushed an **abuse-of-minors allegation**, and that he did not air that on Fox ([Apelbaum, Fox, Tucker](APELBAUM_FOX.md)). This 2025 call is Apelbaum describing a **hotel-room USB handoff** of the laptop to Carlson’s EP and tying it to the **UPS** episode. He does **not** name himself as a Netanyahu emissary, and he does **not** pitch CSAM on this tape.
 
 ## See also
 

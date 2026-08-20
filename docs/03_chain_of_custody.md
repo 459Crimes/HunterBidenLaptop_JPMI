@@ -249,7 +249,7 @@ The bounded conclusion is:
 
 > **No evidence of hacking is attributed to JPMI or to any other laptop-derived medium.** No evidence of post-dropoff hacking or external substantive-file injection has been identified in the JPMI reporting. Later metadata is consistent with custody and forensic handling.
 
-**0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). **Marco Polo** analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021), not JPMI. Those matters are outside this analysis. See [Integrity](INTEGRITY.md) and [Scope](SCOPE.md).
+**0728 Extra Found Files** did not come from the laptop files per se (related collection; many unknown origin; some unknown to the laptop). **Marco Polo** analyzed **MPOLO** (Hayes **bootable laptop**, Jun 2021) on the COSTELLO/TRIMARCO/HAYES line, not JPMI. Those matters are outside this analysis. See [Integrity](INTEGRITY.md) and [Scope](SCOPE.md).
 
 This conclusion is independently consistent with CBS's examination of an exact-copy Mac Isaac/FBI-lineage dataset, which reported no tampering and no new files originating after April 2019.
 

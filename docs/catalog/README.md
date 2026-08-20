@@ -13,7 +13,7 @@ Checksums for every published `build/` object: [`build/manifest.tsv`](../../buil
 | [Metadata](metadata.md) | Time, extension, type, permission, CNID, alias summaries | [Timestamps](../TIMESTAMPS.md) · [Copy method](../COPY_METHOD.md) |
 | [Reports](reports.md) | Human-readable forensic summaries | [Timeline](../TIMELINE.md) · [Integrity](../INTEGRITY.md) |
 | [Deep archives](archives.md) | Partitioned full-volume metadata (not source bytes) | [How to verify](../08_reproducibility.md) |
-| [Exhibits](exhibits.md) | Court/shop/FBI scans, mailing packet, transcripts | [Exhibits](../EXHIBITS.md) · [Mailing packet](../MAILING_PACKET.md) |
+| [Exhibits](exhibits.md) | Court/shop/FBI scans, mailing packet, audio | [Exhibits](../EXHIBITS.md) · [Mailing packet](../MAILING_PACKET.md) |
 
 ## How to read a table
 

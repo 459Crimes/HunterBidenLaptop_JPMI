@@ -23,7 +23,7 @@ Landing page: [README](../README.md). Tables: [Evidence catalog](catalog/README.
 | House Judiciary / Oversight laptop reports | [Congressional reports](CONGRESS.md) |
 | The shop address and three laptops | [The Mac Shop](THE_MAC_SHOP.md) |
 | How many copies and which is which | [Copy lineages](COPY_LINEAGES.md) · [Diagrams](diagrams/README.md) |
-| Where JPMI, Costello, APFS, MPOLO, APFS*, and GAI split | [Where the copies split](BRANCH_DEVIATIONS.md) |
+| Where JPMI, Costello, the TRIMARCO group, BLAP01/GAI, Todd-altered copies, MPOLO, APFS*, IPHONE, and 0728 split | [Where the copies split](BRANCH_DEVIATIONS.md) |
 | How files left the laptop (file-aware copy, then volume clone) | [How the files left the laptop](COPY_METHOD.md) |
 | The USB SSD in the acquisition record | [Crucial X6](CRUCIAL_X6.md) · [disk catalog](catalog/disk_info.md) |
 | The HFS+ volume `Untitled` | [HFS+ volume Untitled](HFS_VOLUME_UNTITLED.md) · [volume catalog](catalog/volume_info.md) |

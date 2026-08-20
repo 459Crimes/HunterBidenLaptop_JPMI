@@ -16,9 +16,17 @@ Multiple paths can name one catalog object. The alias map has **655,330** rows: 
 
 Those two-path CNIDs are **all** TSK `file` + `file-*-slack` (same CNID, slack size 0). They are **not** Unix hard links. HFS+ `^^^^HFS+ Private Data` and `.HFS+ Private Directory Data` exist at volume root and have **zero children**, so this volume has **no live file or directory hard links**. Duplicate SHA-256 on different CNIDs is repeated content (Dr.Fone dumps, iMovie templates, Mail attachments), not a map of broken `ln` pairs. Evaluation: [COPY_METHOD](COPY_METHOD.md).
 
+## BLAP01
+
+COSTELLO grandchild (~**1 Sep 2020+**) without the Burisma Desktop dump that marks **TRIMARCO**. Ancestor of **GAI**. Teal group on the named graph. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+
 ## BOOT01
 
-Project name for the Mac Isaac **bootable** copy that contains macOS **10.14.6 / 18G103**. Created **after 26 Sep 2019** (the public ship date of that build). The 19–21 Sep mtimes on `SystemVersion.plist` and ~26k System/Applications files are **Apple payload dates**, not BOOT01’s create date. **COSTELLO** received this lineage, **not JPMI**. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+Project name for the Mac Isaac **bootable** copy that contains macOS **10.14.6 / 18G103**. Created **after 26 Sep 2019** (the public ship date of that build). The 19–21 Sep mtimes on `SystemVersion.plist` and ~26k System/Applications files are **Apple payload dates**, not BOOT01’s create date. Equal **SHOP** child with **JPMI** and **RHB_WD**. **COSTELLO** received this lineage, **not JPMI**. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+
+## COSTELLO
+
+**26 Aug 2020** transfer of **BOOT01** (or a clone) to Robert Costello. Live boot fingerprints **28–31 Aug 2020**. Never JPMI. Two grandchildren: the **TRIMARCO group** and **BLAP01 / GAI**.
 
 ## Allocated / unallocated
 
@@ -26,31 +34,43 @@ Allocated space belongs to currently represented filesystem objects. JPMI report
 
 ## APFS (459Crimes corpus name)
 
-Hayes SanDisk **bootable** macOS (`HB Boot Drive`). **TRIMARCO → APFS** conversion date unknown; CCC snapshots **5 Jan 2021**. After that date the node fans out to **MARYMAN**, **GUSTAV**, and **TODD → HAYES**. Not a clone of JPMI `Untitled`. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
+Hayes SanDisk **bootable** macOS (`HB Boot Drive`). **TRIMARCO group.** **TRIMARCO → APFS** volume created **12 Dec 2020**; CCC snapshots **5 Jan 2021**. After **5 Jan 2021** the node fans to **MARYMAN**, **GUSTAV**, and **TODD → HAYES**. Not a clone of JPMI `Untitled`. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 ## APFS*
 
-**Jun 2022** / MEGA **13 Jun 2022** Hayes `RHB_Boot.imgc` sent to **Marc Aaron DeGiovanni**. Downstream of **HAYES**. Not JPMI.
+Compressed image file `RHB_Boot.imgc`. Hayes sent it **directly** to **Marc Aaron DeGiovanni** over MEGA on **13 June 2022** — the date stamped on the file (`CJH20220613`). When analyzed, **APFS** / Hayes’s APFS. Not a USB stick. **Todd-altered** outbound from **HAYES**. Not JPMI.
+
+## GAI
+
+Government Accountability Institute truncated HFS+ `Biden Lap 2` (`GAI://`; image `hb.img`). Volume/check **17 May 2021**. **BLAP01 / GAI** group: full OS; same Aug 2020 ColorSync ICCs as APFS. Not a clone of JPMI `Untitled`. See [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md).
 
 ## GUSTAV
 
-**Gus Dimitrelos** APFS-family examination for the Washington Examiner (**May–Jun 2022**). After **5 Jan 2021**. Not JPMI.
+**Gus Dimitrelos** APFS-family examination for the Washington Examiner (**May–Jun 2022**). **TRIMARCO group**, after **5 Jan 2021**. Not JPMI.
 
 ## HAYES
 
-Conan Hayes working copies, after **5 Jan 2021**, from **TODD**. Splits to **MPOLO** (Jun 2021 bootable laptop) and **APFS*** (Jun 2022 to DeGiovanni).
+Conan Hayes working copies, after **5 Jan 2021**, from **TODD** (**Todd-altered** group). Splits to dashed **MPOLO** (Jun 2021 bootable laptop; degraded; missing password vaults), solid **APFS*** (`RHB_Boot.imgc` MEGA **13 Jun 2022** to DeGiovanni), and dashed **0728** (MEGA after **28 Jul 2021**). Supplied the **IPHONE** backup password **2021-06-02**.
 
 ## MARYMAN
 
-Maryman & Associates imaging **4 Apr 2021** of SanDisk `20142M400253`. APFS-family, after **5 Jan 2021**. Not JPMI.
+Maryman & Associates imaging **4 Apr 2021** of SanDisk `20142M400253`. **TRIMARCO group**, after **5 Jan 2021**. Not JPMI.
 
 ## MPOLO
 
-Marco Polo’s claimed receipt **Jun 2021** (report p. 579): Hayes **bootable laptop**, not JPMI.
+Marco Polo’s claimed receipt **Jun 2021** (report p. 579): Hayes **bootable laptop with user files** — a **degraded** copy missing key user files including **password vaults**. Dashed **HAYES** outbound. **Todd-altered** group. Not JPMI.
+
+## IPHONE
+
+iPhone backup present on the named copies. **Password provided by Hayes on 2021-06-02**. Graph edges from **IPHONE** to **HAYES** and **MPOLO**. Not a fifth volume clone.
 
 ## TODD
 
-Sanders’s APFS-family working copy after **5 Jan 2021**, distinct from the Della Rocca **JPMI** packet. Points to **HAYES**.
+Sanders’s APFS-family working copy after **5 Jan 2021**, distinct from the Della Rocca **JPMI** packet. He **altered it to boot**; graphs color **TODD / HAYES / APFS* / MPOLO** separately from the **TRIMARCO group**. Points to **HAYES**.
+
+## TRIMARCO
+
+COSTELLO grandchild (~**1 Sep 2020+**) that received the Burisma Desktop dump. Rose group with **APFS**, **MARYMAN**, **GUSTAV**. **TRIMARCO → APFS** volume **12 Dec 2020**.
 
 ## CNID (Catalog Node ID)
 

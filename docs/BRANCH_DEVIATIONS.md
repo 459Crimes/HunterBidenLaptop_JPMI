@@ -1,6 +1,6 @@
-# Where the copies split (JPMI, Costello, Todd, APFS, GAI)
+# Where the copies split (family groups)
 
-> **Hatnote.** This article is about **sibling copies**, not one stick renamed at each handoff. JPMI remains the Della Rocca → Sanders **HFS+ `Untitled` home copy**. Costello’s public handling and the later Hayes **APFS** / GAI **HFS+** images are a **bootable** branch. Main objects: [Copy lineages](COPY_LINEAGES.md). Method of *this* disk: [COPY_METHOD](COPY_METHOD.md). Timeline: [06](06_timeline_and_handling.md) · [index](TIMELINE.md).
+> **Hatnote.** This article is about **sibling copies**, not one stick renamed at each handoff. **SHOP** has three equal children: **RHB_WD**, **JPMI**, and **BOOT01 → COSTELLO**. COSTELLO then splits to the **TRIMARCO group** (rose) and **BLAP01 / GAI** (teal). **Todd-altered copies** (violet) fan from APFS after **5 Jan 2021**. JPMI remains the Della Rocca → Sanders **HFS+ `Untitled` home copy**. Main objects: [Copy lineages](COPY_LINEAGES.md). Method of *this* disk: [COPY_METHOD](COPY_METHOD.md). Timeline: [06](06_timeline_and_handling.md) · [index](TIMELINE.md).
 
 Mac Isaac made **more than one** preservation copy. The examined JPMI volume is **not** the object Costello received. **BOOT01** (18G103, **after 26 Sep 2019**) is the Costello/APFS/GAI ancestor. Collapsing “the laptop” into a single chain (JPMI → Costello → Todd → APFS) misstates both the public record and the inventories.
 
@@ -30,13 +30,20 @@ Mac Isaac made **more than one** preservation copy. The examined JPMI volume is 
 ```mermaid
 %% Canonical named copy graph.
 %% JPMI is not an ancestor of COSTELLO, TRIMARCO, APFS, HAYES, MPOLO, or APFS*.
-%% 0728 is a separate corpus (Hayes MEGA bag), not a clone of JPMI, APFS, or GAI.
+%% SHOP children: RHB_WD, JPMI, and BOOT01/COSTELLO at equal rank.
+%% COSTELLO grandchildren: TRIMARCO group vs BLAP01/GAI.
+%% TODD/HAYES/APFS*/MPOLO are a separate color: Todd altered his copy to boot.
+%% 0728 is a separate corpus (Hayes MEGA bag). MPOLO is a degraded Hayes outbound.
+%% IPHONE backup is on all copies; Hayes supplied the backup password 2021-06-02.
 flowchart TB
   classDef shop fill:#dbeafe,stroke:#1d4ed8,color:#111
   classDef jpmi fill:#dcfce7,stroke:#15803d,color:#111
   classDef boot fill:#fef3c7,stroke:#b45309,color:#111
-  classDef exam fill:#ede9fe,stroke:#6d28d9,color:#111
+  classDef trim fill:#fecaca,stroke:#b91c1c,color:#111
+  classDef gai fill:#ccfbf1,stroke:#0f766e,color:#111
+  classDef todd fill:#ddd6fe,stroke:#5b21b6,color:#111
   classDef side fill:#f3f4f6,stroke:#111827,stroke-dasharray: 6 4,color:#111
+  classDef phone fill:#e0f2fe,stroke:#0369a1,color:#111
 
   LAPTOP["LAPTOP<br/>user era to 2019-03<br/>intake 2019-04-12<br/>FVFXC2MMHV29"]:::shop
   SHOP["SHOP<br/>2019-04-12+ store server<br/>logs not held"]:::shop
@@ -49,20 +56,37 @@ flowchart TB
     X6["Crucial X6 / E01<br/>HB-IMAGE-2022-04-29"]:::jpmi
   end
 
-  subgraph BOOT["BOOT01 / Costello line — never JPMI"]
+  subgraph BOOT["BOOT01 / Costello — never JPMI"]
     direction TB
     BOOT01["BOOT01<br/>after 2019-09-26<br/>18G103 OS + home"]:::boot
     COSTELLO["COSTELLO<br/>2020-08-26<br/>boot 2020-08-28..31"]:::boot
-    TRIMARCO["TRIMARCO<br/>~2020-09-01+<br/>Burisma Desktop"]:::boot
-    BLAP01["BLAP01<br/>~2020-09-01+<br/>no Burisma dump"]:::boot
-    APFS["APFS HB Boot Drive<br/>conversion date unknown<br/>CCC 2021-01-05"]:::boot
-    GAI["GAI Biden Lap 2<br/>volume 2021-05-17"]:::boot
-    MARYMAN["MARYMAN<br/>imaged 2021-04-04"]:::exam
-    GUSTAV["GUSTAV<br/>Dimitrelos 2022-05–06"]:::exam
-    TODD["TODD<br/>after 2021-01-05"]:::boot
-    HAYES["HAYES<br/>after 2021-01-05"]:::boot
-    MPOLO["MPOLO<br/>Jun 2021<br/>bootable laptop"]:::exam
-    APFSstar["APFS*<br/>Jun 2022 / MEGA 2022-06-13<br/>to Marc Aaron DeGiovanni"]:::exam
+  end
+
+  subgraph TRIM["TRIMARCO group"]
+    direction TB
+    TRIMARCO["TRIMARCO<br/>~2020-09-01+<br/>Burisma Desktop"]:::trim
+    APFS["APFS HB Boot Drive<br/>volume 2020-12-12<br/>CCC 2021-01-05"]:::trim
+    MARYMAN["MARYMAN<br/>imaged 2021-04-04"]:::trim
+    GUSTAV["GUSTAV<br/>Dimitrelos 2022-05–06"]:::trim
+  end
+
+  subgraph BLAPG["BLAP01 / GAI"]
+    direction TB
+    BLAP01["BLAP01<br/>~2020-09-01+<br/>no Burisma dump"]:::gai
+    GAI["GAI Biden Lap 2<br/>volume 2021-05-17"]:::gai
+  end
+
+  subgraph TODDGRP["Todd-altered copies"]
+    direction TB
+    TODD["TODD<br/>after 2021-01-05<br/>altered to boot"]:::todd
+    HAYES["HAYES<br/>after 2021-01-05"]:::todd
+    MPOLO["MPOLO<br/>Jun 2021<br/>degraded copy; missing password vaults"]:::todd
+    APFSstar["APFS*<br/>MEGA 2022-06-13 imgc<br/>to Marc Aaron DeGiovanni"]:::todd
+  end
+
+  subgraph PHONE["iPhone backup — present on all copies"]
+    direction TB
+    IPHONE["IPHONE<br/>iPhone backup on all copies"]:::phone
   end
 
   subgraph SIDE["0728 Extra Found Files — completely separate corpus"]
@@ -79,15 +103,18 @@ flowchart TB
   BOOT01 -->|2020-08-26| COSTELLO
   COSTELLO --> TRIMARCO
   COSTELLO --> BLAP01
-  TRIMARCO -->|date unknown| APFS
+  TRIMARCO -->|2020-12-12| APFS
   BLAP01 --> GAI
   APFS --> MARYMAN
   APFS --> GUSTAV
   APFS --> TODD
   TODD --> HAYES
-  HAYES --> MPOLO
+  HAYES -.->|bootable laptop with user files| MPOLO
   HAYES --> APFSstar
   HAYES -.->|MEGA bag; not identity| EFF
+  IPHONE -->|password provided by Hayes on 2021-06-02| HAYES
+  IPHONE --> MPOLO
+  RHB_WD ~~~ EFF
 ```
 
 Export: [SVG](diagrams/named_graph.svg) · [JPG](diagrams/named_graph.jpg)
@@ -128,7 +155,7 @@ Someone who **boots their own Mac** and **mounts** this volume can **browse** `r
 
 **Todd (16 Jul 2026 chat).** “Ours was from Mark Trimarco”; Desktop-dropped; **had to alter it to boot**; made his bootable **right after** receipt. He **also** holds the restricted Mac Isaac original under Della Rocca agreement — the source of **these JPMI reports**.
 
-**APFS construction (`HB Boot Drive`).** **TRIMARCO → APFS** at an **unknown** date. Spotlight health check **12 Dec 2020 20:22:36 UTC**; CCC `BaseSystem.dmg` / Preboot `boot.efi` the same hour; named CCC snapshots **5 Jan 2021**. `SystemVersion.plist` still mtime **21 Sep 2019** (inherited Mojave tree). August 2020 ColorSync **mtimes preserved** across the clone. After **5 Jan 2021**, **APFS** fans to **MARYMAN**, **GUSTAV**, and **TODD → HAYES**.
+**APFS construction (`HB Boot Drive`).** **TRIMARCO → APFS** volume created **12 Dec 2020**. Spotlight health check **12 Dec 2020 20:22:36 UTC**; CCC `BaseSystem.dmg` / Preboot `boot.efi` the same hour; named CCC snapshots **5 Jan 2021**. `SystemVersion.plist` still mtime **21 Sep 2019** (inherited Mojave tree). August 2020 ColorSync **mtimes preserved** across the clone. After **5 Jan 2021**, **APFS** fans to **MARYMAN**, **GUSTAV**, and **TODD → HAYES**.
 
 **Interpretation.** Todd’s “it was not bootable until I made it so” describes the **Trimarco object he received** (folder dump / broken clone), not the entire Mac Isaac universe. A bootable Hunter OS **already existed in August 2020**. The named **APFS** node is the TRIMARCO conversion, not a clone of JPMI `Untitled`.
 
@@ -152,7 +179,7 @@ October 2020 `Color LCD-…` profiles **diverge** between GAI and APFS (differen
 
 ## Named reconstruction (tightest graph)
 
-Node names used below: **LAPTOP**, **SHOP**, **RHB_WD**, **BOOT01**, **JPMI**, **COSTELLO**, **TRIMARCO**, **BLAP01**, **APFS**, **GAI**, **MARYMAN**, **GUSTAV**, **TODD**, **HAYES**, **MPOLO**, **APFS***.
+Node names used below: **LAPTOP**, **SHOP**, **RHB_WD**, **BOOT01**, **JPMI**, **COSTELLO**, **TRIMARCO**, **BLAP01**, **APFS**, **GAI**, **MARYMAN**, **GUSTAV**, **TODD**, **HAYES**, **MPOLO**, **APFS***, **IPHONE**, **0728**.
 
 | Node | Dates on the node |
 |---|---|
@@ -202,10 +229,10 @@ Export: [SVG](diagrams/shop_outbound.svg) · [JPG](diagrams/shop_outbound.jpg)
 
 COSTELLO (26 Aug 2020) is **BOOT01**, never JPMI. Live ColorSync writes **28–31 Aug 2020** (iMac, then DELL3007 and U2410) are identical on APFS and GAI.
 
-- **TRIMARCO** (~1 Sep 2020+): APFS-only Burisma Desktop folders 31 Aug–2 Sep 2020. **TRIMARCO → APFS** conversion date unknown; CCC snapshots **5 Jan 2021**. Then **MARYMAN**, **GUSTAV**, **TODD → HAYES → MPOLO / APFS***.
+- **TRIMARCO** (~1 Sep 2020+): APFS-only Burisma Desktop folders 31 Aug–2 Sep 2020. **TRIMARCO → APFS** volume **12 Dec 2020**; CCC snapshots **5 Jan 2021**. Then **MARYMAN**, **GUSTAV**, **TODD → HAYES** (dashed **MPOLO**; solid **APFS***; dashed **0728**; **IPHONE** password **2021-06-02**).
 - **BLAP01** (~1 Sep 2020+): no Hunter.Burisma / Desktop Documents trees; heavier 1–3 Sep 2020 mtime mass (319+497+639 vs APFS 36+75+53); unique Color LCD 2020-10-28; GAI volume `Biden Lap 2` **17 May 2021**.
 
-**Last shared boot fingerprint:** 31 Aug 2020 Dell U2410 ICC (both inventories). **First clear APFS-only political staging:** 1–2 Sep 2020 Burisma Desktop folders (Washington Post later saw those names on a Maxey drive). **Color LCD profiles diverge 19–28 Oct 2020.** **TRIMARCO → APFS** conversion date is **unknown**; named CCC snapshots **5 Jan 2021** bound the APFS destination. Downstream examiner and author copies are **after that date**.
+**Last shared boot fingerprint:** 31 Aug 2020 Dell U2410 ICC (both inventories). **First clear APFS-only political staging:** 1–2 Sep 2020 Burisma Desktop folders (Washington Post later saw those names on a Maxey drive). **Color LCD profiles diverge 19–28 Oct 2020.** **TRIMARCO → APFS** volume created **12 Dec 2020**; named CCC snapshots **5 Jan 2021** are later checkpoints on that volume. Downstream examiner and author copies are **after that date**.
 
 ### After 5 Jan 2021: APFS fans out
 
@@ -213,15 +240,16 @@ COSTELLO (26 Aug 2020) is **BOOT01**, never JPMI. Live ColorSync writes **28–3
 |---|---|---|
 | **MARYMAN** | Imaged **4 Apr 2021** | Maryman & Associates / Associated Newspapers; SanDisk Extreme serial `20142M400253` (not the project SanDisk `0241M2042085`). Structurally APFS-family. *Daily Mail* Apr 2021. |
 | **GUSTAV** | **May–Jun 2022** (deletion analysis **1 Jun 2022**) | Konstantinos “Gus” Dimitrelos / Washington Examiner. APFS-structure copy, **not** JPMI. |
-| **TODD** | After **5 Jan 2021** | Sanders holding/working an APFS-family bootable (distinct from his Della Rocca **JPMI** packet). |
+| **TODD** | After **5 Jan 2021** | Sanders holding/working an APFS-family bootable (distinct from his Della Rocca **JPMI** packet). He **altered it to boot**; the graphs color **TODD / HAYES / APFS* / MPOLO** separately from the TRIMARCO group. |
 | **HAYES** | After **5 Jan 2021** | Conan Hayes working copies sourced via Todd/APFS line. |
-| **MPOLO** | **Jun 2021** | Marco Polo schematic (report p. 579): Costello/Giuliani line **Jun 2021 → Marco Polo**. This encyclopedia: they used Hayes’s **bootable laptop**, not JPMI. |
-| **APFS*** | **Jun 2022** / MEGA **13 Jun 2022** | Hayes `RHB_Boot.imgc` (HDD Raw Copy Tool) sent to **Marc Aaron DeGiovanni**. The indexed `rhb_drive` image in the broader project. **Not** JPMI. |
+| **MPOLO** | **Jun 2021** | Marco Polo schematic (report p. 579): Costello/Giuliani line **Jun 2021 → Marco Polo**. This encyclopedia: Hayes **bootable laptop with user files**, a **degraded** copy missing key user files including **password vaults**. **Not** JPMI. |
+| **IPHONE** | Backup on all copies; password **2021-06-02** | iPhone backup present on the named copies. **Password provided by Hayes on 2021-06-02**. Graph edges from **IPHONE** back to **HAYES** and **MPOLO**. |
+| **APFS*** | MEGA **13 Jun 2022** (file datestamp) | Hayes `RHB_Boot.imgc` image file (HDD Raw Copy Tool) sent **directly** to **Marc Aaron DeGiovanni**. When analyzed: APFS / Hayes’s APFS. The indexed `rhb_drive` image in the broader project. **Not** a USB stick. **Not** JPMI. |
 
 The same named graph is at the top of this article ([SVG](diagrams/named_graph.svg) · [JPG](diagrams/named_graph.jpg)).
 
 
-**Probable, not proved:** BOOT01 is the object FedEx’d as COSTELLO (needs serial/hash). TRIMARCO → APFS conversion date is unknown; CCC snapshot names **5 Jan 2021** are the earliest dated APFS checkpoints. TODD → HAYES is attribution (chat + later deliveries), not a hash bridge. BLAP01 is a project label for GAI’s HFS+ ancestor. **JPMI is not an ancestor of COSTELLO, TRIMARCO, APFS, HAYES, MPOLO, or APFS*.**
+**Probable, not proved:** BOOT01 is the object FedEx’d as COSTELLO (needs serial/hash). TRIMARCO → APFS volume create date is the on-disk **12 Dec 2020**; CCC snapshot names **5 Jan 2021** are the next dated APFS checkpoints. TODD → HAYES is attribution (chat + later deliveries), not a hash bridge. BLAP01 is a project label for GAI’s HFS+ ancestor. **JPMI is not an ancestor of COSTELLO, TRIMARCO, APFS, HAYES, MPOLO, or APFS*.**
 
 ## What this encyclopedia still claims
 
