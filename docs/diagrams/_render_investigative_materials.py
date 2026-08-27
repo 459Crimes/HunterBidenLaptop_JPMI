@@ -162,7 +162,7 @@ lineage_edges = f'''  {edge(laptop.cx, laptop.bottom, shop.cx, shop.y, "2019-04-
   {edge(iphone.x, iphone.bottom, mpolo.right, mpolo.y,
         d=f"M{iphone.x:.1f},{iphone.bottom:.1f} V916 H{mpolo.right:.1f} V{mpolo.y:.1f}")}
   {edge(iphone.x, iphone.cy, hayes.right, hayes.cy,
-        "password provided by Hayes|on 2021-06-02", lx=640, ly=820)}'''
+        "password provided by Hayes|on 2022-06-02", lx=640, ly=820)}'''
 
 nodes_core = f'''  {laptop.svg()}
   {shop.svg()}
