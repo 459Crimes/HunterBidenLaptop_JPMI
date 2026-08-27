@@ -21,6 +21,7 @@ A later interview can explain technical details absent from a court opinion. It 
 | Claim | Best supporting source | Attribution |
 |---|---|---|
 | Three damaged laptops were presented in April 2019 | Delaware Supreme Court dissent summarizing Second Amended Complaint | **Court-recited pleaded history** |
+| FBI/prosecution location evidence placed Hunter's cellphone at Wilmington's Sikar Cigar Lounge shortly before the April 12, 2019 drop-off | Miranda Devine X post and reproduced image, summarizing DOJ filings and forensic evidence | **Secondary-source summary; underlying location logs and trial transcript not held here** |
 | Mac Isaac supplied a keyboard for one laptop and another was unrecoverable | Delaware Supreme Court dissent | **Court-recited pleaded history** |
 | One laptop remained for recovery | Delaware Supreme Court majority/dissent | **Court-recited pleaded history** |
 | Biden returned the next day with an external hard drive | Delaware Supreme Court; Delaware Superior Court; S.D. Florida opinion | **Repeated in court records** |
@@ -39,7 +40,7 @@ A later interview can explain technical details absent from a court opinion. It 
 | APFS/GAI have ColorSync iMac + two Dells and ByHost UUIDs dated 28–31 Aug 2020; JPMI does not | `rhb_forensics` `files` sources 1, 116, 122 | **Comparative inventory**; APFS/GAI bytes not in this GitHub tree |
 | APFS `HB Boot Drive` volume created **12 Dec 2020**; CCC snapshots **5 Jan 2021** | APFS Spotlight/CCC paths; parent-project custody synthesis | **Comparative inventory** |
 | COSTELLO splits ~**1 Sep 2020+** to **TRIMARCO** (Burisma Desktop) vs **BLAP01** (no Burisma dump) | APFS vs GAI inventories | **Comparative inventory**; [BRANCH_DEVIATIONS](BRANCH_DEVIATIONS.md) |
-| Hayes provided the **IPHONE** backup password **2021-06-02** | Named-graph / Hayes delivery record | **Participant/project identity**; not a JPMI table |
+| Hayes provided the **IPHONE** backup password **2022-06-02** | Named-graph / Hayes delivery record | **Participant/project identity**; not a JPMI table |
 | GAI HFS+ volume activity 17 May 2021 with full OS | GAI volume/files inventory | **Comparative inventory** |
 | Todd received a Trimarco copy that he had to alter to boot | CybrJstr chat 16 Jul 2026 | **Participant account (this project)**; not the Della Rocca mailing packet |
 | Giuliani provided the material to the New York Post | Delaware Supreme Court | **Court-recited history** |

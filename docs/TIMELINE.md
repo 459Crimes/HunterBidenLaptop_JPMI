@@ -20,7 +20,7 @@
 | 2010-03-02 | 2 | The Mac Shop, Inc. Delaware file 4794855 | [The Mac Shop](THE_MAC_SHOP.md) |
 | Years ≤ 2018 | 1 | Account content, migrations, backups accumulate | [Contents census](CONTENTS_CENSUS.md) |
 | 2019-01 … 2019-03 | 1 | Created/modified counts peak (e.g. Feb 2019: ~241k created rows) | [Timestamps](TIMESTAMPS.md) |
-| 2019-04-12 | 2 | Three laptops; one retained | [The Mac Shop](THE_MAC_SHOP.md) |
+| 2019-04-12 | 2 | FBI/prosecution location evidence, as summarized by Miranda Devine, placed Hunter's cellphone at Wilmington's Sikar Cigar Lounge shortly before the approximately 6:50 p.m. three-laptop repair drop-off; one laptop was retained | [The Mac Shop](THE_MAC_SHOP.md) · [Sikar geolocation research note](RESEARCH_SIKAR_GEOLOCATION.md) |
 | 2019-04-13 | 2 | External drive; recovery completed | [The Mac Shop](THE_MAC_SHOP.md) |
 | 2019-04-17 | 2 | $85 invoice | [The Mac Shop](THE_MAC_SHOP.md) |
 | 2019-05-10 | 5/2 | Two user-tree `.DS_Store` mtimes (Desktop subfolder; Pictures) — still metadata | [Integrity](INTEGRITY.md) |
@@ -46,7 +46,7 @@
 | 2021-01-05 | 5 | Named CCC snapshots on APFS. After this date: **MARYMAN**, **GUSTAV**, **TODD → HAYES** (Todd-altered copies) | [Branch splits](BRANCH_DEVIATIONS.md) |
 | 2021-04-04 | 5 | **MARYMAN** images related SanDisk (`20142M400253`) | [Branch splits](BRANCH_DEVIATIONS.md) |
 | 2021-05-17 | 5 | GAI HFS+ `Biden Lap 2` volume/check (full OS; same Aug 2020 ICCs as APFS). **BLAP01 / GAI**. Not JPMI | [Branch splits](BRANCH_DEVIATIONS.md) |
-| 2021-06-02 | 5 | **IPHONE**: Hayes provided the iPhone-backup password | [Branch splits](BRANCH_DEVIATIONS.md) |
+| 2022-06-02 | 5 | **IPHONE**: Hayes provided the iPhone-backup password | [Branch splits](BRANCH_DEVIATIONS.md) |
 | 2021-06 | 5 | **MPOLO**: Marco Polo schematic claims receipt of a copy (report p. 579). Hayes **bootable laptop** (degraded; missing password vaults), not JPMI | [Marco Polo v4](MARCO_POLO.md) · [Branch splits](BRANCH_DEVIATIONS.md) |
 | 2021-07-28 | 5 | **0728 Extra Found Files**: Hayes MEGA bag (separate corpus; not a volume clone) | [Copy lineages](COPY_LINEAGES.md) |
 | 2022-03-30 | 5 | *Washington Post* Maxey-drive exam: post-FBI access; folders dated 1–2 Sep 2020 | [Bibliography](BIBLIOGRAPHY.md) |
